@@ -1,0 +1,46 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="-7.5 -7.5 415 415"
+  >
+
+  <path
+    fill="#1abc9c"
+    stroke="white"
+    stroke-width="15"
+    d="
+    M 50,0
+      H 350
+      A 50,50 0 0,1 400,50
+      V 350
+      A 50,50 0 0,1 350,400
+      H 50
+      A 50,50 0 0,1 0,350
+      V 50
+      A 50,50 0 0,1 50,0
+    Z"
+  />
+
+  <path
+    fill="white"
+    d="
+    M 85,100
+      A 25,25 0 0,1 135,100
+      V 180
+      H 265
+      V 100
+      A 25,25 0 0,1 315,100
+      V 300
+      A 25,25 0 0,1 265,300
+      V 220
+      H 135
+      V 300
+      A 25,25 0 0,1 85,300
+      V 100
+    Z"
+  />
+
+  <!-- <rect width="400" height="400" fill="none" stroke="#e70fbf" stroke-width="5px" /> -->
+
+</svg>
