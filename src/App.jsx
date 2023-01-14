@@ -4,6 +4,7 @@ import './assets/styles/App.css'
 
 import Navigation from './components/Navigation.jsx'
 import Home from './pages/Home.jsx'
+// import Menu from './components/Menu.jsx'
 import About from './pages/About.jsx'
 import WorkSamples from './pages/WorkSamples.jsx'
 import Contact from './pages/Contact.jsx'
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Navigation />} >
           <Route index element={<Home />} />
+          {/* <Route path='/menu' element={<Menu />} /> */}
           <Route path='/about' element={<About />} />
           <Route path='/work-samples' element={<WorkSamples />} />
           <Route path='/contact' element={<Contact />} />
