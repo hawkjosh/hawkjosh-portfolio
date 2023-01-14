@@ -14,7 +14,7 @@ export default function Home() {
         <div id='home-avatar'>
           <img src={myAvatar} alt='Hawk Avatar' />
         </div>
-        
+
         <div id='home-descriptors'>
           <div id='home-descriptor-1'>
             <div className='home-descriptor-container'>

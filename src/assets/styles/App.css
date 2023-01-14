@@ -19,7 +19,7 @@ body {
   margin: 0px;
   font-family: "Rubik", sans-serif;
   color: white;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {

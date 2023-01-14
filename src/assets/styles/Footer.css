@@ -7,7 +7,7 @@
   padding: 0.5rem 0;
 }
 
-.footer-container svg > path:hover {
+.footer-container .footer-icon:hover {
   stroke: var(--primary);
   stroke-width: 8;
 }
