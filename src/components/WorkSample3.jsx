@@ -4,7 +4,7 @@ export default function WorkSample3() {
   
   return (
     <>
-      <h1>WorkSample3</h1>
+      <div>WorkSample3</div>
     </>
   )
 }

@@ -4,7 +4,7 @@ export default function Toolbox() {
   
   return (
     <>
-      <h1>Toolbox</h1>
+      <div>Toolbox</div>
     </>
   )
 }

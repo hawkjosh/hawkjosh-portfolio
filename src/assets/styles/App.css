@@ -12,15 +12,17 @@
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0px;
   font-family: "Rubik", sans-serif;
-  /* overflow: hidden; */
+  color: white;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }

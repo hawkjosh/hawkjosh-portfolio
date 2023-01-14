@@ -1,0 +1,39 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 110 110">
+  
+  <path
+    fill="white"
+    stroke="white"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="
+    M 15 15
+      H 95
+      A 5 5 0 0 1 95 25
+      H 15
+      A 5 5 0 0 1 15 15
+    Z
+
+    M 15 50
+      H 95
+      A 5 5 0 0 1 95 60
+      H 15
+      A 5 5 0 0 1 15 50
+    Z
+
+    M 15 85
+      H 95
+      A 5 5 0 0 1 95 95
+      H 15
+      A 5 5 0 0 1 15 85
+    Z
+    "
+  />
+
+</svg>
+
+<!-- <svg width="32" height="32" viewBox="0 0 110 110"><path fill="white" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d=" M 15 15H 95A 5 5 0 0 1 95 25H 15A 5 5 0 0 1 15 15ZM 15 50H 95A 5 5 0 0 1 95 60H 15A 5 5 0 0 1 15 50ZM 15 85H 95A 5 5 0 0 1 95 95H 15A 5 5 0 0 1 15 85Z"/></svg> -->

@@ -1,41 +1,10 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="48"
-  height="48"
+  width="32"
+  height="32"
   viewBox="0 0 110 110">
 
-  <!-- Relative Path -->
   <path
-    fill="none"
-    stroke="white"
-    stroke-width="5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="
-    M 98 73
-      v 32
-      h -93
-      v -32
-    
-    m 73 11
-      h -53
-    
-    m 53 -12
-      l -53 -10
-    
-    m 58 -3
-      l -49 -19
-    
-    m 59 9
-      l -42 -28
-    
-    m 54 18
-      l -33 -34
-    "
-  />
-
-  <!-- Absolute Path -->
-  <!-- <path
     fill="none"
     stroke="white"
     stroke-width="5"
@@ -62,13 +31,8 @@
     M 105 39
       L 72 5
     "
-  /> -->
-
-  <!-- <line x1="0" x2="110" y1="5" y2="5" stroke="cyan" stroke-width="0.5" /> -->
-  <!-- <line x1="0" x2="110" y1="105" y2="105" stroke="cyan" stroke-width="0.5" /> -->
-  <!-- <line x1="5" x2="5" y1="0" y2="110" stroke="cyan" stroke-width="0.5" /> -->
-  <!-- <line x1="105" x2="105" y1="0" y2="110" stroke="cyan" stroke-width="0.5" /> -->
-
-  <!-- <rect width="110" height="110" fill="none" stroke="#e70fbf" /> -->
+  />
 
 </svg>
+
+<!-- <svg width="32" height="32" viewBox="0 0 110 110"><path fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M98 73V105H5V73M78 84H25M78 72L25 62M83 59L34 40M93 49L51 21M105 39L72 5"/></svg> -->

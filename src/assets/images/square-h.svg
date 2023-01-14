@@ -1,7 +1,7 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="48"
-  height="48"
+  width="40"
+  height="40"
   viewBox="-7.5 -7.5 415 415"
   >
 
@@ -41,6 +41,6 @@
     Z"
   />
 
-  <!-- <rect width="400" height="400" fill="none" stroke="#e70fbf" stroke-width="5px" /> -->
-
 </svg>
+
+<!-- <svg width="40" height="40" viewBox="-7.5 -7.5 415 415"><path fill="#1abc9c" stroke="white" stroke-width="15" d="M50 0H350A50 50 0 0 1 400 50V350A50 50 0 0 1 350 400H50A50 50 0 0 1 0 350V50A50 50 0 0 1 50 0Z"/><path fill="white" d="M85 100A25 25 0 0 1 135 100V180H265V100A25 25 0 0 1 315 100V300A25 25 0 0 1 265 300V220H135V300A25 25 0 0 1 85 300V100Z"/></svg> -->

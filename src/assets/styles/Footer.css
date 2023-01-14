@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
   height: 100%;
+  padding: 0.5rem 0;
 }
 
-.footer-text {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: white;
+.footer-container svg > path:hover {
+  stroke: var(--primary);
+  stroke-width: 8;
 }

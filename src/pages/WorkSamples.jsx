@@ -4,7 +4,7 @@ export default function WorkSamples() {
   
   return (
     <>
-      <h1>Work Samples Page</h1>
+      <div>Work Samples Page</div>
     </>
   )
 }

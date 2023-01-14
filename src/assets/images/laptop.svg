@@ -1,7 +1,7 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="640"
-  height="360"
+  width="100px"
+  height="50px"
 	viewBox="0 0 640 360"
 	>
 
@@ -54,7 +54,5 @@
       C 368,98 384,98 393,107
     Z"
   />
-
-  <!-- <rect width="640" height="360" fill="none" stroke="#e70fbf" stroke-width="5px" /> -->
 
 </svg>
