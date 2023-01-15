@@ -1,0 +1,30 @@
+#menu-dropdown button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-dropdown .menu-icon:hover,
+#menu-dropdown .menu-icon:active {
+  cursor: pointer;
+  stroke: var(--primary);
+}
+
+#menu-dropdown .menu-list {
+  position: absolute;
+  top: 4.25rem;
+  left: 2rem;
+  z-index: 1;
+  padding: 0.5rem;
+  background-color: rgba(44, 62, 80, 0.85);
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+#menu-dropdown .menu-list-item {
+  font-size: calc(var(--font-size) + 1rem);
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+}

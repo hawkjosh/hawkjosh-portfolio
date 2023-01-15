@@ -1,26 +1,46 @@
 import React, { useState } from 'react'
-import '../assets/styles/Menus.css'
-
-import menu from '../assets/images/menu.svg'
+import { Link } from 'react-router-dom'
+import '../assets/styles/Menu.css'
 
 export default function Menu() {
+
   const [showMenu, setShowMenu] = useState(false);
-  const menuOptions = ['Home', 'About', 'Work Samples', 'Contact', 'Resume']
   
+  const menuItems = [
+    {
+      name: 'Home',
+      link: '/'
+    },
+    {
+      name: 'About',
+      link: '/about'
+    },
+    {
+      name: 'Work Samples',
+      link: '/work-samples'
+    },
+    {
+      name: 'Contact',
+      link: '/contact'
+    }
+  ]
+
   return (
     <>
-      <div className='menu-dropdown'>
+      <div id='menu-dropdown'>
         <button onClick={() => setShowMenu(!showMenu)}>
-          <svg width="32" height="32" viewBox="0 0 110 110">
-            <path className='menu-icon' fill="white" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d=" M 15 15H 95A 5 5 0 0 1 95 25H 15A 5 5 0 0 1 15 15ZM 15 50H 95A 5 5 0 0 1 95 60H 15A 5 5 0 0 1 15 50ZM 15 85H 95A 5 5 0 0 1 95 95H 15A 5 5 0 0 1 15 85Z"/>
+          <svg width="32" height="32" viewBox="0 0 100 100">
+            <path className="menu-icon" fill="transparent" stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" d="M-10-10H110V110H-10V-10ZM10 10H90ZM10 50H90ZM10 90H90Z" />
           </svg>
         </button>
         {showMenu && (
-          <ul className='menu-list'>
-            {menuOptions.map((option, index) => (
-              <li key={index}>{option}</li>
+          <div className='menu-list'>
+            {menuItems.map((item, index) => (
+              <Link className='menu-list-item' key={index} to={item.link} onClick={() => setShowMenu(!showMenu)}>
+                {item.name}
+              </Link>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </>
