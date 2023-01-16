@@ -1,88 +1,184 @@
-#home-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  padding: 0rem 2rem;
-  height: 100vh;
-}
-
-#home-avatar {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-shrink: 1;
-  flex-basis: 75%;
-
-  border: dashed yellow;
-}
-#home-avatar > img {
-  max-width: 100%;
-  height: auto;
-}
-
-#home-descriptors {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  flex-basis: 100%;
-  flex-shrink: 2;
-  padding: 1rem;
-
-  border: dashed yellow;
-}
-
-[id ^= "home-descriptor-"] {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+/* For Desktop Layout
+--------------------- */
+#home-desktop-layout {
   width: 100%;
-  text-align: center;
-  padding: 1rem 0rem;
+  height: 100vh;
 
-  border: dashed red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.home-descriptor-image {
-  align-self: center;
-  max-width: 100%;
-  height: auto;
-
-  border: dashed blue;
+#home-desktop-layout .home-avatar {
+  width: 60%;
+  max-width: 500px;
 }
 
-.home-descriptor-text {
-  font-size: 1.25rem;
-  margin-top: 1rem;
-
-  border: dashed green;
+#home-desktop-layout .home-divider {
+  width: 100%;
+}
+#home-desktop-layout .home-divider > hr {
+  background-color: white;
+  border-bottom-width: 0.1rem;
+  margin: 2.5rem 10%;
 }
 
-#home-descriptor-1 > div {
-  align-self: flex-start;
+#home-desktop-layout .home-descriptors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4.5rem;
+}
+#home-desktop-layout .home-descriptors-container .home-descriptor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  gap: 1rem;
+}
+#home-desktop-layout .home-descriptors-container .home-descriptor > svg {
+  width: 5rem;
+}
+#home-desktop-layout .home-descriptors-container .home-descriptor > div {
+  font-size: calc(var(--font-size) + 1rem);
 }
 
-#home-descriptor-3 > div {
-  align-self: flex-end;
+
+/* For Laptop Layout
+--------------------- */
+#home-laptop-layout {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 767px) {
-  #home-descriptor-1 > div,
-  #home-descriptor-3 > div {
-    align-self: center;
-  }
-  [id ^= "home-descriptor-"] {
-    width: calc(100% / 1.5);
-  }
-  .home-descriptor-text {
-    font-size: 1rem;
-    margin-top: 0.75rem
-  }
+#home-laptop-layout .home-avatar {
+  width: 60%;
+  max-width: 500px;
 }
 
-@media (max-width: 600px) {
-  .home-descriptor-text {
-    font-size: 0.75rem;
-    margin-top: 0.5rem
-  }
+#home-laptop-layout .home-divider {
+  width: 100%;
+}
+#home-laptop-layout .home-divider > hr {
+  background-color: white;
+  border-bottom-width: 0.1rem;
+  margin: 2.5rem 10%;
+}
+
+#home-laptop-layout .home-descriptors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4.5rem;
+}
+#home-laptop-layout .home-descriptors-container .home-descriptor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  gap: 0.9rem;
+}
+#home-laptop-layout .home-descriptors-container .home-descriptor > svg {
+  width: 4.5rem;
+}
+#home-laptop-layout .home-descriptors-container .home-descriptor > div {
+  font-size: calc(var(--font-size) + 1rem);
+}
+
+
+/* For Tablet Layout
+--------------------- */
+#home-tablet-layout {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-tablet-layout .home-avatar {
+  width: 60%;
+  max-width: 500px;
+}
+
+#home-tablet-layout .home-divider {
+  width: 100%;
+}
+#home-tablet-layout .home-divider > hr {
+  background-color: white;
+  border-bottom-width: 0.1rem;
+  margin: 2.5rem 10%;
+}
+
+#home-tablet-layout .home-descriptors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4.5rem;
+}
+#home-tablet-layout .home-descriptors-container .home-descriptor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3);
+  gap: 0.75rem;
+}
+#home-tablet-layout .home-descriptors-container .home-descriptor > svg {
+  width: 4rem;
+}
+#home-tablet-layout .home-descriptors-container .home-descriptor > div {
+  font-size: calc(var(--font-size) + 0.75rem);
+}
+
+
+/* For Mobile Layout
+--------------------- */
+#home-mobile-layout {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-mobile-layout .home-avatar {
+  width: 75%;
+  max-width: 350px;
+}
+
+#home-mobile-layout .home-divider {
+  width: 100%;
+}
+#home-mobile-layout .home-divider > hr {
+  background-color: white;
+  border-bottom-width: 0.1rem;
+  margin: 2.5rem 15%;
+}
+
+#home-mobile-layout .home-descriptors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 4.5rem;
+}
+#home-mobile-layout .home-descriptors-container .home-descriptor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+#home-mobile-layout .home-descriptors-container .home-descriptor > svg {
+  width: 3.5rem;
+}
+#home-mobile-layout .home-descriptors-container .home-descriptor > div {
+  font-size: calc(var(--font-size) + 1.15rem);
 }

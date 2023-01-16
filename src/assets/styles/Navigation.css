@@ -1,4 +1,6 @@
-#desktop-layout {
+/* For Desktop Layout
+--------------------- */
+#nav-desktop-layout {
   width: 100%;
   height: 100vh;
 
@@ -7,7 +9,7 @@
   grid-template-rows: 15% 85%;
 }
 
-#desktop-layout > nav {
+#nav-desktop-layout > nav {
   grid-column: span 12;
   gap: 1rem;
   display: flex;
@@ -21,12 +23,12 @@
   left: 0;
 }
 
-#desktop-layout > main {
+#nav-desktop-layout > main {
   grid-column: span 12;
   width: 100%;
 }
 
-#desktop-layout .nav-logo-container {
+#nav-desktop-layout .nav-logo-container {
   flex-basis: 30%;
   display: flex;
   justify-content: flex-start;
@@ -35,12 +37,12 @@
   padding-left: 1.5rem;
   gap: 1rem;
 }
-#desktop-layout .nav-logo-title {
+#nav-desktop-layout .nav-logo-title {
   font-size: calc(var(--font-size) + 1.25rem);
   text-transform: uppercase;
 }
 
-#desktop-layout .nav-links-container {
+#nav-desktop-layout .nav-links-container {
   flex-basis: 47.5%;
   display: flex;
   justify-content: space-between;
@@ -49,16 +51,16 @@
   padding: 0rem 1.5rem;
   border-left: 1px solid var(--border);
 }
-#desktop-layout .nav-links-container > a {
+#nav-desktop-layout .nav-links-container > a {
   font-size: calc(var(--font-size) + 0.5rem);
   text-transform: uppercase;
 }
-#desktop-layout .nav-links-container > a:hover {
+#nav-desktop-layout .nav-links-container > a:hover {
   color: var(--primary);
   font-weight: bold;
 }
 
-#desktop-layout .nav-social-container {
+#nav-desktop-layout .nav-social-container {
   flex-basis: 22.5%;
   display: flex;
   justify-content: space-between;
@@ -67,12 +69,15 @@
   padding: 0rem 1.5rem;
   border-left: 1px solid var(--border);
 }
-#desktop-layout .nav-social-container .nav-social-icon:hover {
+#nav-desktop-layout .nav-social-container .nav-social-icon:hover {
   stroke: var(--primary);
   stroke-width: 8;
 }
 
-#laptop-layout {
+
+/* For Laptop Layout
+--------------------- */
+#nav-laptop-layout {
   width: 100%;
   height: 100vh;
 
@@ -81,7 +86,7 @@
   grid-template-rows: 15% 85%;
 }
 
-#laptop-layout > nav {
+#nav-laptop-layout > nav {
   grid-column: span 12;
   gap: 1rem;
   display: flex;
@@ -95,12 +100,12 @@
   left: 0;
 }
 
-#laptop-layout > main {
+#nav-laptop-layout > main {
   grid-column: span 12;
   width: 100%;
 }
 
-#laptop-layout .nav-logo-container {
+#nav-laptop-layout .nav-logo-container {
   flex-basis: 30%;
   display: flex;
   justify-content: flex-start;
@@ -109,12 +114,12 @@
   padding-left: 1.5rem;
   gap: 1rem;
 }
-#laptop-layout .nav-logo-title {
+#nav-laptop-layout .nav-logo-title {
   font-size: calc(var(--font-size) + 0.8rem);
   text-transform: uppercase;
 }
 
-#laptop-layout .nav-links-container {
+#nav-laptop-layout .nav-links-container {
   flex-basis: 45%;
   display: flex;
   justify-content: space-between;
@@ -123,16 +128,16 @@
   padding: 0rem 1.5rem;
   border-left: 1px solid var(--border);
 }
-#laptop-layout .nav-links-container > a {
+#nav-laptop-layout .nav-links-container > a {
   font-size: calc(var(--font-size) + 0.35rem);
   text-transform: uppercase;
 }
-#laptop-layout .nav-links-container > a:hover {
+#nav-laptop-layout .nav-links-container > a:hover {
   color: var(--primary);
   font-weight: bold;
 }
 
-#laptop-layout .nav-social-container {
+#nav-laptop-layout .nav-social-container {
   flex-basis: 25%;
   display: flex;
   justify-content: space-between;
@@ -141,12 +146,15 @@
   padding: 0rem 1.5rem;
   border-left: 1px solid var(--border);
 }
-#laptop-layout .nav-social-container .nav-social-icon:hover {
+#nav-laptop-layout .nav-social-container .nav-social-icon:hover {
   stroke: var(--primary);
   stroke-width: 8;
 }
 
-#tablet-layout {
+
+/* For Tablet Layout
+--------------------- */
+#nav-tablet-layout {
   width: 100%;
   height: 100vh;
 
@@ -155,7 +163,7 @@
   grid-template-rows: 15% 85%;
 }
 
-#tablet-layout > nav {
+#nav-tablet-layout > nav {
   grid-column: span 12;
   gap: 1rem;
   display: flex;
@@ -169,12 +177,12 @@
   left: 0;
 }
 
-#tablet-layout > main {
+#nav-tablet-layout > main {
   grid-column: span 12;
   width: 100%;
 }
 
-#tablet-layout > footer {
+#nav-tablet-layout > footer {
   grid-column: span 12;
   background-color: var(--secondary);
   width: 100%;
@@ -184,7 +192,7 @@
   left: 0;
 }
 
-#tablet-layout .nav-logo-container {
+#nav-tablet-layout .nav-logo-container {
   flex-basis: 40%;
   display: flex;
   justify-content: flex-start;
@@ -193,12 +201,12 @@
   padding-left: 1.5rem;
   gap: 1rem;
 }
-#tablet-layout .nav-logo-title {
+#nav-tablet-layout .nav-logo-title {
   font-size: calc(var(--font-size) + 0.95rem);
   text-transform: uppercase;
 }
 
-#tablet-layout .nav-links-container {
+#nav-tablet-layout .nav-links-container {
   flex-basis: 60%;
   display: flex;
   justify-content: space-between;
@@ -207,16 +215,19 @@
   border-left: 1px solid var(--border);
   padding: 0rem 1.5rem;
 }
-#tablet-layout .nav-links-container > a {
+#nav-tablet-layout .nav-links-container > a {
   font-size: calc(var(--font-size) + 0.55rem);
   text-transform: uppercase;
 }
-#tablet-layout .nav-links-container > a:hover {
+#nav-tablet-layout .nav-links-container > a:hover {
   color: var(--primary);
   font-weight: bold;
 }
 
-#mobile-layout {
+
+/* For Mobile Layout
+--------------------- */
+#nav-mobile-layout {
   width: 100%;
   height: 100vh;
 
@@ -225,7 +236,7 @@
   grid-template-rows: 10% 80% 10%;
 }
 
-#mobile-layout > nav {
+#nav-mobile-layout > nav {
   grid-column: span 12;
   gap: 1rem;
   display: flex;
@@ -239,12 +250,12 @@
   left: 0;
 }
 
-#mobile-layout > main {
+#nav-mobile-layout > main {
   grid-column: span 12;
   width: 100%;
 }
 
-#mobile-layout > footer {
+#nav-mobile-layout > footer {
   grid-column: span 12;
   background-color: var(--secondary);
   width: 100%;
@@ -254,7 +265,7 @@
   left: 0;
 }
 
-#mobile-layout .nav-menu-container {
+#nav-mobile-layout .nav-menu-container {
   flex-basis: 20%;
   display: flex;
   justify-content: flex-start;
@@ -263,7 +274,7 @@
   padding-left: 1.5rem;
 }
 
-#mobile-layout .nav-logo-container {
+#nav-mobile-layout .nav-logo-container {
   flex-basis: 80%;
   display: flex;
   justify-content: flex-end;
@@ -272,7 +283,7 @@
   padding-right: 1.5rem;
   gap: 1rem;
 }
-#mobile-layout .nav-logo-title {
+#nav-mobile-layout .nav-logo-title {
   font-size: calc(var(--font-size) + 1.25rem);
   text-transform: uppercase;
 }
