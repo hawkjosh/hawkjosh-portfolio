@@ -4,7 +4,11 @@ export default function Contact() {
   
   return (
     <>
-      <div>Contact Page</div>
+
+    <div>
+      Contact Page
+    </div>
+
     </>
   )
 }

@@ -4,7 +4,11 @@ export default function WorkSamples() {
   
   return (
     <>
-      <div>Work Samples Page</div>
+
+    <div>
+      Work Samples Page
+    </div>
+
     </>
   )
 }
