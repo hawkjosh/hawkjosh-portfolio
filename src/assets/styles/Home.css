@@ -1,17 +1,13 @@
 /* For Desktop Layout
 --------------------- */
 #home-desktop-layout {
-  width: 100%;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#home-desktop-layout .home-avatar {
-  width: 60%;
-  max-width: 500px;
+#home-desktop-layout > img {
+  width: 575px;
 }
 
 #home-desktop-layout .home-divider {
@@ -19,46 +15,39 @@
 }
 #home-desktop-layout .home-divider > hr {
   background-color: white;
-  border-bottom-width: 0.1rem;
-  margin: 2.5rem 10%;
+  border-bottom-width: 0.15rem;
+  margin: 5rem 7.5%;
 }
 
 #home-desktop-layout .home-descriptors-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-bottom: 4.5rem;
+  padding-bottom: 2rem;
 }
-#home-desktop-layout .home-descriptors-container .home-descriptor {
+#home-desktop-layout .home-descriptors-container > * {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 3);
-  gap: 1rem;
-}
-#home-desktop-layout .home-descriptors-container .home-descriptor > svg {
-  width: 5rem;
+  gap: 1.75rem;
 }
 #home-desktop-layout .home-descriptors-container .home-descriptor > div {
-  font-size: calc(var(--font-size) + 1rem);
+  font-size: 2rem;
 }
 
 
 /* For Laptop Layout
 --------------------- */
 #home-laptop-layout {
-  width: 100%;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#home-laptop-layout .home-avatar {
-  width: 60%;
-  max-width: 500px;
+#home-laptop-layout > img {
+  width: 525px;
 }
 
 #home-laptop-layout .home-divider {
@@ -67,45 +56,38 @@
 #home-laptop-layout .home-divider > hr {
   background-color: white;
   border-bottom-width: 0.1rem;
-  margin: 2.5rem 10%;
+  margin: 4rem 7.5%;
 }
 
 #home-laptop-layout .home-descriptors-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-bottom: 4.5rem;
+  padding-bottom: 1.75rem;
 }
-#home-laptop-layout .home-descriptors-container .home-descriptor {
+#home-laptop-layout .home-descriptors-container > * {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 3);
-  gap: 0.9rem;
-}
-#home-laptop-layout .home-descriptors-container .home-descriptor > svg {
-  width: 4.5rem;
+  gap: 1.5rem;
 }
 #home-laptop-layout .home-descriptors-container .home-descriptor > div {
-  font-size: calc(var(--font-size) + 1rem);
+  font-size: 1.75rem;
 }
 
 
 /* For Tablet Layout
 --------------------- */
 #home-tablet-layout {
-  width: 100%;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#home-tablet-layout .home-avatar {
-  width: 60%;
-  max-width: 500px;
+#home-tablet-layout > img {
+  width: 475px;
 }
 
 #home-tablet-layout .home-divider {
@@ -114,45 +96,64 @@
 #home-tablet-layout .home-divider > hr {
   background-color: white;
   border-bottom-width: 0.1rem;
-  margin: 2.5rem 10%;
+  margin: 3.75rem 10%;
 }
 
 #home-tablet-layout .home-descriptors-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-bottom: 4.5rem;
+  padding-bottom: 1.5rem;
 }
-#home-tablet-layout .home-descriptors-container .home-descriptor {
+#home-tablet-layout .home-descriptors-container > * {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(100% / 3);
-  gap: 0.75rem;
-}
-#home-tablet-layout .home-descriptors-container .home-descriptor > svg {
-  width: 4rem;
+  gap: 1.25rem;
 }
 #home-tablet-layout .home-descriptors-container .home-descriptor > div {
-  font-size: calc(var(--font-size) + 0.75rem);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 850px) {
+  #home-tablet-layout > img {
+    width: 425px;
+  }
+  #home-tablet-layout .home-divider > hr {
+    border-bottom-width: 0.1rem;
+    margin: 3.5rem 12.5%;
+  }
+  #home-tablet-layout .home-descriptors-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 4.5rem;
+  }
+  #home-tablet-layout .home-descriptors-container > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #home-tablet-layout .home-descriptors-container .home-descriptor > div {
+    font-size: 1.75rem;
+  }
 }
 
 
 /* For Mobile Layout
 --------------------- */
 #home-mobile-layout {
-  width: 100%;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#home-mobile-layout .home-avatar {
-  width: 75%;
-  max-width: 350px;
+#home-mobile-layout > img {
+  width: 375px;
 }
 
 #home-mobile-layout .home-divider {
@@ -161,24 +162,21 @@
 #home-mobile-layout .home-divider > hr {
   background-color: white;
   border-bottom-width: 0.1rem;
-  margin: 2.5rem 15%;
+  margin: 3.5rem 12.5%;
 }
 
 #home-mobile-layout .home-descriptors-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4.5rem;
   padding-bottom: 4.5rem;
 }
-#home-mobile-layout .home-descriptors-container .home-descriptor {
+#home-mobile-layout .home-descriptors-container > * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-}
-#home-mobile-layout .home-descriptors-container .home-descriptor > svg {
-  width: 3.5rem;
+  gap: 1.25rem;
 }
 #home-mobile-layout .home-descriptors-container .home-descriptor > div {
-  font-size: calc(var(--font-size) + 1.15rem);
+  font-size: 1.75rem;
 }

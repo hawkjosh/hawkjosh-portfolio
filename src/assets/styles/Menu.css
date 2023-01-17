@@ -22,7 +22,7 @@
 }
 
 #menu-dropdown .menu-list-item {
-  font-size: calc(var(--font-size) + 1rem);
+  font-size: 1.25rem;
   color: white;
   padding: 0.75rem 1rem;
   text-decoration: none;

@@ -1,13 +1,18 @@
-.footer-container {
+#footer-container {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  height: 100%;
-  padding: 0.5rem 0;
+  gap: 2.5rem;
 }
 
-.footer-container .footer-icon:hover {
+#footer-container .footer-icon:hover {
   stroke: var(--primary);
   stroke-width: 8;
+}
+
+@media (min-width: 768px) {
+  #footer-container {
+    gap: 5rem;
+  }
 }
