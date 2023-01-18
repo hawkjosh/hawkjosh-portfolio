@@ -2,6 +2,8 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/Resume.css'
 
+import ResumeIcon from '../components/svg-icons/ResumeIcon.jsx'
+
 const Desktop = ({ children }) => {
 	const isDesktop = useMediaQuery({ minWidth: 1440 })
 	return isDesktop ? children : null
@@ -33,14 +35,10 @@ export default function Toolbox() {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<svg
-							width='48px'
-							height='auto'
-							viewBox='0 0 1024 1024'
+						<ResumeIcon
 							fill='white'
-						>
-							<path d='M832 384H576V128H192v768h640V384zm-26.496-64L640 154.496V320h165.504zM160 64h480l256 256v608a32 32 0 0 1-32 32H160a32 32 0 0 1-32-32V96a32 32 0 0 1 32-32zm160 448h384v64H320v-64zm0-192h160v64H320v-64zm0 384h384v64H320v-64z' />
-						</svg>
+							width='48px'
+						/>
 						<div className='resume-btn-title'>My Resume</div>
 					</a>
 				</section>
@@ -54,14 +52,10 @@ export default function Toolbox() {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<svg
-							width='42px'
-							height='auto'
-							viewBox='0 0 1024 1024'
+						<ResumeIcon
 							fill='white'
-						>
-							<path d='M832 384H576V128H192v768h640V384zm-26.496-64L640 154.496V320h165.504zM160 64h480l256 256v608a32 32 0 0 1-32 32H160a32 32 0 0 1-32-32V96a32 32 0 0 1 32-32zm160 448h384v64H320v-64zm0-192h160v64H320v-64zm0 384h384v64H320v-64z' />
-						</svg>
+							width='42px'
+						/>
 						<div className='resume-btn-title'>My Resume</div>
 					</a>
 				</section>
@@ -75,14 +69,10 @@ export default function Toolbox() {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<svg
-							width='36px'
-							height='auto'
-							viewBox='0 0 1024 1024'
+						<ResumeIcon
 							fill='white'
-						>
-							<path d='M832 384H576V128H192v768h640V384zm-26.496-64L640 154.496V320h165.504zM160 64h480l256 256v608a32 32 0 0 1-32 32H160a32 32 0 0 1-32-32V96a32 32 0 0 1 32-32zm160 448h384v64H320v-64zm0-192h160v64H320v-64zm0 384h384v64H320v-64z' />
-						</svg>
+							width='36px'
+						/>
 						<div className='resume-btn-title'>My Resume</div>
 					</a>
 				</section>
@@ -96,14 +86,10 @@ export default function Toolbox() {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<svg
-							width='32px'
-							height='auto'
-							viewBox='0 0 1024 1024'
+						<ResumeIcon
 							fill='white'
-						>
-							<path d='M832 384H576V128H192v768h640V384zm-26.496-64L640 154.496V320h165.504zM160 64h480l256 256v608a32 32 0 0 1-32 32H160a32 32 0 0 1-32-32V96a32 32 0 0 1 32-32zm160 448h384v64H320v-64zm0-192h160v64H320v-64zm0 384h384v64H320v-64z' />
-						</svg>
+							width='32px'
+						/>
 						<div className='resume-btn-title'>My Resume</div>
 					</a>
 				</section>

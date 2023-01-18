@@ -37,8 +37,6 @@ footer {
 }
 
 .nav-logo-container svg:hover {
-	fill: white;
-	stroke: var(--primary);
 	cursor: grab;
 	animation: rotate 1.5s linear infinite;
 }
@@ -82,7 +80,7 @@ footer {
 	padding: 0rem 2.5%;
 }
 
-.nav-social-container .nav-social-icon:hover {
+.nav-social-container a *:hover {
 	stroke: var(--primary);
 	stroke-width: 8;
 }

@@ -3,7 +3,6 @@ import React from 'react'
 export default function LogoIcon({ fill, stroke, width }) {
 	return (
 		<svg
-			xmlns='http://www.w3.org/2000/svg'
 			width={width}
 			height='auto'
 			viewBox='0 0 110 110'

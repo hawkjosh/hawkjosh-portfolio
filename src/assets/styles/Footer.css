@@ -10,7 +10,7 @@
 	}
 }
 
-.footer-icon:hover {
+.footer-container a *:hover {
 	stroke: var(--primary);
 	stroke-width: 8;
 }

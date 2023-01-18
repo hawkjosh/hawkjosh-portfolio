@@ -3,13 +3,12 @@ import React from 'react'
 export default function GithubIcon({ stroke, width }) {
 	return (
 		<svg
-			xmlns='http://www.w3.org/2000/svg'
 			width={width}
 			height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
-				fill='none'
+				fill='transparent'
 				stroke={stroke}
 				stroke-width='5'
 				stroke-linecap='round'
