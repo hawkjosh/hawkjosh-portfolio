@@ -1,16 +1,16 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="32"
-  height="32"
-  viewBox="0 0 110 110">
-
-  <path
-    fill="none"
-    stroke="white"
-    stroke-width="5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="
+	width="32"
+	height="32"
+	viewBox="0 0 110 110"
+>
+	<path
+		fill="none"
+		stroke="white"
+		stroke-width="5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		d="
     M 98 73
       V 105
       H 5
@@ -31,8 +31,7 @@
     M 105 39
       L 72 5
     "
-  />
-
+	/>
 </svg>
 
 <!-- <svg width="32" height="32" viewBox="0 0 110 110"><path fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M98 73V105H5V73M78 84H25M78 72L25 62M83 59L34 40M93 49L51 21M105 39L72 5"/></svg> -->

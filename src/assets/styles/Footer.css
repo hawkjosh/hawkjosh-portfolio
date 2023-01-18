@@ -1,16 +1,16 @@
-#footer-container {
-  height: 100%;
-  display: flex;
-  gap: 3rem;
-}
-
-.footer-icon:hover {
-  stroke: var(--primary);
-  stroke-width: 8;
+.footer-container {
+	height: 100%;
+	display: flex;
+	gap: 3rem;
 }
 
 @media (min-width: 768px) {
-  #footer-container {
-    gap: 5rem;
-  }
+	.footer-container {
+		gap: 5rem;
+	}
+}
+
+.footer-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
 }

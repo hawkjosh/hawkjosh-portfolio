@@ -1,16 +1,16 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="32"
-  height="32"
-  viewBox="0 0 110 110">
-  
-  <path
-    fill="none"
-    stroke="white"
-    stroke-width="5"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="
+	width="32"
+	height="32"
+	viewBox="0 0 110 110"
+>
+	<path
+		fill="none"
+		stroke="white"
+		stroke-width="5"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		d="
     M 105 30
       V 80
       A 25 25 0 0 1 80 105
@@ -38,8 +38,7 @@
       C 50 45 80 45 80 65
       V 80
     "
-  />
-
+	/>
 </svg>
 
 <!-- <svg width="32" height="32" viewBox="0 0 110 110"><path fill="none" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M105 30V80A25 25 0 0 1 80 105H30A25 25 0 0 1 5 80V30A25 25 0 0 1 30 5H80A25 25 0 0 1 105 30M30 28A1 1 0 0 1 30 32A1 1 0 0 1 30 28M30 80V45M50 80V65M50 45V65M50 65C50 45 80 45 80 65V80"/></svg> -->

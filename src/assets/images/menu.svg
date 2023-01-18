@@ -1,16 +1,16 @@
 <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="32"
-  height="32"
-  viewBox="0 0 100 100">
-  
-  <path
-    fill="transparent"
-    stroke="white"
-    stroke-width="15"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="
+	xmlns="http://www.w3.org/2000/svg"
+	width="32"
+	height="32"
+	viewBox="0 0 100 100"
+>
+	<path
+		fill="transparent"
+		stroke="white"
+		stroke-width="15"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		d="
     M -10 -10
       H 110
       V 110
@@ -30,8 +30,7 @@
       H 90
     Z
     "
-  />
-
+	/>
 </svg>
 
 <!-- <svg width="32" height="32" viewBox="0 0 100 100">

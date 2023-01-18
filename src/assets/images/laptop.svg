@@ -1,12 +1,11 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-  width="100px"
-  height="50px"
+	width="100px"
+	height="50px"
 	viewBox="0 0 640 360"
-	>
-
-  <path
-    fill="#2c3e50"
+>
+	<path
+		fill="#2c3e50"
 		d="
     M 64 69
       C 64 34 93 5 128 5
@@ -53,8 +52,7 @@
       C 350 132 350 116 359 107
       C 368 98 384 98 393 107
     Z"
-  />
-
+	/>
 </svg>
 
 <!-- <svg width="100px" height="50px" viewBox="0 0 640 360">

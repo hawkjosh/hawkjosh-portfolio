@@ -1,171 +1,167 @@
+/* For All Layouts
+--------------------- */
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--secondary);
+	border-bottom: 1px solid white;
+	position: fixed;
+	top: 0;
+}
+
+footer {
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary);
+	border-top: 1px solid white;
+	padding: 1.5rem auto;
+	position: fixed;
+	bottom: 0;
+}
+
+.nav-logo-container {
+	min-height: 75px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.nav-logo-container svg {
+	transition: all 0.5s;
+}
+
+.nav-logo-container svg:hover {
+	fill: white;
+	stroke: var(--primary);
+	cursor: grab;
+	animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.nav-logo-title {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.nav-links-container {
+	min-height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-left: 1px solid white;
+}
+
+.nav-links-container a {
+	text-transform: uppercase;
+}
+
+.nav-links-container a:hover {
+	color: var(--primary);
+}
+
+.nav-social-container {
+	min-height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-left: 1px solid white;
+	padding: 0rem 2.5%;
+}
+
+.nav-social-container .nav-social-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
 /* For Desktop Layout Only
 --------------------- */
 #nav-desktop-layout .nav-logo-container {
-  flex-basis: 30%;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
+	flex-basis: 30%;
+	justify-content: flex-start;
+	padding-left: 1.5rem;
 }
 #nav-desktop-layout .nav-logo-title {
-  font-size: 1.8rem;
+	font-size: 2.25rem;
 }
 #nav-desktop-layout .nav-links-container {
-  flex-basis: 47.5%;
-  padding: 0rem 2.5%;
+	flex-basis: 47.5%;
+	padding: 0rem 2.5%;
 }
 #nav-desktop-layout .nav-links-container a {
-  font-size: 1.25rem;
+	font-size: 1.35rem;
 }
 #nav-desktop-layout .nav-social-container {
-  flex-basis: 22.5%;
+	flex-basis: 22.5%;
 }
-
 
 /* For Laptop Layout Only
 --------------------- */
 #nav-laptop-layout .nav-logo-container {
-  flex-basis: 30%;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
+	flex-basis: 30%;
+	justify-content: flex-start;
+	padding-left: 1.5rem;
 }
 #nav-laptop-layout .nav-logo-title {
-  font-size: 1.15rem;
+	font-size: 1.45rem;
 }
 #nav-laptop-layout .nav-links-container {
-  flex-basis: 45%;
-  padding: 0rem 2.5%;
+	flex-basis: 45%;
+	padding: 0rem 2.5%;
 }
 #nav-laptop-layout .nav-links-container a {
-  font-size: 0.9rem;
+	font-size: 1.05rem;
 }
 #nav-laptop-layout .nav-social-container {
-  flex-basis: 25%;
+	flex-basis: 25%;
 }
-
 
 /* For Tablet Layout Only
 --------------------- */
 #nav-tablet-layout .nav-logo-container {
-  flex-basis: 40%;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
+	flex-basis: 40%;
+	justify-content: flex-start;
+	padding-left: 1.5rem;
 }
 #nav-tablet-layout .nav-logo-title {
-  font-size: 1.15rem;
+	font-size: 1.45rem;
 }
 #nav-tablet-layout .nav-links-container {
-  flex-basis: 60%;
-  padding: 0rem 3.5%;
+	flex-basis: 60%;
+	padding: 0rem 3.5%;
 }
 #nav-tablet-layout .nav-links-container a {
-  font-size: 0.9rem;
+	font-size: 1.1rem;
 }
-
 
 /* For Mobile Layout Only
 --------------------- */
 #nav-mobile-layout .nav-menu-container {
-  min-height: 75px;
-  flex-basis: 20%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 1.5rem;
+	min-height: 75px;
+	flex-basis: 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 1.5rem;
 }
 #nav-mobile-layout .nav-logo-container {
-  flex-basis: 80%;
-  justify-content: flex-end;
-  padding-right: 1.5rem;
+	flex-basis: 80%;
+	justify-content: flex-end;
+	padding-right: 1.5rem;
 }
 #nav-mobile-layout .nav-logo-title {
-  font-size: 1.25rem;
-}
-
-
-/* For All Layouts
---------------------- */
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--secondary);
-  border-bottom: 1px solid white;
-  position: fixed;
-  top: 0;
-}
-
-main {
-  width: 100%;
-}
-
-footer {
-  width: 100%;
-  min-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary);
-  border-top: 1px solid white;
-  padding: 1.5rem auto;
-  position: fixed;
-  bottom: 0
-}
-
-.nav-logo-container {
-  min-height: 75px;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-logo-container svg {
-  transition: all 0.5s;
-}
-
-.nav-logo-container svg:hover {
-  fill: white;
-  stroke: var(--primary);
-  cursor: grab;
-  animation: rotate 1.5s linear infinite;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.nav-logo-title {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.nav-links-container {
-  min-height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-left: 1px solid white;
-}
-
-.nav-links-container a {
-  text-transform: uppercase;
-}
-
-.nav-links-container a:hover {
-  color: var(--primary);
-}
-
-.nav-social-container {
-  min-height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-left: 1px solid white;
-  padding: 0rem 2.5%;
-}
-
-.nav-social-container .nav-social-icon:hover {
-  stroke: var(--primary);
-  stroke-width: 8;
+	font-size: 1.5rem;
 }
