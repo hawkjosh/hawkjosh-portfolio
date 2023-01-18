@@ -1,4 +1,4 @@
-#toolbox-component > button {
+.toolbox-open-btn {
   background-color: transparent;
   border: 1px solid white;
   border-radius: 1rem;
@@ -9,42 +9,40 @@
   gap: 1rem;
 }
 
-#toolbox-component > button > div {
-  font-size: 2rem;
+.toolbox-title {
+  font-size: 1.75rem;
   color: white;
 }
 
-#toolbox-component .toolbox-window {
-  position: absolute;
+.toolbox-window {
+  position: fixed;
   top: 80px;
+  left: 0px;
   z-index: 1;
   padding: 0.5rem;
   background-color: rgba(44, 62, 80, 0.9);
   border: 3px solid white;
   border-radius: 1rem;
   width: 100%;
-  height: 75%;
+  height: auto;
   overflow-y: auto;
 }
 
-#toolbox-component .toolbox-window > button {
+.toolbox-close-btn {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 2rem;
   position: absolute;
   top: 5;
   right: 0;
   cursor: pointer;
 }
 
-#toolbox-component .toolbox-window-icons {
+.toolbox-icons-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem 3rem;
-}
-
-#toolbox-component .toolbox-window img {
-  width: 10%;
-  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
 }

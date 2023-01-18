@@ -1,12 +1,10 @@
 #footer-container {
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 3rem;
 }
 
-#footer-container .footer-icon:hover {
+.footer-icon:hover {
   stroke: var(--primary);
   stroke-width: 8;
 }

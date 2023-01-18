@@ -1,21 +1,26 @@
 * {
   margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 :root {
   --primary: #1abc9c;
   --secondary: #2c3e50;
+  --font-size: 20px;
+  --line-height: 30px;
 }
 
-body {
+body, html {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   color: white;
   background-color: var(--primary);
+  overflow-y: auto;
   overflow-x: hidden;
 }
 

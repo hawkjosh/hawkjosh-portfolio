@@ -1,24 +1,11 @@
-/* For Desktop Layout
+/* For Desktop Layout Only
 --------------------- */
-#home-desktop-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #home-desktop-layout > img {
   width: 575px;
 }
-
-#home-desktop-layout .home-divider {
-  width: 100%;
-}
 #home-desktop-layout .home-divider > hr {
-  background-color: white;
-  border-bottom-width: 0.15rem;
   margin: 5rem 7.5%;
 }
-
 #home-desktop-layout .home-descriptors-container {
   width: 100%;
   display: flex;
@@ -27,38 +14,21 @@
   padding-bottom: 2rem;
 }
 #home-desktop-layout .home-descriptors-container > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1.75rem;
 }
 #home-desktop-layout .home-descriptors-container .home-descriptor > div {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 
-/* For Laptop Layout
+/* For Laptop Layout Only
 --------------------- */
-#home-laptop-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #home-laptop-layout > img {
   width: 525px;
 }
-
-#home-laptop-layout .home-divider {
-  width: 100%;
-}
 #home-laptop-layout .home-divider > hr {
-  background-color: white;
-  border-bottom-width: 0.1rem;
   margin: 4rem 7.5%;
 }
-
 #home-laptop-layout .home-descriptors-container {
   width: 100%;
   display: flex;
@@ -67,38 +37,21 @@
   padding-bottom: 1.75rem;
 }
 #home-laptop-layout .home-descriptors-container > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1.5rem;
 }
 #home-laptop-layout .home-descriptors-container .home-descriptor > div {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
 
-/* For Tablet Layout
+/* For Tablet Layout Only
 --------------------- */
-#home-tablet-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #home-tablet-layout > img {
   width: 475px;
 }
-
-#home-tablet-layout .home-divider {
-  width: 100%;
-}
 #home-tablet-layout .home-divider > hr {
-  background-color: white;
-  border-bottom-width: 0.1rem;
   margin: 3.75rem 10%;
 }
-
 #home-tablet-layout .home-descriptors-container {
   width: 100%;
   display: flex;
@@ -107,64 +60,39 @@
   padding-bottom: 4.5rem;
 }
 #home-tablet-layout .home-descriptors-container > * {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1.25rem;
 }
 #home-tablet-layout .home-descriptors-container .home-descriptor > div {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
 }
-
 @media (max-width: 850px) {
   #home-tablet-layout > img {
     width: 425px;
   }
   #home-tablet-layout .home-divider > hr {
-    border-bottom-width: 0.1rem;
     margin: 3.5rem 12.5%;
   }
   #home-tablet-layout .home-descriptors-container {
-    display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-bottom: 4.5rem;
   }
   #home-tablet-layout .home-descriptors-container > * {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
   }
   #home-tablet-layout .home-descriptors-container .home-descriptor > div {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
   }
 }
 
 
-/* For Mobile Layout
+/* For Mobile Layout Only
 --------------------- */
-#home-mobile-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #home-mobile-layout > img {
   width: 375px;
 }
-
-#home-mobile-layout .home-divider {
-  width: 100%;
-}
 #home-mobile-layout .home-divider > hr {
-  background-color: white;
-  border-bottom-width: 0.1rem;
   margin: 3.5rem 12.5%;
 }
-
 #home-mobile-layout .home-descriptors-container {
   display: flex;
   flex-direction: column;
@@ -172,11 +100,37 @@
   padding-bottom: 4.5rem;
 }
 #home-mobile-layout .home-descriptors-container > * {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1.25rem;
 }
 #home-mobile-layout .home-descriptors-container .home-descriptor > div {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
+}
+
+
+/* For All Layouts
+--------------------- */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-top: 3.5rem;
+}
+
+.home-divider {
+  width: 100%;
+}
+
+.home-divider > hr {
+  background-color: white;
+  border-bottom-width: 0.1rem;
+}
+
+.home-descriptors-container > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

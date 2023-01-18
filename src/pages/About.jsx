@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/About.css'
 
+import Resume from '../components/Resume.jsx'
 import Toolbox from '../components/Toolbox.jsx'
 
 import profilePhoto from '../assets/images/profile_photo.jpg'
@@ -32,30 +33,41 @@ export default function About() {
     <>
 
     <Desktop>
-      <div id='about-desktop-layout'>
+      <section id='about-desktop-layout' className='about-layout'>
 
-        <img src={profilePhoto} alt='Profile Photo' />
+        <div className='img-container'>
+          <img src={profilePhoto} alt='Profile Photo' />
+        </div>
 
-        <div className='about-text'>
+        <div className='text-container'>
           <p>
             Welcome to my portfolio! My name is Josh Hawk and I have been an educator for the past 15 years. I recently decided to forge a new path into the exciting world of programming and web development. Having very little background in coding, I enrolled in a full stack web development boot camp through Georgia Tech to jumpstart this career change.
           </p>
           <p>
-            Please check out some of my favorite work samples while you're here. I've included various projects I created throughout the boot camp, as well as a few personal projects. You can also see the skills I've acquired in my toolbox link below. Feel free to reach out to me with any questions or comments. I hope you like what you see, and thanks for stopping by!
+            Please check out some of my favorite work samples while you're here. I've included various projects I created throughout the boot camp, as well as a few personal projects. You can also see the skills I've acquired in my toolbox and resume links below. Feel free to reach out to me with any questions or comments. I hope you like what you see, and thanks for stopping by!
           </p>
         </div>
 
-        <Toolbox />
+        <div className='btns-container'>
+          <div className='toolbox-btn'>
+            <Toolbox />
+          </div>
+          <div className='resume-btn'>
+            <Resume />
+          </div>
+        </div>
 
-      </div>
+      </section>
     </Desktop>
 
     <Laptop>
-      <div id='about-laptop-layout'>
+      <section id='about-laptop-layout' className='about-layout'>
 
-        <img src={profilePhoto} alt='Profile Photo' />
+        <div className='img-container'>
+          <img src={profilePhoto} alt='Profile Photo' />
+        </div>
 
-        <div className='about-text'>
+        <div className='text-container'>
           <p>
             Welcome to my portfolio! My name is Josh Hawk and I have been an educator for the past 15 years. I recently decided to forge a new path into the exciting world of programming and web development. Having very little background in coding, I enrolled in a full stack web development boot camp through Georgia Tech to jumpstart this career change.
           </p>
@@ -64,17 +76,26 @@ export default function About() {
           </p>
         </div>
 
-        <Toolbox />
+        <div className='btns-container'>
+          <div className='toolbox-btn'>
+            <Toolbox />
+          </div>
+          <div className='resume-btn'>
+            <Resume />
+          </div>
+        </div>
 
-      </div>
+      </section>
     </Laptop>
 
     <Tablet>
-      <div id='about-tablet-layout'>
+      <section id='about-tablet-layout' className='about-layout'>
 
-        <img src={profilePhoto} alt='Profile Photo' />
+        <div className='img-container'>
+          <img src={profilePhoto} alt='Profile Photo' />
+        </div>
 
-        <div className='about-text'>
+        <div className='text-container'>
           <p>
             Welcome to my portfolio! My name is Josh Hawk and I have been an educator for the past 15 years. I recently decided to forge a new path into the exciting world of programming and web development. Having very little background in coding, I enrolled in a full stack web development boot camp through Georgia Tech to jumpstart this career change.
           </p>
@@ -83,17 +104,26 @@ export default function About() {
           </p>
         </div>
 
-        <Toolbox />
+        <div className='btns-container'>
+          <div className='toolbox-btn'>
+            <Toolbox />
+          </div>
+          <div className='resume-btn'>
+            <Resume />
+          </div>
+        </div>
 
-      </div>
+      </section>
     </Tablet>
 
     <Mobile>
-      <div id='about-mobile-layout'>
+      <section id='about-mobile-layout' className='about-layout'>
 
-        <img src={profilePhoto} alt='Profile Photo' />
+        <div className='img-container'>
+          <img src={profilePhoto} alt='Profile Photo' />
+        </div>
 
-        <div className='about-text'>
+        <div className='text-container'>
           <p>
             Welcome to my portfolio! My name is Josh Hawk and I have been an educator for the past 15 years. I recently decided to forge a new path into the exciting world of programming and web development. Having very little background in coding, I enrolled in a full stack web development boot camp through Georgia Tech to jumpstart this career change.
           </p>
@@ -102,9 +132,16 @@ export default function About() {
           </p>
         </div>
 
-        <Toolbox />
+        <div className='btns-container'>
+          <div className='toolbox-btn'>
+            <Toolbox />
+          </div>
+          <div className='resume-btn'>
+            <Resume />
+          </div>
+        </div>
 
-      </div>
+      </section>
     </Mobile>
 
     </>

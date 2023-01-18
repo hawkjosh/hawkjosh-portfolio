@@ -1,16 +1,14 @@
-#menu-dropdown button {
+button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-#menu-dropdown .menu-icon:hover,
-#menu-dropdown .menu-icon:active {
-  cursor: pointer;
+.menu-icon:hover {
   stroke: var(--primary);
 }
 
-#menu-dropdown .menu-list {
+.menu-list {
   position: absolute;
   top: 4.25rem;
   left: 2rem;
@@ -21,13 +19,14 @@
   border-radius: 1rem;
 }
 
-#menu-dropdown .menu-list-item {
+.menu-list-item {
   font-size: 1.25rem;
+  font-weight: 500;
   color: white;
   padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
-#menu-dropdown .menu-list-item:hover {
+.menu-list-item:hover {
   color: var(--primary);
 }
