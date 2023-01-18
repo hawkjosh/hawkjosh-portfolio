@@ -6,6 +6,12 @@ import '../assets/styles/Navigation.css'
 import Menu from './Menu.jsx'
 import Footer from './Footer.jsx'
 
+import LogoIcon from '../components/svg-icons/LogoIcon.jsx'
+import LinkedinIcon from '../components/svg-icons/LinkedinIcon.jsx'
+import GithubIcon from '../components/svg-icons/GithubIcon.jsx'
+import CodepenIcon from '../components/svg-icons/CodepenIcon.jsx'
+import StackOverflowIcon from '../components/svg-icons/StackOverflowIcon.jsx'
+
 const Desktop = ({ children }) => {
 	const isDesktop = useMediaQuery({ minWidth: 1440 })
 	return isDesktop ? children : null
