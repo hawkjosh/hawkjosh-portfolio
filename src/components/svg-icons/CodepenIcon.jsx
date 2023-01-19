@@ -4,15 +4,15 @@ export default function CodepenIcon({ stroke, width }) {
 	return (
 		<svg
 			width={width}
-			height='auto'
+			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
 				fill='transparent'
 				stroke={stroke}
-				stroke-width='5'
-				stroke-linecap='round'
-				stroke-linejoin='round'
+				strokeWidth='5'
+				strokeLinecap='round'
+				strokeLinejoin='round'
 				d='
         M105 38
           V71

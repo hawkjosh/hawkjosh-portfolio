@@ -15,8 +15,7 @@ export default function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Navigation />}
-				>
+					element={<Navigation />}>
 					<Route
 						index
 						element={<Home />}

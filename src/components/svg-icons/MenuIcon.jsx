@@ -4,15 +4,15 @@ export default function MenuIcon({ stroke, width }) {
 	return (
 		<svg
 			width={width}
-			height='auto'
+			// height='auto'
 			viewBox='0 0 100 100'
 		>
 			<path
 				fill='transparent'
 				stroke={stroke}
-				stroke-width='15'
-				stroke-linecap='round'
-				stroke-linejoin='round'
+				strokeWidth='15'
+				strokeLinecap='round'
+				strokeLinejoin='round'
 				d='
         M -10 -10
           H 110

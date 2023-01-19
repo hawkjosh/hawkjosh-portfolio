@@ -33,39 +33,32 @@ export default function Home() {
 			<Desktop>
 				<section
 					id='home-desktop-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						src={myAvatar}
-						alt='Hawk Avatar'
+						alt='My Avatar'
 					/>
 
 					<div className='home-divider'>
 						<hr />
 					</div>
 
-					<div className='home-descriptors-container'>
-						<div className='home-descriptor'>
-							<LaptopIcon
-								fill='var(--secondary)'
-								width='150px'
-							/>
-							<div>Emerging Developer</div>
-						</div>
-						<div className='home-descriptor'>
-							<FamilyIcon
-								fill='var(--secondary)'
-								width='150px'
-							/>
-							<div>Super Dad/Husband</div>
-						</div>
-						<div className='home-descriptor'>
-							<TennesseeIcon
-								fill='var(--secondary)'
-								width='150px'
-							/>
-							<div>Vol For Life</div>
-						</div>
+					<div className='home-descriptors'>
+						<LaptopIcon
+							iconSize='275px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<FamilyIcon
+							iconSize='275px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<TennesseeIcon
+							iconSize='275px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
 					</div>
 				</section>
 			</Desktop>
@@ -73,39 +66,32 @@ export default function Home() {
 			<Laptop>
 				<section
 					id='home-laptop-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						src={myAvatar}
-						alt='Hawk Avatar'
+						alt='My Avatar'
 					/>
 
 					<div className='home-divider'>
 						<hr />
 					</div>
 
-					<div className='home-descriptors-container'>
-						<div className='home-descriptor'>
-							<LaptopIcon
-								fill='var(--secondary)'
-								width='125px'
-							/>
-							<div>Emerging Developer</div>
-						</div>
-						<div className='home-descriptor'>
-							<FamilyIcon
-								fill='var(--secondary)'
-								width='125px'
-							/>
-							<div>Super Dad/Husband</div>
-						</div>
-						<div className='home-descriptor'>
-							<TennesseeIcon
-								fill='var(--secondary)'
-								width='125px'
-							/>
-							<div>Vol For Life</div>
-						</div>
+					<div className='home-descriptors'>
+						<LaptopIcon
+							iconSize='225px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<FamilyIcon
+							iconSize='225px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<TennesseeIcon
+							iconSize='225px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
 					</div>
 				</section>
 			</Laptop>
@@ -113,39 +99,32 @@ export default function Home() {
 			<Tablet>
 				<section
 					id='home-tablet-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						src={myAvatar}
-						alt='Hawk Avatar'
+						alt='My Avatar'
 					/>
 
 					<div className='home-divider'>
 						<hr />
 					</div>
 
-					<div className='home-descriptors-container'>
-						<div className='home-descriptor'>
-							<LaptopIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Emerging Developer</div>
-						</div>
-						<div className='home-descriptor'>
-							<FamilyIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Super Dad/Husband</div>
-						</div>
-						<div className='home-descriptor'>
-							<TennesseeIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Vol For Life</div>
-						</div>
+					<div className='home-descriptors'>
+						<LaptopIcon
+							iconSize='195px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<FamilyIcon
+							iconSize='195px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<TennesseeIcon
+							iconSize='195px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
 					</div>
 				</section>
 			</Tablet>
@@ -153,39 +132,32 @@ export default function Home() {
 			<Mobile>
 				<section
 					id='home-mobile-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						src={myAvatar}
-						alt='Hawk Avatar'
+						alt='My Avatar'
 					/>
 
 					<div className='home-divider'>
 						<hr />
 					</div>
 
-					<div className='home-descriptors-container'>
-						<div className='home-descriptor'>
-							<LaptopIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Emerging Developer</div>
-						</div>
-						<div className='home-descriptor'>
-							<FamilyIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Super Dad/Husband</div>
-						</div>
-						<div className='home-descriptor'>
-							<TennesseeIcon
-								fill='var(--secondary)'
-								width='100px'
-							/>
-							<div>Vol For Life</div>
-						</div>
+					<div className='home-descriptors'>
+						<LaptopIcon
+							iconSize='175px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<FamilyIcon
+							iconSize='175px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
+						<TennesseeIcon
+							iconSize='175px'
+							iconColor='var(--secondary)'
+							fontColor='white'
+						/>
 					</div>
 				</section>
 			</Mobile>

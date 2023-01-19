@@ -106,25 +106,29 @@ export default function Toolbox() {
 		<>
 			<Desktop>
 				<section id='toolbox-desktop-layout'>
-					<button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}
-					>
+					<button onClick={() => setShowToolbox(true)}>
 						<ToolboxIcon
-							fill='white'
-							width='48px'
+							iconSize='225px'
+							iconColor='white'
+						/>
+					</button>
+					{/* <button
+						className='toolbox-open-btn'
+						onClick={() => setShowToolbox(true)}>
+						<ToolboxIcon
+							iconSize='48px'
+							iconColor='white'
 						/>
 						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button>
+					</button> */}
 					{showToolbox && (
 						<div className='toolbox-window'>
 							<button
 								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}
-							>
+								onClick={() => setShowToolbox(false)}>
 								<CloseBtnIcon
-									fill='white'
-									width='35px'
+									iconSize='35px'
+									iconColor='white'
 								/>
 							</button>
 							<div className='toolbox-icons-container'>
@@ -144,25 +148,29 @@ export default function Toolbox() {
 
 			<Laptop>
 				<section id='toolbox-laptop-layout'>
-					<button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}
-					>
+					<button onClick={() => setShowToolbox(true)}>
 						<ToolboxIcon
-							fill='white'
-							width='42px'
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</button>
+					{/* <button
+						className='toolbox-open-btn'
+						onClick={() => setShowToolbox(true)}>
+						<ToolboxIcon
+							iconSize='48px'
+							iconColor='white'
 						/>
 						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button>
+					</button> */}
 					{showToolbox && (
 						<div className='toolbox-window'>
 							<button
 								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}
-							>
+								onClick={() => setShowToolbox(false)}>
 								<CloseBtnIcon
-									fill='white'
-									width='35px'
+									iconSize='35px'
+									iconColor='white'
 								/>
 							</button>
 							<div className='toolbox-icons-container'>
@@ -182,25 +190,29 @@ export default function Toolbox() {
 
 			<Tablet>
 				<section id='toolbox-tablet-layout'>
-					<button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}
-					>
+					<button onClick={() => setShowToolbox(true)}>
 						<ToolboxIcon
-							fill='white'
-							width='36px'
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</button>
+					{/* <button
+						className='toolbox-open-btn'
+						onClick={() => setShowToolbox(true)}>
+						<ToolboxIcon
+							iconSize='48px'
+							iconColor='white'
 						/>
 						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button>
+					</button> */}
 					{showToolbox && (
 						<div className='toolbox-window'>
 							<button
 								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}
-							>
+								onClick={() => setShowToolbox(false)}>
 								<CloseBtnIcon
-									fill='white'
-									width='35px'
+									iconSize='35px'
+									iconColor='white'
 								/>
 							</button>
 							<div className='toolbox-icons-container'>
@@ -220,25 +232,29 @@ export default function Toolbox() {
 
 			<Mobile>
 				<section id='toolbox-mobile-layout'>
-					<button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}
-					>
+					<button onClick={() => setShowToolbox(true)}>
 						<ToolboxIcon
-							fill='white'
-							width='32px'
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</button>
+					{/* <button
+						className='toolbox-open-btn'
+						onClick={() => setShowToolbox(true)}>
+						<ToolboxIcon
+							iconSize='48px'
+							iconColor='white'
 						/>
 						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button>
+					</button> */}
 					{showToolbox && (
 						<div className='toolbox-window'>
 							<button
 								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}
-							>
+								onClick={() => setShowToolbox(false)}>
 								<CloseBtnIcon
-									fill='white'
-									width='35px'
+									iconSize='35px'
+									iconColor='white'
 								/>
 							</button>
 							<div className='toolbox-icons-container'>

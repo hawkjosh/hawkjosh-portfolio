@@ -1,51 +1,22 @@
 import React from 'react'
 
-export default function TennesseeIcon({ fill, width }) {
+export default function TennesseeIcon({ iconSize, iconColor, fontColor }) {
 	return (
 		<svg
-			width={width}
-			height='auto'
-			viewBox='0 0 640 360'
-		>
+			width={iconSize}
+			// height='auto'
+			viewBox='0 0 925 550'>
 			<path
-				fill={fill}
-				d='
-        M 5 15
-          A 10 10 0 0 1 15 5
-          H 115
-          A 10 10 0 0 1 125 15
-          V 225
-          A 25 25 0 0 0 150 250
-          H 245
-          A 25 25 0 0 0 265 230
-          V 155
-          A 25 25 0 0 0 245 135
-          H 140
-          C 130 100 175 100 180 70
-          C 185 35 220 35 225 20
-          C 230 10 230 5 240 5
-          H 360
-          V 250
-          L 265 355
-          H 135
-          A 135 130 0 0 1 5 225
-          V 15
-        Z
-
-        M 370 5
-          V 345
-          A 10 10 0 0 0 380 355
-          H 465
-          A 10 10 0 0 0 475 345
-          V 155
-          A 25 25 0 0 1 490 135
-          H 525
-          C 535 135 535 125 540 115
-          C 555 85 580 105 590 75
-          C 605 40 635 60 635 5
-          H 370
-        Z'
+				fill={iconColor}
+				d='M140 15A10 10 0 0 1 150 5H250A10 10 0 0 1 260 15V225A25 25 0 0 0 285 250H380A25 25 0 0 0 400 230V155A25 25 0 0 0 380 135H275C265 100 310 100 315 70C320 35 355 35 360 20C365 10 365 5 375 5H495V250L400 355H270A135 130 0 0 1 140 225V15ZM505 5V345A10 10 0 0 0 515 355H600A10 10 0 0 0 610 345V155A25 25 0 0 1 625 135H660C670 135 670 125 675 115C690 85 715 105 725 75C740 40 770 60 770 5H505Z'
 			/>
+			<text
+				fill={fontColor}
+				fontSize='95px'
+				x='185'
+				y='515'>
+				Vol For Life
+			</text>
 		</svg>
 	)
 }

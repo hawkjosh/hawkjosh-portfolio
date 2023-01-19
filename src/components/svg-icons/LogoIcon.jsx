@@ -4,13 +4,13 @@ export default function LogoIcon({ fill, stroke, width }) {
 	return (
 		<svg
 			width={width}
-			height='auto'
+			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
 				fill={fill}
 				stroke={stroke}
-				stroke-width='5'
+				strokeWidth='5'
 				d='
         M 15 5
           H 95

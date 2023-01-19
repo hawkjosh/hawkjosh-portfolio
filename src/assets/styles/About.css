@@ -50,12 +50,12 @@
 
 /* For Desktop Layout Only
 --------------------- */
-#about-desktop-layout {
-}
-#about-desktop-layout .img-container {
-}
-#about-desktop-layout .img-container img {
-}
+/* #about-desktop-layout {
+} */
+/* #about-desktop-layout .img-container {
+} */
+/* #about-desktop-layout .img-container img {
+} */
 #about-desktop-layout .text-container {
 	gap: 2.5rem;
 }
@@ -68,12 +68,12 @@
 
 /* For Laptop Layout Only
 --------------------- */
-#about-laptop-layout {
-}
-#about-laptop-layout .img-container {
-}
-#about-laptop-layout .img-container img {
-}
+/* #about-laptop-layout {
+} */
+/* #about-laptop-layout .img-container {
+} */
+/* #about-laptop-layout .img-container img {
+} */
 #about-laptop-layout .text-container {
 	gap: 1.75rem;
 }
@@ -86,31 +86,38 @@
 
 /* For Tablet Layout Only
 --------------------- */
-#about-tablet-layout {
-}
+/* #about-tablet-layout {
+} */
 #about-tablet-layout .img-container {
+	grid-column: 1 / 5;
+	grid-row: 1 / 7;
 }
-#about-tablet-layout .img-container img {
-}
+/* #about-tablet-layout .img-container img {
+} */
 #about-tablet-layout .text-container {
+	grid-column: 5 / 11;
+	grid-row: 1 / 11;
 	gap: 1.5rem;
 }
 #about-tablet-layout .text-container p {
 	font-size: 1.1rem;
 }
 #about-tablet-layout .btns-container {
+	grid-column: 1 / 5;
+	grid-row: 7 / 11;
 	flex-direction: column;
-	gap: 2rem;
 }
 
 /* For Mobile Layout Only
 --------------------- */
 #about-mobile-layout {
+	display: flex;
+	flex-direction: column;
 }
-#about-mobile-layout .img-container {
-}
-#about-mobile-layout .img-container img {
-}
+/* #about-mobile-layout .img-container {
+} */
+/* #about-mobile-layout .img-container img {
+} */
 #about-mobile-layout .text-container {
 	gap: 1.75rem;
 }

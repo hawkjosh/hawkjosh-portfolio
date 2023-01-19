@@ -30,6 +30,15 @@ export default function Toolbox() {
 			<Desktop>
 				<section id='resume-desktop-layout'>
 					<a
+						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
+						target='_blank'
+						rel='noreferrer'>
+						<ResumeIcon
+							iconSize='225px'
+							iconColor='white'
+						/>
+					</a>
+					{/* <a
 						className='resume-open-btn'
 						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 						target='_blank'
@@ -40,58 +49,82 @@ export default function Toolbox() {
 							width='48px'
 						/>
 						<div className='resume-btn-title'>My Resume</div>
-					</a>
+					</a> */}
 				</section>
 			</Desktop>
 
 			<Laptop>
 				<section id='resume-laptop-layout'>
 					<a
+						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
+						target='_blank'
+						rel='noreferrer'>
+						<ResumeIcon
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</a>
+					{/* <a
 						className='resume-open-btn'
 						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 						target='_blank'
-						rel='noreferrer'
-					>
+						rel='noreferrer'>
 						<ResumeIcon
 							fill='white'
 							width='42px'
 						/>
 						<div className='resume-btn-title'>My Resume</div>
-					</a>
+					</a> */}
 				</section>
 			</Laptop>
 
 			<Tablet>
 				<section id='resume-tablet-layout'>
 					<a
+						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
+						target='_blank'
+						rel='noreferrer'>
+						<ResumeIcon
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</a>
+					{/* <a
 						className='resume-open-btn'
 						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 						target='_blank'
-						rel='noreferrer'
-					>
+						rel='noreferrer'>
 						<ResumeIcon
 							fill='white'
 							width='36px'
 						/>
 						<div className='resume-btn-title'>My Resume</div>
-					</a>
+					</a> */}
 				</section>
 			</Tablet>
 
 			<Mobile>
 				<section id='resume-mobile-layout'>
 					<a
+						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
+						target='_blank'
+						rel='noreferrer'>
+						<ResumeIcon
+							iconSize='175px'
+							iconColor='white'
+						/>
+					</a>
+					{/* <a
 						className='resume-open-btn'
 						href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 						target='_blank'
-						rel='noreferrer'
-					>
+						rel='noreferrer'>
 						<ResumeIcon
 							fill='white'
 							width='32px'
 						/>
 						<div className='resume-btn-title'>My Resume</div>
-					</a>
+					</a> */}
 				</section>
 			</Mobile>
 		</>
