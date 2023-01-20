@@ -1,18 +1,20 @@
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
-export default function GithubIcon({ stroke, width }) {
+export default function GithubIcon({ iconSize, iconColor }) {
 	return (
 		<svg
-			width={width}
+			id='github-icon'
+			width={iconSize}
+			stroke={iconColor}
+			fill='none'
+			strokeWidth='5'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
-				fill='transparent'
-				stroke={stroke}
-				strokeWidth='5'
-				strokeLinecap='round'
-				strokeLinejoin='round'
 				d='
         M 75 105
           V 91

@@ -1,18 +1,20 @@
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
-export default function CodepenIcon({ stroke, width }) {
+export default function CodepenIcon({ iconSize, iconColor }) {
 	return (
 		<svg
-			width={width}
+			id='codepen-icon'
+			width={iconSize}
+			stroke={iconColor}
+			fill='none'
+			strokeWidth='5'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
-				fill='transparent'
-				stroke={stroke}
-				strokeWidth='5'
-				strokeLinecap='round'
-				strokeLinejoin='round'
 				d='
         M105 38
           V71

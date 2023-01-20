@@ -1,18 +1,20 @@
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
-export default function MenuIcon({ stroke, width }) {
+export default function MenuIcon({ iconSize, iconColor }) {
 	return (
 		<svg
-			width={width}
+			id='menu-icon'
+			width={iconSize}
+			stroke={iconColor}
+			fill='none'
+			strokeWidth='15'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 			// height='auto'
 			viewBox='0 0 100 100'
 		>
 			<path
-				fill='transparent'
-				stroke={stroke}
-				strokeWidth='15'
-				strokeLinecap='round'
-				strokeLinejoin='round'
 				d='
         M -10 -10
           H 110

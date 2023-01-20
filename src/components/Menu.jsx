@@ -31,8 +31,8 @@ export default function Menu() {
 			<section>
 				<button onClick={() => setShowMenu(!showMenu)}>
 					<MenuIcon
-						stroke='white'
-						width='35px'
+						iconSize='35px'
+						iconColor='white'
 					/>
 				</button>
 				{showMenu && (

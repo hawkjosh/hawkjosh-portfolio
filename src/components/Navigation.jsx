@@ -40,9 +40,9 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								fill='var(--primary)'
-								stroke='white'
-								width='50px'
+								iconSize='50px'
+								iconColor='var(--primary)'
+								iconBorder='white'
 							/>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
@@ -61,8 +61,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<LinkedinIcon
-									stroke='white'
-									width='36px'
+									iconSize='36px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -71,8 +71,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<GithubIcon
-									stroke='white'
-									width='36px'
+									iconSize='36px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -81,8 +81,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<CodepenIcon
-									stroke='white'
-									width='36px'
+									iconSize='36px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -91,8 +91,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<StackOverflowIcon
-									stroke='white'
-									width='36px'
+									iconSize='36px'
+									iconColor='white'
 								/>
 							</a>
 						</div>
@@ -109,9 +109,9 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								fill='var(--primary)'
-								stroke='white'
-								width='40px'
+								iconSize='40px'
+								iconColor='var(--primary)'
+								iconBorder='white'
 							/>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
@@ -130,8 +130,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<LinkedinIcon
-									stroke='white'
-									width='30px'
+									iconSize='30px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -140,8 +140,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<GithubIcon
-									stroke='white'
-									width='30px'
+									iconSize='30px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -150,8 +150,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<CodepenIcon
-									stroke='white'
-									width='30px'
+									iconSize='30px'
+									iconColor='white'
 								/>
 							</a>
 							<a
@@ -160,8 +160,8 @@ export default function Navigation() {
 								rel='noreferrer'
 							>
 								<StackOverflowIcon
-									stroke='white'
-									width='30px'
+									iconSize='30px'
+									iconColor='white'
 								/>
 							</a>
 						</div>
@@ -178,9 +178,9 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								fill='var(--primary)'
-								stroke='white'
-								width='37.5px'
+								iconSize='37.5px'
+								iconColor='var(--primary)'
+								iconBorder='white'
 							/>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
@@ -211,9 +211,9 @@ export default function Navigation() {
 						</div>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								fill='var(--primary)'
-								stroke='white'
-								width='40px'
+								iconSize='40px'
+								iconColor='var(--primary)'
+								iconBorder='white'
 							/>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>

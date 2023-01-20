@@ -9,8 +9,3 @@
 		gap: 5rem;
 	}
 }
-
-.footer-container a *:hover {
-	stroke: var(--primary);
-	stroke-width: 8;
-}

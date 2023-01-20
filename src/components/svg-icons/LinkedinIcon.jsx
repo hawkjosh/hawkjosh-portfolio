@@ -1,18 +1,20 @@
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
-export default function LinkedinIcon({ stroke, width }) {
+export default function LinkedinIcon({ iconSize, iconColor }) {
 	return (
 		<svg
-			width={width}
+			id='linkedin-icon'
+			width={iconSize}
+			stroke={iconColor}
+			fill='none'
+			strokeWidth='5'
+			strokeLinecap='round'
+			strokeLinejoin='round'
 			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
-				fill='transparent'
-				stroke={stroke}
-				strokeWidth='5'
-				strokeLinecap='round'
-				strokeLinejoin='round'
 				d='
         M 105 30
           V 80

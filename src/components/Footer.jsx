@@ -16,8 +16,8 @@ export default function Footer() {
 					rel='noreferrer'
 				>
 					<LinkedinIcon
-						stroke='white'
-						width='32px'
+						iconSize='32px'
+						iconColor='white'
 					/>
 				</a>
 				<a
@@ -26,8 +26,8 @@ export default function Footer() {
 					rel='noreferrer'
 				>
 					<GithubIcon
-						stroke='white'
-						width='32px'
+						iconSize='32px'
+						iconColor='white'
 					/>
 				</a>
 				<a
@@ -36,8 +36,8 @@ export default function Footer() {
 					rel='noreferrer'
 				>
 					<CodepenIcon
-						stroke='white'
-						width='32px'
+						iconSize='32px'
+						iconColor='white'
 					/>
 				</a>
 				<a
@@ -46,8 +46,8 @@ export default function Footer() {
 					rel='noreferrer'
 				>
 					<StackOverflowIcon
-						stroke='white'
-						width='32px'
+						iconSize='32px'
+						iconColor='white'
 					/>
 				</a>
 			</section>

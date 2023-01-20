@@ -1,16 +1,18 @@
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
-export default function LogoIcon({ fill, stroke, width }) {
+export default function LogoIcon({ iconSize, iconColor, iconBorder }) {
 	return (
 		<svg
-			width={width}
+			id='logo-icon'
+			width={iconSize}
+			fill={iconColor}
+			stroke={iconBorder}
+			strokeWidth='5'
 			// height='auto'
 			viewBox='0 0 110 110'
 		>
 			<path
-				fill={fill}
-				stroke={stroke}
-				strokeWidth='5'
 				d='
         M 15 5
           H 95

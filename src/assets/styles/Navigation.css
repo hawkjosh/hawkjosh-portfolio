@@ -32,24 +32,6 @@ footer {
 	gap: 1rem;
 }
 
-.nav-logo-container svg {
-	transition: all 0.5s;
-}
-
-.nav-logo-container svg:hover {
-	cursor: grab;
-	animation: rotate 1.5s linear infinite;
-}
-
-@keyframes rotate {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
 .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
@@ -78,11 +60,6 @@ footer {
 	align-items: center;
 	border-left: 1px solid white;
 	padding: 0rem 2.5%;
-}
-
-.nav-social-container a *:hover {
-	stroke: var(--primary);
-	stroke-width: 8;
 }
 
 /* For Desktop Layout Only

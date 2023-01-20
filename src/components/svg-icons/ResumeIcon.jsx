@@ -1,30 +1,34 @@
 // This is an updated version with text included in icon, previous version with icon only is commented out below
 
 import React from 'react'
+import '../../assets/styles/Icons.css'
 
 export default function ResumeIcon({ iconSize, iconColor }) {
 	return (
 		<svg
+			id='resume-btn-icon'
 			width={iconSize}
+			fill={iconColor}
+			stroke={iconColor}
 			// height='auto'
-			viewBox='-7 -7 105 33'>
+			viewBox='-7 -7 105 33'
+		>
 			<path
-				stroke={iconColor}
 				strokeWidth='1.15'
-				fill='transparent'
+				fill='none'
 				d='M2 19v-18h12l5 5v13h-17zM14 1v5h5M5 6h6M5 10.5h11M5 15h11'
 			/>
 			<text
-				fill={iconColor}
+				strokeWidth='0'
 				fontSize='12px'
 				x='25'
-				y='13.75'>
+				y='13.75'
+			>
 				My Resume
 			</text>
 			<rect
-				stroke={iconColor}
 				strokeWidth='0.5'
-				fill='transparent'
+				fill='none'
 				width='100'
 				height='29'
 				x='-4.5'

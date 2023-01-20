@@ -4,10 +4,6 @@ button {
 	cursor: pointer;
 }
 
-button *:hover {
-	stroke: var(--primary);
-}
-
 .menu-list {
 	position: absolute;
 	top: 4.25rem;

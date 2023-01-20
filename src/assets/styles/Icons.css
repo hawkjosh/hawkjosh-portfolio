@@ -1,0 +1,53 @@
+#logo-icon {
+	transition: all 0.5s;
+}
+
+#logo-icon:hover {
+	cursor: grab;
+	animation: rotate 1.5s linear infinite;
+	fill: white;
+	stroke: var(--primary);
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#menu-icon:hover {
+	stroke: var(--primary);
+}
+
+#linkedin-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
+#github-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
+#codepen-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
+#stack-overflow-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
+#toolbox-btn-icon:hover {
+	fill: var(--secondary);
+	stroke: var(--secondary);
+}
+
+#resume-btn-icon:hover {
+	fill: var(--secondary);
+	stroke: var(--secondary);
+}
