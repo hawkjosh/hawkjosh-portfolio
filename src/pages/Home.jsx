@@ -4,7 +4,7 @@ import '../assets/styles/Home.css'
 
 import myAvatar from '../assets/images/my-avatar.svg'
 import LaptopIcon from '../components/svg-icons/LaptopIcon.jsx'
-import FamilyIcon from '../components/svg-icons/FamilyIcon.jsx'
+import SuperheroIcon from '../components/svg-icons/SuperheroIcon.jsx'
 import TennesseeIcon from '../components/svg-icons/TennesseeIcon.jsx'
 
 const Desktop = ({ children }) => {
@@ -33,7 +33,8 @@ export default function Home() {
 			<Desktop>
 				<section
 					id='home-desktop-layout'
-					className='home-layout'>
+					className='home-layout'
+				>
 					<img
 						src={myAvatar}
 						alt='My Avatar'
@@ -49,7 +50,7 @@ export default function Home() {
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
-						<FamilyIcon
+						<SuperheroIcon
 							iconSize='275px'
 							iconColor='var(--secondary)'
 							fontColor='white'
@@ -66,7 +67,8 @@ export default function Home() {
 			<Laptop>
 				<section
 					id='home-laptop-layout'
-					className='home-layout'>
+					className='home-layout'
+				>
 					<img
 						src={myAvatar}
 						alt='My Avatar'
@@ -82,7 +84,7 @@ export default function Home() {
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
-						<FamilyIcon
+						<SuperheroIcon
 							iconSize='225px'
 							iconColor='var(--secondary)'
 							fontColor='white'
@@ -99,7 +101,8 @@ export default function Home() {
 			<Tablet>
 				<section
 					id='home-tablet-layout'
-					className='home-layout'>
+					className='home-layout'
+				>
 					<img
 						src={myAvatar}
 						alt='My Avatar'
@@ -115,7 +118,7 @@ export default function Home() {
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
-						<FamilyIcon
+						<SuperheroIcon
 							iconSize='195px'
 							iconColor='var(--secondary)'
 							fontColor='white'
@@ -132,7 +135,8 @@ export default function Home() {
 			<Mobile>
 				<section
 					id='home-mobile-layout'
-					className='home-layout'>
+					className='home-layout'
+				>
 					<img
 						src={myAvatar}
 						alt='My Avatar'
@@ -148,7 +152,7 @@ export default function Home() {
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
-						<FamilyIcon
+						<SuperheroIcon
 							iconSize='175px'
 							iconColor='var(--secondary)'
 							fontColor='white'

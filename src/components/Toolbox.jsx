@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
-import { useMediaQuery } from 'react-responsive'
+import React from 'react'
 import '../assets/styles/Toolbox.css'
 
-import ToolboxIcon from '../components/svg-icons/ToolboxIcon.jsx'
 import CloseBtnIcon from '../components/svg-icons/CloseBtnIcon.jsx'
 
 import Apollo from '../assets/images/toolbox/apollo.svg'
@@ -40,26 +38,6 @@ import SVG_icon from '../assets/images/toolbox/svg.svg'
 import Tailwind from '../assets/images/toolbox/tailwind.svg'
 import VSCode from '../assets/images/toolbox/vscode.svg'
 import WebPack from '../assets/images/toolbox/webpack.svg'
-
-const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1440 })
-	return isDesktop ? children : null
-}
-
-const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
-	return isLaptop ? children : null
-}
-
-const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
-	return isTablet ? children : null
-}
-
-const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 })
-	return isMobile ? children : null
-}
 
 const icons = [
 	{ name: 'Apollo Icon', image: Apollo },
@@ -99,176 +77,154 @@ const icons = [
 	{ name: 'WebPack Icon', image: WebPack },
 ]
 
-export default function Toolbox() {
-	const [showToolbox, setShowToolbox] = useState(false)
+const Desktop = ({ children }) => {
+	const isDesktop = useMediaQuery({ minWidth: 1440 })
+	return isDesktop ? children : null
+}
 
+const Laptop = ({ children }) => {
+	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
+	return isLaptop ? children : null
+}
+
+const Tablet = ({ children }) => {
+	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
+	return isTablet ? children : null
+}
+
+const Mobile = ({ children }) => {
+	const isMobile = useMediaQuery({ maxWidth: 767 })
+	return isMobile ? children : null
+}
+
+export default function ToolboxUpdate({ setShowToolbox }) {
 	return (
 		<>
 			<Desktop>
-				<section id='toolbox-desktop-layout'>
-					<button onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='225px'
-							iconColor='white'
-						/>
-					</button>
-					{/* <button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='48px'
-							iconColor='white'
-						/>
-						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button> */}
-					{showToolbox && (
-						<div className='toolbox-window'>
+				<section
+					id='toolbox-desktop-layout'
+					className='toolbox-background'
+				>
+					<div className='toolbox-window'>
+						<div className='toolbox-close-btn'>
 							<button
-								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}>
+								onClick={() => {
+									setShowToolbox(false)
+								}}
+							>
 								<CloseBtnIcon
 									iconSize='35px'
-									iconColor='white'
+									iconColor='var(--secondary)'
 								/>
 							</button>
-							<div className='toolbox-icons-container'>
-								{icons.map((icon, index) => (
-									<img
-										className='toolbox-icons'
-										src={icon.image}
-										key={index}
-										alt={icon.name}
-									/>
-								))}
-							</div>
 						</div>
-					)}
+						<div className='toolbox-icons-container'>
+							{icons.map((icon, index) => (
+								<img
+									className='toolbox-icons'
+									src={icon.image}
+									key={index}
+									alt={icon.name}
+								/>
+							))}
+						</div>
+					</div>
 				</section>
 			</Desktop>
 
 			<Laptop>
-				<section id='toolbox-laptop-layout'>
-					<button onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='175px'
-							iconColor='white'
-						/>
-					</button>
-					{/* <button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='48px'
-							iconColor='white'
-						/>
-						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button> */}
-					{showToolbox && (
-						<div className='toolbox-window'>
+				<section
+					id='toolbox-laptop-layout'
+					className='toolbox-background'
+				>
+					<div className='toolbox-window'>
+						<div className='toolbox-close-btn'>
 							<button
-								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}>
+								onClick={() => {
+									setShowToolbox(false)
+								}}
+							>
 								<CloseBtnIcon
 									iconSize='35px'
-									iconColor='white'
+									iconColor='var(--secondary)'
 								/>
 							</button>
-							<div className='toolbox-icons-container'>
-								{icons.map((icon, index) => (
-									<img
-										className='toolbox-icons'
-										src={icon.image}
-										key={index}
-										alt={icon.name}
-									/>
-								))}
-							</div>
 						</div>
-					)}
+						<div className='toolbox-icons-container'>
+							{icons.map((icon, index) => (
+								<img
+									className='toolbox-icons'
+									src={icon.image}
+									key={index}
+									alt={icon.name}
+								/>
+							))}
+						</div>
+					</div>
 				</section>
 			</Laptop>
 
 			<Tablet>
-				<section id='toolbox-tablet-layout'>
-					<button onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='175px'
-							iconColor='white'
-						/>
-					</button>
-					{/* <button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='48px'
-							iconColor='white'
-						/>
-						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button> */}
-					{showToolbox && (
-						<div className='toolbox-window'>
+				<section
+					id='toolbox-tablet-layout'
+					className='toolbox-background'
+				>
+					<div className='toolbox-window'>
+						<div className='toolbox-close-btn'>
 							<button
-								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}>
+								onClick={() => {
+									setShowToolbox(false)
+								}}
+							>
 								<CloseBtnIcon
 									iconSize='35px'
-									iconColor='white'
+									iconColor='var(--secondary)'
 								/>
 							</button>
-							<div className='toolbox-icons-container'>
-								{icons.map((icon, index) => (
-									<img
-										className='toolbox-icons'
-										src={icon.image}
-										key={index}
-										alt={icon.name}
-									/>
-								))}
-							</div>
 						</div>
-					)}
+						<div className='toolbox-icons-container'>
+							{icons.map((icon, index) => (
+								<img
+									className='toolbox-icons'
+									src={icon.image}
+									key={index}
+									alt={icon.name}
+								/>
+							))}
+						</div>
+					</div>
 				</section>
 			</Tablet>
 
 			<Mobile>
-				<section id='toolbox-mobile-layout'>
-					<button onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='175px'
-							iconColor='white'
-						/>
-					</button>
-					{/* <button
-						className='toolbox-open-btn'
-						onClick={() => setShowToolbox(true)}>
-						<ToolboxIcon
-							iconSize='48px'
-							iconColor='white'
-						/>
-						<div className='toolbox-btn-title'>My Toolbox</div>
-					</button> */}
-					{showToolbox && (
-						<div className='toolbox-window'>
+				<section
+					id='toolbox-mobile-layout'
+					className='toolbox-background'
+				>
+					<div className='toolbox-window'>
+						<div className='toolbox-close-btn'>
 							<button
-								className='toolbox-close-btn'
-								onClick={() => setShowToolbox(false)}>
+								onClick={() => {
+									setShowToolbox(false)
+								}}
+							>
 								<CloseBtnIcon
 									iconSize='35px'
-									iconColor='white'
+									iconColor='var(--secondary)'
 								/>
 							</button>
-							<div className='toolbox-icons-container'>
-								{icons.map((icon, index) => (
-									<img
-										className='toolbox-icons'
-										src={icon.image}
-										key={index}
-										alt={icon.name}
-									/>
-								))}
-							</div>
 						</div>
-					)}
+						<div className='toolbox-icons-container'>
+							{icons.map((icon, index) => (
+								<img
+									className='toolbox-icons'
+									src={icon.image}
+									key={index}
+									alt={icon.name}
+								/>
+							))}
+						</div>
+					</div>
 				</section>
 			</Mobile>
 		</>

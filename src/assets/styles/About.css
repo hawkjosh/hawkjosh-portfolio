@@ -1,12 +1,13 @@
 /* For All Layouts
 --------------------- */
 .about-layout {
+	width: 100vw;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: repeat(10, 1fr);
-	grid-gap: 2rem;
-	padding: 2rem;
-	margin: 4.5rem auto 3rem;
+	row-gap: 2rem;
+	margin: 5rem auto 2rem;
 }
 
 .img-container {
@@ -28,9 +29,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	margin-right: 2.5rem;
+	gap: 2.5rem;
 }
 
 .text-container p {
+	font-size: 1.5rem;
 	font-weight: 300;
 }
 
@@ -43,19 +47,8 @@
 	align-items: center;
 }
 
-.toolbox-btn,
-.resume-btn {
-	font-size: 2rem;
-}
-
 /* For Desktop Layout Only
 --------------------- */
-/* #about-desktop-layout {
-} */
-/* #about-desktop-layout .img-container {
-} */
-/* #about-desktop-layout .img-container img {
-} */
 #about-desktop-layout .text-container {
 	gap: 2.5rem;
 }
@@ -68,12 +61,6 @@
 
 /* For Laptop Layout Only
 --------------------- */
-/* #about-laptop-layout {
-} */
-/* #about-laptop-layout .img-container {
-} */
-/* #about-laptop-layout .img-container img {
-} */
 #about-laptop-layout .text-container {
 	gap: 1.75rem;
 }
@@ -86,14 +73,10 @@
 
 /* For Tablet Layout Only
 --------------------- */
-/* #about-tablet-layout {
-} */
 #about-tablet-layout .img-container {
 	grid-column: 1 / 5;
 	grid-row: 1 / 7;
 }
-/* #about-tablet-layout .img-container img {
-} */
 #about-tablet-layout .text-container {
 	grid-column: 5 / 11;
 	grid-row: 1 / 11;
@@ -114,10 +97,6 @@
 	display: flex;
 	flex-direction: column;
 }
-/* #about-mobile-layout .img-container {
-} */
-/* #about-mobile-layout .img-container img {
-} */
 #about-mobile-layout .text-container {
 	gap: 1.75rem;
 }

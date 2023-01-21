@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/About.css'
-
-import Resume from '../components/Resume.jsx'
-import Toolbox from '../components/Toolbox.jsx'
-
+import ToolboxUpdate from '../components/Toolbox.jsx'
+import ToolboxIcon from '../components/svg-icons/ToolboxIcon'
+import ResumeIcon from '../components/svg-icons/ResumeIcon'
 import profilePhoto from '../assets/images/profile_photo.jpg'
 
 const Desktop = ({ children }) => {
@@ -27,7 +26,9 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
-export default function About() {
+export default function AboutUpdate() {
+	const [showToolbox, setShowToolbox] = useState(false)
+
 	return (
 		<>
 			<Desktop>
@@ -62,13 +63,25 @@ export default function About() {
 					</div>
 
 					<div className='btns-container'>
-						<div className='toolbox-btn'>
-							<Toolbox />
-						</div>
-						<div className='resume-btn'>
-							<Resume />
-						</div>
+						<button
+							onClick={() => {
+								setShowToolbox(true)
+							}}
+						>
+							<ToolboxIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
+						<button>
+							<ResumeIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
 					</div>
+
+					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
 				</section>
 			</Desktop>
 
@@ -97,20 +110,32 @@ export default function About() {
 							Please check out some of my favorite work samples while you're
 							here. I've included various projects I created throughout the boot
 							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox link below. Feel free to reach
-							out to me with any questions or comments. I hope you like what you
-							see, and thanks for stopping by!
+							skills I've acquired in my toolbox and resume links below. Feel
+							free to reach out to me with any questions or comments. I hope you
+							like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
 					<div className='btns-container'>
-						<div className='toolbox-btn'>
-							<Toolbox />
-						</div>
-						<div className='resume-btn'>
-							<Resume />
-						</div>
+						<button
+							onClick={() => {
+								setShowToolbox(true)
+							}}
+						>
+							<ToolboxIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
+						<button>
+							<ResumeIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
 					</div>
+
+					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
 				</section>
 			</Laptop>
 
@@ -139,20 +164,32 @@ export default function About() {
 							Please check out some of my favorite work samples while you're
 							here. I've included various projects I created throughout the boot
 							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox link below. Feel free to reach
-							out to me with any questions or comments. I hope you like what you
-							see, and thanks for stopping by!
+							skills I've acquired in my toolbox and resume links below. Feel
+							free to reach out to me with any questions or comments. I hope you
+							like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
 					<div className='btns-container'>
-						<div className='toolbox-btn'>
-							<Toolbox />
-						</div>
-						<div className='resume-btn'>
-							<Resume />
-						</div>
+						<button
+							onClick={() => {
+								setShowToolbox(true)
+							}}
+						>
+							<ToolboxIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
+						<button>
+							<ResumeIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
 					</div>
+
+					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
 				</section>
 			</Tablet>
 
@@ -181,20 +218,32 @@ export default function About() {
 							Please check out some of my favorite work samples while you're
 							here. I've included various projects I created throughout the boot
 							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox link below. Feel free to reach
-							out to me with any questions or comments. I hope you like what you
-							see, and thanks for stopping by!
+							skills I've acquired in my toolbox and resume links below. Feel
+							free to reach out to me with any questions or comments. I hope you
+							like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
 					<div className='btns-container'>
-						<div className='toolbox-btn'>
-							<Toolbox />
-						</div>
-						<div className='resume-btn'>
-							<Resume />
-						</div>
+						<button
+							onClick={() => {
+								setShowToolbox(true)
+							}}
+						>
+							<ToolboxIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
+						<button>
+							<ResumeIcon
+								iconSize='225px'
+								iconColor='white'
+							/>
+						</button>
 					</div>
+
+					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
 				</section>
 			</Mobile>
 		</>

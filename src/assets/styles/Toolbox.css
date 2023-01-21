@@ -1,43 +1,45 @@
 /* For All Layouts
 --------------------- */
-.toolbox-open-btn {
-	background-color: transparent;
-	border: 1px solid white;
-	border-radius: 1rem;
-	padding: 0.5rem;
-	cursor: pointer;
+.toolbox-background {
+	width: 100vw;
+	/* height: 100vh; */
+	background-color: rgba(200, 200, 200, 0.5);
+	position: fixed;
 	display: flex;
-	align-items: center;
-	gap: 1rem;
+	justify-content: center;
+	/* align-items: center; */
 }
 
 .toolbox-window {
-	position: fixed;
-	top: 80px;
-	left: 0px;
-	z-index: 1;
-	padding: 0.5rem;
-	background-color: rgba(44, 62, 80, 0.9);
-	border: 3px solid white;
+	width: 80%;
+	height: 80%;
+	border: 5px solid var(--secondary);
 	border-radius: 1rem;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 0rem 2rem 1rem;
+	overflow-y: auto;
 }
 
 .toolbox-close-btn {
-	background-color: transparent;
-	border: none;
-	position: absolute;
-	top: 5;
-	right: 0;
-	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1rem;
 }
 
-.toolbox-icons-container {
+.toolbox-window .toolbox-icons-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
-	gap: 3rem;
-	padding: 2rem;
+	gap: 2rem;
+}
+
+.toolbox-icons {
+	width: 10%;
+	height: 10%;
 }
 
 /* For Desktop Layout Only

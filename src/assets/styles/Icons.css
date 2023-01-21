@@ -45,9 +45,44 @@
 #toolbox-btn-icon:hover {
 	fill: var(--secondary);
 	stroke: var(--secondary);
+	cursor: pointer;
 }
 
 #resume-btn-icon:hover {
 	fill: var(--secondary);
 	stroke: var(--secondary);
+}
+
+#close-btn-icon:hover {
+	fill: white;
+	stroke: var(--secondary);
+	stroke-width: 3;
+}
+
+#laptop-icon:hover {
+	fill: var(--primary);
+	stroke: var(--secondary);
+	stroke-width: 10;
+	cursor: grab;
+}
+
+#superhero-icon:hover {
+	fill: red;
+	stroke: blue;
+	stroke-width: 10;
+	cursor: grab;
+}
+
+#family-icon:hover {
+	fill: white;
+	stroke: var(--secondary);
+	stroke-width: 10;
+	cursor: grab;
+}
+
+#tennessee-icon:hover {
+	fill: orange;
+	stroke: white;
+	stroke-width: 10;
+	cursor: grab;
 }

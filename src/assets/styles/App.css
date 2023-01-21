@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 :root {
 	--primary: hsl(168, 76%, 42%);
 	--secondary: hsl(211, 30%, 24%);
@@ -8,15 +10,20 @@
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
-	color: white;
+}
+
+* ::-webkit-scrollbar {
+	display: none;
 }
 
 body,
 html {
+	color: white;
 	background-color: var(--primary);
 	overflow-x: hidden;
 }
 
 a {
+	color: white;
 	text-decoration: none;
 }

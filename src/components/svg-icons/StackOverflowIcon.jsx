@@ -11,32 +11,9 @@ export default function StackOverflowIcon({ iconSize, iconColor }) {
 			strokeWidth='5'
 			strokeLinecap='round'
 			strokeLinejoin='round'
-			// height='auto'
 			viewBox='0 0 110 110'
 		>
-			<path
-				d='
-        M 98 73
-          V 105
-          H 5
-          V 73
-        
-        M 78 84
-          H 25
-        
-        M 78 72
-          L 25 62
-        
-        M 83 59
-          L 34 40
-        
-        M 93 49
-          L 51 21
-        
-        M 105 39
-          L 72 5
-        '
-			/>
+			<path d='M98 73V105H5V73M78 84H25M78 72L25 62M83 59L34 40M93 49L51 21M105 39L72 5' />
 		</svg>
 	)
 }
