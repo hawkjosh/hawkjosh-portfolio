@@ -13,75 +13,51 @@
 .home-divider > hr {
 	background-color: white;
 	border-bottom-width: 0.1rem;
+	margin: 4rem 12.5%;
+}
+
+.home-descriptors {
+	width: 85%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 2rem;
 }
 
 /* For Desktop Layout Only
 --------------------- */
 #home-desktop-layout > img {
-	width: 575px;
-	margin-top: 3.5rem;
-}
-#home-desktop-layout .home-divider > hr {
-	margin: 5rem 7.5%;
-}
-#home-desktop-layout .home-descriptors {
-	width: 85%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-bottom: 2rem;
+	width: clamp(648px, 45%, 700px);
+	margin-top: 4rem;
 }
 
 /* For Laptop Layout Only
 --------------------- */
-#home-laptop-layout > img {
-	width: 525px;
-	margin-top: 3.6rem;
-}
-#home-laptop-layout .home-divider > hr {
-	margin: 4rem 7.5%;
-}
-#home-laptop-layout .home-descriptors {
-	width: 85%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-bottom: 1.75rem;
+#home-laptop-layout img {
+	width: clamp(563px, 55%, 648px);
+	margin-top: 4rem;
 }
 
 /* For Tablet Layout Only
 --------------------- */
-#home-tablet-layout > img {
-	width: 475px;
-	margin-top: 3.75rem;
-}
-#home-tablet-layout .home-divider > hr {
-	margin: 3.75rem 10%;
+#home-tablet-layout img {
+	width: clamp(500px, 65%, 563px);
+	margin-top: 4rem;
 }
 #home-tablet-layout .home-descriptors {
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	gap: 1rem;
-	padding-bottom: 4.5rem;
+	padding-bottom: 6rem;
 }
 
 /* For Mobile Layout Only
 --------------------- */
 #home-mobile-layout > img {
-	width: 375px;
+	width: clamp(350px, 90%, 500px);
 	margin-top: 4rem;
 }
-#home-mobile-layout .home-divider > hr {
-	margin: 3.5rem 10%;
-}
 #home-mobile-layout .home-descriptors {
-	width: 90%;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
+	flex-direction: column;
 	align-items: center;
-	gap: 3.5rem;
-	padding-bottom: 4.5rem;
+	gap: 5rem;
+	padding-bottom: 6rem;
 }

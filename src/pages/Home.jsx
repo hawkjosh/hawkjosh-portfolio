@@ -36,6 +36,7 @@ export default function Home() {
 					className='home-layout'
 				>
 					<img
+						className='home-avatar'
 						src={myAvatar}
 						alt='My Avatar'
 					/>
@@ -46,17 +47,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='275px'
+							iconSize='clamp(225px, 18%, 275px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='275px'
+							iconSize='clamp(225px, 18%, 275px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='275px'
+							iconSize='clamp(225px, 18%, 275px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -70,6 +71,7 @@ export default function Home() {
 					className='home-layout'
 				>
 					<img
+						className='home-avatar'
 						src={myAvatar}
 						alt='My Avatar'
 					/>
@@ -80,17 +82,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='225px'
+							iconSize='clamp(195px, 22%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='225px'
+							iconSize='clamp(195px, 22%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='225px'
+							iconSize='clamp(195px, 22%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -104,6 +106,7 @@ export default function Home() {
 					className='home-layout'
 				>
 					<img
+						className='home-avatar'
 						src={myAvatar}
 						alt='My Avatar'
 					/>
@@ -114,17 +117,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='195px'
+							iconSize='clamp(150px, 22.5%, 195px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='195px'
+							iconSize='clamp(150px, 22.5%, 195px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='195px'
+							iconSize='clamp(150px, 22.5%, 195px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -138,6 +141,7 @@ export default function Home() {
 					className='home-layout'
 				>
 					<img
+						className='home-avatar'
 						src={myAvatar}
 						alt='My Avatar'
 					/>
@@ -148,17 +152,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='175px'
+							iconSize='clamp(175px, 50%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='175px'
+							iconSize='clamp(175px, 50%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='175px'
+							iconSize='clamp(175px, 50%, 225px)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
