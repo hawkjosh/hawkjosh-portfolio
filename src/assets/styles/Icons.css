@@ -60,29 +60,169 @@
 }
 
 #laptop-icon:hover {
-	fill: var(--primary);
+	fill: white;
 	stroke: var(--secondary);
-	stroke-width: 10;
+	stroke-width: 15;
 	cursor: grab;
 }
 
 #superhero-icon:hover {
-	fill: red;
-	stroke: blue;
-	stroke-width: 10;
+	fill: blue;
+	stroke: red;
+	stroke-width: 7;
 	cursor: grab;
 }
 
 #family-icon:hover {
 	fill: white;
 	stroke: var(--secondary);
-	stroke-width: 10;
+	stroke-width: 15;
 	cursor: grab;
 }
 
 #tennessee-icon:hover {
-	fill: orange;
+	fill: #f77f00;
 	stroke: white;
-	stroke-width: 10;
+	stroke-width: 8;
 	cursor: grab;
 }
+
+/* #apollo-tb-icon {
+
+} */
+
+/* #babel-tb-icon {
+
+} */
+
+/* #bootstrap-tb-icon {
+
+} */
+
+/* #codepen-tb-icon {
+
+} */
+
+/* #css-tb-icon {
+
+} */
+
+/* #eslint-tb-icon {
+
+} */
+
+/* #git-tb-icon {
+
+} */
+
+/* #github-tb-icon {
+
+} */
+
+/* #gitlab-tb-icon {
+
+} */
+
+/* #graphql-tb-icon {
+
+} */
+
+/* #handlebars-tb-icon {
+
+} */
+
+/* #heroku-tb-icon {
+
+} */
+
+/* #html-tb-icon {
+
+} */
+
+/* #javascript-tb-icon {
+
+} */
+
+/* #jest-tb-icon {
+
+} */
+
+/* #jquery-tb-icon {
+
+} */
+
+/* #json-tb-icon {
+
+} */
+
+/* #linkedin-tb-icon {
+
+} */
+
+/* #material-tb-icon {
+
+} */
+
+/* #momentjs-tb-icon {
+
+} */
+
+/* #mongodb-tb-icon {
+
+} */
+
+/* #mysql-tb-icon {
+
+} */
+
+/* #netlify-tb-icon {
+
+} */
+
+/* #nodejs-tb-icon {
+
+} */
+
+/* #nodemon-tb-icon {
+
+} */
+
+/* #npm-tb-icon {
+
+} */
+
+/* #react-tb-icon {
+
+} */
+
+/* #redux-tb-icon {
+
+} */
+
+/* #sequelize-tb-icon {
+
+} */
+
+/* #slack-tb-icon {
+
+} */
+
+/* #stackoverflow-tb-icon {
+
+} */
+
+/* #svg-tb-icon {
+
+} */
+
+/* #tailwind-tb-icon {
+
+} */
+
+/* #vscode-tb-icon {
+
+} */
+
+/* #webpack-tb-icon {
+
+} */

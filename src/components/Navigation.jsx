@@ -6,11 +6,11 @@ import '../assets/styles/Navigation.css'
 import Menu from './Menu.jsx'
 import Footer from './Footer.jsx'
 
-import LogoIcon from '../components/svg-icons/LogoIcon.jsx'
-import LinkedinIcon from '../components/svg-icons/LinkedinIcon.jsx'
-import GithubIcon from '../components/svg-icons/GithubIcon.jsx'
-import CodepenIcon from '../components/svg-icons/CodepenIcon.jsx'
-import StackOverflowIcon from '../components/svg-icons/StackOverflowIcon.jsx'
+import LogoIcon from '../components/page-icons/LogoIcon.jsx'
+import LinkedinIcon from '../components/page-icons/LinkedinIcon.jsx'
+import GithubIcon from '../components/page-icons/GithubIcon.jsx'
+import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
+import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 
 const Desktop = ({ children }) => {
 	const isDesktop = useMediaQuery({ minWidth: 1440 })
@@ -55,46 +55,22 @@ export default function Navigation() {
 						</div>
 
 						<div className='nav-social-container'>
-							<a
-								href='https://www.linkedin.com/in/josh-hawk-6591a3230/'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<LinkedinIcon
-									iconSize='36px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://github.com/hawkjosh'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<GithubIcon
-									iconSize='36px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://codepen.io/hawkjosh'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<CodepenIcon
-									iconSize='36px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://stackoverflow.com/users/19513873/hawkjosh?tab=profile'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<StackOverflowIcon
-									iconSize='36px'
-									iconColor='white'
-								/>
-							</a>
+							<LinkedinIcon
+								iconSize='36px'
+								iconColor='white'
+							/>
+							<GithubIcon
+								iconSize='36px'
+								iconColor='white'
+							/>
+							<CodepenIcon
+								iconSize='36px'
+								iconColor='white'
+							/>
+							<StackOverflowIcon
+								iconSize='36px'
+								iconColor='white'
+							/>
 						</div>
 					</nav>
 
@@ -124,46 +100,22 @@ export default function Navigation() {
 						</div>
 
 						<div className='nav-social-container'>
-							<a
-								href='https://www.linkedin.com/in/josh-hawk-6591a3230/'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<LinkedinIcon
-									iconSize='30px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://github.com/hawkjosh'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<GithubIcon
-									iconSize='30px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://codepen.io/hawkjosh'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<CodepenIcon
-									iconSize='30px'
-									iconColor='white'
-								/>
-							</a>
-							<a
-								href='https://stackoverflow.com/users/19513873/hawkjosh?tab=profile'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<StackOverflowIcon
-									iconSize='30px'
-									iconColor='white'
-								/>
-							</a>
+							<LinkedinIcon
+								iconSize='30px'
+								iconColor='white'
+							/>
+							<GithubIcon
+								iconSize='30px'
+								iconColor='white'
+							/>
+							<CodepenIcon
+								iconSize='30px'
+								iconColor='white'
+							/>
+							<StackOverflowIcon
+								iconSize='30px'
+								iconColor='white'
+							/>
 						</div>
 					</nav>
 
@@ -211,7 +163,8 @@ export default function Navigation() {
 						</div>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='40px'
+								iconSize='clamp(2rem, 1.154rem + 3.846vw, 3rem)'
+								// iconSize='48px'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>

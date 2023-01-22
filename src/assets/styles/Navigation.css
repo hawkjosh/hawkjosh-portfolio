@@ -33,7 +33,7 @@ footer {
 }
 
 .nav-logo-title {
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
@@ -138,5 +138,6 @@ footer {
 	padding-right: 1.5rem;
 }
 #nav-mobile-layout .nav-logo-title {
-	font-size: 1.4rem;
+	font-size: clamp(1.35rem, 0.504rem + 3.846vw, 2.35rem);
+	/* font-size: 2.35rem; */
 }

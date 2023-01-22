@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/About.css'
-import ToolboxUpdate from '../components/Toolbox.jsx'
-import ToolboxIcon from '../components/svg-icons/ToolboxIcon'
-import ResumeIcon from '../components/svg-icons/ResumeIcon'
+import Toolbox from '../components/Toolbox.jsx'
+import ToolboxIcon from '../components/page-icons/ToolboxIcon.jsx'
+import ResumeIcon from '../components/page-icons/ResumeIcon.jsx'
 import profilePhoto from '../assets/images/profile_photo.jpg'
 
 const Desktop = ({ children }) => {
@@ -34,8 +34,7 @@ export default function AboutUpdate() {
 			<Desktop>
 				<section
 					id='about-desktop-layout'
-					className='about-layout'
-				>
+					className='about-layout'>
 					<div className='img-container'>
 						<img
 							src={profilePhoto}
@@ -66,8 +65,7 @@ export default function AboutUpdate() {
 						<button
 							onClick={() => {
 								setShowToolbox(true)
-							}}
-						>
+							}}>
 							<ToolboxIcon
 								iconSize='225px'
 								iconColor='white'
@@ -81,15 +79,14 @@ export default function AboutUpdate() {
 						</button>
 					</div>
 
-					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
+					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
 				</section>
 			</Desktop>
 
 			<Laptop>
 				<section
 					id='about-laptop-layout'
-					className='about-layout'
-				>
+					className='about-layout'>
 					<div className='img-container'>
 						<img
 							src={profilePhoto}
@@ -120,8 +117,7 @@ export default function AboutUpdate() {
 						<button
 							onClick={() => {
 								setShowToolbox(true)
-							}}
-						>
+							}}>
 							<ToolboxIcon
 								iconSize='225px'
 								iconColor='white'
@@ -135,15 +131,14 @@ export default function AboutUpdate() {
 						</button>
 					</div>
 
-					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
+					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
 				</section>
 			</Laptop>
 
 			<Tablet>
 				<section
 					id='about-tablet-layout'
-					className='about-layout'
-				>
+					className='about-layout'>
 					<div className='img-container'>
 						<img
 							src={profilePhoto}
@@ -174,8 +169,7 @@ export default function AboutUpdate() {
 						<button
 							onClick={() => {
 								setShowToolbox(true)
-							}}
-						>
+							}}>
 							<ToolboxIcon
 								iconSize='225px'
 								iconColor='white'
@@ -189,15 +183,14 @@ export default function AboutUpdate() {
 						</button>
 					</div>
 
-					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
+					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
 				</section>
 			</Tablet>
 
 			<Mobile>
 				<section
 					id='about-mobile-layout'
-					className='about-layout'
-				>
+					className='about-layout'>
 					<div className='img-container'>
 						<img
 							src={profilePhoto}
@@ -228,8 +221,7 @@ export default function AboutUpdate() {
 						<button
 							onClick={() => {
 								setShowToolbox(true)
-							}}
-						>
+							}}>
 							<ToolboxIcon
 								iconSize='225px'
 								iconColor='white'
@@ -243,7 +235,7 @@ export default function AboutUpdate() {
 						</button>
 					</div>
 
-					{showToolbox && <ToolboxUpdate setShowToolbox={setShowToolbox} />}
+					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
 				</section>
 			</Mobile>
 		</>

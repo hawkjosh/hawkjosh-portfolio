@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/styles/Menu.css'
 
-import MenuIcon from '../components/svg-icons/MenuIcon.jsx'
+import MenuIcon from '../components/page-icons/MenuIcon.jsx'
 
 export default function Menu() {
 	const [showMenu, setShowMenu] = useState(false)
@@ -42,8 +42,7 @@ export default function Menu() {
 								className='menu-list-item'
 								key={index}
 								to={item.link}
-								onClick={() => setShowMenu(!showMenu)}
-							>
+								onClick={() => setShowMenu(!showMenu)}>
 								{item.name}
 							</Link>
 						))}

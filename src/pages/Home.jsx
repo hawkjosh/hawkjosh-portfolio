@@ -3,9 +3,9 @@ import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/Home.css'
 
 import myAvatar from '../assets/images/my-avatar.svg'
-import LaptopIcon from '../components/svg-icons/LaptopIcon.jsx'
-import SuperheroIcon from '../components/svg-icons/SuperheroIcon.jsx'
-import TennesseeIcon from '../components/svg-icons/TennesseeIcon.jsx'
+import LaptopIcon from '../components/page-icons/LaptopIcon.jsx'
+import SuperheroIcon from '../components/page-icons/SuperheroIcon.jsx'
+import TennesseeIcon from '../components/page-icons/TennesseeIcon.jsx'
 
 const Desktop = ({ children }) => {
 	const isDesktop = useMediaQuery({ minWidth: 1440 })
@@ -33,8 +33,7 @@ export default function Home() {
 			<Desktop>
 				<section
 					id='home-desktop-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						className='home-avatar'
 						src={myAvatar}
@@ -68,8 +67,7 @@ export default function Home() {
 			<Laptop>
 				<section
 					id='home-laptop-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						className='home-avatar'
 						src={myAvatar}
@@ -103,8 +101,7 @@ export default function Home() {
 			<Tablet>
 				<section
 					id='home-tablet-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						className='home-avatar'
 						src={myAvatar}
@@ -138,8 +135,7 @@ export default function Home() {
 			<Mobile>
 				<section
 					id='home-mobile-layout'
-					className='home-layout'
-				>
+					className='home-layout'>
 					<img
 						className='home-avatar'
 						src={myAvatar}

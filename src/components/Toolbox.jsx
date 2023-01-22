@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/styles/Toolbox.css'
 
-import CloseBtnIcon from '../components/svg-icons/CloseBtnIcon.jsx'
+import CloseBtnIcon from '../components/page-icons/CloseBtnIcon.jsx'
 
 import Apollo from '../assets/images/toolbox/apollo.svg'
 import Babel from '../assets/images/toolbox/babel.svg'
@@ -103,15 +103,13 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 			<Desktop>
 				<section
 					id='toolbox-desktop-layout'
-					className='toolbox-background'
-				>
+					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
 							<button
 								onClick={() => {
 									setShowToolbox(false)
-								}}
-							>
+								}}>
 								<CloseBtnIcon
 									iconSize='35px'
 									iconColor='var(--secondary)'
@@ -135,15 +133,13 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 			<Laptop>
 				<section
 					id='toolbox-laptop-layout'
-					className='toolbox-background'
-				>
+					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
 							<button
 								onClick={() => {
 									setShowToolbox(false)
-								}}
-							>
+								}}>
 								<CloseBtnIcon
 									iconSize='35px'
 									iconColor='var(--secondary)'
@@ -167,15 +163,13 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 			<Tablet>
 				<section
 					id='toolbox-tablet-layout'
-					className='toolbox-background'
-				>
+					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
 							<button
 								onClick={() => {
 									setShowToolbox(false)
-								}}
-							>
+								}}>
 								<CloseBtnIcon
 									iconSize='35px'
 									iconColor='var(--secondary)'
@@ -199,15 +193,13 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 			<Mobile>
 				<section
 					id='toolbox-mobile-layout'
-					className='toolbox-background'
-				>
+					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
 							<button
 								onClick={() => {
 									setShowToolbox(false)
-								}}
-							>
+								}}>
 								<CloseBtnIcon
 									iconSize='35px'
 									iconColor='var(--secondary)'
