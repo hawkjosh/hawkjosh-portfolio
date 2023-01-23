@@ -2,16 +2,15 @@
 --------------------- */
 .toolbox-background {
 	width: 100vw;
-	/* height: 100vh; */
+	height: 100vh;
 	background-color: rgba(200, 200, 200, 0.5);
 	position: fixed;
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 }
 
 .toolbox-window {
-	width: 80%;
+	width: 90%;
 	height: 80%;
 	border: 5px solid var(--secondary);
 	border-radius: 1rem;
@@ -21,25 +20,21 @@
 	flex-direction: column;
 	padding: 0rem 2rem 1rem;
 	overflow-y: auto;
+	z-index: 1;
 }
 
 .toolbox-close-btn {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 1rem;
+	margin-top: 0.75rem;
+	margin-right: -0.75rem;
 }
 
-.toolbox-window .toolbox-icons-container {
+.toolbox-icons-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
-	gap: 2rem;
-}
-
-.toolbox-icons {
-	width: 10%;
-	height: 10%;
 }
 
 /* For Desktop Layout Only
@@ -47,11 +42,27 @@
 #toolbox-desktop-layout .toolbox-btn-title {
 	font-size: 1.75rem;
 }
+#toolbox-desktop-layout .toolbox-icons-container {
+	gap: 3rem;
+}
+#toolbox-desktop-layout .toolbox-icons {
+	width: 7.5%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
+}
 
 /* For Laptop Layout Only
 --------------------- */
 #toolbox-laptop-layout .toolbox-btn-title {
 	font-size: 1.5rem;
+}
+#toolbox-laptop-layout .toolbox-icons-container {
+	gap: 1.5rem;
+}
+#toolbox-laptop-layout .toolbox-icons {
+	width: 8%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
 }
 
 /* For Tablet Layout Only
@@ -59,9 +70,25 @@
 #toolbox-tablet-layout .toolbox-btn-title {
 	font-size: 1.25rem;
 }
+#toolbox-tablet-layout .toolbox-icons-container {
+	gap: 2rem;
+}
+#toolbox-tablet-layout .toolbox-icons {
+	width: 10%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
+}
 
 /* For Mobile Layout Only
 --------------------- */
 #toolbox-mobile-layout .toolbox-btn-title {
 	font-size: 1rem;
+}
+#toolbox-mobile-layout .toolbox-icons-container {
+	gap: 2rem;
+}
+#toolbox-mobile-layout .toolbox-icons {
+	width: 15%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
 }

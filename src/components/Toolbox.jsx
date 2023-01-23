@@ -1,4 +1,5 @@
 import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import '../assets/styles/Toolbox.css'
 
 import CloseBtnIcon from '../components/page-icons/CloseBtnIcon.jsx'
@@ -36,6 +37,7 @@ import Slack from '../assets/images/toolbox/slack.svg'
 import StackOverflow from '../assets/images/toolbox/stackoverflow.svg'
 import SVG_icon from '../assets/images/toolbox/svg.svg'
 import Tailwind from '../assets/images/toolbox/tailwind.svg'
+import Vite_icon from '../assets/images/toolbox/vite.svg'
 import VSCode from '../assets/images/toolbox/vscode.svg'
 import WebPack from '../assets/images/toolbox/webpack.svg'
 
@@ -73,8 +75,9 @@ const icons = [
 	{ name: 'Stack Overflow Icon', image: StackOverflow },
 	{ name: 'SVG Icon', image: SVG_icon },
 	{ name: 'Tailwind Icon', image: Tailwind },
+	{ name: 'Vite Icon', image: Vite_icon },
 	{ name: 'VSCode Icon', image: VSCode },
-	{ name: 'WebPack Icon', image: WebPack },
+	{ name: 'WebPack Icon', image: WebPack }
 ]
 
 const Desktop = ({ children }) => {
@@ -97,7 +100,7 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
-export default function ToolboxUpdate({ setShowToolbox }) {
+export default function Toolbox({ setShowToolbox }) {
 	return (
 		<>
 			<Desktop>
@@ -111,7 +114,7 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='35px'
+									iconSize='25px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -141,7 +144,7 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='35px'
+									iconSize='25px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -171,7 +174,7 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='35px'
+									iconSize='25px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -201,7 +204,7 @@ export default function ToolboxUpdate({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='35px'
+									iconSize='25px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
