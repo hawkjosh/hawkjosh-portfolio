@@ -1,33 +1,38 @@
 /* For All Layouts
 --------------------- */
 .toolbox-background {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-color: rgba(200, 200, 200, 0.5);
 	position: fixed;
+	top: 5rem;
+	left: 0;
 	display: flex;
 	justify-content: center;
 }
 
 .toolbox-window {
-	width: 90%;
-	height: 80%;
+	width: 50%;
+	height: 75%;
+	position: absolute;
+	top: 2rem;
+	right: 10%;
 	border: 5px solid var(--secondary);
 	border-radius: 1rem;
 	background-color: white;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	display: flex;
 	flex-direction: column;
-	padding: 0rem 2rem 1rem;
+	padding: 0.5rem 2rem 1.75rem;
 	overflow-y: auto;
-	z-index: 1;
 }
 
 .toolbox-close-btn {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 0.75rem;
-	margin-right: -0.75rem;
+	margin-top: 0.5rem;
+	margin-right: -1rem;
+	padding-bottom: 0.5rem;
 }
 
 .toolbox-icons-container {
@@ -39,56 +44,66 @@
 
 /* For Desktop Layout Only
 --------------------- */
-#toolbox-desktop-layout .toolbox-btn-title {
-	font-size: 1.75rem;
+#toolbox-desktop-layout .toolbox-window {
+	position: absolute;
+	top: 2rem;
+	right: 10%;
 }
 #toolbox-desktop-layout .toolbox-icons-container {
 	gap: 3rem;
 }
 #toolbox-desktop-layout .toolbox-icons {
-	width: 7.5%;
+	width: clamp(6.463rem, -0.737rem + 8vw, 7.763rem);
 	aspect-ratio: 3/2;
 	object-fit: contain;
 }
 
 /* For Laptop Layout Only
 --------------------- */
-#toolbox-laptop-layout .toolbox-btn-title {
-	font-size: 1.5rem;
+#toolbox-laptop-layout .toolbox-window {
+	position: absolute;
+	top: 1.5rem;
+	right: 7%;
 }
 #toolbox-laptop-layout .toolbox-icons-container {
 	gap: 1.5rem;
 }
 #toolbox-laptop-layout .toolbox-icons {
-	width: 8%;
+	width: clamp(4.384rem, -2.702rem + 11.072vw, 7.263rem);
 	aspect-ratio: 3/2;
 	object-fit: contain;
 }
 
 /* For Tablet Layout Only
 --------------------- */
-#toolbox-tablet-layout .toolbox-btn-title {
-	font-size: 1.25rem;
+#toolbox-tablet-layout .toolbox-window {
+	position: absolute;
+	top: 1.5rem;
+	right: 5%;
 }
 #toolbox-tablet-layout .toolbox-icons-container {
 	gap: 2rem;
 }
 #toolbox-tablet-layout .toolbox-icons {
-	width: 10%;
+	width: 18%;
+	width: clamp(3.125rem, -2.125rem + 10.938vw, 4.875rem);
 	aspect-ratio: 3/2;
 	object-fit: contain;
 }
 
 /* For Mobile Layout Only
 --------------------- */
-#toolbox-mobile-layout .toolbox-btn-title {
-	font-size: 1rem;
+#toolbox-mobile-layout .toolbox-window {
+	width: 75%;
+	position: absolute;
+	top: 2rem;
+	right: 12.5%;
 }
 #toolbox-mobile-layout .toolbox-icons-container {
 	gap: 2rem;
 }
 #toolbox-mobile-layout .toolbox-icons {
-	width: 15%;
+	width: 16%;
 	aspect-ratio: 3/2;
 	object-fit: contain;
 }

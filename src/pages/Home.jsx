@@ -27,6 +27,10 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
+const homeDesClampSm = 'clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
+
+const homeDesClampLg = 'clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+
 export default function Home() {
 	return (
 		<>
@@ -46,17 +50,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(225px, 18%, 275px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(225px, 18%, 275px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(225px, 18%, 275px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -80,17 +84,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(195px, 22%, 225px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(195px, 22%, 225px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(195px, 22%, 225px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -114,17 +118,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(150px, 22.5%, 195px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(150px, 22.5%, 195px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(150px, 22.5%, 195px)'
+							iconSize={homeDesClampLg}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -148,17 +152,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(175px, 50%, 225px)'
+							iconSize={homeDesClampSm}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(175px, 50%, 225px)'
+							iconSize={homeDesClampSm}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(175px, 50%, 225px)'
+							iconSize={homeDesClampSm}
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>

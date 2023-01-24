@@ -1,10 +1,10 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function ToolboxIcon({ iconSize, iconColor }) {
+export default function ToolboxIconLg({ iconSize, iconColor }) {
 	return (
 		<svg
-			id='toolbox-btn-icon'
+			id='toolbox-btn-lg-icon'
 			width={iconSize}
 			fill={iconColor}
 			stroke={iconColor}

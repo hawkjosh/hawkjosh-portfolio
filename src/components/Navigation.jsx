@@ -32,6 +32,10 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
+const logoIconClamp = 'clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
+
+const socialIconsClamp = 'clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
+
 export default function Navigation() {
 	return (
 		<>
@@ -40,7 +44,7 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='50px'
+								iconSize={logoIconClamp}
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -56,19 +60,19 @@ export default function Navigation() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize='36px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize='36px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize='36px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize='36px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 						</div>
@@ -85,7 +89,7 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='40px'
+								iconSize={logoIconClamp}
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -101,19 +105,19 @@ export default function Navigation() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize='30px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize='30px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize='30px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize='30px'
+								iconSize={socialIconsClamp}
 								iconColor='white'
 							/>
 						</div>
@@ -130,7 +134,7 @@ export default function Navigation() {
 					<nav>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='37.5px'
+								iconSize={logoIconClamp}
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -162,13 +166,12 @@ export default function Navigation() {
 							<Menu />
 						</div>
 						<div className='nav-logo-container'>
+							<div className='nav-logo-title'>The Hawk's Nest</div>
 							<LogoIcon
-								iconSize='clamp(2rem, 1.154rem + 3.846vw, 3rem)'
-								// iconSize='48px'
+								iconSize={logoIconClamp}
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
-							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
 					</nav>
 

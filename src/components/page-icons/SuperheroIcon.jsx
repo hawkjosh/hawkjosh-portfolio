@@ -13,9 +13,9 @@ export default function SuperheroIcon({ iconSize, iconColor, fontColor }) {
 				fill={fontColor}
 				stroke='none'
 				fontSize='95px'
-				x='10'
+				x='220'
 				y='515'>
-				Super Dad/Husband
+				Super Dad
 			</text>
 		</svg>
 	)

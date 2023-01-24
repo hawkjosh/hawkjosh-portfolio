@@ -3,23 +3,24 @@
 :root {
 	--primary: hsl(168, 76%, 42%);
 	--secondary: hsl(211, 30%, 24%);
+	--font-family: 'Open Sans', sans-serif;
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
 }
 
 * ::-webkit-scrollbar {
 	display: none;
 }
 
-body,
-html {
+body {
+	font-family: var(--font-family);
 	color: white;
 	background-color: var(--primary);
+	min-height: 100vh;
 	overflow-x: hidden;
 }
 

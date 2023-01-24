@@ -114,7 +114,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='25px'
+									iconSize='30px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -174,7 +174,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='25px'
+									iconSize='20px'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -204,7 +204,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='25px'
+									iconSize='20px'
 									iconColor='var(--secondary)'
 								/>
 							</button>

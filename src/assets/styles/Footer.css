@@ -1,11 +1,15 @@
 .footer-container {
-	height: 100%;
+	min-height: 3.5rem;
 	display: flex;
-	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--secondary);
+	border-top: 1px solid white;
+	gap: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 375px) {
 	.footer-container {
-		gap: 5rem;
+		gap: 2.5rem;
 	}
 }

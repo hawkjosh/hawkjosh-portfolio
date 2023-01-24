@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function ResumeIcon({ iconSize, iconColor }) {
+export default function ResumeIconLg({ iconSize, iconColor }) {
 	return (
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
@@ -9,7 +9,7 @@ export default function ResumeIcon({ iconSize, iconColor }) {
 			rel='noreferrer'
 		>
 			<svg
-				id='resume-btn-icon'
+				id='resume-btn-lg-icon'
 				width={iconSize}
 				fill={iconColor}
 				stroke={iconColor}
