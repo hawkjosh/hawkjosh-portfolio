@@ -31,12 +31,6 @@ const Mobile = ({ children }) => {
 export default function AboutUpdate() {
 	const [showToolbox, setShowToolbox] = useState(false)
 
-	const width = window.innerWidth;
-
-	const mobileStyles = {
-		iconSize: width > 674 ? '150px' : '250px'
-	}
-
 	return (
 		<>
 			<Desktop>
@@ -205,7 +199,7 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconSm
-								iconSize='65px'
+								iconSize='75px'
 								// iconSize='85px'
 								// iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
 								iconColor='white'
@@ -213,7 +207,7 @@ export default function AboutUpdate() {
 						</button>
 						<button>
 							<ResumeIconSm
-								iconSize='65px'
+								iconSize='75px'
 								// iconSize='85px'
 								// iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
 								iconColor='white'
@@ -267,15 +261,13 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								// iconSize={width > 674 ? '150px' : '250px'}
-								iconSize={mobileStyles}
+								iconSize='100px'
 								iconColor='white'
 							/>
 						</button>
 						<button>
 							<ResumeIconLg
-								// iconSize={width > 674 ? '150px' : '250px'}
-								iconSize={mobileStyles}
+								iconSize='100px'
 								iconColor='white'
 							/>
 						</button>
