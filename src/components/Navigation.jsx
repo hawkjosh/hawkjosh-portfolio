@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Link, Outlet } from 'react-router-dom'
+import useScrollMagic from '../hooks/useScrollMagic'
+
 import '../assets/styles/Navigation.css'
 
 import Menu from './Menu.jsx'
 import Footer from './Footer.jsx'
-
 import LogoIcon from '../components/page-icons/LogoIcon.jsx'
 import LinkedinIcon from '../components/page-icons/LinkedinIcon.jsx'
 import GithubIcon from '../components/page-icons/GithubIcon.jsx'
@@ -32,19 +33,36 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
-const logoIconClamp = 'clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
-
-const socialIconsClamp = 'clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
-
 export default function Navigation() {
+	const [shouldHideHeader, setShouldHideHeader] = useState(false)
+	const [shouldShowShadow, setShouldShowShadow] = useState(false)
+
+	const MINIMUM_SCROLL = 25
+	const TIMEOUT_DELAY = 100
+
+	useScrollMagic((callbackData) => {
+		const { prevScrollTop, currScrollTop } = callbackData
+		const scrollDown = prevScrollTop < currScrollTop
+		const minScroll = currScrollTop > MINIMUM_SCROLL
+
+		setShouldShowShadow(currScrollTop > 2)
+
+		setTimeout(() => {
+			setShouldHideHeader(scrollDown && minScroll)
+		}, TIMEOUT_DELAY)
+	})
+
+	const shadowStyle = shouldShowShadow ? 'shadow' : ''
+	const hiddenStyle = shouldHideHeader ? 'hidden' : ''
+
 	return (
 		<>
 			<Desktop>
 				<section id='nav-desktop-layout'>
-					<nav>
+					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize={logoIconClamp}
+								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -60,19 +78,19 @@ export default function Navigation() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 						</div>
@@ -86,10 +104,10 @@ export default function Navigation() {
 
 			<Laptop>
 				<section id='nav-laptop-layout'>
-					<nav>
+					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize={logoIconClamp}
+								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -105,19 +123,19 @@ export default function Navigation() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize={socialIconsClamp}
+								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
 								iconColor='white'
 							/>
 						</div>
@@ -131,10 +149,10 @@ export default function Navigation() {
 
 			<Tablet>
 				<section id='nav-tablet-layout'>
-					<nav>
+					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize={logoIconClamp}
+								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -161,14 +179,14 @@ export default function Navigation() {
 
 			<Mobile>
 				<section id='nav-mobile-layout'>
-					<nav>
+					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-menu-container'>
 							<Menu />
 						</div>
 						<div className='nav-logo-container'>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 							<LogoIcon
-								iconSize={logoIconClamp}
+								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>

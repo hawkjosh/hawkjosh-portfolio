@@ -24,17 +24,18 @@ const Tablet = ({ children }) => {
 }
 
 const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ minWidth: 575, maxWidth: 767 })
-	return isMobile ? children : null
-}
-
-const MobileSmall = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 574 })
+	const isMobile = useMediaQuery({ maxWidth: 767 })
 	return isMobile ? children : null
 }
 
 export default function AboutUpdate() {
 	const [showToolbox, setShowToolbox] = useState(false)
+
+	const width = window.innerWidth;
+
+	const mobileStyles = {
+		iconSize: width > 674 ? '150px' : '250px'
+	}
 
 	return (
 		<>
@@ -51,20 +52,26 @@ export default function AboutUpdate() {
 
 					<div className='text-container'>
 						<p>
-							Welcome to my portfolio! My name is Josh Hawk and I have been an
-							educator for the past 15 years. I recently decided to forge a new
-							path into the exciting world of programming and web development.
-							Having very little background in coding, I enrolled in a full
-							stack web development boot camp through Georgia Tech to jumpstart
-							this career change.
+							Welcome to my online portfolio! My name is Josh Hawk and I
+							recently decided to forge a new path into the exciting world of
+							programming and web development. Having spent the last 15 years as
+							a high school educator with no real background in coding, I
+							enrolled in a full stack web development boot camp through Georgia
+							Tech to jumpstart this career change. I finished the bootcamp this
+							past fall and have coded nearly every day since, each one bringing
+							new opportunities to reinforce what I've already learned and to
+							expand my knowledge base of this incredible and continuously
+							evolving field.
 						</p>
 						<p>
 							Please check out some of my favorite work samples while you're
-							here. I've included various projects I created throughout the boot
-							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox and resume links below. Feel
-							free to reach out to me with any questions or comments. I hope you
-							like what you see, and thanks for stopping by!
+							here. I've included individual and group projects I created
+							throughout the boot camp, as well as some personal projects I
+							tackled for fun. You can also look at the skills I've acquired and
+							experiences I've gained by following the toolbox and resume links
+							on this page. I'd love to hear from you so please feel free to
+							reach out with any questions or comments using the contact link
+							above. I hope you like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
@@ -74,13 +81,17 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='clamp(14.063rem, 5.409rem + 9.615vw, 15.625rem)'
+								iconSize='225px'
+								// iconSize='250px'
+								// iconSize='clamp(14.063rem, 5.409rem + 9.615vw, 15.625rem)'
 								iconColor='white'
 							/>
 						</button>
 						<button>
 							<ResumeIconLg
-								iconSize='clamp(14.063rem, 5.409rem + 9.615vw, 15.625rem)'
+								iconSize='225px'
+								// iconSize='250px'
+								// iconSize='clamp(14.063rem, 5.409rem + 9.615vw, 15.625rem)'
 								iconColor='white'
 							/>
 						</button>
@@ -103,20 +114,26 @@ export default function AboutUpdate() {
 
 					<div className='text-container'>
 						<p>
-							Welcome to my portfolio! My name is Josh Hawk and I have been an
-							educator for the past 15 years. I recently decided to forge a new
-							path into the exciting world of programming and web development.
-							Having very little background in coding, I enrolled in a full
-							stack web development boot camp through Georgia Tech to jumpstart
-							this career change.
+							Welcome to my online portfolio! My name is Josh Hawk and I
+							recently decided to forge a new path into the exciting world of
+							programming and web development. Having spent the last 15 years as
+							a high school educator with no real background in coding, I
+							enrolled in a full stack web development boot camp through Georgia
+							Tech to jumpstart this career change. I finished the bootcamp this
+							past fall and have coded nearly every day since, each one bringing
+							new opportunities to reinforce what I've already learned and to
+							expand my knowledge base of this incredible and continuously
+							evolving field.
 						</p>
 						<p>
 							Please check out some of my favorite work samples while you're
-							here. I've included various projects I created throughout the boot
-							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox and resume links below. Feel
-							free to reach out to me with any questions or comments. I hope you
-							like what you see, and thanks for stopping by!
+							here. I've included individual and group projects I created
+							throughout the boot camp, as well as some personal projects I
+							tackled for fun. You can also look at the skills I've acquired and
+							experiences I've gained by following the toolbox and resume links
+							on this page. I'd love to hear from you so please feel free to
+							reach out with any questions or comments using the contact link
+							above. I hope you like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
@@ -126,13 +143,17 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='clamp(12.5rem, 8.654rem + 6.01vw, 14.063rem)'
+								iconSize='200px'
+								// iconSize='250px'
+								// iconSize='clamp(12.5rem, 8.654rem + 6.01vw, 14.063rem)'
 								iconColor='white'
 							/>
 						</button>
 						<button>
 							<ResumeIconLg
-								iconSize='clamp(12.5rem, 8.654rem + 6.01vw, 14.063rem)'
+								iconSize='200px'
+								// iconSize='250px'
+								// iconSize='clamp(12.5rem, 8.654rem + 6.01vw, 14.063rem)'
 								iconColor='white'
 							/>
 						</button>
@@ -155,20 +176,26 @@ export default function AboutUpdate() {
 
 					<div className='text-container'>
 						<p>
-							Welcome to my portfolio! My name is Josh Hawk and I have been an
-							educator for the past 15 years. I recently decided to forge a new
-							path into the exciting world of programming and web development.
-							Having very little background in coding, I enrolled in a full
-							stack web development boot camp through Georgia Tech to jumpstart
-							this career change.
+							Welcome to my online portfolio! My name is Josh Hawk and I
+							recently decided to forge a new path into the exciting world of
+							programming and web development. Having spent the last 15 years as
+							a high school educator with no real background in coding, I
+							enrolled in a full stack web development boot camp through Georgia
+							Tech to jumpstart this career change. I finished the bootcamp this
+							past fall and have coded nearly every day since, each one bringing
+							new opportunities to reinforce what I've already learned and to
+							expand my knowledge base of this incredible and continuously
+							evolving field.
 						</p>
 						<p>
 							Please check out some of my favorite work samples while you're
-							here. I've included various projects I created throughout the boot
-							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox and resume links below. Feel
-							free to reach out to me with any questions or comments. I hope you
-							like what you see, and thanks for stopping by!
+							here. I've included individual and group projects I created
+							throughout the boot camp, as well as some personal projects I
+							tackled for fun. You can also look at the skills I've acquired and
+							experiences I've gained by following the toolbox and resume links
+							on this page. I'd love to hear from you so please feel free to
+							reach out with any questions or comments using the contact link
+							above. I hope you like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
@@ -178,13 +205,17 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconSm
-								iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
+								iconSize='65px'
+								// iconSize='85px'
+								// iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
 								iconColor='white'
 							/>
 						</button>
 						<button>
 							<ResumeIconSm
-								iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
+								iconSize='65px'
+								// iconSize='85px'
+								// iconSize='clamp(4.063rem, 0.313rem + 7.813vw, 5.313rem)'
 								iconColor='white'
 							/>
 						</button>
@@ -207,20 +238,26 @@ export default function AboutUpdate() {
 
 					<div className='text-container'>
 						<p>
-							Welcome to my portfolio! My name is Josh Hawk and I have been an
-							educator for the past 15 years. I recently decided to forge a new
-							path into the exciting world of programming and web development.
-							Having very little background in coding, I enrolled in a full
-							stack web development boot camp through Georgia Tech to jumpstart
-							this career change.
+							Welcome to my online portfolio! My name is Josh Hawk and I
+							recently decided to forge a new path into the exciting world of
+							programming and web development. Having spent the last 15 years as
+							a high school educator with no real background in coding, I
+							enrolled in a full stack web development boot camp through Georgia
+							Tech to jumpstart this career change. I finished the bootcamp this
+							past fall and have coded nearly every day since, each one bringing
+							new opportunities to reinforce what I've already learned and to
+							expand my knowledge base of this incredible and continuously
+							evolving field.
 						</p>
 						<p>
 							Please check out some of my favorite work samples while you're
-							here. I've included various projects I created throughout the boot
-							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox and resume links below. Feel
-							free to reach out to me with any questions or comments. I hope you
-							like what you see, and thanks for stopping by!
+							here. I've included individual and group projects I created
+							throughout the boot camp, as well as some personal projects I
+							tackled for fun. You can also look at the skills I've acquired and
+							experiences I've gained by following the toolbox and resume links
+							on this page. I'd love to hear from you so please feel free to
+							reach out with any questions or comments using the contact link
+							above. I hope you like what you see, and thanks for stopping by!
 						</p>
 					</div>
 
@@ -230,13 +267,15 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='clamp(9.375rem, 4.72rem + 12.953vw, 10.938rem)'
+								// iconSize={width > 674 ? '150px' : '250px'}
+								iconSize={mobileStyles}
 								iconColor='white'
 							/>
 						</button>
 						<button>
 							<ResumeIconLg
-								iconSize='clamp(9.375rem, 4.72rem + 12.953vw, 10.938rem)'
+								// iconSize={width > 674 ? '150px' : '250px'}
+								iconSize={mobileStyles}
 								iconColor='white'
 							/>
 						</button>
@@ -245,58 +284,6 @@ export default function AboutUpdate() {
 					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
 				</section>
 			</Mobile>
-
-			<MobileSmall>
-				<section
-					id='about-mobile-small-layout'
-					className='about-layout'>
-					<div className='img-container'>
-						<img
-							src={profilePhoto}
-							alt='Profile Photo'
-						/>
-					</div>
-
-					<div className='text-container'>
-						<p>
-							Welcome to my portfolio! My name is Josh Hawk and I have been an
-							educator for the past 15 years. I recently decided to forge a new
-							path into the exciting world of programming and web development.
-							Having very little background in coding, I enrolled in a full
-							stack web development boot camp through Georgia Tech to jumpstart
-							this career change.
-						</p>
-						<p>
-							Please check out some of my favorite work samples while you're
-							here. I've included various projects I created throughout the boot
-							camp, as well as a few personal projects. You can also see the
-							skills I've acquired in my toolbox and resume links below. Feel
-							free to reach out to me with any questions or comments. I hope you
-							like what you see, and thanks for stopping by!
-						</p>
-					</div>
-
-					<div className='btns-container'>
-						<button
-							onClick={() => {
-								setShowToolbox(true)
-							}}>
-							<ToolboxIconSm
-								iconSize='clamp(2.822rem, 2.008rem + 3.476vw, 3.676rem)'
-								iconColor='white'
-							/>
-						</button>
-						<button>
-							<ResumeIconSm
-								iconSize='clamp(2.822rem, 2.008rem + 3.476vw, 3.676rem)'
-								iconColor='white'
-							/>
-						</button>
-					</div>
-
-					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
-				</section>
-			</MobileSmall>
 		</>
 	)
 }

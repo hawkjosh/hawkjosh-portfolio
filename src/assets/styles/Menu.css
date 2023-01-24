@@ -6,17 +6,17 @@ button {
 
 .menu-list {
 	position: absolute;
-	top: 4.25rem;
-	left: 2rem;
+	top: 4rem;
+	left: 1.5rem;
 	z-index: 1;
 	padding: 0.5rem;
-	background-color: hsla(210, 29%, 24%, 0.8);
-	border: 3px solid white;
-	border-radius: 1rem;
+	background-color: hsla(210, 29%, 24%, 0.75);
+	border: 2.5px solid white;
+	border-radius: 10%;
 }
 
 .menu-list-item {
-	font-size: 1.55rem;
+	font-size: clamp(1.4rem, 1.257rem + 0.611vw, 1.55rem);
 	font-weight: 500;
 	padding: 0.75rem 1rem;
 	display: block;

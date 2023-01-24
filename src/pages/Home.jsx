@@ -27,10 +27,6 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
-const homeDesClampSm = 'clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
-
-const homeDesClampLg = 'clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
-
 export default function Home() {
 	return (
 		<>
@@ -43,24 +39,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-
+	
 					<div className='home-divider'>
 						<hr />
 					</div>
-
+	
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -77,24 +73,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-
+	
 					<div className='home-divider'>
 						<hr />
 					</div>
-
+	
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -111,24 +107,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-
+	
 					<div className='home-divider'>
 						<hr />
 					</div>
-
+	
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize={homeDesClampLg}
+							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -145,24 +141,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-
+	
 					<div className='home-divider'>
 						<hr />
 					</div>
-
+	
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize={homeDesClampSm}
+							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize={homeDesClampSm}
+							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize={homeDesClampSm}
+							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
