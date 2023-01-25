@@ -2,26 +2,26 @@ import { useEffect, useState } from 'react'
 import { throttle } from 'lodash'
 
 export default function useScrollMagic(callback) {
-  const [, setScrollPosition] = useState(0)
-  let prevScrollTop = 0
+	const [, setScrollPosition] = useState(0)
+	let prevScrollTop = 0
 
-  const handleDocScroll = () => {
-    const { scrollTop: currScrollTop } = document.documentElement || document.body
+	const handleDocScroll = () => {
+		const { scrollTop: currScrollTop } =
+			document.documentElement || document.body
 
-    setScrollPosition(prevPosition => {
-      prevScrollTop = prevPosition
-      return currScrollTop
-    })
-    
-    callback({ prevScrollTop, currScrollTop })
-  }
+		setScrollPosition((prevPosition) => {
+			prevScrollTop = prevPosition
+			return currScrollTop
+		})
 
-  const handleDocScrollThrottle = throttle(handleDocScroll, 250)
+		callback({ prevScrollTop, currScrollTop })
+	}
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleDocScrollThrottle)
+	const handleDocScrollThrottle = throttle(handleDocScroll, 250)
 
-    return () =>
-      window.removeEventListener('scroll', handleDocScrollThrottle)
-  }, [])
+	useEffect(() => {
+		window.addEventListener('scroll', handleDocScrollThrottle)
+
+		return () => window.removeEventListener('scroll', handleDocScrollThrottle)
+	}, [])
 }

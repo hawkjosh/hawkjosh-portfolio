@@ -7,18 +7,38 @@ import LaptopIcon from '../components/page-icons/LaptopIcon.jsx'
 import SuperheroIcon from '../components/page-icons/SuperheroIcon.jsx'
 import TennesseeIcon from '../components/page-icons/TennesseeIcon.jsx'
 
+// const Desktop = ({ children }) => {
+// 	const isDesktop = useMediaQuery({ minWidth: 1440 })
+// 	return isDesktop ? children : null
+// }
+
+// const Laptop = ({ children }) => {
+// 	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
+// 	return isLaptop ? children : null
+// }
+
+// const Tablet = ({ children }) => {
+// 	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
+// 	return isTablet ? children : null
+// }
+
+// const Mobile = ({ children }) => {
+// 	const isMobile = useMediaQuery({ maxWidth: 767 })
+// 	return isMobile ? children : null
+// }
+
 const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1440 })
+	const isDesktop = useMediaQuery({ minWidth: 1664 })
 	return isDesktop ? children : null
 }
 
 const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
+	const isLaptop = useMediaQuery({ minWidth: 1280, maxWidth: 1663 })
 	return isLaptop ? children : null
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
+	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 

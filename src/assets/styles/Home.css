@@ -7,6 +7,10 @@
 	padding-bottom: 1.5rem;
 }
 
+.home-layout img {
+	width: clamp(21.875rem, 15.382rem + 24.272vw, 40.625rem);
+}
+
 .home-divider {
 	width: 100%;
 }
@@ -27,9 +31,9 @@
 
 /* For Desktop Layout Only
 --------------------- */
-#home-desktop-layout img {
+/* #home-desktop-layout img {
 	width: clamp(37.5rem, 20.192rem + 19.231vw, 40.625rem);
-}
+} */
 #home-desktop-layout .home-divider hr {
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -37,9 +41,9 @@
 
 /* For Laptop Layout Only
 --------------------- */
-#home-laptop-layout img {
+/* #home-laptop-layout img {
 	width: clamp(34.375rem, 26.683rem + 12.019vw, 37.5rem);
-}
+} */
 #home-laptop-layout .home-divider hr {
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -47,9 +51,9 @@
 
 /* For Tablet Layout Only
 --------------------- */
-#home-tablet-layout img {
+/* #home-tablet-layout img {
 	width: clamp(31.25rem, 21.875rem + 19.531vw, 34.375rem);
-}
+} */
 #home-tablet-layout .home-divider hr {
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -57,9 +61,9 @@
 
 /* For Mobile Layout Only
 --------------------- */
-#home-mobile-layout img {
+/* #home-mobile-layout img {
 	width: clamp(21.875rem, 12.929rem + 38.168vw, 31.25rem);
-}
+} */
 #home-mobile-layout .home-divider hr {
 	margin-left: 17.5%;
 	margin-right: 17.5%;
@@ -71,8 +75,8 @@
 	align-items: center;
 	gap: 5rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
 	#home-mobile-layout img {
-		width: 93.5vw;
+		width: 81.5%;
 	}
 }

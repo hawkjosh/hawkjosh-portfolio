@@ -14,17 +14,17 @@ import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
 import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 
 const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1440 })
+	const isDesktop = useMediaQuery({ minWidth: 1664 })
 	return isDesktop ? children : null
 }
 
 const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
+	const isLaptop = useMediaQuery({ minWidth: 1280, maxWidth: 1663 })
 	return isLaptop ? children : null
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
+	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 

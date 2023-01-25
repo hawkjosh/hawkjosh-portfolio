@@ -1,15 +1,7 @@
 .footer-container {
-	min-height: 3.5rem;
+	min-height: 3.75rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--secondary);
-	border-top: 1px solid white;
-	gap: 4rem;
-}
-
-@media (max-width: 375px) {
-	.footer-container {
-		gap: 2.5rem;
-	}
+	gap: 3.5rem;
 }

@@ -6,6 +6,7 @@ import Navigation from './components/Navigation.jsx'
 import Home from './pages/Home.jsx'
 // import About from './pages/About.jsx'
 import AboutUpdate from './pages/AboutUpdate.jsx'
+
 import WorkSamples from './pages/WorkSamples.jsx'
 import Contact from './pages/Contact.jsx'
 import NoPage from './pages/NoPage.jsx'
