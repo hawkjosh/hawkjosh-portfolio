@@ -45,7 +45,7 @@ export default function Navigation() {
 		const scrollDown = prevScrollTop < currScrollTop
 		const minScroll = currScrollTop > MINIMUM_SCROLL
 
-		setShouldShowShadow(currScrollTop > 2)
+		setShouldShowShadow(currScrollTop > 15)
 
 		setTimeout(() => {
 			setShouldHideHeader(scrollDown && minScroll)
