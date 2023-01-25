@@ -73,14 +73,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='175px'
+								iconSize='250px'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='175px'
+								iconSize='250px'
 								iconColor='white'
 							/>
 						</button>
@@ -132,14 +132,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='150px'
+								iconSize='200px'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='150px'
+								iconSize='200px'
 								iconColor='white'
 							/>
 						</button>

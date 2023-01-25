@@ -62,7 +62,7 @@ export default function Navigation() {
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
+								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -107,7 +107,7 @@ export default function Navigation() {
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
+								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -152,7 +152,7 @@ export default function Navigation() {
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
+								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -186,7 +186,7 @@ export default function Navigation() {
 						<div className='nav-logo-container'>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.038rem + 0.906vw, 3rem)'
+								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>

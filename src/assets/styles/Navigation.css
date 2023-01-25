@@ -44,9 +44,9 @@ footer {
 .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
-	font-size: clamp(1.25rem, 1.038rem + 0.906vw, 2rem);
+	font-size: clamp(1.25rem, 1.043rem + 0.92vw, 2rem);
 }
-@media (max-width: 375px) {
+@media (max-width: 359px) {
 	.nav-logo-title {
 		display: none;
 	}
@@ -78,7 +78,7 @@ footer {
 	padding: 0rem 2.5%;
 }
 
-/* For Desktop Layout Only
+/* For Desktop Layout
 --------------------- */
 #nav-desktop-layout {
 	display: flex;
@@ -99,7 +99,7 @@ footer {
 	flex-basis: 25%;
 }
 
-/* For Laptop Layout Only
+/* For Laptop Layout
 --------------------- */
 #nav-laptop-layout {
 	display: flex;
@@ -120,7 +120,7 @@ footer {
 	flex-basis: 25%;
 }
 
-/* For Tablet Layout Only
+/* For Tablet Layout
 --------------------- */
 #nav-tablet-layout {
 	display: flex;
@@ -138,7 +138,7 @@ footer {
 	padding: 0rem 2.5%;
 }
 
-/* For Mobile Layout Only
+/* For Mobile Layout
 --------------------- */
 #nav-mobile-layout {
 	display: flex;

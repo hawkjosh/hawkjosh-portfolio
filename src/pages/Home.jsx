@@ -7,26 +7,6 @@ import LaptopIcon from '../components/page-icons/LaptopIcon.jsx'
 import SuperheroIcon from '../components/page-icons/SuperheroIcon.jsx'
 import TennesseeIcon from '../components/page-icons/TennesseeIcon.jsx'
 
-// const Desktop = ({ children }) => {
-// 	const isDesktop = useMediaQuery({ minWidth: 1440 })
-// 	return isDesktop ? children : null
-// }
-
-// const Laptop = ({ children }) => {
-// 	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
-// 	return isLaptop ? children : null
-// }
-
-// const Tablet = ({ children }) => {
-// 	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
-// 	return isTablet ? children : null
-// }
-
-// const Mobile = ({ children }) => {
-// 	const isMobile = useMediaQuery({ maxWidth: 767 })
-// 	return isMobile ? children : null
-// }
-
 const Desktop = ({ children }) => {
 	const isDesktop = useMediaQuery({ minWidth: 1664 })
 	return isDesktop ? children : null
@@ -59,24 +39,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-	
+
 					<div className='home-divider'>
 						<hr />
 					</div>
-	
+
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='295px'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='295px'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='295px'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -93,24 +73,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-	
+
 					<div className='home-divider'>
 						<hr />
 					</div>
-	
+
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -127,24 +107,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-	
+
 					<div className='home-divider'>
 						<hr />
 					</div>
-	
+
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 4.5rem + 13.412vw, 18.75rem)'
+							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -161,24 +141,24 @@ export default function Home() {
 						src={myAvatar}
 						alt='My Avatar'
 					/>
-	
+
 					<div className='home-divider'>
 						<hr />
 					</div>
-	
+
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
+							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
+							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 7.956rem + 12.723vw, 14.063rem)'
+							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
