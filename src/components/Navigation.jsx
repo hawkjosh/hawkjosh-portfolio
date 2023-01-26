@@ -13,13 +13,8 @@ import GithubIcon from '../components/page-icons/GithubIcon.jsx'
 import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
 import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 
-const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1664 })
-	return isDesktop ? children : null
-}
-
 const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1280, maxWidth: 1663 })
+	const isLaptop = useMediaQuery({ minWidth: 1280 })
 	return isLaptop ? children : null
 }
 
@@ -57,51 +52,6 @@ export default function Navigation() {
 
 	return (
 		<>
-			<Desktop>
-				<section id='nav-desktop-layout'>
-					<nav className={`${shadowStyle} ${hiddenStyle}`}>
-						<div className='nav-logo-container'>
-							<LogoIcon
-								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
-							<div className='nav-logo-title'>The Hawk's Nest</div>
-						</div>
-
-						<div className='nav-links-container'>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/work-samples'>Work Samples</Link>
-							<Link to='/contact'>Contact</Link>
-						</div>
-
-						<div className='nav-social-container'>
-							<LinkedinIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
-								iconColor='white'
-							/>
-							<GithubIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
-								iconColor='white'
-							/>
-							<CodepenIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
-								iconColor='white'
-							/>
-							<StackOverflowIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
-								iconColor='white'
-							/>
-						</div>
-					</nav>
-
-					<main>
-						<Outlet />
-					</main>
-				</section>
-			</Desktop>
-
 			<Laptop>
 				<section id='nav-laptop-layout'>
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>

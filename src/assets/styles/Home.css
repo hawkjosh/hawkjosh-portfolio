@@ -29,13 +29,6 @@
 	align-items: center;
 }
 
-/* For Desktop Layout
---------------------- */
-#home-desktop-layout .home-divider hr {
-	margin-left: 12.5%;
-	margin-right: 12.5%;
-}
-
 /* For Laptop Layout
 --------------------- */
 #home-laptop-layout .home-divider hr {

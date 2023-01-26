@@ -6,7 +6,6 @@ import GithubIcon from '../components/page-icons/GithubIcon.jsx'
 import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
 import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 
-
 export default function Footer() {
 	return (
 		<>

@@ -78,27 +78,6 @@ footer {
 	padding: 0rem 2.5%;
 }
 
-/* For Desktop Layout
---------------------- */
-#nav-desktop-layout {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
-}
-#nav-desktop-layout .nav-logo-container {
-	flex-basis: 35%;
-	justify-content: flex-start;
-	padding-left: 2.5%;
-}
-#nav-desktop-layout .nav-links-container {
-	flex-basis: 45%;
-	padding: 0rem 2.5%;
-}
-#nav-desktop-layout .nav-social-container {
-	flex-basis: 25%;
-}
-
 /* For Laptop Layout
 --------------------- */
 #nav-laptop-layout {

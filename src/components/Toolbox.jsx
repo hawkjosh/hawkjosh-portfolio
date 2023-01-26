@@ -77,21 +77,16 @@ const icons = [
 	{ name: 'Tailwind Icon', image: Tailwind },
 	{ name: 'Vite Icon', image: Vite_icon },
 	{ name: 'VSCode Icon', image: VSCode },
-	{ name: 'WebPack Icon', image: WebPack }
+	{ name: 'WebPack Icon', image: WebPack },
 ]
 
-const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1440 })
-	return isDesktop ? children : null
-}
-
 const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1024, maxWidth: 1439 })
+	const isLaptop = useMediaQuery({ minWidth: 1280 })
 	return isLaptop ? children : null
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 })
+	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 
@@ -103,36 +98,6 @@ const Mobile = ({ children }) => {
 export default function Toolbox({ setShowToolbox }) {
 	return (
 		<>
-			<Desktop>
-				<section
-					id='toolbox-desktop-layout'
-					className='toolbox-background'>
-					<div className='toolbox-window'>
-						<div className='toolbox-close-btn'>
-							<button
-								onClick={() => {
-									setShowToolbox(false)
-								}}>
-								<CloseBtnIcon
-									iconSize='30px'
-									iconColor='var(--secondary)'
-								/>
-							</button>
-						</div>
-						<div className='toolbox-icons-container'>
-							{icons.map((icon, index) => (
-								<img
-									className='toolbox-icons'
-									src={icon.image}
-									key={index}
-									alt={icon.name}
-								/>
-							))}
-						</div>
-					</div>
-				</section>
-			</Desktop>
-
 			<Laptop>
 				<section
 					id='toolbox-laptop-layout'

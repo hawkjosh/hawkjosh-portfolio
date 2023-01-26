@@ -43,23 +43,7 @@
 	align-items: center;
 }
 
-/* For Desktop Layout Only
---------------------- */
-#toolbox-desktop-layout .toolbox-window {
-	position: absolute;
-	top: 2rem;
-	right: 10%;
-}
-#toolbox-desktop-layout .toolbox-icons-container {
-	gap: 3rem;
-}
-#toolbox-desktop-layout .toolbox-icons {
-	width: clamp(6.463rem, -0.737rem + 8vw, 7.763rem);
-	aspect-ratio: 3/2;
-	object-fit: contain;
-}
-
-/* For Laptop Layout Only
+/* For Laptop Layout
 --------------------- */
 #toolbox-laptop-layout .toolbox-window {
 	position: absolute;
@@ -75,7 +59,7 @@
 	object-fit: contain;
 }
 
-/* For Tablet Layout Only
+/* For Tablet Layout
 --------------------- */
 #toolbox-tablet-layout .toolbox-window {
 	position: absolute;
@@ -92,7 +76,7 @@
 	object-fit: contain;
 }
 
-/* For Mobile Layout Only
+/* For Mobile Layout
 --------------------- */
 #toolbox-mobile-layout .toolbox-window {
 	width: 85%;

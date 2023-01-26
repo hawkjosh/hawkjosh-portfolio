@@ -6,15 +6,13 @@ export default function ResumeIconLg({ iconSize, iconColor }) {
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 			target='_blank'
-			rel='noreferrer'
-		>
+			rel='noreferrer'>
 			<svg
 				id='resume-btn-lg-icon'
 				width={iconSize}
 				fill={iconColor}
 				stroke={iconColor}
-				viewBox='-7 -7 105 33'
-			>
+				viewBox='-7 -7 105 33'>
 				<path
 					strokeWidth='1.15'
 					fill='none'
@@ -24,8 +22,7 @@ export default function ResumeIconLg({ iconSize, iconColor }) {
 					strokeWidth='0'
 					fontSize='12px'
 					x='25'
-					y='13.75'
-				>
+					y='13.75'>
 					My Resume
 				</text>
 				<rect

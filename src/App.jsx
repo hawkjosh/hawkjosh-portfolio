@@ -4,9 +4,7 @@ import './assets/styles/App.css'
 
 import Navigation from './components/Navigation.jsx'
 import Home from './pages/Home.jsx'
-// import About from './pages/About.jsx'
-import AboutUpdate from './pages/AboutUpdate.jsx'
-
+import About from './pages/About.jsx'
 import WorkSamples from './pages/WorkSamples.jsx'
 import Contact from './pages/Contact.jsx'
 import NoPage from './pages/NoPage.jsx'
@@ -25,13 +23,9 @@ export default function App() {
 						index
 						element={<Home />}
 					/>
-					{/* <Route
-						path='/about'
-						element={<About />}
-					/> */}
 					<Route
 						path='/about'
-						element={<AboutUpdate />}
+						element={<About />}
 					/>
 					<Route
 						path='/work-samples'
@@ -47,7 +41,6 @@ export default function App() {
 						path='/test-page'
 						element={<TestPage />}
 					/>
-					
 				</Route>
 				<Route
 					path='*'

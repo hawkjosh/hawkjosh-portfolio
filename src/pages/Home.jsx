@@ -7,13 +7,8 @@ import LaptopIcon from '../components/page-icons/LaptopIcon.jsx'
 import SuperheroIcon from '../components/page-icons/SuperheroIcon.jsx'
 import TennesseeIcon from '../components/page-icons/TennesseeIcon.jsx'
 
-const Desktop = ({ children }) => {
-	const isDesktop = useMediaQuery({ minWidth: 1664 })
-	return isDesktop ? children : null
-}
-
 const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1280, maxWidth: 1663 })
+	const isLaptop = useMediaQuery({ minWidth: 1280 })
 	return isLaptop ? children : null
 }
 
@@ -30,40 +25,6 @@ const Mobile = ({ children }) => {
 export default function Home() {
 	return (
 		<>
-			<Desktop>
-				<section
-					id='home-desktop-layout'
-					className='home-layout'>
-					<img
-						className='home-avatar'
-						src={myAvatar}
-						alt='My Avatar'
-					/>
-
-					<div className='home-divider'>
-						<hr />
-					</div>
-
-					<div className='home-descriptors'>
-						<LaptopIcon
-							iconSize='295px'
-							iconColor='var(--secondary)'
-							fontColor='white'
-						/>
-						<SuperheroIcon
-							iconSize='295px'
-							iconColor='var(--secondary)'
-							fontColor='white'
-						/>
-						<TennesseeIcon
-							iconSize='295px'
-							iconColor='var(--secondary)'
-							fontColor='white'
-						/>
-					</div>
-				</section>
-			</Desktop>
-
 			<Laptop>
 				<section
 					id='home-laptop-layout'

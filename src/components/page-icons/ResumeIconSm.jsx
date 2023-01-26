@@ -6,14 +6,12 @@ export default function ResumeIconSm({ iconSize, iconColor }) {
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 			target='_blank'
-			rel='noreferrer'
-		>
+			rel='noreferrer'>
 			<svg
 				id='resume-btn-sm-icon'
 				width={iconSize}
 				stroke={iconColor}
-				viewBox='0 0 31 32'
-			>
+				viewBox='0 0 31 32'>
 				<path
 					strokeWidth='1.15'
 					fill='transparent'
