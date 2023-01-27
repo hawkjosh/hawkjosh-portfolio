@@ -9,7 +9,7 @@ import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 import HawkIcon from '../components/page-icons/HawkIcon.jsx'
 
 export default function Footer() {
-	const isLargeScreen = useMediaQuery({ minWidth: 1280 })
+	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
 
 	return (
 		<>
@@ -17,27 +17,27 @@ export default function Footer() {
 				<section className='footer-container'>
 					<div className='copywrite-text'>© 2022 Joshua Wilde Hawk</div>
 					<HawkIcon
-						iconSize='55px'
+						iconSize='3.75rem'
 						iconColor='white'
-						iconBorder='var(--primary)'
+						iconBorder='var(--secondary)'
 					/>
 				</section>
 			) : (
 				<section className='footer-container'>
 					<LinkedinIcon
-						iconSize='27px'
+						iconSize='1.75rem'
 						iconColor='white'
 					/>
 					<GithubIcon
-						iconSize='27px'
+						iconSize='1.75rem'
 						iconColor='white'
 					/>
 					<CodepenIcon
-						iconSize='27px'
+						iconSize='1.75rem'
 						iconColor='white'
 					/>
 					<StackOverflowIcon
-						iconSize='27px'
+						iconSize='1.75rem'
 						iconColor='white'
 					/>
 				</section>

@@ -18,6 +18,13 @@
 	}
 }
 
+#hawk-icon:hover {
+	fill: var(--secondary);
+	stroke: white;
+	stroke-width: 50;
+	cursor: grab;
+}
+
 #menu-icon:hover {
 	stroke: var(--primary);
 }
@@ -86,11 +93,5 @@
 	fill: #f77f00;
 	stroke: white;
 	stroke-width: 8;
-	cursor: grab;
-}
-
-#hawk-icon:hover {
-	fill: var(--primary);
-	stroke: white;
 	cursor: grab;
 }

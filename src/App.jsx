@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './assets/styles/App.css'
 
-import Navigation from './components/Navigation.jsx'
+import Navbar from './components/Navbar.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import WorkSamples from './pages/WorkSamples.jsx'
@@ -15,7 +15,7 @@ export default function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Navigation />}>
+					element={<Navbar />}>
 					<Route
 						index
 						element={<Home />}

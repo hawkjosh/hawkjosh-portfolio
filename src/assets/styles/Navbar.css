@@ -3,10 +3,9 @@
 nav {
 	position: sticky;
 	top: 0;
-	/* width: 100%; */
 	height: 5rem;
 	background-color: var(--secondary);
-	border-bottom: 2px solid white;
+	border-bottom: solid white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -20,18 +19,9 @@ nav.hidden {
 	transform: translateY(-110%);
 }
 
-main {
-	width: 100%;
-	/* margin: 5rem 0rem 3.75rem; */
-}
-
 footer {
-	/* position: sticky; */
-	/* bottom: 0; */
-	/* width: 100%; */
-	/* height: 3.5rem; */
 	background-color: var(--secondary);
-	border-top: 2px solid white;
+	border-top: solid white;
 }
 
 .nav-logo-container {
@@ -57,7 +47,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-left: 2px solid white;
+	border-left: solid white;
 }
 
 .nav-links-container a {
@@ -74,7 +64,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-left: 2px solid white;
+	border-left: solid white;
 	padding: 0rem 2.5%;
 }
 
@@ -86,8 +76,6 @@ footer {
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	
-	border: solid orangered;
 }
 #nav-laptop .nav-logo-container {
 	flex-basis: 32.5%;
@@ -102,23 +90,43 @@ footer {
 	flex-basis: 25%;
 }
 
-/* For Tablet Layout → 640px to 1279px
+/* For Large Tablet Layout → 1024px to 1279px
 --------------------- */
-#nav-tablet {
+#nav-tablet-large {
 	min-height: 100vh;
 	min-height: 100dvh;
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	
-	border: solid orangered;
 }
-#nav-tablet .nav-logo-container {
+#nav-tablet-large .nav-logo-container {
+	flex-basis: 32.5%;
+	justify-content: flex-start;
+	padding-left: 2.5%;
+}
+#nav-tablet-large .nav-links-container {
+	flex-basis: 42.5%;
+	padding: 0rem 2.5%;
+}
+#nav-tablet-large .nav-social-container {
+	flex-basis: 25%;
+}
+
+/* For Small Tablet Layout → 640px to 1023px
+--------------------- */
+#nav-tablet-small {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+#nav-tablet-small .nav-logo-container {
 	flex-basis: 35%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
-#nav-tablet .nav-links-container {
+#nav-tablet-small .nav-links-container {
 	flex-basis: 65%;
 	justify-content: flex-end;
 	padding-right: 2.5%;
@@ -134,8 +142,6 @@ footer {
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	
-	border: solid orangered;
 }
 #nav-mobile .nav-menu-container {
 	min-height: 5rem;

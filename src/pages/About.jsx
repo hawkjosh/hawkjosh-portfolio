@@ -69,14 +69,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
@@ -129,14 +129,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
@@ -154,7 +154,7 @@ export default function AboutUpdate() {
 						/>
 					</div>
 
-					<div className='about-txt'>
+					<div className='about-txt-1 about-txt'>
 						<p>
 							Welcome to my online portfolio! My name is Josh Hawk and I
 							recently decided to forge a new path into the exciting world of
@@ -167,6 +167,9 @@ export default function AboutUpdate() {
 							already learned and to expand my knowledge base of this
 							incredible and continuously evolving field.
 						</p>
+					</div>
+
+					<div className='about-txt-2 about-txt'>
 						<p>
 							Please check out some of my favorite work samples while you're
 							here. I've included individual and group projects I created
@@ -186,14 +189,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='150px'
+								iconSize='12rem'
 								iconColor='white'
 							/>
 						</button>
@@ -245,14 +248,14 @@ export default function AboutUpdate() {
 								setShowToolbox(true)
 							}}>
 							<ToolboxIconLg
-								iconSize='150px'
+								iconSize='9.25rem'
 								iconColor='white'
 							/>
 						</button>
 
 						<button>
 							<ResumeIconLg
-								iconSize='150px'
+								iconSize='9.25rem'
 								iconColor='white'
 							/>
 						</button>

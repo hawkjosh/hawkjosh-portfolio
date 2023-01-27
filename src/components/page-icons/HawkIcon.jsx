@@ -8,7 +8,7 @@ export default function HawkIcon({ iconSize, iconColor, iconBorder }) {
 			width={iconSize}
 			fill={iconColor}
 			stroke={iconBorder}
-			strokeWidth='60'
+			strokeWidth='20'
 			viewBox='0 0 700 700'
 			preserveAspectRatio='xMidYMid meet'>
 			<path
