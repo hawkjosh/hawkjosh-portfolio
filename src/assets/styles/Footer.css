@@ -5,3 +5,8 @@
 	align-items: center;
 	gap: 3.5rem;
 }
+
+.copywrite-text {
+	font-size: 1.25rem;
+	font-weight: 400;
+}

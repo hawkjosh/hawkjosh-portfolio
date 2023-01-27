@@ -9,9 +9,6 @@ import WorkSamples from './pages/WorkSamples.jsx'
 import Contact from './pages/Contact.jsx'
 import NoPage from './pages/NoPage.jsx'
 
-// below is for testing purposes only
-import TestPage from './pages/TestPage.jsx'
-
 export default function App() {
 	return (
 		<Router>
@@ -34,12 +31,6 @@ export default function App() {
 					<Route
 						path='/contact'
 						element={<Contact />}
-					/>
-
-					{/* below is for testing purposes only */}
-					<Route
-						path='/test-page'
-						element={<TestPage />}
 					/>
 				</Route>
 				<Route

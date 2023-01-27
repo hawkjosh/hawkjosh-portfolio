@@ -1,12 +1,12 @@
 /* For All Layouts
 --------------------- */
 nav {
-	position: fixed;
+	position: sticky;
 	top: 0;
-	width: 100%;
+	/* width: 100%; */
 	height: 5rem;
 	background-color: var(--secondary);
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,29 +22,29 @@ nav.hidden {
 
 main {
 	width: 100%;
-	margin: 5rem 0rem 3.75rem;
+	/* margin: 5rem 0rem 3.75rem; */
 }
 
 footer {
-	position: sticky;
-	bottom: 0;
-	width: 100%;
-	height: 3.5rem;
+	/* position: sticky; */
+	/* bottom: 0; */
+	/* width: 100%; */
+	/* height: 3.5rem; */
 	background-color: var(--secondary);
-	border-top: 1px solid white;
+	border-top: 2px solid white;
 }
 
 .nav-logo-container {
 	min-height: 5rem;
 	display: flex;
 	align-items: center;
-	gap: 0.75rem;
+	gap: 1rem;
 }
 
 .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
-	font-size: clamp(1.25rem, 1.043rem + 0.92vw, 2rem);
+	font-size: 1rem;
 }
 @media (max-width: 359px) {
 	.nav-logo-title {
@@ -57,12 +57,12 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-left: 1px solid white;
+	border-left: 2px solid white;
 }
 
 .nav-links-container a {
 	text-transform: uppercase;
-	font-size: clamp(1rem, 0.794rem + 0.429vw, 1.25rem);
+	font-size: 1rem;
 }
 
 .nav-links-container a:hover {
@@ -74,58 +74,70 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-left: 1px solid white;
+	border-left: 2px solid white;
 	padding: 0rem 2.5%;
 }
 
-/* For Laptop Layout
+/* For Laptop Layout → 1280px and above
 --------------------- */
-#nav-laptop-layout {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
+#nav-laptop {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	
+	border: solid orangered;
 }
-#nav-laptop-layout .nav-logo-container {
+#nav-laptop .nav-logo-container {
 	flex-basis: 32.5%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
-#nav-laptop-layout .nav-links-container {
+#nav-laptop .nav-links-container {
 	flex-basis: 42.5%;
 	padding: 0rem 2.5%;
 }
-#nav-laptop-layout .nav-social-container {
+#nav-laptop .nav-social-container {
 	flex-basis: 25%;
 }
 
-/* For Tablet Layout
+/* For Tablet Layout → 640px to 1279px
 --------------------- */
-#nav-tablet-layout {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
+#nav-tablet {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	
+	border: solid orangered;
 }
-#nav-tablet-layout .nav-logo-container {
-	flex-basis: 42.5%;
+#nav-tablet .nav-logo-container {
+	flex-basis: 35%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
-#nav-tablet-layout .nav-links-container {
-	flex-basis: 57.5%;
-	padding: 0rem 2.5%;
+#nav-tablet .nav-links-container {
+	flex-basis: 65%;
+	justify-content: flex-end;
+	padding-right: 2.5%;
+	gap: 1.5rem;
+	/* padding: 0rem 2.5%; */
 }
 
-/* For Mobile Layout
+/* For Mobile Layout → 639px and below
 --------------------- */
-#nav-mobile-layout {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100vh;
+#nav-mobile {
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	
+	border: solid orangered;
 }
-#nav-mobile-layout .nav-menu-container {
+#nav-mobile .nav-menu-container {
 	min-height: 5rem;
 	flex-basis: 20%;
 	display: flex;
@@ -133,7 +145,7 @@ footer {
 	align-items: center;
 	padding-left: 1.5rem;
 }
-#nav-mobile-layout .nav-logo-container {
+#nav-mobile .nav-logo-container {
 	flex-basis: 80%;
 	justify-content: flex-end;
 	padding-right: 1.5rem;

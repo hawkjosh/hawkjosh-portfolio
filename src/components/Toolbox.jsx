@@ -86,12 +86,12 @@ const Laptop = ({ children }) => {
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
+	const isTablet = useMediaQuery({ minWidth: 640, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 
 const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 })
+	const isMobile = useMediaQuery({ maxWidth: 639 })
 	return isMobile ? children : null
 }
 

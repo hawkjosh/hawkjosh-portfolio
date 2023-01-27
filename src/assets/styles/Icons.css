@@ -88,3 +88,9 @@
 	stroke-width: 8;
 	cursor: grab;
 }
+
+#hawk-icon:hover {
+	fill: var(--primary);
+	stroke: white;
+	cursor: grab;
+}

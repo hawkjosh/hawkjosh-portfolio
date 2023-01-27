@@ -13,12 +13,12 @@ const Laptop = ({ children }) => {
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
+	const isTablet = useMediaQuery({ minWidth: 640, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 
 const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 })
+	const isMobile = useMediaQuery({ maxWidth: 639 })
 	return isMobile ? children : null
 }
 
@@ -27,7 +27,7 @@ export default function Home() {
 		<>
 			<Laptop>
 				<section
-					id='home-laptop-layout'
+					id='home-laptop'
 					className='home-layout'>
 					<img
 						className='home-avatar'
@@ -41,17 +41,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(12.5rem, -8.333rem + 26.042vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(12.5rem, -8.333rem + 26.042vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(12.5rem, -8.333rem + 26.042vw, 18.75rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -61,7 +61,7 @@ export default function Home() {
 
 			<Tablet>
 				<section
-					id='home-tablet-layout'
+					id='home-tablet'
 					className='home-layout'>
 					<img
 						className='home-avatar'
@@ -75,17 +75,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(9.375rem, 6.25rem + 7.813vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(9.375rem, 6.25rem + 7.813vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 4.509rem + 13.393vw, 18.438rem)'
+							iconSize='clamp(9.375rem, 6.25rem + 7.813vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
@@ -95,7 +95,7 @@ export default function Home() {
 
 			<Mobile>
 				<section
-					id='home-mobile-layout'
+					id='home-mobile'
 					className='home-layout'>
 					<img
 						className='home-avatar'
@@ -109,17 +109,17 @@ export default function Home() {
 
 					<div className='home-descriptors'>
 						<LaptopIcon
-							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
+							iconSize='clamp(9.375rem, 5.357rem + 17.857vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<SuperheroIcon
-							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
+							iconSize='clamp(9.375rem, 5.357rem + 17.857vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>
 						<TennesseeIcon
-							iconSize='clamp(10.938rem, 8.18rem + 12.255vw, 14.063rem)'
+							iconSize='clamp(9.375rem, 5.357rem + 17.857vw, 12.5rem)'
 							iconColor='var(--secondary)'
 							fontColor='white'
 						/>

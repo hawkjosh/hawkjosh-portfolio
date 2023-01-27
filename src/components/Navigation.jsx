@@ -19,12 +19,12 @@ const Laptop = ({ children }) => {
 }
 
 const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1279 })
+	const isTablet = useMediaQuery({ minWidth: 640, maxWidth: 1279 })
 	return isTablet ? children : null
 }
 
 const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 767 })
+	const isMobile = useMediaQuery({ maxWidth: 639 })
 	return isMobile ? children : null
 }
 
@@ -50,14 +50,16 @@ export default function Navigation() {
 	const shadowStyle = shouldShowShadow ? 'shadow' : ''
 	const hiddenStyle = shouldHideHeader ? 'hidden' : ''
 
+	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
+
 	return (
 		<>
 			<Laptop>
-				<section id='nav-laptop-layout'>
+				<section id='nav-laptop'>
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
+								iconSize='32px'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -73,19 +75,19 @@ export default function Navigation() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
+								iconSize='27px'
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
+								iconSize='27px'
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
+								iconSize='27px'
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize='clamp(1.688rem, 0.835rem + 1.331vw, 2.25rem)'
+								iconSize='27px'
 								iconColor='white'
 							/>
 						</div>
@@ -94,15 +96,19 @@ export default function Navigation() {
 					<main>
 						<Outlet />
 					</main>
+
+					<footer>
+						<Footer />
+					</footer>
 				</section>
 			</Laptop>
 
 			<Tablet>
-				<section id='nav-tablet-layout'>
+				<section id='nav-tablet'>
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
+								iconSize='32px'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -128,7 +134,7 @@ export default function Navigation() {
 			</Tablet>
 
 			<Mobile>
-				<section id='nav-mobile-layout'>
+				<section id='nav-mobile'>
 					<nav className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-menu-container'>
 							<Menu />
@@ -136,7 +142,7 @@ export default function Navigation() {
 						<div className='nav-logo-container'>
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 							<LogoIcon
-								iconSize='clamp(2.25rem, 2.043rem + 0.92vw, 3rem)'
+								iconSize='32px'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
