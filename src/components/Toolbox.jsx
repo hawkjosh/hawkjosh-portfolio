@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
+
 import '../assets/styles/Toolbox.css'
 
 import CloseBtnIcon from '../components/page-icons/CloseBtnIcon.jsx'
@@ -109,7 +110,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='25px'
+									iconSize='clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem)'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -139,7 +140,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='20px'
+									iconSize='clamp(2rem, 1.75rem + 0.625vw, 2.25rem)'
 									iconColor='var(--secondary)'
 								/>
 							</button>
@@ -169,7 +170,7 @@ export default function Toolbox({ setShowToolbox }) {
 									setShowToolbox(false)
 								}}>
 								<CloseBtnIcon
-									iconSize='20px'
+									iconSize='clamp(1.75rem, 1.429rem + 1.429vw, 2rem)'
 									iconColor='var(--secondary)'
 								/>
 							</button>

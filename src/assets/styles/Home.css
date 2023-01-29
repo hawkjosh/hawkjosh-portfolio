@@ -31,8 +31,6 @@
 /* For Mobile Layout → 639px and below
 --------------------- */
 #home-mobile .home-divider hr {
-	/* margin-left: 17.5%; */
-	/* margin-right: 17.5%; */
 	margin: 4rem 15%;
 }
 #home-mobile .home-descriptors {

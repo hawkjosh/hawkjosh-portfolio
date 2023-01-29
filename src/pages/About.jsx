@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+
 import '../assets/styles/About.css'
+
 import Toolbox from '../components/Toolbox.jsx'
 import ToolboxIconLg from '../components/page-icons/ToolboxIconLg.jsx'
 import ResumeIconLg from '../components/page-icons/ResumeIconLg.jsx'

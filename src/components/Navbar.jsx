@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-// import { Link, Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import useScrollMagic from '../hooks/useScrollMagic'
 
 import '../assets/styles/Navbar.css'
 
 import Menu from './Menu.jsx'
-// import Footer from './Footer.jsx'
 import LogoIcon from './page-icons/LogoIcon.jsx'
 import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
 import GithubIcon from './page-icons/GithubIcon.jsx'
@@ -61,11 +59,54 @@ export default function Navbar() {
 	return (
 		<>
 			<Laptop>
-				{/* <section id='nav-laptop'> */}
-					<nav id='nav-laptop' className={`${shadowStyle} ${hiddenStyle}`}>
+				<nav
+					id='nav-laptop'
+					className={`${shadowStyle} ${hiddenStyle}`}>
+					<div className='nav-logo-container'>
+						<LogoIcon
+							iconSize='clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem)'
+							iconColor='var(--primary)'
+							iconBorder='white'
+						/>
+						<div className='nav-logo-title'>The Hawk's Nest</div>
+					</div>
+
+					<div className='nav-links-container'>
+						<Link to='/'>Home</Link>
+						<Link to='/about'>About</Link>
+						<Link to='/work-samples'>Work Samples</Link>
+						<Link to='/contact'>Contact</Link>
+					</div>
+
+					<div className='nav-social-container'>
+						<LinkedinIcon
+							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							iconColor='white'
+						/>
+						<GithubIcon
+							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							iconColor='white'
+						/>
+						<CodepenIcon
+							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							iconColor='white'
+						/>
+						<StackOverflowIcon
+							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							iconColor='white'
+						/>
+					</div>
+				</nav>
+			</Laptop>
+
+			<Tablet>
+				{isLargeScreen ? (
+					<nav
+						id='nav-tablet-large'
+						className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='2rem'
+								iconSize='clamp(3rem, 2rem + 1.563vw, 3.25rem)'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -81,137 +122,63 @@ export default function Navbar() {
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize='1.75rem'
+								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize='1.75rem'
+								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize='1.75rem'
+								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize='1.75rem'
+								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
 								iconColor='white'
 							/>
 						</div>
 					</nav>
-{/* 
-					<main>
-						<Outlet />
-					</main>
-
-					<footer>
-						<Footer />
-					</footer> */}
-				{/* </section> */}
-			</Laptop>
-
-			<Tablet>
-				{isLargeScreen ? (
-					// <section>
-						<nav id='nav-tablet-large' className={`${shadowStyle} ${hiddenStyle}`}>
-							<div className='nav-logo-container'>
-								<LogoIcon
-									iconSize='2rem'
-									iconColor='var(--primary)'
-									iconBorder='white'
-								/>
-								<div className='nav-logo-title'>The Hawk's Nest</div>
-							</div>
-
-							<div className='nav-links-container'>
-								<Link to='/'>Home</Link>
-								<Link to='/about'>About</Link>
-								<Link to='/work-samples'>Work Samples</Link>
-								<Link to='/contact'>Contact</Link>
-							</div>
-
-							<div className='nav-social-container'>
-								<LinkedinIcon
-									iconSize='1.75rem'
-									iconColor='white'
-								/>
-								<GithubIcon
-									iconSize='1.75rem'
-									iconColor='white'
-								/>
-								<CodepenIcon
-									iconSize='1.75rem'
-									iconColor='white'
-								/>
-								<StackOverflowIcon
-									iconSize='1.75rem'
-									iconColor='white'
-								/>
-							</div>
-						</nav>
-
-						// {/* <main>
-						// 	<Outlet />
-						// </main>
-
-						// <footer>
-						// 	<Footer />
-						// </footer> */}
-					// </section>
 				) : (
-					// <section id='nav-tablet-small'>
-						<nav id='nav-tablet-small' className={`${shadowStyle} ${hiddenStyle}`}>
-							<div className='nav-logo-container'>
-								<LogoIcon
-									iconSize='2rem'
-									iconColor='var(--primary)'
-									iconBorder='white'
-								/>
-								<div className='nav-logo-title'>The Hawk's Nest</div>
-							</div>
+					<nav
+						id='nav-tablet-small'
+						className={`${shadowStyle} ${hiddenStyle}`}>
+						<div className='nav-logo-container'>
+							<LogoIcon
+								iconSize='clamp(2.75rem, 2.333rem + 1.042vw, 3rem)'
+								iconColor='var(--primary)'
+								iconBorder='white'
+							/>
+							<div className='nav-logo-title'>The Hawk's Nest</div>
+						</div>
 
-							<div className='nav-links-container'>
-								<Link to='/'>Home</Link>
-								<Link to='/about'>About</Link>
-								<Link to='/work-samples'>Work Samples</Link>
-								<Link to='/contact'>Contact</Link>
-							</div>
-						</nav>
-
-						// {/* <main>
-						// 	<Outlet />
-						// </main>
-
-						// <footer>
-						// 	<Footer />
-						// </footer> */}
-					// </section>
+						<div className='nav-links-container'>
+							<Link to='/'>Home</Link>
+							<Link to='/about'>About</Link>
+							<Link to='/work-samples'>Work Samples</Link>
+							<Link to='/contact'>Contact</Link>
+						</div>
+					</nav>
 				)}
 			</Tablet>
 
 			<Mobile>
-				{/* <section id='nav-mobile'> */}
-					<nav id='nav-mobile' className={`${shadowStyle} ${hiddenStyle}`}>
-						<div className='nav-menu-container'>
-							<Menu />
-						</div>
-						<div className='nav-logo-container'>
-							<div className='nav-logo-title'>The Hawk's Nest</div>
-							<LogoIcon
-								iconSize='2rem'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
-						</div>
-					</nav>
+				<nav
+					id='nav-mobile'
+					className={`${shadowStyle} ${hiddenStyle}`}>
+					<div className='nav-menu-container'>
+						<Menu />
+					</div>
 
-					{/* <main>
-						<Outlet />
-					</main>
-
-					<footer>
-						<Footer />
-					</footer> */}
-				{/* </section> */}
+					<div className='nav-logo-container'>
+						<div className='nav-logo-title'>The Hawk's Nest</div>
+						<LogoIcon
+							iconSize='clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem)'
+							iconColor='var(--primary)'
+							iconBorder='white'
+						/>
+					</div>
+				</nav>
 			</Mobile>
 		</>
 	)

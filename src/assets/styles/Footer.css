@@ -7,8 +7,13 @@
 	background-color: var(--secondary);
 	border-top: solid white;
 }
+@media (max-width: 524px) {
+	#footer-container {
+		gap: 2.5rem;
+	}
+}
 
 .copywrite-text {
-	font-size: 1.25rem;
+	font-size: clamp(1.5rem, 0.7rem + 1.25vw, 2rem);
 	font-weight: 300;
 }

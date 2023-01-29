@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import '../assets/styles/Menu.css'
 
 import MenuIcon from '../components/page-icons/MenuIcon.jsx'
