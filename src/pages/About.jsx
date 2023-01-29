@@ -29,7 +29,7 @@ export default function AboutUpdate() {
 	return (
 		<>
 			<Laptop>
-				<section id='about-laptop'>
+				<main id='about-laptop'>
 					<div className='about-img'>
 						<img
 							src={profilePhoto}
@@ -82,12 +82,12 @@ export default function AboutUpdate() {
 					</div>
 
 					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
-				</section>
+				</main>
 			</Laptop>
 
 			<Tablet>
 				{isLargeScreen ? (
-					<section id='about-tablet-large'>
+					<main id='about-tablet-large'>
 						<div className='about-img'>
 							<img
 								src={profilePhoto}
@@ -141,9 +141,9 @@ export default function AboutUpdate() {
 						</div>
 
 						{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
-					</section>
+					</main>
 				) : (
-					<section id='about-tablet-small'>
+					<main id='about-tablet-small'>
 						<div className='about-img'>
 							<img
 								src={profilePhoto}
@@ -205,12 +205,12 @@ export default function AboutUpdate() {
 						</div>
 
 						{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
-					</section>
+					</main>
 				)}
 			</Tablet>
 
 			<Mobile>
-				<section id='about-mobile'>
+				<main id='about-mobile'>
 					<div className='about-img'>
 						<img
 							src={profilePhoto}
@@ -263,7 +263,7 @@ export default function AboutUpdate() {
 					</div>
 
 					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
-				</section>
+				</main>
 			</Mobile>
 		</>
 	)

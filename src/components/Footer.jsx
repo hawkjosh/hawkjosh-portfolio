@@ -14,16 +14,16 @@ export default function Footer() {
 	return (
 		<>
 			{isLargeScreen ? (
-				<section className='footer-container'>
+				<footer id='footer-container'>
 					<div className='copywrite-text'>© 2022 Joshua Wilde Hawk</div>
 					<HawkIcon
 						iconSize='3.75rem'
 						iconColor='white'
 						iconBorder='var(--secondary)'
 					/>
-				</section>
+				</footer>
 			) : (
-				<section className='footer-container'>
+				<footer id='footer-container'>
 					<LinkedinIcon
 						iconSize='1.75rem'
 						iconColor='white'
@@ -40,7 +40,7 @@ export default function Footer() {
 						iconSize='1.75rem'
 						iconColor='white'
 					/>
-				</section>
+				</footer>
 			)}
 		</>
 	)

@@ -99,7 +99,7 @@ export default function Toolbox({ setShowToolbox }) {
 	return (
 		<>
 			<Laptop>
-				<section
+				<main
 					id='toolbox-laptop-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
@@ -125,11 +125,11 @@ export default function Toolbox({ setShowToolbox }) {
 							))}
 						</div>
 					</div>
-				</section>
+				</main>
 			</Laptop>
 
 			<Tablet>
-				<section
+				<main
 					id='toolbox-tablet-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
@@ -155,11 +155,11 @@ export default function Toolbox({ setShowToolbox }) {
 							))}
 						</div>
 					</div>
-				</section>
+				</main>
 			</Tablet>
 
 			<Mobile>
-				<section
+				<main
 					id='toolbox-mobile-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
@@ -185,7 +185,7 @@ export default function Toolbox({ setShowToolbox }) {
 							))}
 						</div>
 					</div>
-				</section>
+				</main>
 			</Mobile>
 		</>
 	)

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import { Link, Outlet } from 'react-router-dom'
+// import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import useScrollMagic from '../hooks/useScrollMagic'
 
 import '../assets/styles/Navbar.css'
 
 import Menu from './Menu.jsx'
-import Footer from './Footer.jsx'
+// import Footer from './Footer.jsx'
 import LogoIcon from './page-icons/LogoIcon.jsx'
 import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
 import GithubIcon from './page-icons/GithubIcon.jsx'
@@ -60,8 +61,8 @@ export default function Navbar() {
 	return (
 		<>
 			<Laptop>
-				<section id='nav-laptop'>
-					<nav className={`${shadowStyle} ${hiddenStyle}`}>
+				{/* <section id='nav-laptop'> */}
+					<nav id='nav-laptop' className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<LogoIcon
 								iconSize='2rem'
@@ -97,21 +98,21 @@ export default function Navbar() {
 							/>
 						</div>
 					</nav>
-
+{/* 
 					<main>
 						<Outlet />
 					</main>
 
 					<footer>
 						<Footer />
-					</footer>
-				</section>
+					</footer> */}
+				{/* </section> */}
 			</Laptop>
 
 			<Tablet>
 				{isLargeScreen ? (
-					<section id='nav-tablet-large'>
-						<nav className={`${shadowStyle} ${hiddenStyle}`}>
+					// <section>
+						<nav id='nav-tablet-large' className={`${shadowStyle} ${hiddenStyle}`}>
 							<div className='nav-logo-container'>
 								<LogoIcon
 									iconSize='2rem'
@@ -148,17 +149,17 @@ export default function Navbar() {
 							</div>
 						</nav>
 
-						<main>
-							<Outlet />
-						</main>
+						// {/* <main>
+						// 	<Outlet />
+						// </main>
 
-						<footer>
-							<Footer />
-						</footer>
-					</section>
+						// <footer>
+						// 	<Footer />
+						// </footer> */}
+					// </section>
 				) : (
-					<section id='nav-tablet-small'>
-						<nav className={`${shadowStyle} ${hiddenStyle}`}>
+					// <section id='nav-tablet-small'>
+						<nav id='nav-tablet-small' className={`${shadowStyle} ${hiddenStyle}`}>
 							<div className='nav-logo-container'>
 								<LogoIcon
 									iconSize='2rem'
@@ -176,20 +177,20 @@ export default function Navbar() {
 							</div>
 						</nav>
 
-						<main>
-							<Outlet />
-						</main>
+						// {/* <main>
+						// 	<Outlet />
+						// </main>
 
-						<footer>
-							<Footer />
-						</footer>
-					</section>
+						// <footer>
+						// 	<Footer />
+						// </footer> */}
+					// </section>
 				)}
 			</Tablet>
 
 			<Mobile>
-				<section id='nav-mobile'>
-					<nav className={`${shadowStyle} ${hiddenStyle}`}>
+				{/* <section id='nav-mobile'> */}
+					<nav id='nav-mobile' className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-menu-container'>
 							<Menu />
 						</div>
@@ -203,14 +204,14 @@ export default function Navbar() {
 						</div>
 					</nav>
 
-					<main>
+					{/* <main>
 						<Outlet />
 					</main>
 
 					<footer>
 						<Footer />
-					</footer>
-				</section>
+					</footer> */}
+				{/* </section> */}
 			</Mobile>
 		</>
 	)

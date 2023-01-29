@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './assets/styles/App.css'
 
-import Navbar from './components/Navbar.jsx'
+// import Navbar from './components/Navbar.jsx'
+import Layout from './components/Layout.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import WorkSamples from './pages/WorkSamples.jsx'
@@ -15,7 +16,7 @@ export default function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Navbar />}>
+					element={<Layout />}>
 					<Route
 						index
 						element={<Home />}

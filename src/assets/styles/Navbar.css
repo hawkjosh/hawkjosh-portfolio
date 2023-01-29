@@ -19,11 +19,11 @@ nav.hidden {
 	transform: translateY(-110%);
 }
 
-footer {
+/* footer {
 	background-color: var(--secondary);
 	border-top: solid white;
 }
-
+ */
 .nav-logo-container {
 	min-height: 5rem;
 	display: flex;
@@ -70,13 +70,13 @@ footer {
 
 /* For Laptop Layout → 1280px and above
 --------------------- */
-#nav-laptop {
+/* #nav-laptop {
 	min-height: 100vh;
 	min-height: 100dvh;
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-}
+} */
 #nav-laptop .nav-logo-container {
 	flex-basis: 32.5%;
 	justify-content: flex-start;
@@ -92,13 +92,13 @@ footer {
 
 /* For Large Tablet Layout → 1024px to 1279px
 --------------------- */
-#nav-tablet-large {
+/* #nav-tablet-large {
 	min-height: 100vh;
 	min-height: 100dvh;
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-}
+} */
 #nav-tablet-large .nav-logo-container {
 	flex-basis: 32.5%;
 	justify-content: flex-start;
@@ -114,13 +114,13 @@ footer {
 
 /* For Small Tablet Layout → 640px to 1023px
 --------------------- */
-#nav-tablet-small {
+/* #nav-tablet-small {
 	min-height: 100vh;
 	min-height: 100dvh;
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-}
+} */
 #nav-tablet-small .nav-logo-container {
 	flex-basis: 35%;
 	justify-content: flex-start;
@@ -136,13 +136,13 @@ footer {
 
 /* For Mobile Layout → 639px and below
 --------------------- */
-#nav-mobile {
+/* #nav-mobile {
 	min-height: 100vh;
 	min-height: 100dvh;
 
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-}
+} */
 #nav-mobile .nav-menu-container {
 	min-height: 5rem;
 	flex-basis: 20%;

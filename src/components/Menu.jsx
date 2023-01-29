@@ -28,7 +28,7 @@ export default function Menu() {
 
 	return (
 		<>
-			<section>
+			<main>
 				<button onClick={() => setShowMenu(!showMenu)}>
 					<MenuIcon
 						iconSize='30px'
@@ -48,7 +48,7 @@ export default function Menu() {
 						))}
 					</div>
 				)}
-			</section>
+			</main>
 		</>
 	)
 }

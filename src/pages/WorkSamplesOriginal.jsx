@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/styles/WorkSamples.css'
-import RightArrowIcon from '../components/page-icons/RightArrowIcon.jsx'
-import LeftArrowIcon from '../components/page-icons/LeftArrowIcon.jsx'
+import rightArrow from '../assets/images/right-arrow.svg'
+import leftArrow from '../assets/images/left-arrow.svg'
 
 export default function WorkSamples() {
   let activeIndex = 0
@@ -52,23 +52,15 @@ export default function WorkSamples() {
 							<h2>Social Network</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
-						{/* <div className='article-nav-section article-section'>
-							<div className='article-nav-button' onClick={() => handleLeftClick()} >
-								<LeftArrowIcon iconSize='150px' iconColor='rgba(255, 255, 255, 0.75)'/>
-							</div>
-							<div className='article-nav-button' onClick={() => handleRightClick()} >
-								<RightArrowIcon iconSize='150px' iconColor='rgba(255, 255, 255, 0.75)' />
-							</div>
-						</div> */}
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<div className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
-							</div>
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
+							</button>
 						</div>
 					</div>
 				</article>
@@ -80,14 +72,14 @@ export default function WorkSamples() {
 							<h2>Message Forum</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<button className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
 							</button>
 						</div>
 					</div>
@@ -100,14 +92,14 @@ export default function WorkSamples() {
 							<h2>Song Search</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<button className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
 							</button>
 						</div>
 					</div>
@@ -120,14 +112,14 @@ export default function WorkSamples() {
 							<h2>Note Taker</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>A clean, crisp, and very usefuly note-taking app that uses an express.js backend that allows users to save and retrieve note data from a JSON file.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<button className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
 							</button>
 						</div>
 					</div>
@@ -140,14 +132,14 @@ export default function WorkSamples() {
 							<h2>Weather Dashboard</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the OpenWeatherMap API.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<button className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
 							</button>
 						</div>
 					</div>
@@ -160,14 +152,14 @@ export default function WorkSamples() {
 							<h2>Workday Scheduler</h2>
 						</div>
 						<div className='article-description-section article-section'>
-							<p>A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, omnis alias, exercitationem modi ipsum dolorem minus ratione sequi autem odit animi, labore laboriosam consequatur facilis delectus molestias.</p>
 						</div>
 						<div className='article-nav-section article-section'>
-							<button className='article-nav-button' onClick={handleLeftClick}>
-								<LeftArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleLeftClick}>
+								<img src={leftArrow} alt='Left Arrow Icon' />
 							</button>
-							<button className='article-nav-button' onClick={handleRightClick}>
-								<RightArrowIcon iconSize='75px' iconColor='rgba(255, 255, 255, 0.75)' />
+							<button className='article-nav-button' type='button' onClick={handleRightClick}>
+								<img src={rightArrow} alt='Right Arrow Icon' />
 							</button>
 						</div>
 					</div>

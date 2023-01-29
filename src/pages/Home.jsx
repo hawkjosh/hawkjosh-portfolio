@@ -26,7 +26,7 @@ export default function Home() {
 	return (
 		<>
 			<Laptop>
-				<section
+				<main
 					id='home-laptop'
 					className='home-layout'>
 					<img
@@ -56,11 +56,11 @@ export default function Home() {
 							fontColor='white'
 						/>
 					</div>
-				</section>
+				</main>
 			</Laptop>
 
 			<Tablet>
-				<section
+				<main
 					id='home-tablet'
 					className='home-layout'>
 					<img
@@ -90,11 +90,11 @@ export default function Home() {
 							fontColor='white'
 						/>
 					</div>
-				</section>
+				</main>
 			</Tablet>
 
 			<Mobile>
-				<section
+				<main
 					id='home-mobile'
 					className='home-layout'>
 					<img
@@ -124,7 +124,7 @@ export default function Home() {
 							fontColor='white'
 						/>
 					</div>
-				</section>
+				</main>
 			</Mobile>
 		</>
 	)
