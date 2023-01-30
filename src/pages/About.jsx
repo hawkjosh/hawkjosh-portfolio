@@ -65,22 +65,18 @@ export default function AboutUpdate() {
 					</div>
 
 					<div className='about-btns'>
-						<button
+						<ToolboxIconLg
+							iconSize='16rem'
+							iconColor='white'
 							onClick={() => {
 								setShowToolbox(true)
-							}}>
-							<ToolboxIconLg
-								iconSize='16rem'
-								iconColor='white'
-							/>
-						</button>
+							}}
+						/>
 
-						<button>
-							<ResumeIconLg
-								iconSize='16rem'
-								iconColor='white'
-							/>
-						</button>
+						<ResumeIconLg
+							iconSize='16rem'
+							iconColor='white'
+						/>
 					</div>
 
 					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
@@ -124,22 +120,18 @@ export default function AboutUpdate() {
 						</div>
 
 						<div className='about-btns'>
-							<button
+							<ToolboxIconLg
+								iconSize='15rem'
+								iconColor='white'
 								onClick={() => {
 									setShowToolbox(true)
-								}}>
-								<ToolboxIconLg
-									iconSize='15rem'
-									iconColor='white'
-								/>
-							</button>
+								}}
+							/>
 
-							<button>
-								<ResumeIconLg
-									iconSize='15rem'
-									iconColor='white'
-								/>
-							</button>
+							<ResumeIconLg
+								iconSize='15rem'
+								iconColor='white'
+							/>
 						</div>
 
 						{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
@@ -188,22 +180,18 @@ export default function AboutUpdate() {
 						</div>
 
 						<div className='about-btns'>
-							<button
+							<ToolboxIconLg
+								iconSize='15rem'
+								iconColor='white'
 								onClick={() => {
 									setShowToolbox(true)
-								}}>
-								<ToolboxIconLg
-									iconSize='15rem'
-									iconColor='white'
-								/>
-							</button>
+								}}
+							/>
 
-							<button>
-								<ResumeIconLg
-									iconSize='15rem'
-									iconColor='white'
-								/>
-							</button>
+							<ResumeIconLg
+								iconSize='15rem'
+								iconColor='white'
+							/>
 						</div>
 
 						{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
@@ -246,22 +234,18 @@ export default function AboutUpdate() {
 					</div>
 
 					<div className='about-btns'>
-						<button
+						<ToolboxIconLg
+							iconSize='14rem'
+							iconColor='white'
 							onClick={() => {
 								setShowToolbox(true)
-							}}>
-							<ToolboxIconLg
-								iconSize='14rem'
-								iconColor='white'
-							/>
-						</button>
+							}}
+						/>
 
-						<button>
-							<ResumeIconLg
-								iconSize='14rem'
-								iconColor='white'
-							/>
-						</button>
+						<ResumeIconLg
+							iconSize='14rem'
+							iconColor='white'
+						/>
 					</div>
 
 					{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}

@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function RightArrow({ iconSize, iconColor }) {
+export default function RightArrow({ iconSize, iconColor, onClick }) {
 	return (
 		<svg
 			id='right-arrow-icon'
 			width={iconSize}
 			fill={iconColor}
+			onClick={onClick}
 			viewBox='0 0 512 322'>
 			<path
 				transform='translate(0 -95)'

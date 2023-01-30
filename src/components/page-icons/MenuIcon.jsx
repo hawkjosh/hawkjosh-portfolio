@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function MenuIcon({ iconSize, iconColor }) {
+export default function MenuIcon({ iconSize, iconColor, onClick }) {
 	return (
 		<svg
 			id='menu-icon'
 			width={iconSize}
 			stroke={iconColor}
+			onClick={onClick}
 			fill='none'
 			strokeWidth='15'
 			strokeLinecap='round'

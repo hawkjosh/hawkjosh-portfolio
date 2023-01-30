@@ -30,12 +30,11 @@ export default function Menu() {
 	return (
 		<>
 			<main>
-				<button onClick={() => setShowMenu(!showMenu)}>
-					<MenuIcon
-						iconSize='30px'
-						iconColor='white'
-					/>
-				</button>
+				<MenuIcon
+					iconSize='30px'
+					iconColor='white'
+					onClick={() => setShowMenu(!showMenu)}
+				/>
 				{showMenu && (
 					<div className='menu-list'>
 						{menuItems.map((item, index) => (

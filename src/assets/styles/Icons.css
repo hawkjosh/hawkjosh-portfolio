@@ -18,15 +18,9 @@
 	}
 }
 
-#hawk-icon:hover {
-	fill: var(--secondary);
-	stroke: white;
-	stroke-width: 50;
-	cursor: grab;
-}
-
 #menu-icon:hover {
 	stroke: var(--primary);
+	cursor: pointer;
 }
 
 #linkedin-icon:hover {
@@ -49,6 +43,13 @@
 	stroke-width: 8;
 }
 
+#hawk-icon:hover {
+	fill: var(--secondary);
+	stroke: white;
+	stroke-width: 50;
+	cursor: grab;
+}
+
 #toolbox-btn-lg-icon:hover,
 #toolbox-btn-sm-icon:hover {
 	fill: var(--secondary);
@@ -66,6 +67,7 @@
 	fill: white;
 	stroke: var(--secondary);
 	stroke-width: 3;
+	cursor: pointer;
 }
 
 #laptop-icon:hover {
@@ -98,5 +100,6 @@
 
 #right-arrow-icon:hover,
 #left-arrow-icon:hover {
-	fill: white;
+	fill: var(--secondary);
+	cursor: pointer;
 }

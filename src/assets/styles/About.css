@@ -7,7 +7,7 @@
 .about-img img {
 	justify-self: center;
 	border: 3.75px solid white;
-	border-radius: 12.5%;
+	border-radius: 2rem;
 	background-color: var(--secondary);
 	box-shadow: 6px 6px 7.5px 4px rgba(0, 0, 0, 0.4);
 	padding: 7.5px;

@@ -1,18 +1,11 @@
-button {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-}
-
 .menu-list {
 	position: absolute;
 	top: 4rem;
 	left: 1.5rem;
-	z-index: 1;
 	padding: 0.5rem;
 	background-color: hsla(210, 29%, 24%, 0.75);
 	border: 2.5px solid white;
-	border-radius: 10%;
+	border-radius: 1.5rem;
 }
 
 .menu-list-item {

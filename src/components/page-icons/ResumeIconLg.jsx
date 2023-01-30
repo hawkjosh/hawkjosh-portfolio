@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function ResumeIconLg({ iconSize, iconColor }) {
+export default function ResumeIconLg({ iconSize, iconColor, onClick }) {
 	return (
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
@@ -12,6 +12,7 @@ export default function ResumeIconLg({ iconSize, iconColor }) {
 				width={iconSize}
 				fill={iconColor}
 				stroke={iconColor}
+				onClick={onClick}
 				viewBox='-7 -7 105 33'>
 				<path
 					strokeWidth='1.15'

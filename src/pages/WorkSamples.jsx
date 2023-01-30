@@ -19,7 +19,7 @@ const samples = [
 		status: 'active',
 		image: socialNetwork,
 		title: 'Social Network',
-		description: `An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.`,
+		info: `An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.`,
 		website: 'https://stayintouchnetwork.herokuapp.com/',
 		github: 'https://github.com/hawkjosh/Social-Network',
 	},
@@ -28,45 +28,45 @@ const samples = [
 		status: 'inactive',
 		image: messageForum,
 		title: 'Message Forum',
-		description: `A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.`,
-		website: 'https://stayintouchnetwork.herokuapp.com/',
-		github: 'https://github.com/hawkjosh/Social-Network',
+		info: `A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.`,
+		website: 'https://glacial-tor-15581.herokuapp.com/',
+		github: 'https://github.com/hawkjosh/Message-Forum',
 	},
 	{
 		index: '2',
 		status: 'inactive',
 		image: songSearch,
 		title: 'Song Search',
-		description: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
-		website: 'https://stayintouchnetwork.herokuapp.com/',
-		github: 'https://github.com/hawkjosh/Social-Network',
+		info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
+		website: 'https://hawkjosh.github.io/Song-Search',
+		github: 'https://github.com/hawkjosh/Song-Search',
 	},
 	{
 		index: '3',
 		status: 'inactive',
 		image: noteTaker,
 		title: 'Note Taker',
-		description: `A clean, crisp, and very usefuly note-taking app that uses an express.js backend that allows users to save and retrieve note data from a JSON file.`,
-		website: 'https://stayintouchnetwork.herokuapp.com/',
-		github: 'https://github.com/hawkjosh/Social-Network',
+		info: `A clean, crisp, and very usefuly note-taking app that uses an express.js backend that allows users to save and retrieve note data from a JSON file.`,
+		website: 'https://secure-ravine-29968.herokuapp.com/',
+		github: 'https://github.com/hawkjosh/Note-Taker',
 	},
 	{
 		index: '4',
 		status: 'inactive',
 		image: weatherDashboard,
 		title: 'Weather Dashboard',
-		description: `A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the OpenWeatherMap API.`,
-		website: 'https://stayintouchnetwork.herokuapp.com/',
-		github: 'https://github.com/hawkjosh/Social-Network',
+		info: `A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the OpenWeatherMap API.`,
+		website: 'https://hawkjosh.github.io/Weather-Dashboard',
+		github: 'https://github.com/hawkjosh/Weather-Dashboard',
 	},
 	{
 		index: '5',
 		status: 'inactive',
 		image: workdayScheduler,
 		title: 'Workday Scheduler',
-		description: `A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.`,
-		website: 'https://stayintouchnetwork.herokuapp.com/',
-		github: 'https://github.com/hawkjosh/Social-Network',
+		info: `A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.`,
+		website: 'https://hawkjosh.github.io/Workday-Scheduler',
+		github: 'https://github.com/hawkjosh/Workday-Scheduler',
 	},
 ]
 
@@ -86,177 +86,137 @@ const Mobile = ({ children }) => {
 }
 
 export default function WorkSamples() {
-	let activeIndex = 0
+	let activeImgIndex = 0
+	let activeInfoIndex = 0
+	let activeLinkIndex = 0
 
-	const slides = document.getElementsByTagName('article')
+	const imgSlides = document.getElementsByClassName('image-section')
+	const infoSlides = document.getElementsByClassName('info-section')
+	const linkSlides = document.getElementsByClassName('link-section')
 
 	const handleLeftClick = () => {
-		const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1
+		const nextImgIndex = activeImgIndex - 1 >= 0 ? activeImgIndex - 1 : imgSlides.length - 1
+		const nextInfoIndex = activeInfoIndex - 1 >= 0 ? activeInfoIndex - 1 : infoSlides.length - 1
+		const nextLinkIndex = activeLinkIndex - 1 >= 0 ? activeLinkIndex - 1 : linkSlides.length - 1
 
-		const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`)
+		const currImgSlide = document.querySelector(`.image-section[data-index='${activeImgIndex}']`)
+		const currInfoSlide = document.querySelector(`.info-section[data-index='${activeInfoIndex}']`)
+		const currLinkSlide = document.querySelector(`.link-section[data-index='${activeLinkIndex}']`)
 
-		const nextSlide = document.querySelector(`[data-index="${nextIndex}"]`)
+		const nextImgSlide = document.querySelector(`.image-section[data-index='${nextImgIndex}']`)
+		const nextInfoSlide = document.querySelector(`.info-section[data-index='${nextInfoIndex}']`)
+		const nextLinkSlide = document.querySelector(`.link-section[data-index='${nextLinkIndex}']`)
 
-		currentSlide.dataset.status = 'after'
-
-		nextSlide.dataset.status = 'becoming-active-from-before'
+		currImgSlide.dataset.status = 'inactive'
+		currInfoSlide.dataset.status = 'inactive'
+		currLinkSlide.dataset.status = 'inactive'
 
 		setTimeout(() => {
-			nextSlide.dataset.status = 'active'
-			activeIndex = nextIndex
+			nextImgSlide.dataset.status = 'active'
+			nextInfoSlide.dataset.status = 'active'
+			nextLinkSlide.dataset.status = 'active'
+			activeImgIndex = nextImgIndex
+			activeInfoIndex = nextInfoIndex
+			activeLinkIndex = nextLinkIndex
 		})
 	}
 
 	const handleRightClick = () => {
-		const nextIndex = activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0
+		const nextImgIndex = activeImgIndex + 1 <= imgSlides.length - 1 ? activeImgIndex + 1 : 0
+		const nextInfoIndex = activeInfoIndex + 1 <= infoSlides.length - 1 ? activeInfoIndex + 1 : 0
+		const nextLinkIndex = activeLinkIndex + 1 <= linkSlides.length - 1 ? activeLinkIndex + 1 : 0
 
-		const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`)
+		const currImgSlide = document.querySelector(`.image-section[data-index='${activeImgIndex}']`)
+		const currInfoSlide = document.querySelector(`.info-section[data-index='${activeInfoIndex}']`)
+		const currLinkSlide = document.querySelector(`.link-section[data-index='${activeLinkIndex}']`)
 
-		const nextSlide = document.querySelector(`[data-index="${nextIndex}"]`)
+		const nextImgSlide = document.querySelector(`.image-section[data-index='${nextImgIndex}']`)
+		const nextInfoSlide = document.querySelector(`.info-section[data-index='${nextInfoIndex}']`)
+		const nextLinkSlide = document.querySelector(`.link-section[data-index='${nextLinkIndex}']`)
 
-		currentSlide.dataset.status = 'before'
-
-		nextSlide.dataset.status = 'becoming-active-from-after'
+		currImgSlide.dataset.status = 'inactive'
+		currInfoSlide.dataset.status = 'inactive'
+		currLinkSlide.dataset.status = 'inactive'
 
 		setTimeout(() => {
-			nextSlide.dataset.status = 'active'
-			activeIndex = nextIndex
+			nextImgSlide.dataset.status = 'active'
+			nextInfoSlide.dataset.status = 'active'
+			nextLinkSlide.dataset.status = 'active'
+			activeImgIndex = nextImgIndex
+			activeInfoIndex = nextInfoIndex
+			activeLinkIndex = nextLinkIndex
 		})
 	}
 
 	return (
 		<>
-			<Laptop>
-				<main id='work-samples-laptop'>
-					{samples.map((sample) => (
-						<article
-							data-index={sample.index}
-							data-status={sample.status}>
-							<div className='article-image-section article-section' />
-							<div className='article-info-section'>
-								<div className='article-title-section article-section'>
-									<h2>{sample.title}</h2>
-								</div>
-								<div className='article-description-section article-section'>
-									<p>{sample.description}</p>
-								</div>
-								<div className='article-nav-section article-section'>
-									<button
-										className='article-nav-button'
-										onClick={handleLeftClick}>
-										<LeftArrowIcon
-											iconSize='75px'
-											iconColor='rgba(255, 255, 255, 0.75)'
-										/>
-									</button>
-									<div
-										className='article-nav-button'
-										onClick={handleRightClick}>
-										<RightArrowIcon
-											iconSize='75px'
-											iconColor='rgba(255, 255, 255, 0.75)'
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-					))}
-				</main>
-			</Laptop>
-
-			<Tablet>
-				<main
-					id='work-samples-tablet'
-					className='work-samples'>
-					{samples.map((sample) => (
-						<article
-							data-index={sample.index}
-							data-status={sample.status}>
-							<div className='article-image-section article-section' />
-							<div className='article-info-section'>
-								<div className='article-title-section article-section'>
-									<h2>{sample.title}</h2>
-								</div>
-								<div className='article-description-section article-section'>
-									<p>{sample.description}</p>
-								</div>
-								<div className='article-nav-section article-section'>
-									<button
-										className='article-nav-button'
-										onClick={handleLeftClick}>
-										<LeftArrowIcon
-											iconSize='75px'
-											iconColor='rgba(255, 255, 255, 0.75)'
-										/>
-									</button>
-									<div
-										className='article-nav-button'
-										onClick={handleRightClick}>
-										<RightArrowIcon
-											iconSize='75px'
-											iconColor='rgba(255, 255, 255, 0.75)'
-										/>
-									</div>
-								</div>
-							</div>
-						</article>
-					))}
-				</main>
-			</Tablet>
 
 			<Mobile>
 				<main id='work-samples-mobile'>
-					{samples.map((sample) => (
-						<article
-							data-index={sample.index}
-							data-status={sample.status}>
-							<img
-								className='article-image-section'
-								src={sample.image}
-								alt='Work Sample Image'
+					{/* <div> */}
+						<div style={{ flexBasis: '50%', display: 'flex' }}>
+							<LeftArrowIcon
+								iconSize='50px'
+								iconColor='white'
+								onClick={handleLeftClick}
 							/>
-							<div className='article-title-section'>
-								<h2>{sample.title}</h2>
-							</div>
-							<div className='article-description-section'>
-								<p>{sample.description}</p>
-								<div className='btns-container'>
+							{samples.map((sample) => (
+								<div
+									className='image-section'
+									key={sample.index}
+									data-index={sample.index}
+									data-status={sample.status}
+									>
+									<img src={sample.image} alt="Work Sample Image" />
+								</div>
+							))}
+							<RightArrowIcon
+								iconSize='50px'
+								iconColor='white'
+								onClick={handleRightClick}
+							/>
+						</div>
+						<div style={{flex: 1}}>
+							{samples.map((sample) => (
+								<div
+									className='info-section'
+									key={sample.index}
+									data-index={sample.index}
+									data-status={sample.status}
+									>
+									<h2>{sample.title}</h2>
+									<p>{sample.info}</p>
+								</div>
+							))}
+						</div>
+					{/* </div> */}
+					<div style={{flexBasis: '10%', width: '100%'}}>
+						{samples.map((sample) => (
+							<div
+								className='link-section'
+								key={sample.index}
+								data-index={sample.index}
+								data-status={sample.status}
+								>
+								<div className='link-btn'>
 									<a
-										className='link-btn'
 										href={sample.website}
 										target='_blank'
-										rel='noreferrer'>
-										Web App
+										rel='noreferrer'
+										>Web App
 									</a>
+								</div>
+								<div className='link-btn'>
 									<a
-										className='link-btn'
 										href={sample.github}
 										target='_blank'
-										rel='noreferrer'>
-										GitHub Repo
+										rel='noreferrer'
+										>GitHub Repo
 									</a>
 								</div>
 							</div>
-							<div className='article-nav-section'>
-								<button
-									className='article-nav-button'
-									onClick={handleLeftClick}>
-									<LeftArrowIcon
-										iconSize='50px'
-										iconColor='rgba(255, 255, 255, 0.75)'
-									/>
-								</button>
-								<div
-									className='article-nav-button'
-									onClick={handleRightClick}>
-									<RightArrowIcon
-										iconSize='50px'
-										iconColor='rgba(255, 255, 255, 0.75)'
-									/>
-								</div>
-							</div>
-						</article>
-					))}
+						))}
+					</div>
 				</main>
 			</Mobile>
 		</>

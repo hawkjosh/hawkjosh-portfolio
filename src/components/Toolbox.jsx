@@ -105,15 +105,13 @@ export default function Toolbox({ setShowToolbox }) {
 					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
-							<button
+							<CloseBtnIcon
+								iconSize='clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem)'
+								iconColor='var(--secondary)'
 								onClick={() => {
 									setShowToolbox(false)
-								}}>
-								<CloseBtnIcon
-									iconSize='clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem)'
-									iconColor='var(--secondary)'
-								/>
-							</button>
+								}}
+							/>
 						</div>
 						<div className='toolbox-icons-container'>
 							{icons.map((icon, index) => (
@@ -135,15 +133,13 @@ export default function Toolbox({ setShowToolbox }) {
 					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
-							<button
+							<CloseBtnIcon
+								iconSize='clamp(2rem, 1.75rem + 0.625vw, 2.25rem)'
+								iconColor='var(--secondary)'
 								onClick={() => {
 									setShowToolbox(false)
-								}}>
-								<CloseBtnIcon
-									iconSize='clamp(2rem, 1.75rem + 0.625vw, 2.25rem)'
-									iconColor='var(--secondary)'
-								/>
-							</button>
+								}}
+							/>
 						</div>
 						<div className='toolbox-icons-container'>
 							{icons.map((icon, index) => (
@@ -165,15 +161,13 @@ export default function Toolbox({ setShowToolbox }) {
 					className='toolbox-background'>
 					<div className='toolbox-window'>
 						<div className='toolbox-close-btn'>
-							<button
+							<CloseBtnIcon
+								iconSize='clamp(1.75rem, 1.429rem + 1.429vw, 2rem)'
+								iconColor='var(--secondary)'
 								onClick={() => {
 									setShowToolbox(false)
-								}}>
-								<CloseBtnIcon
-									iconSize='clamp(1.75rem, 1.429rem + 1.429vw, 2rem)'
-									iconColor='var(--secondary)'
-								/>
-							</button>
+								}}
+							/>
 						</div>
 						<div className='toolbox-icons-container'>
 							{icons.map((icon, index) => (
