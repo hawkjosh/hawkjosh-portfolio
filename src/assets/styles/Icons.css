@@ -97,9 +97,3 @@
 	stroke-width: 8;
 	cursor: grab;
 }
-
-#right-arrow-icon:hover,
-#left-arrow-icon:hover {
-	fill: var(--secondary);
-	cursor: pointer;
-}

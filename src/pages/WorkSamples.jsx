@@ -178,150 +178,80 @@ export default function WorkSamples() {
 		})
 	}
 
-	const isSmallScreen = useMediaQuery({ maxWidth: 474 })
-
 	return (
 		<>
 			<Mobile>
-				{isSmallScreen ? (
-					<main id='work-samples-mobile-small'>
-						<div className='left-arrow-icon'>
-							<LeftArrowIcon
-								iconSize='50px'
-								iconColor='white'
-								onClick={handleLeftClick}
+				<main id='work-samples-mobile'>
+					<div className='image-section'>
+						<div
+							className='image-container'
+							data-index='0'
+							data-status='active'>
+							<img
+								src={socialNetwork}
+								alt='Work Sample Image'
 							/>
 						</div>
-						<div className='right-arrow-icon'>
-							<RightArrowIcon
-								iconSize='50px'
-								iconColor='white'
-								onClick={handleRightClick}
+						<div
+							className='image-container'
+							data-index='1'
+							data-status='inactive'>
+							<img
+								src={messageForum}
+								alt='Work Sample Image'
 							/>
 						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='0'
-								data-status='active'>
-								<img
-									src={socialNetwork}
-									alt='Work Sample Image'
-								/>
-							</div>
+						<div
+							className='image-container'
+							data-index='2'
+							data-status='inactive'>
+							<img
+								src={songSearch}
+								alt='Work Sample Image'
+							/>
 						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='1'
-								data-status='inactive'>
-								<img
-									src={messageForum}
-									alt='Work Sample Image'
-								/>
-							</div>
+						<div
+							className='image-container'
+							data-index='3'
+							data-status='inactive'>
+							<img
+								src={noteTaker}
+								alt='Work Sample Image'
+							/>
 						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='2'
-								data-status='inactive'>
-								<img
-									src={songSearch}
-									alt='Work Sample Image'
-								/>
-							</div>
+						<div
+							className='image-container'
+							data-index='4'
+							data-status='inactive'>
+							<img
+								src={weatherDashboard}
+								alt='Work Sample Image'
+							/>
 						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='3'
-								data-status='inactive'>
-								<img
-									src={noteTaker}
-									alt='Work Sample Image'
-								/>
-							</div>
+						<div
+							className='image-container'
+							data-index='5'
+							data-status='inactive'>
+							<img
+								src={workdayScheduler}
+								alt='Work Sample Image'
+							/>
 						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='4'
-								data-status='inactive'>
-								<img
-									src={weatherDashboard}
-									alt='Work Sample Image'
-								/>
-							</div>
-						</div>
-						<div className='image-section'>
-							<div
-								className='image-container'
-								data-index='5'
-								data-status='inactive'>
-								<img
-									src={workdayScheduler}
-									alt='Work Sample Image'
-								/>
-							</div>
-						</div>
+					</div>
 
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='0'
-								data-status='active'>
-								<h2>Social Network</h2>
-								<p>An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.</p>
-							</div>
-						</div>
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='1'
-								data-status='inactive'>
-								<h2>Message Forum</h2>
-								<p>A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.</p>
-							</div>
-						</div>
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='2'
-								data-status='inactive'>
-								<h2>Song Search</h2>
-								<p>A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.</p>
-							</div>
-						</div>
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='3'
-								data-status='inactive'>
-								<h2>Note Taker</h2>
-								<p>A clean, crisp, and very usefuly note-taking app that uses an express.js backend that allows users to save and retrieve note data from a JSON file.</p>
-							</div>
-						</div>
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='4'
-								data-status='inactive'>
-								<h2>Weather Dashboard</h2>
-								<p>A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the OpenWeatherMap API.</p>
-							</div>
-						</div>
-						<div className='info-section'>
-							<div
-								className='info-container'
-								data-index='5'
-								data-status='inactive'>
-								<h2>Workday Scheduler</h2>
-								<p>A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.</p>
-							</div>
-						</div>
-
-						<div className='link-section'>
+					<div className='info-section'>
+						<div
+							className='info-container'
+							data-index='0'
+							data-status='active'>
+							<h2>Social Network</h2>
+							<p>
+								An efficient and polished full-stack social network app that
+								uses React.js on the client-side with Tailwind frameworks for
+								styling. The server-side is built with Express.js including
+								MongoDB as the ODM, GraphQL for runtime API's, and JWT for
+								authentication.
+							</p>
 							<div
 								className='link-container'
 								data-index='0'
@@ -342,7 +272,17 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-						<div className='link-section'>
+						<div
+							className='info-container'
+							data-index='1'
+							data-status='inactive'>
+							<h2>Message Forum</h2>
+							<p>
+								A unique and fun message forum app that follows the MVC paradigm
+								in its architectural structure, using Handlebars.js as the
+								templating language, Sequelize as the ORM, and the
+								Express-Session npm package for authentication.
+							</p>
 							<div
 								className='link-container'
 								data-index='1'
@@ -363,7 +303,15 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-						<div className='link-section'>
+						<div
+							className='info-container'
+							data-index='2'
+							data-status='inactive'>
+							<h2>Song Search</h2>
+							<p>
+								A small but powerful music search tool that uses third party
+								API's to retrieve song information via RESTful CRUD routes.
+							</p>
 							<div
 								className='link-container'
 								data-index='2'
@@ -384,7 +332,16 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-						<div className='link-section'>
+						<div
+							className='info-container'
+							data-index='3'
+							data-status='inactive'>
+							<h2>Note Taker</h2>
+							<p>
+								A clean, crisp, and very usefuly note-taking app that uses an
+								express.js backend that allows users to save and retrieve note
+								data from a JSON file.
+							</p>
 							<div
 								className='link-container'
 								data-index='3'
@@ -405,7 +362,16 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-						<div className='link-section'>
+						<div
+							className='info-container'
+							data-index='4'
+							data-status='inactive'>
+							<h2>Weather Dashboard</h2>
+							<p>
+								A nifty weather widget app that runs in the browser and
+								retrieves current as well as forectast weather info via the
+								OpenWeatherMap API.
+							</p>
 							<div
 								className='link-container'
 								data-index='4'
@@ -426,7 +392,15 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-						<div className='link-section'>
+						<div
+							className='info-container'
+							data-index='5'
+							data-status='inactive'>
+							<h2>Workday Scheduler</h2>
+							<p>
+								A simple calendar/planner app that runs in the browser and
+								features dynamically updated HTML and CSS powered by jQuery.
+							</p>
 							<div
 								className='link-container'
 								data-index='5'
@@ -447,9 +421,9 @@ export default function WorkSamples() {
 								</a>
 							</div>
 						</div>
-					</main>
-				) : (
-					<main id='work-samples-mobile'>
+					</div>
+
+					<div className='nav-section'>
 						<div className='left-arrow-icon'>
 							<LeftArrowIcon
 								iconSize='50px'
@@ -457,20 +431,7 @@ export default function WorkSamples() {
 								onClick={handleLeftClick}
 							/>
 						</div>
-						<div className='image-section'>
-							{samples.map((sample) => (
-								<div
-									className='image-container'
-									key={sample.index}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<img
-										src={sample.image}
-										alt='Work Sample Image'
-									/>
-								</div>
-							))}
-						</div>
+
 						<div className='right-arrow-icon'>
 							<RightArrowIcon
 								iconSize='50px'
@@ -478,44 +439,8 @@ export default function WorkSamples() {
 								onClick={handleRightClick}
 							/>
 						</div>
-						<div className='info-section'>
-							{samples.map((sample) => (
-								<div
-									className='info-container'
-									key={sample.index}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<h2>{sample.title}</h2>
-									<p>{sample.info}</p>
-								</div>
-							))}
-						</div>
-						<div className='link-section'>
-							{samples.map((sample) => (
-								<div
-									className='link-container'
-									key={sample.index}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<a
-										className='link-btn'
-										href={sample.website}
-										target='_blank'
-										rel='noreferrer'>
-										Web App
-									</a>
-									<a
-										className='link-btn'
-										href={sample.github}
-										target='_blank'
-										rel='noreferrer'>
-										GitHub Repo
-									</a>
-								</div>
-							))}
-						</div>
-					</main>
-				)}
+					</div>
+				</main>
 			</Mobile>
 		</>
 	)
