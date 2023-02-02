@@ -16,8 +16,9 @@
 }
 
 .home-divider hr {
+	height: 0.15rem;
 	background-color: white;
-	border-bottom-width: 0.1rem;
+	border-style: none;
 	margin: 4rem 12.5%;
 }
 

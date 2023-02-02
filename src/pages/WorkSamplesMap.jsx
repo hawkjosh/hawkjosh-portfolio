@@ -63,7 +63,7 @@ const samples = [
 		title: 'Note Taker',
 		info: `A clean, crisp, and very usefuly note-taking app that uses an express.js backend that allows users to save and retrieve note data from a JSON file.`,
 		linkClass: 'link-container4',
-		website: 'https://secure-ravine-29968.herokuapp.com/',
+		website: 'https://hawkjosh-note-taker.netlify.app/',
 		github: 'https://github.com/hawkjosh/Note-Taker',
 	},
 	{
@@ -228,61 +228,63 @@ export default function WorkSamples() {
 						</div>
 	
 						<div className='info-nav-vertical'>
-							<div className='info-section'>
-								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.infoClass} info-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<h2>{sample.title}</h2>
-										<p>{sample.info}</p>
-									</div>
-								))}
-							</div>
-		
-							<div className='link-section'>
-								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.linkClass} link-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<a
-											className='link-btn'
-											href={sample.website}
-											target='_blank'
-											rel='noreferrer'>
-											Web App
-										</a>
-										<a
-											className='link-btn'
-											href={sample.github}
-											target='_blank'
-											rel='noreferrer'>
-											GitHub Repo
-										</a>
-									</div>
-								))}
-							</div>
-						</div>
-
-						<div className='nav-section'>
-							<div
-							className='left-arrow-icon'
-							onClick={handleLeftClick}>
-								<LeftArrowIcon
-									iconSize='75px'
-									iconColor='white'
-								/>
+							<div className='info-link-vertical'>
+								<div className='info-section'>
+									{samples.map((sample) => (
+										<div
+											key={sample.index}
+											className={`${sample.infoClass} info-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<h2>{sample.title}</h2>
+											<p>{sample.info}</p>
+										</div>
+									))}
+								</div>
+			
+								<div className='link-section'>
+									{samples.map((sample) => (
+										<div
+											key={sample.index}
+											className={`${sample.linkClass} link-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<a
+												className='link-btn'
+												href={sample.website}
+												target='_blank'
+												rel='noreferrer'>
+												Web App
+											</a>
+											<a
+												className='link-btn'
+												href={sample.github}
+												target='_blank'
+												rel='noreferrer'>
+												GitHub Repo
+											</a>
+										</div>
+									))}
+								</div>
 							</div>
 
-							<div className='right-arrow-icon'
-							onClick={handleRightClick}>
-								<RightArrowIcon
-									iconSize='75px'
-									iconColor='white'
-								/>
+							<div className='nav-section'>
+								<div
+								className='left-arrow-icon'
+								onClick={handleLeftClick}>
+									<LeftArrowIcon
+										iconSize='75px'
+										iconColor='white'
+									/>
+								</div>
+
+								<div className='right-arrow-icon'
+								onClick={handleRightClick}>
+									<RightArrowIcon
+										iconSize='75px'
+										iconColor='white'
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
