@@ -10,6 +10,7 @@ import socialNetwork from '../assets/images/work-samples/social_network.png'
 import messageForum from '../assets/images/work-samples/message_forum.png'
 import songSearch from '../assets/images/work-samples/song_search.png'
 import noteTaker from '../assets/images/work-samples/note_taker.png'
+import noteTakerUpdate from '../assets/images/work-samples/note_taker_new.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler.png'
 
@@ -57,7 +58,7 @@ const samples = [
 		index: '3',
 		status: 'inactive',
 		imageClass: 'image-container4',
-		image: noteTaker,
+		image: noteTakerUpdate,
 		alt: 'Note Taker Image',
 		infoClass: 'info-container4',
 		title: 'Note Taker',
