@@ -16,7 +16,7 @@ export default function Footer() {
 		<>
 			{isLargeScreen ? (
 				<footer id='footer-container'>
-					<div className='copywrite-text'>© 2022 Joshua Wilde Hawk</div>
+					<div className='copywrite-text'>© {new Date().getFullYear()} Joshua Wilde Hawk</div>
 					<HawkIcon
 						iconSize='clamp(3.25rem, 2.45rem + 1.25vw, 3.75rem)'
 						iconColor='white'
