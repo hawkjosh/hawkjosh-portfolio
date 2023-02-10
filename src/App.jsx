@@ -6,8 +6,7 @@ import './assets/styles/App.css'
 import Layout from './components/Layout.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
-// import WorkSamples from './pages/WorkSamples.jsx'
-import WorkSamplesMap from './pages/WorkSamplesMap.jsx'
+import WorkSamples from './pages/WorkSamples.jsx'
 import Contact from './pages/Contact.jsx'
 import NoPage from './pages/NoPage.jsx'
 
@@ -26,13 +25,9 @@ export default function App() {
 						path='/about'
 						element={<About />}
 					/>
-					{/* <Route
-						path='/work-samples'
-						element={<WorkSamples />}
-					/> */}
 					<Route
 						path='/work-samples'
-						element={<WorkSamplesMap />}
+						element={<WorkSamples />}
 					/>
 					<Route
 						path='/contact'
