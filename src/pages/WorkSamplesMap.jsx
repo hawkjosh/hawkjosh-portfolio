@@ -5,14 +5,18 @@ import '../assets/styles/WorkSamplesMap.css'
 
 import RightArrowIcon from '../components/page-icons/RightArrowIcon.jsx'
 import LeftArrowIcon from '../components/page-icons/LeftArrowIcon.jsx'
-
 import socialNetwork from '../assets/images/work-samples/social_network.png'
 import messageForum from '../assets/images/work-samples/message_forum.png'
 import songSearch from '../assets/images/work-samples/song_search.png'
 import noteTaker from '../assets/images/work-samples/note_taker.png'
-import noteTakerUpdate from '../assets/images/work-samples/note_taker_new.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler.png'
+import courseTracker from '../assets/images/work-samples/course_tracker.png'
+import miniGames from '../assets/images/work-samples/mini_games.png'
+
+const bonusLink = () => (
+	<a href='https://hawkjosh-note-taker.onrender.com' target='_blank' rel='noreferrer'>HERE</a>
+)
 
 const samples = [
 	{
@@ -62,9 +66,9 @@ const samples = [
 		alt: 'Note Taker Image',
 		infoClass: 'info-container4',
 		title: 'Note Taker',
-		info: `A clean, crisp, and very usefuly note-taking app that uses an express.js backend allowing users to save and retrieve note data from a JSON file.`,
+		info: `A clean, crisp, and very usefuly note-taking app that uses localStorage to save and retrieve note data. BONUS: Check out an alternate version of this app at https://hawkjosh-note-taker.onrender.com that uses an express.js backend to save and retrieve notes from a JSON file.`,
 		linkClass: 'link-container4',
-		website: 'https://hawkjosh-note-taker.onrender.com/',
+		website: 'https://hawkjosh-note-taker.netlify.app/',
 		github: 'https://github.com/hawkjosh/vite-note-taker',
 	},
 	{
@@ -92,6 +96,32 @@ const samples = [
 		linkClass: 'link-container6',
 		website: 'https://hawkjosh.github.io/Workday-Scheduler',
 		github: 'https://github.com/hawkjosh/Workday-Scheduler',
+	},
+	{
+		index: '6',
+		status: 'inactive',
+		imageClass: 'image-container7',
+		image: courseTracker,
+		alt: 'Course Tracker Image',
+		infoClass: 'info-container7',
+		title: 'Course Tracker',
+		info: `A somewhat niche but very useful app that keeps track of online developer courses that you have purchased or have your eye on purchasing. It uses Netlify Functions to connect with an Airtable database where the user's information is stored.`,
+		linkClass: 'link-container7',
+		website: 'https://hawkjosh-course-tracker.netlify.app',
+		github: 'https://github.com/hawkjosh/course-tracker',
+	},
+	{
+		index: '7',
+		status: 'inactive',
+		imageClass: 'image-container8',
+		image: miniGames,
+		alt: 'Mini Games Image',
+		infoClass: 'info-container8',
+		title: 'Mini Games',
+		info: `A fun and entertaining way to kill some time, this app is a collection of some classic games built with the basics - HTML, CSS, and JavaScript.`,
+		linkClass: 'link-container8',
+		website: 'https://hawkjosh-mini-games.netlify.app',
+		github: 'https://github.com/hawkjosh/mini-games',
 	},
 ]
 
