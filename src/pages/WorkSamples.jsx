@@ -11,7 +11,7 @@ import songSearch from '../assets/images/work-samples/song_search.png'
 import noteTaker from '../assets/images/work-samples/note_taker.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler.png'
-// import courseTracker from '../assets/images/work-samples/course_tracker.png'
+import courseTracker from '../assets/images/work-samples/course_tracker.png'
 import miniGames from '../assets/images/work-samples/mini_games.png'
 
 const samples = [
@@ -94,19 +94,19 @@ const samples = [
 		website: 'https://hawkjosh.github.io/Workday-Scheduler',
 		github: 'https://github.com/hawkjosh/Workday-Scheduler',
 	},
-	// {
-	// 	index: '6',
-	// 	status: 'inactive',
-	// 	imageClass: 'image-container7',
-	// 	image: courseTracker,
-	// 	alt: 'Course Tracker Image',
-	// 	infoClass: 'info-container7',
-	// 	title: 'Course Tracker',
-	// 	info: `A somewhat niche but very useful app that keeps track of online developer courses that you have purchased or have your eye on purchasing. It uses Netlify Functions to connect with an Airtable database where the user's information is stored.`,
-	// 	linkClass: 'link-container7',
-	// 	website: 'https://hawkjosh-course-tracker.netlify.app',
-	// 	github: 'https://github.com/hawkjosh/course-tracker',
-	// },
+	{
+		index: '6',
+		status: 'inactive',
+		imageClass: 'image-container7',
+		image: courseTracker,
+		alt: 'Course Tracker Image',
+		infoClass: 'info-container7',
+		title: 'Course Tracker',
+		info: `A somewhat niche but very useful app that keeps track of online developer courses that you have purchased or have your eye on purchasing. It uses Netlify Functions to connect with an Airtable database where the user's information is stored.`,
+		linkClass: 'link-container7',
+		website: 'https://hawkjosh-course-tracker.netlify.app',
+		github: 'https://github.com/hawkjosh/course-tracker',
+	},
 	{
 		index: '7',
 		status: 'inactive',
