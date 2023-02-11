@@ -14,15 +14,6 @@ import workdayScheduler from '../assets/images/work-samples/workday_scheduler.pn
 import courseTracker from '../assets/images/work-samples/course_tracker.png'
 import miniGames from '../assets/images/work-samples/mini_games.png'
 
-const bonusLink = () => (
-	<a
-		href='https://hawkjosh-note-taker.onrender.com'
-		target='_blank'
-		rel='noreferrer'>
-		HERE
-	</a>
-)
-
 const samples = [
 	{
 		index: '0',
