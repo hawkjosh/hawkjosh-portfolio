@@ -1,19 +1,24 @@
-// Function to shrink the navbar when scrolling
+import { useEffect } from 'react'
 
-window.addEventListener('DOMContentLoaded', (event) => {
-	var navbarShrink = function () {
-		const navbarCollapsible = document.body.querySelector('#mainNav')
-		if (!navbarCollapsible) {
-			return
+export default function useNavbarShrink() {
+	useEffect(() => {
+		var navbarShrink = function () {
+			const navShrinkElement = document.body.querySelector('nav')
+			if (!navShrinkElement) {
+				return
+			}
+			if (window.scrollY === 0) {
+				navShrinkElement.classList.remove('navbar-shrink')
+			} else {
+				navShrinkElement.classList.add('navbar-shrink')
+			}
 		}
-		if (window.scrollY === 0) {
-			navbarCollapsible.classList.remove('navbar-shrink')
-		} else {
-			navbarCollapsible.classList.add('navbar-shrink')
+
+		navbarShrink()
+		document.addEventListener('scroll', navbarShrink)
+
+		return () => {
+			document.removeEventListener('scroll', navbarShrink)
 		}
-	}
-
-	navbarShrink()
-
-	document.addEventListener('scroll', navbarShrink)
-})
+	}, [])
+}

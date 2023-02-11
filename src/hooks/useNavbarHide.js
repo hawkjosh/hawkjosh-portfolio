@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { throttle } from 'lodash'
 
-export default function useScrollMagic(callback) {
+export default function useNavbarHide(callback) {
 	const [, setScrollPosition] = useState(0)
 	let prevScrollTop = 0
 

@@ -3,14 +3,16 @@ import { Outlet } from 'react-router-dom'
 
 import '../assets/styles/Layout.css'
 
-import Navbar from './Navbar.jsx'
+// import NavbarHide from './NavbarHide.jsx'
+import NavbarShrink from './NavbarShrink.jsx'
 import Footer from './Footer.jsx'
 
 export default function Layout() {
 	return (
 		<>
 			<section>
-				<Navbar />
+				{/* <NavbarHide /> */}
+				<NavbarShrink />
 				<Outlet />
 				<Footer />
 			</section>

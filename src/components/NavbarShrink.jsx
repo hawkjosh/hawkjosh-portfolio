@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
-import useScrollMagic from '../hooks/useScrollMagic'
+import useNavbarShrink from '../hooks/useNavbarShrink'
 
-import '../assets/styles/Navbar.css'
+import '../assets/styles/NavbarShrink.css'
 
 import Menu from './Menu.jsx'
 import LogoIcon from './page-icons/LogoIcon.jsx'
@@ -27,41 +27,17 @@ const Mobile = ({ children }) => {
 	return isMobile ? children : null
 }
 
-export default function Navbar() {
-	const [shouldHideHeader, setShouldHideHeader] = useState(false)
-
-	const [shouldShowShadow, setShouldShowShadow] = useState(false)
-
-	const MINIMUM_SCROLL = 25
-
-	const TIMEOUT_DELAY = 100
-
-	useScrollMagic((callbackData) => {
-		const { prevScrollTop, currScrollTop } = callbackData
-
-		const scrollDown = prevScrollTop < currScrollTop
-
-		const minScroll = currScrollTop > MINIMUM_SCROLL
-
-		setShouldShowShadow(currScrollTop > 15)
-
-		setTimeout(() => {
-			setShouldHideHeader(scrollDown && minScroll)
-		}, TIMEOUT_DELAY)
-	})
-
-	const shadowStyle = shouldShowShadow ? 'shadow' : ''
-
-	const hiddenStyle = shouldHideHeader ? 'hidden' : ''
-
+export default function NavbarShrink() {
 	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
+
+	useNavbarShrink()
 
 	return (
 		<>
 			<Laptop>
 				<nav
 					id='nav-laptop'
-					className={`${shadowStyle} ${hiddenStyle}`}>
+					className=''>
 					<div className='nav-logo-container'>
 						<LogoIcon
 							iconSize='clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem)'
@@ -103,7 +79,7 @@ export default function Navbar() {
 				{isLargeScreen ? (
 					<nav
 						id='nav-tablet-large'
-						className={`${shadowStyle} ${hiddenStyle}`}>
+						className=''>
 						<div className='nav-logo-container'>
 							<LogoIcon
 								iconSize='clamp(3rem, 2rem + 1.563vw, 3.25rem)'
@@ -142,7 +118,7 @@ export default function Navbar() {
 				) : (
 					<nav
 						id='nav-tablet-small'
-						className={`${shadowStyle} ${hiddenStyle}`}>
+						className=''>
 						<div className='nav-logo-container'>
 							<LogoIcon
 								iconSize='clamp(2.75rem, 2.333rem + 1.042vw, 3rem)'
@@ -165,7 +141,7 @@ export default function Navbar() {
 			<Mobile>
 				<nav
 					id='nav-mobile'
-					className={`${shadowStyle} ${hiddenStyle}`}>
+					className=''>
 					<div className='nav-menu-container'>
 						<Menu />
 					</div>
