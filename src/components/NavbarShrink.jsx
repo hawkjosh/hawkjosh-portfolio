@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 import useNavbarShrink from '../hooks/useNavbarShrink'
@@ -6,7 +6,8 @@ import useNavbarShrink from '../hooks/useNavbarShrink'
 import '../assets/styles/NavbarShrink.css'
 
 import Menu from './Menu.jsx'
-import LogoIcon from './page-icons/LogoIcon.jsx'
+
+import NavLogoIcon from './page-icons/NavLogoIcon.jsx'
 import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
 import GithubIcon from './page-icons/GithubIcon.jsx'
 import CodepenIcon from './page-icons/CodepenIcon.jsx'
@@ -33,15 +34,11 @@ export default function NavbarShrink() {
 	useNavbarShrink()
 
 	return (
-		<>
+		<Fragment>
 			<Laptop>
 				<nav id='nav-laptop'>
 					<div className='nav-logo-container'>
-						<LogoIcon
-							className='nav-logo-icon'
-							iconColor='var(--primary)'
-							iconBorder='white'
-						/>
+						<NavLogoIcon className='nav-logo-icon' />
 						<div className='nav-logo-title'>The Hawk's Nest</div>
 					</div>
 
@@ -69,22 +66,10 @@ export default function NavbarShrink() {
 					</div>
 
 					<div className='nav-social-container'>
-						<LinkedinIcon
-							className='nav-social-icon'
-							iconColor='white'
-						/>
-						<GithubIcon
-							className='nav-social-icon'
-							iconColor='white'
-						/>
-						<CodepenIcon
-							className='nav-social-icon'
-							iconColor='white'
-						/>
-						<StackOverflowIcon
-							className='nav-social-icon'
-							iconColor='white'
-						/>
+						<LinkedinIcon className='nav-social-icon' />
+						<GithubIcon className='nav-social-icon' />
+						<CodepenIcon className='nav-social-icon' />
+						<StackOverflowIcon className='nav-social-icon' />
 					</div>
 				</nav>
 			</Laptop>
@@ -93,11 +78,7 @@ export default function NavbarShrink() {
 				{isLargeScreen ? (
 					<nav id='nav-tablet-large'>
 						<div className='nav-logo-container'>
-							<LogoIcon
-								className='nav-logo-icon'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
+							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
 
@@ -125,32 +106,16 @@ export default function NavbarShrink() {
 						</div>
 
 						<div className='nav-social-container'>
-							<LinkedinIcon
-								className='nav-social-icon'
-								iconColor='white'
-							/>
-							<GithubIcon
-								className='nav-social-icon'
-								iconColor='white'
-							/>
-							<CodepenIcon
-								className='nav-social-icon'
-								iconColor='white'
-							/>
-							<StackOverflowIcon
-								className='nav-social-icon'
-								iconColor='white'
-							/>
+							<LinkedinIcon className='nav-social-icon' />
+							<GithubIcon className='nav-social-icon' />
+							<CodepenIcon className='nav-social-icon' />
+							<StackOverflowIcon className='nav-social-icon' />
 						</div>
 					</nav>
 				) : (
 					<nav id='nav-tablet-small'>
 						<div className='nav-logo-container'>
-							<LogoIcon
-								className='nav-logo-icon'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
+							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
 
@@ -188,15 +153,10 @@ export default function NavbarShrink() {
 
 					<div className='nav-logo-container'>
 						<div className='nav-logo-title'>The Hawk's Nest</div>
-						<LogoIcon
-							className='nav-logo-icon'
-							// iconSize='clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem)'
-							iconColor='var(--primary)'
-							iconBorder='white'
-						/>
+						<NavLogoIcon className='nav-logo-icon' />
 					</div>
 				</nav>
 			</Mobile>
-		</>
+		</Fragment>
 	)
 }

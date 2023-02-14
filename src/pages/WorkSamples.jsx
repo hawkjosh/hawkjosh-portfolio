@@ -304,21 +304,15 @@ export default function WorkSamples() {
 
 							<div className='nav-section'>
 								<div
-									className='left-arrow-icon'
+									className='left-arrow-icon-container'
 									onClick={handleLeftClick}>
-									<LeftArrowIcon
-										iconSize='75px'
-										iconColor='white'
-									/>
+									<LeftArrowIcon className='arrow-icon' />
 								</div>
 
 								<div
-									className='right-arrow-icon'
+									className='right-arrow-icon-container'
 									onClick={handleRightClick}>
-									<RightArrowIcon
-										iconSize='75px'
-										iconColor='white'
-									/>
+									<RightArrowIcon className='arrow-icon' />
 								</div>
 							</div>
 						</div>
@@ -347,21 +341,15 @@ export default function WorkSamples() {
 
 							<div className='nav-section'>
 								<div
-									className='left-arrow-icon'
+									className='left-arrow-icon-container'
 									onClick={handleLeftClick}>
-									<LeftArrowIcon
-										iconSize='75px'
-										iconColor='white'
-									/>
+									<LeftArrowIcon className='arrow-icon' />
 								</div>
 
 								<div
-									className='right-arrow-icon'
+									className='right-arrow-icon-container'
 									onClick={handleRightClick}>
-									<RightArrowIcon
-										iconSize='75px'
-										iconColor='white'
-									/>
+									<RightArrowIcon className='arrow-icon' />
 								</div>
 							</div>
 						</div>
@@ -475,7 +463,7 @@ export default function WorkSamples() {
 												rel='noreferrer'>
 												Bonus
 											</a>
-											)}
+										)}
 									</div>
 								))}
 							</div>
@@ -483,21 +471,15 @@ export default function WorkSamples() {
 
 						<div className='nav-section'>
 							<div
-								className='left-arrow-icon'
+								className='left-arrow-icon-container'
 								onClick={handleLeftClick}>
-								<LeftArrowIcon
-									iconSize='75px'
-									iconColor='white'
-								/>
+								<LeftArrowIcon className='arrow-icon' />
 							</div>
 
 							<div
-								className='right-arrow-icon'
+								className='right-arrow-icon-container'
 								onClick={handleRightClick}>
-								<RightArrowIcon
-									iconSize='75px'
-									iconColor='white'
-								/>
+								<RightArrowIcon className='arrow-icon' />
 							</div>
 						</div>
 					</main>
@@ -557,14 +539,14 @@ export default function WorkSamples() {
 										GitHub Repo
 									</a>
 									{sample.bonus && (
-											<a
-												className='link-btn bonus-link'
-												href={sample.bonus}
-												target='_blank'
-												rel='noreferrer'>
-												Bonus
-											</a>
-											)}
+										<a
+											className='link-btn bonus-link'
+											href={sample.bonus}
+											target='_blank'
+											rel='noreferrer'>
+											Bonus
+										</a>
+									)}
 								</div>
 							))}
 						</div>
@@ -572,21 +554,15 @@ export default function WorkSamples() {
 
 					<div className='nav-section'>
 						<div
-							className='left-arrow-icon'
+							className='left-arrow-icon-container'
 							onClick={handleLeftClick}>
-							<LeftArrowIcon
-								iconSize='clamp(3.125rem, 1.116rem + 8.929vw, 4.688rem)'
-								iconColor='white'
-							/>
+							<LeftArrowIcon className='arrow-icon' />
 						</div>
 
 						<div
-							className='right-arrow-icon'
+							className='right-arrow-icon-container'
 							onClick={handleRightClick}>
-							<RightArrowIcon
-								iconSize='clamp(3.125rem, 1.116rem + 8.929vw, 4.688rem)'
-								iconColor='white'
-							/>
+							<RightArrowIcon className='arrow-icon' />
 						</div>
 					</div>
 				</main>

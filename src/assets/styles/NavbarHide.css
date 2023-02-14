@@ -26,6 +26,25 @@ nav.hidden {
 	gap: 1rem;
 }
 
+.nav-logo-icon {
+	fill: var(--primary);
+	stroke: white;
+}
+.nav-logo-icon:hover {
+	cursor: grab;
+	animation: rotate 1.5s linear infinite;
+	fill: white;
+	stroke: var(--primary);
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
@@ -44,11 +63,10 @@ nav.hidden {
 	border-left: solid white;
 }
 
-.nav-links-container a {
+.nav-link {
 	text-transform: uppercase;
 }
-
-.nav-links-container a:hover {
+.nav-link:hover {
 	color: var(--primary);
 }
 
@@ -61,6 +79,14 @@ nav.hidden {
 	padding: 0rem 2.5%;
 }
 
+.nav-social-icon {
+	stroke: white;
+}
+.nav-social-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
 /* For Laptop Layout → 1280px and above
 --------------------- */
 #nav-laptop .nav-logo-container {
@@ -68,18 +94,30 @@ nav.hidden {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
+#nav-laptop .nav-logo-icon {
+	width: clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem);
+}
+
+#nav-laptop .nav-logo-title {
+	font-size: clamp(1.75rem, 0.917rem + 1.042vw, 2rem);
+}
+
 #nav-laptop .nav-links-container {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
+
+#nav-laptop .nav-link {
+	font-size: clamp(1.25rem, 0.583rem + 0.833vw, 1.45rem);
+}
+
 #nav-laptop .nav-social-container {
 	flex-basis: 25%;
 }
-#nav-laptop .nav-links-container a {
-	font-size: clamp(1.25rem, 0.583rem + 0.833vw, 1.45rem);
-}
-#nav-laptop .nav-logo-title {
-	font-size: clamp(1.75rem, 0.917rem + 1.042vw, 2rem);
+
+#nav-laptop .nav-social-icon {
+	width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
 }
 
 /* For Large Tablet Layout → 1024px to 1279px
@@ -89,19 +127,32 @@ nav.hidden {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
+#nav-tablet-large .nav-logo-icon {
+	width: clamp(3rem, 2rem + 1.563vw, 3.25rem);
+}
+
+#nav-tablet-large .nav-logo-title {
+	font-size: clamp(1.5rem, 0.5rem + 1.563vw, 1.75rem);
+}
+
 #nav-tablet-large .nav-links-container {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
+
+#nav-tablet-large .nav-link {
+	font-size: clamp(1.05rem, 0.25rem + 1.25vw, 1.25rem);
+}
+
 #nav-tablet-large .nav-social-container {
 	flex-basis: 25%;
 }
-#nav-tablet-large .nav-links-container a {
-	font-size: clamp(1.05rem, 0.25rem + 1.25vw, 1.25rem);
+
+#nav-tablet-large .nav-social-icon {
+	width: clamp(1.75rem, 0.75rem + 1.563vw, 2rem);
 }
-#nav-tablet-large .nav-logo-title {
-	font-size: clamp(1.5rem, 0.5rem + 1.563vw, 1.75rem);
-}
+
 /* For Small Tablet Layout → 640px to 1023px
 --------------------- */
 #nav-tablet-small .nav-logo-container {
@@ -109,18 +160,26 @@ nav.hidden {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
+#nav-tablet-small .nav-logo-icon {
+	width: clamp(2.75rem, 2.333rem + 1.042vw, 3rem);
+}
+
+#nav-tablet-small .nav-logo-title {
+	font-size: clamp(1.25rem, 0.833rem + 1.042vw, 1.5rem);
+}
+
 #nav-tablet-small .nav-links-container {
 	flex-basis: 57.5%;
 	justify-content: flex-end;
 	padding-right: 2.5%;
 	gap: 1.5rem;
 }
-#nav-tablet-small .nav-links-container a {
+
+#nav-tablet-small .nav-link {
 	font-size: clamp(0.85rem, 0.517rem + 0.833vw, 1.05rem);
 }
-#nav-tablet-small .nav-logo-title {
-	font-size: clamp(1.25rem, 0.833rem + 1.042vw, 1.5rem);
-}
+
 /* For Mobile Layout → 639px and below
 --------------------- */
 #nav-mobile .nav-menu-container {
@@ -131,11 +190,17 @@ nav.hidden {
 	align-items: center;
 	padding-left: 1.5rem;
 }
+
 #nav-mobile .nav-logo-container {
 	flex-basis: 80%;
 	justify-content: flex-end;
 	padding-right: 1.5rem;
 }
+
 #nav-mobile .nav-logo-title {
 	font-size: clamp(1rem, 0.679rem + 1.429vw, 1.25rem);
+}
+
+#nav-mobile .nav-logo-icon {
+	width: clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem);
 }

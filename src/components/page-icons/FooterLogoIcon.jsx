@@ -1,14 +1,10 @@
 import React from 'react'
-import '../../assets/styles/Icons.css'
 
-export default function HawkIcon({ iconSize, iconColor, iconBorder }) {
+export default function FooterLogoIcon({ ...props }) {
 	return (
 		<svg
-			id='hawk-icon'
-			width={iconSize}
-			fill={iconColor}
-			stroke={iconBorder}
-			strokeWidth='20'
+			{...props}
+			strokeWidth='50'
 			viewBox='0 0 700 700'
 			preserveAspectRatio='xMidYMid meet'>
 			<path

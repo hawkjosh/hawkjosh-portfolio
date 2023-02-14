@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 import useNavbarHide from '../hooks/useNavbarHide'
@@ -6,7 +6,7 @@ import useNavbarHide from '../hooks/useNavbarHide'
 import '../assets/styles/NavbarHide.css'
 
 import Menu from './Menu.jsx'
-import LogoIcon from './page-icons/LogoIcon.jsx'
+import NavLogoIcon from './page-icons/NavLogoIcon.jsx'
 import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
 import GithubIcon from './page-icons/GithubIcon.jsx'
 import CodepenIcon from './page-icons/CodepenIcon.jsx'
@@ -57,44 +57,44 @@ export default function NavbarHide() {
 	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
 
 	return (
-		<>
+		<Fragment>
 			<Laptop>
 				<nav
 					id='nav-laptop'
 					className={`${shadowStyle} ${hiddenStyle}`}>
 					<div className='nav-logo-container'>
-						<LogoIcon
-							iconSize='clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem)'
-							iconColor='var(--primary)'
-							iconBorder='white'
-						/>
+						<NavLogoIcon className='nav-logo-icon' />
 						<div className='nav-logo-title'>The Hawk's Nest</div>
 					</div>
 
 					<div className='nav-links-container'>
-						<Link to='/'>Home</Link>
-						<Link to='/about'>About</Link>
-						<Link to='/work-samples'>Work Samples</Link>
-						<Link to='/contact'>Contact</Link>
+						<Link
+							className='nav-link'
+							to='/'>
+							Home
+						</Link>
+						<Link
+							className='nav-link'
+							to='/about'>
+							About
+						</Link>
+						<Link
+							className='nav-link'
+							to='/work-samples'>
+							Work Samples
+						</Link>
+						<Link
+							className='nav-link'
+							to='/contact'>
+							Contact
+						</Link>
 					</div>
 
 					<div className='nav-social-container'>
-						<LinkedinIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
-							iconColor='white'
-						/>
-						<GithubIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
-							iconColor='white'
-						/>
-						<CodepenIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
-							iconColor='white'
-						/>
-						<StackOverflowIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
-							iconColor='white'
-						/>
+						<LinkedinIcon className='nav-social-icon' />
+						<GithubIcon className='nav-social-icon' />
+						<CodepenIcon className='nav-social-icon' />
+						<StackOverflowIcon className='nav-social-icon' />
 					</div>
 				</nav>
 			</Laptop>
@@ -105,38 +105,38 @@ export default function NavbarHide() {
 						id='nav-tablet-large'
 						className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
-							<LogoIcon
-								iconSize='clamp(3rem, 2rem + 1.563vw, 3.25rem)'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
+							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
 
 						<div className='nav-links-container'>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/work-samples'>Work Samples</Link>
-							<Link to='/contact'>Contact</Link>
+							<Link
+								className='nav-link'
+								to='/'>
+								Home
+							</Link>
+							<Link
+								className='nav-link'
+								to='/about'>
+								About
+							</Link>
+							<Link
+								className='nav-link'
+								to='/work-samples'>
+								Work Samples
+							</Link>
+							<Link
+								className='nav-link'
+								to='/contact'>
+								Contact
+							</Link>
 						</div>
 
 						<div className='nav-social-container'>
-							<LinkedinIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
-								iconColor='white'
-							/>
-							<GithubIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
-								iconColor='white'
-							/>
-							<CodepenIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
-								iconColor='white'
-							/>
-							<StackOverflowIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
-								iconColor='white'
-							/>
+							<LinkedinIcon className='nav-social-icon' />
+							<GithubIcon className='nav-social-icon' />
+							<CodepenIcon className='nav-social-icon' />
+							<StackOverflowIcon className='nav-social-icon' />
 						</div>
 					</nav>
 				) : (
@@ -144,19 +144,31 @@ export default function NavbarHide() {
 						id='nav-tablet-small'
 						className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
-							<LogoIcon
-								iconSize='clamp(2.75rem, 2.333rem + 1.042vw, 3rem)'
-								iconColor='var(--primary)'
-								iconBorder='white'
-							/>
+							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
 						</div>
 
 						<div className='nav-links-container'>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/work-samples'>Work Samples</Link>
-							<Link to='/contact'>Contact</Link>
+							<Link
+								className='nav-link'
+								to='/'>
+								Home
+							</Link>
+							<Link
+								className='nav-link'
+								to='/about'>
+								About
+							</Link>
+							<Link
+								className='nav-link'
+								to='/work-samples'>
+								Work Samples
+							</Link>
+							<Link
+								className='nav-link'
+								to='/contact'>
+								Contact
+							</Link>
 						</div>
 					</nav>
 				)}
@@ -172,14 +184,10 @@ export default function NavbarHide() {
 
 					<div className='nav-logo-container'>
 						<div className='nav-logo-title'>The Hawk's Nest</div>
-						<LogoIcon
-							iconSize='clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem)'
-							iconColor='var(--primary)'
-							iconBorder='white'
-						/>
+						<NavLogoIcon className='nav-logo-icon' />
 					</div>
 				</nav>
 			</Mobile>
-		</>
+		</Fragment>
 	)
 }

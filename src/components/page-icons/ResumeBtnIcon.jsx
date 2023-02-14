@@ -1,18 +1,13 @@
 import React from 'react'
-import '../../assets/styles/Icons.css'
 
-export default function ResumeIconLg({ iconSize, iconColor, onClick }) {
+export default function ResumeBtnIcon({ ...props }) {
 	return (
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
 			target='_blank'
 			rel='noreferrer'>
 			<svg
-				id='resume-btn-lg-icon'
-				width={iconSize}
-				fill={iconColor}
-				stroke={iconColor}
-				onClick={onClick}
+				{...props}
 				viewBox='-7 -7 105 33'>
 				<path
 					strokeWidth='1.15'

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import '../assets/styles/Footer.css'
@@ -7,42 +7,28 @@ import LinkedinIcon from '../components/page-icons/LinkedinIcon.jsx'
 import GithubIcon from '../components/page-icons/GithubIcon.jsx'
 import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
 import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
-import HawkIcon from '../components/page-icons/HawkIcon.jsx'
+import FooterLogoIcon from '../components/page-icons/FooterLogoIcon.jsx'
 
 export default function Footer() {
 	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
 
 	return (
-		<>
+		<Fragment>
 			{isLargeScreen ? (
 				<footer id='footer-container'>
-					<div className='copywrite-text'>© {new Date().getFullYear()} Joshua Wilde Hawk</div>
-					<HawkIcon
-						iconSize='clamp(3.25rem, 2.45rem + 1.25vw, 3.75rem)'
-						iconColor='white'
-						iconBorder='var(--secondary)'
-					/>
+					<div className='footer-copywrite-text'>
+						© {new Date().getFullYear()} Joshua Wilde Hawk
+					</div>
+					<FooterLogoIcon className='footer-logo-icon' />
 				</footer>
 			) : (
 				<footer id='footer-container'>
-					<LinkedinIcon
-						iconSize='clamp(1.75rem, 1.343rem + 1.807vw, 2.5rem)'
-						iconColor='white'
-					/>
-					<GithubIcon
-						iconSize='clamp(1.75rem, 1.343rem + 1.807vw, 2.5rem)'
-						iconColor='white'
-					/>
-					<CodepenIcon
-						iconSize='clamp(1.75rem, 1.343rem + 1.807vw, 2.5rem)'
-						iconColor='white'
-					/>
-					<StackOverflowIcon
-						iconSize='clamp(1.75rem, 1.343rem + 1.807vw, 2.5rem)'
-						iconColor='white'
-					/>
+					<LinkedinIcon className='footer-social-icon' />
+					<GithubIcon className='footer-social-icon' />
+					<CodepenIcon className='footer-social-icon' />
+					<StackOverflowIcon className='footer-social-icon' />
 				</footer>
 			)}
-		</>
+		</Fragment>
 	)
 }

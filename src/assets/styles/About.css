@@ -1,10 +1,10 @@
-.about-img {
+.about-img-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.about-img img {
+.about-img {
 	justify-self: center;
 	border: 3.75px solid white;
 	border-radius: 2rem;
@@ -14,20 +14,30 @@
 	object-fit: cover;
 }
 
-.about-txt {
+.about-txt-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
 
-.about-txt p {
+.about-txt {
 	font-weight: 200;
 }
 
-.about-btns {
+.about-btns-container {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+.about-btn {
+	fill: white;
+	stroke: white;
+}
+.about-btn:hover {
+	fill: var(--secondary);
+	stroke: var(--secondary);
+	cursor: pointer;
 }
 
 /* For Laptop Layout → 1280px and above
@@ -39,34 +49,45 @@
 	padding: 1rem;
 	gap: 2rem;
 }
-#about-laptop .about-img {
+
+#about-laptop .about-img-container {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	align-items: flex-start;
 }
-#about-laptop .about-img img {
+
+#about-laptop .about-img {
 	width: clamp(25rem, -1.042rem + 32.552vw, 32.813rem);
 	height: clamp(41.875rem, 30.417rem + 14.323vw, 45.313rem);
 }
-#about-laptop .about-txt {
+
+#about-laptop .about-txt-container {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	gap: 1.5rem;
 }
-#about-laptop .about-txt p {
+
+#about-laptop .about-txt {
 	font-size: clamp(1.65rem, 0.483rem + 1.458vw, 2rem);
 }
-#about-laptop .about-btns {
+
+#about-laptop .about-btns-container {
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
 	align-items: flex-start;
 }
+
+#about-laptop .about-btn {
+	width: 16rem;
+}
+
 @media (min-width: 1664px) {
-	#about-laptop .about-img {
+	#about-laptop .about-img-container {
 		grid-column: 1 / 2;
 		grid-row: 1 / 3;
 	}
-	#about-laptop .about-btns {
+
+	#about-laptop .about-btns-container {
 		grid-column: 2 / 3;
 		grid-row: 2 / 3;
 		margin-top: 1rem;
@@ -83,28 +104,37 @@
 	column-gap: 1.5rem;
 	row-gap: 3rem;
 }
-#about-tablet-large .about-img {
+
+#about-tablet-large .about-img-container {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 }
-#about-tablet-large .about-img img {
+
+#about-tablet-large .about-img {
 	width: 100%;
 	height: 100%;
 }
-#about-tablet-large .about-txt {
+
+#about-tablet-large .about-txt-container {
 	grid-column: 2 / 3;
 	grid-row: 1 / 3;
 	gap: 1.5rem;
 }
-#about-tablet-large .about-txt p {
+
+#about-tablet-large .about-txt {
 	font-size: clamp(1.5rem, 0.45rem + 1.75vw, 1.85rem);
 }
-#about-tablet-large .about-btns {
+
+#about-tablet-large .about-btns-container {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 1.5rem;
+}
+
+#about-tablet-large .about-btn {
+	width: 15rem;
 }
 
 /* For Small Tablet Layout → 640px to 959px
@@ -116,36 +146,47 @@
 	padding: 1.5rem;
 	row-gap: 1.5rem;
 }
-#about-tablet-small .about-img {
+
+#about-tablet-small .about-img-container {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
 	align-items: flex-start;
 }
-#about-tablet-small .about-img img {
+
+#about-tablet-small .about-img {
 	width: 100%;
 	height: clamp(18.438rem, 4.688rem + 34.375vw, 25.313rem);
 	box-shadow: -6px 6px 7.5px 4px rgba(0, 0, 0, 0.4);
 }
-#about-tablet-small .about-txt-1 {
+
+#about-tablet-small .about-txt-container-1 {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
-	font-size: clamp(1.25rem, 0.05rem + 3vw, 1.85rem);
 	margin-right: 6.25%;
 }
-#about-tablet-small .about-txt-2 {
+
+#about-tablet-small .about-txt-container-2 {
 	grid-column: 1 / 3;
 	grid-row: 2 / 3;
-	font-size: clamp(1.25rem, 0.05rem + 3vw, 1.85rem);
 }
-#about-tablet-small .about-txt-3 {
+
+#about-tablet-small .about-txt-container-3 {
 	grid-column: 1 / 3;
 	grid-row: 3 / 4;
+}
+
+#about-tablet-small .about-txt {
 	font-size: clamp(1.25rem, 0.05rem + 3vw, 1.85rem);
 }
-#about-tablet-small .about-btns {
+
+#about-tablet-small .about-btns-container {
 	grid-column: 1 / 3;
 	grid-row: 4 / 5;
 	margin-top: 1rem;
+}
+
+#about-tablet-small .about-btn {
+	width: 15rem;
 }
 
 /* For Mobile Layout → 639px and below
@@ -157,26 +198,36 @@
 	padding: 1.5rem;
 	gap: 2rem;
 }
-#about-mobile .about-img {
+
+#about-mobile .about-img-container {
 	width: clamp(16rem, 10.857rem + 22.857vw, 20rem);
 }
-#about-mobile .about-img img {
+
+#about-mobile .about-img {
 	width: 100%;
 	height: 100%;
 }
-#about-mobile .about-txt {
+
+#about-mobile .about-txt-container {
 	gap: 1.5rem;
 }
-#about-mobile .about-txt p {
+
+#about-mobile .about-txt {
 	font-size: clamp(1.25rem, 0.929rem + 1.429vw, 1.5rem);
 }
-#about-mobile .about-btns {
+
+#about-mobile .about-btns-container {
 	width: 100%;
 	flex-direction: column;
 	gap: 0.5rem;
 }
+
+#about-mobile .about-btn {
+	width: 14rem;
+}
+
 @media (min-width: 525px) {
-	#about-mobile .about-btns {
+	#about-mobile .about-btns-container {
 		flex-direction: row;
 		gap: 0rem;
 	}

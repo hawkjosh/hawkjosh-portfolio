@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Outlet } from 'react-router-dom'
 
 import '../assets/styles/Layout.css'
@@ -9,12 +9,13 @@ import Footer from './Footer.jsx'
 
 export default function Layout() {
 	return (
-		<>
+		<Fragment>
 			<section>
+				{/* <NavbarHide /> */}
 				<NavbarShrink />
 				<Outlet />
 				<Footer />
 			</section>
-		</>
+		</Fragment>
 	)
 }

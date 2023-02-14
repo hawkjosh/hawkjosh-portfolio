@@ -7,37 +7,74 @@
 	padding-bottom: 1.5rem;
 }
 
-.home-layout img {
+.home-avatar {
 	width: clamp(18.75rem, 12.711rem + 26.84vw, 40.625rem);
 }
 
-.home-divider {
+.home-divider-container {
 	width: 100%;
 }
 
-.home-divider hr {
+.home-divider {
 	height: 0.15rem;
 	background-color: white;
 	border-style: none;
 	margin: 4rem 12.5%;
 }
 
-.home-descriptors {
+.home-icons-container {
 	width: 90%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
+.home-icon {
+	width: clamp(9.375rem, 3.516rem + 14.648vw, 18.75rem);
+	fill: var(--secondary);
+}
+.home-icon > text {
+	fill: white;
+}
+.laptop-icon:hover {
+	fill: white;
+	stroke: var(--secondary);
+	stroke-width: 15;
+	cursor: grab;
+}
+.superhero-icon:hover {
+	fill: blue;
+	stroke: red;
+	stroke-width: 7;
+	cursor: grab;
+}
+.tennessee-icon:hover {
+	fill: #f77f00;
+	stroke: white;
+	stroke-width: 8;
+	cursor: grab;
+}
+.family-icon:hover {
+	fill: white;
+	stroke: var(--secondary);
+	stroke-width: 15;
+	cursor: grab;
+}
+
 /* For Mobile Layout → 639px and below
 --------------------- */
-#home-mobile .home-divider hr {
+#home-mobile .home-divider {
 	margin: 4rem 15%;
 }
-#home-mobile .home-descriptors {
+
+#home-mobile .home-icons-container {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 5rem;
+}
+
+#home-mobile .home-icon {
+	width: clamp(9.375rem, 5.357rem + 17.857vw, 12.5rem);
 }

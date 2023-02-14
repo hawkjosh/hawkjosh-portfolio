@@ -22,6 +22,25 @@ nav.navbar-shrink {
 	gap: 1rem;
 }
 
+.nav-logo-icon {
+	fill: var(--primary);
+	stroke: white;
+}
+.nav-logo-icon:hover {
+	cursor: grab;
+	animation: rotate 1.5s linear infinite;
+	fill: white;
+	stroke: var(--primary);
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
@@ -43,7 +62,6 @@ nav.navbar-shrink {
 .nav-link {
 	text-transform: uppercase;
 }
-
 .nav-link:hover {
 	color: var(--primary);
 }
@@ -57,6 +75,14 @@ nav.navbar-shrink {
 	padding: 0rem 2.5%;
 }
 
+.nav-social-icon {
+	stroke: white;
+}
+.nav-social-icon:hover {
+	stroke: var(--primary);
+	stroke-width: 8;
+}
+
 /* For Laptop Layout → 1280px and above
 --------------------- */
 #nav-laptop .nav-logo-container {
@@ -64,6 +90,7 @@ nav.navbar-shrink {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
 #nav-laptop .nav-logo-icon {
 	width: clamp(4.5rem, 2.833rem + 2.083vw, 5rem);
 	transition: width 0.5s ease-in-out;
@@ -71,6 +98,7 @@ nav.navbar-shrink {
 #nav-laptop.navbar-shrink .nav-logo-icon {
 	width: clamp(3rem, 1.333rem + 2.083vw, 3.5rem);
 }
+
 #nav-laptop .nav-logo-title {
 	font-size: clamp(1.75rem, 0.083rem + 2.083vw, 2.25rem);
 	transition: font-size 0.5s ease-in-out;
@@ -83,6 +111,7 @@ nav.navbar-shrink {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
+
 #nav-laptop .nav-link {
 	font-size: clamp(1.25rem, 0.417rem + 1.042vw, 1.5rem);
 	transition: font-size 0.5s ease-in-out;
@@ -94,6 +123,7 @@ nav.navbar-shrink {
 #nav-laptop .nav-social-container {
 	flex-basis: 25%;
 }
+
 #nav-laptop .nav-social-icon {
 	width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
 	transition: width 0.5s ease-in-out;
@@ -109,6 +139,7 @@ nav.navbar-shrink {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
 #nav-tablet-large .nav-logo-icon {
 	width: clamp(4rem, 1.992rem + 3.137vw, 4.5rem);
 	transition: width 0.5s ease-in-out;
@@ -116,6 +147,7 @@ nav.navbar-shrink {
 #nav-tablet-large.navbar-shrink .nav-logo-icon {
 	width: clamp(2.5rem, 0.5rem + 3.125vw, 3rem);
 }
+
 #nav-tablet-large .nav-logo-title {
 	font-size: clamp(1.35rem, -0.25rem + 2.5vw, 1.75rem);
 	transition: font-size 0.5s ease-in-out;
@@ -128,6 +160,7 @@ nav.navbar-shrink {
 	flex-basis: 43%;
 	padding: 0rem 2.5%;
 }
+
 #nav-tablet-large .nav-link {
 	font-size: clamp(1rem, 0rem + 1.563vw, 1.25rem);
 	transition: font-size 0.5s ease-in-out;
@@ -139,6 +172,7 @@ nav.navbar-shrink {
 #nav-tablet-large .nav-social-container {
 	flex-basis: 25%;
 }
+
 #nav-tablet-large .nav-social-icon {
 	width: clamp(1.65rem, 0.45rem + 1.875vw, 1.95rem);
 	transition: width 0.5s ease-in-out;
@@ -154,6 +188,7 @@ nav.navbar-shrink {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+
 #nav-tablet-small .nav-logo-icon {
 	width: clamp(3.5rem, 2.667rem + 2.083vw, 4rem);
 	transition: width 0.5s ease-in-out;
@@ -161,6 +196,7 @@ nav.navbar-shrink {
 #nav-tablet-small.navbar-shrink .nav-logo-icon {
 	width: clamp(2rem, 1.167rem + 2.083vw, 2.5rem);
 }
+
 #nav-tablet-small .nav-logo-title {
 	font-size: clamp(1.15rem, 0.317rem + 2.083vw, 1.65rem);
 	transition: font-size 0.5s ease-in-out;
@@ -175,6 +211,7 @@ nav.navbar-shrink {
 	padding-right: 2.5%;
 	gap: 1.5rem;
 }
+
 #nav-tablet-small .nav-link {
 	font-size: clamp(0.85rem, 0.183rem + 1.667vw, 1.25rem);
 	transition: font-size 0.5s ease-in-out;
@@ -199,6 +236,7 @@ nav.navbar-shrink {
 	justify-content: flex-end;
 	padding-right: 1.5rem;
 }
+
 #nav-mobile .nav-logo-icon {
 	width: clamp(3.5rem, 2.857rem + 2.857vw, 4rem);
 	transition: width 0.5s ease-in-out;
@@ -206,6 +244,7 @@ nav.navbar-shrink {
 #nav-mobile.navbar-shrink .nav-logo-icon {
 	width: clamp(2rem, 1.357rem + 2.857vw, 2.5rem);
 }
+
 #nav-mobile .nav-logo-title {
 	font-size: clamp(1.15rem, 0.507rem + 2.857vw, 1.65rem);
 	transition: font-size 0.5s ease-in-out;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import '../assets/styles/Toolbox.css'
 
-import CloseBtnIcon from '../components/page-icons/CloseBtnIcon.jsx'
+import ToolboxCloseBtnIcon from '../components/page-icons/ToolboxCloseBtnIcon.jsx'
 
 import Apollo from '../assets/images/toolbox/apollo.svg'
 import Babel from '../assets/images/toolbox/babel.svg'
@@ -98,16 +98,15 @@ const Mobile = ({ children }) => {
 
 export default function Toolbox({ setShowToolbox }) {
 	return (
-		<>
+		<Fragment>
 			<Laptop>
 				<main
 					id='toolbox-laptop-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
-						<div className='toolbox-close-btn'>
-							<CloseBtnIcon
-								iconSize='clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem)'
-								iconColor='var(--secondary)'
+						<div className='toolbox-close-btn-container'>
+							<ToolboxCloseBtnIcon
+								className='toolbox-close-btn-icon'
 								onClick={() => {
 									setShowToolbox(false)
 								}}
@@ -132,10 +131,9 @@ export default function Toolbox({ setShowToolbox }) {
 					id='toolbox-tablet-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
-						<div className='toolbox-close-btn'>
-							<CloseBtnIcon
-								iconSize='clamp(2rem, 1.75rem + 0.625vw, 2.25rem)'
-								iconColor='var(--secondary)'
+						<div className='toolbox-close-btn-container'>
+							<ToolboxCloseBtnIcon
+								className='toolbox-close-btn-icon'
 								onClick={() => {
 									setShowToolbox(false)
 								}}
@@ -160,10 +158,9 @@ export default function Toolbox({ setShowToolbox }) {
 					id='toolbox-mobile-layout'
 					className='toolbox-background'>
 					<div className='toolbox-window'>
-						<div className='toolbox-close-btn'>
-							<CloseBtnIcon
-								iconSize='clamp(1.75rem, 1.429rem + 1.429vw, 2rem)'
-								iconColor='var(--secondary)'
+						<div className='toolbox-close-btn-container'>
+							<ToolboxCloseBtnIcon
+								className='toolbox-close-btn-icon'
 								onClick={() => {
 									setShowToolbox(false)
 								}}
@@ -182,6 +179,6 @@ export default function Toolbox({ setShowToolbox }) {
 					</div>
 				</main>
 			</Mobile>
-		</>
+		</Fragment>
 	)
 }
