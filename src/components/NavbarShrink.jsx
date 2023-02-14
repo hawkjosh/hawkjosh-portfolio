@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 import useNavbarShrink from '../hooks/useNavbarShrink'
@@ -35,12 +35,10 @@ export default function NavbarShrink() {
 	return (
 		<>
 			<Laptop>
-				<nav
-					id='nav-laptop'
-					className=''>
+				<nav id='nav-laptop'>
 					<div className='nav-logo-container'>
 						<LogoIcon
-							iconSize='clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem)'
+							className='nav-logo-icon'
 							iconColor='var(--primary)'
 							iconBorder='white'
 						/>
@@ -48,27 +46,43 @@ export default function NavbarShrink() {
 					</div>
 
 					<div className='nav-links-container'>
-						<Link to='/'>Home</Link>
-						<Link to='/about'>About</Link>
-						<Link to='/work-samples'>Work Samples</Link>
-						<Link to='/contact'>Contact</Link>
+						<Link
+							className='nav-link'
+							to='/'>
+							Home
+						</Link>
+						<Link
+							className='nav-link'
+							to='/about'>
+							About
+						</Link>
+						<Link
+							className='nav-link'
+							to='/work-samples'>
+							Work Samples
+						</Link>
+						<Link
+							className='nav-link'
+							to='/contact'>
+							Contact
+						</Link>
 					</div>
 
 					<div className='nav-social-container'>
 						<LinkedinIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							className='nav-social-icon'
 							iconColor='white'
 						/>
 						<GithubIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							className='nav-social-icon'
 							iconColor='white'
 						/>
 						<CodepenIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							className='nav-social-icon'
 							iconColor='white'
 						/>
 						<StackOverflowIcon
-							iconSize='clamp(2rem, 0.333rem + 2.083vw, 2.5rem)'
+							className='nav-social-icon'
 							iconColor='white'
 						/>
 					</div>
@@ -77,12 +91,10 @@ export default function NavbarShrink() {
 
 			<Tablet>
 				{isLargeScreen ? (
-					<nav
-						id='nav-tablet-large'
-						className=''>
+					<nav id='nav-tablet-large'>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(3rem, 2rem + 1.563vw, 3.25rem)'
+								className='nav-logo-icon'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -90,38 +102,52 @@ export default function NavbarShrink() {
 						</div>
 
 						<div className='nav-links-container'>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/work-samples'>Work Samples</Link>
-							<Link to='/contact'>Contact</Link>
+							<Link
+								className='nav-link'
+								to='/'>
+								Home
+							</Link>
+							<Link
+								className='nav-link'
+								to='/about'>
+								About
+							</Link>
+							<Link
+								className='nav-link'
+								to='/work-samples'>
+								Work Samples
+							</Link>
+							<Link
+								className='nav-link'
+								to='/contact'>
+								Contact
+							</Link>
 						</div>
 
 						<div className='nav-social-container'>
 							<LinkedinIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
+								className='nav-social-icon'
 								iconColor='white'
 							/>
 							<GithubIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
+								className='nav-social-icon'
 								iconColor='white'
 							/>
 							<CodepenIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
+								className='nav-social-icon'
 								iconColor='white'
 							/>
 							<StackOverflowIcon
-								iconSize='clamp(1.75rem, 0.75rem + 1.563vw, 2rem)'
+								className='nav-social-icon'
 								iconColor='white'
 							/>
 						</div>
 					</nav>
 				) : (
-					<nav
-						id='nav-tablet-small'
-						className=''>
+					<nav id='nav-tablet-small'>
 						<div className='nav-logo-container'>
 							<LogoIcon
-								iconSize='clamp(2.75rem, 2.333rem + 1.042vw, 3rem)'
+								className='nav-logo-icon'
 								iconColor='var(--primary)'
 								iconBorder='white'
 							/>
@@ -129,19 +155,33 @@ export default function NavbarShrink() {
 						</div>
 
 						<div className='nav-links-container'>
-							<Link to='/'>Home</Link>
-							<Link to='/about'>About</Link>
-							<Link to='/work-samples'>Work Samples</Link>
-							<Link to='/contact'>Contact</Link>
+							<Link
+								className='nav-link'
+								to='/'>
+								Home
+							</Link>
+							<Link
+								className='nav-link'
+								to='/about'>
+								About
+							</Link>
+							<Link
+								className='nav-link'
+								to='/work-samples'>
+								Work Samples
+							</Link>
+							<Link
+								className='nav-link'
+								to='/contact'>
+								Contact
+							</Link>
 						</div>
 					</nav>
 				)}
 			</Tablet>
 
 			<Mobile>
-				<nav
-					id='nav-mobile'
-					className=''>
+				<nav id='nav-mobile'>
 					<div className='nav-menu-container'>
 						<Menu />
 					</div>
@@ -149,7 +189,8 @@ export default function NavbarShrink() {
 					<div className='nav-logo-container'>
 						<div className='nav-logo-title'>The Hawk's Nest</div>
 						<LogoIcon
-							iconSize='clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem)'
+							className='nav-logo-icon'
+							// iconSize='clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem)'
 							iconColor='var(--primary)'
 							iconBorder='white'
 						/>

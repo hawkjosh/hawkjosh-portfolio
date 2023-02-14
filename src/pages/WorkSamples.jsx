@@ -91,8 +91,8 @@ const samples = [
 		title: 'Workday Scheduler',
 		info: `A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.`,
 		linkClass: 'link-container6',
-		website: 'https://hawkjosh.github.io/Workday-Scheduler',
-		github: 'https://github.com/hawkjosh/Workday-Scheduler',
+		website: 'https://hawkjosh-workday-scheduler.netlify.app/',
+		github: 'https://github.com/hawkjosh/workday-scheduler-update',
 	},
 	{
 		index: '6',

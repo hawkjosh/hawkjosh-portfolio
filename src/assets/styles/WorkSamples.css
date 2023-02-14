@@ -9,7 +9,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 50% 50%;
-	position: absolute;
+	position: relative;
 	left: 0px;
 	top: 0px;
 	transition: transform 500ms ease;

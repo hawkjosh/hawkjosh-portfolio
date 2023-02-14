@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/styles/Icons.css'
 
-export default function StackOverflowIcon({ iconSize, iconColor }) {
+export default function StackOverflowIcon({ iconSize, iconColor, ...props }) {
 	return (
 		<a
 			href='https://stackoverflow.com/users/19513873/hawkjosh?tab=profile'
@@ -15,7 +15,8 @@ export default function StackOverflowIcon({ iconSize, iconColor }) {
 				strokeWidth='5'
 				strokeLinecap='round'
 				strokeLinejoin='round'
-				viewBox='0 0 110 110'>
+				viewBox='0 0 110 110'
+				{...props}>
 				<path d='M98 73V105H5V73M78 84H25M78 72L25 62M83 59L34 40M93 49L51 21M105 39L72 5' />
 			</svg>
 		</a>

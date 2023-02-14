@@ -11,7 +11,6 @@ export default function Layout() {
 	return (
 		<>
 			<section>
-				{/* <NavbarHide /> */}
 				<NavbarShrink />
 				<Outlet />
 				<Footer />

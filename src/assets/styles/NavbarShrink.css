@@ -1,6 +1,7 @@
 /* For All Layouts
 --------------------- */
 nav {
+	height: 8rem;
 	position: sticky;
 	top: 0;
 	background-color: var(--secondary);
@@ -8,17 +9,14 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	transition: padding-top 0.3s, padding-bottom 0.3s;
+	transition: height 0.5s ease-in-out;
 }
 nav.navbar-shrink {
-	padding-top: 0.01rem;
-	padding-bottom: 0.01rem;
+	height: 5rem;
 }
 
 .nav-logo-container {
-	min-height: 5rem;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	gap: 1rem;
@@ -35,23 +33,23 @@ nav.navbar-shrink {
 }
 
 .nav-links-container {
-	min-height: 5rem;
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-left: solid white;
 }
 
-.nav-links-container a {
+.nav-link {
 	text-transform: uppercase;
 }
 
-.nav-links-container a:hover {
+.nav-link:hover {
 	color: var(--primary);
 }
 
 .nav-social-container {
-	min-height: 5rem;
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -66,40 +64,89 @@ nav.navbar-shrink {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+#nav-laptop .nav-logo-icon {
+	width: clamp(4.5rem, 2.833rem + 2.083vw, 5rem);
+	transition: width 0.5s ease-in-out;
+}
+#nav-laptop.navbar-shrink .nav-logo-icon {
+	width: clamp(3rem, 1.333rem + 2.083vw, 3.5rem);
+}
+#nav-laptop .nav-logo-title {
+	font-size: clamp(1.75rem, 0.083rem + 2.083vw, 2.25rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-laptop.navbar-shrink .nav-logo-title {
+	font-size: clamp(1.5rem, 0.667rem + 1.042vw, 1.75rem);
+}
+
 #nav-laptop .nav-links-container {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
+#nav-laptop .nav-link {
+	font-size: clamp(1.25rem, 0.417rem + 1.042vw, 1.5rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-laptop.navbar-shrink .nav-link {
+	font-size: clamp(1rem, 0.167rem + 1.042vw, 1.25rem);
+}
+
 #nav-laptop .nav-social-container {
 	flex-basis: 25%;
 }
-#nav-laptop .nav-links-container a {
-	font-size: clamp(1.25rem, 0.583rem + 0.833vw, 1.45rem);
+#nav-laptop .nav-social-icon {
+	width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
+	transition: width 0.5s ease-in-out;
 }
-#nav-laptop .nav-logo-title {
-	font-size: clamp(1.75rem, 0.917rem + 1.042vw, 2rem);
+#nav-laptop.navbar-shrink .nav-social-icon {
+	width: clamp(1.5rem, -0.167rem + 2.083vw, 2rem);
 }
 
 /* For Large Tablet Layout → 1024px to 1279px
 --------------------- */
 #nav-tablet-large .nav-logo-container {
-	flex-basis: 31.5%;
+	flex-basis: 32%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+#nav-tablet-large .nav-logo-icon {
+	width: clamp(4rem, 1.992rem + 3.137vw, 4.5rem);
+	transition: width 0.5s ease-in-out;
+}
+#nav-tablet-large.navbar-shrink .nav-logo-icon {
+	width: clamp(2.5rem, 0.5rem + 3.125vw, 3rem);
+}
+#nav-tablet-large .nav-logo-title {
+	font-size: clamp(1.35rem, -0.25rem + 2.5vw, 1.75rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-tablet-large.navbar-shrink .nav-logo-title {
+	font-size: clamp(1.15rem, -0.05rem + 1.875vw, 1.45rem);
+}
+
 #nav-tablet-large .nav-links-container {
-	flex-basis: 43.5%;
+	flex-basis: 43%;
 	padding: 0rem 2.5%;
 }
+#nav-tablet-large .nav-link {
+	font-size: clamp(1rem, 0rem + 1.563vw, 1.25rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-tablet-large.navbar-shrink .nav-link {
+	font-size: clamp(0.85rem, -0.15rem + 1.563vw, 1.1rem);
+}
+
 #nav-tablet-large .nav-social-container {
 	flex-basis: 25%;
 }
-#nav-tablet-large .nav-links-container a {
-	font-size: clamp(1.05rem, 0.25rem + 1.25vw, 1.25rem);
+#nav-tablet-large .nav-social-icon {
+	width: clamp(1.65rem, 0.45rem + 1.875vw, 1.95rem);
+	transition: width 0.5s ease-in-out;
 }
-#nav-tablet-large .nav-logo-title {
-	font-size: clamp(1.5rem, 0.5rem + 1.563vw, 1.75rem);
+#nav-tablet-large.navbar-shrink .nav-social-icon {
+	width: clamp(1.45rem, 0.25rem + 1.875vw, 1.75rem);
 }
+
 /* For Small Tablet Layout → 640px to 1023px
 --------------------- */
 #nav-tablet-small .nav-logo-container {
@@ -107,18 +154,35 @@ nav.navbar-shrink {
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
+#nav-tablet-small .nav-logo-icon {
+	width: clamp(3.5rem, 2.667rem + 2.083vw, 4rem);
+	transition: width 0.5s ease-in-out;
+}
+#nav-tablet-small.navbar-shrink .nav-logo-icon {
+	width: clamp(2rem, 1.167rem + 2.083vw, 2.5rem);
+}
+#nav-tablet-small .nav-logo-title {
+	font-size: clamp(1.15rem, 0.317rem + 2.083vw, 1.65rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-tablet-small.navbar-shrink .nav-logo-title {
+	font-size: clamp(0.95rem, 0.617rem + 0.833vw, 1.15rem);
+}
+
 #nav-tablet-small .nav-links-container {
 	flex-basis: 57.5%;
 	justify-content: flex-end;
 	padding-right: 2.5%;
 	gap: 1.5rem;
 }
-#nav-tablet-small .nav-links-container a {
-	font-size: clamp(0.85rem, 0.517rem + 0.833vw, 1.05rem);
+#nav-tablet-small .nav-link {
+	font-size: clamp(0.85rem, 0.183rem + 1.667vw, 1.25rem);
+	transition: font-size 0.5s ease-in-out;
 }
-#nav-tablet-small .nav-logo-title {
-	font-size: clamp(1.25rem, 0.833rem + 1.042vw, 1.5rem);
+#nav-tablet-small.navbar-shrink .nav-link {
+	font-size: clamp(0.75rem, 0.333rem + 1.042vw, 1rem);
 }
+
 /* For Mobile Layout → 639px and below
 --------------------- */
 #nav-mobile .nav-menu-container {
@@ -129,11 +193,23 @@ nav.navbar-shrink {
 	align-items: center;
 	padding-left: 1.5rem;
 }
+
 #nav-mobile .nav-logo-container {
 	flex-basis: 80%;
 	justify-content: flex-end;
 	padding-right: 1.5rem;
 }
+#nav-mobile .nav-logo-icon {
+	width: clamp(3.5rem, 2.857rem + 2.857vw, 4rem);
+	transition: width 0.5s ease-in-out;
+}
+#nav-mobile.navbar-shrink .nav-logo-icon {
+	width: clamp(2rem, 1.357rem + 2.857vw, 2.5rem);
+}
 #nav-mobile .nav-logo-title {
-	font-size: clamp(1rem, 0.679rem + 1.429vw, 1.25rem);
+	font-size: clamp(1.15rem, 0.507rem + 2.857vw, 1.65rem);
+	transition: font-size 0.5s ease-in-out;
+}
+#nav-mobile.navbar-shrink .nav-logo-title {
+	font-size: clamp(0.95rem, 0.693rem + 1.143vw, 1.15rem);
 }
