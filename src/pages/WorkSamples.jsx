@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 import '../assets/styles/WorkSamples.css'
@@ -233,22 +233,24 @@ export default function WorkSamples() {
 	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
 
 	return (
-		<>
+		<Fragment>
 			<Laptop>
 				<main id='work-samples-laptop'>
 					<div className='sample-section'>
 						<div className='image-section'>
 							{samples.map((sample) => (
-								<div
-									key={sample.index}
-									className={`${sample.imageClass} image-transition`}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<img
-										src={sample.image}
-										alt={sample.alt}
-									/>
-								</div>
+								<Fragment key={sample.index}>
+									<div
+										className={`${sample.imageClass} image-transition`}
+										data-index={sample.index}
+										data-status={sample.status}>
+										<img
+											className='work-sample-image'
+											src={sample.image}
+											alt={sample.alt}
+										/>
+									</div>
+								</Fragment>
 							))}
 						</div>
 
@@ -256,48 +258,50 @@ export default function WorkSamples() {
 							<div className='info-link-vertical'>
 								<div className='info-section'>
 									{samples.map((sample) => (
-										<div
-											key={sample.index}
-											className={`${sample.infoClass} info-transition`}
-											data-index={sample.index}
-											data-status={sample.status}>
-											<h2>{sample.title}</h2>
-											<p>{sample.info}</p>
-										</div>
+										<Fragment key={sample.index}>
+											<div
+												className={`${sample.infoClass} info-transition`}
+												data-index={sample.index}
+												data-status={sample.status}>
+												<h2 className='info-title'>{sample.title}</h2>
+												<p className='info-text'>{sample.info}</p>
+											</div>
+										</Fragment>
 									))}
 								</div>
 
 								<div className='link-section'>
 									{samples.map((sample) => (
-										<div
-											key={sample.index}
-											className={`${sample.linkClass} link-transition`}
-											data-index={sample.index}
-											data-status={sample.status}>
-											<a
-												className='link-btn'
-												href={sample.website}
-												target='_blank'
-												rel='noreferrer'>
-												Web App
-											</a>
-											<a
-												className='link-btn'
-												href={sample.github}
-												target='_blank'
-												rel='noreferrer'>
-												GitHub Repo
-											</a>
-											{sample.bonus && (
+										<Fragment key={sample.index}>
+											<div
+												className={`${sample.linkClass} link-transition`}
+												data-index={sample.index}
+												data-status={sample.status}>
 												<a
-													className='link-btn bonus-link'
-													href={sample.bonus}
+													className='link-btn'
+													href={sample.website}
 													target='_blank'
 													rel='noreferrer'>
-													Bonus
+													Web App
 												</a>
-											)}
-										</div>
+												<a
+													className='link-btn'
+													href={sample.github}
+													target='_blank'
+													rel='noreferrer'>
+													GitHub Repo
+												</a>
+												{sample.bonus && (
+													<a
+														className='link-btn bonus-link'
+														href={sample.bonus}
+														target='_blank'
+														rel='noreferrer'>
+														Bonus
+													</a>
+												)}
+											</div>
+										</Fragment>
 									))}
 								</div>
 							</div>
@@ -326,16 +330,18 @@ export default function WorkSamples() {
 						<div className='image-nav-horizontal'>
 							<div className='image-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.imageClass} image-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<img
-											src={sample.image}
-											alt={sample.alt}
-										/>
-									</div>
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.imageClass} image-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<img
+												className='work-sample-image'
+												src={sample.image}
+												alt={sample.alt}
+											/>
+										</div>
+									</Fragment>
 								))}
 							</div>
 
@@ -357,48 +363,50 @@ export default function WorkSamples() {
 						<div className='info-link-horizontal'>
 							<div className='info-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.infoClass} info-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<h2>{sample.title}</h2>
-										<p>{sample.info}</p>
-									</div>
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.infoClass} info-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<h2 className='info-title'>{sample.title}</h2>
+											<p className='info-text'>{sample.info}</p>
+										</div>
+									</Fragment>
 								))}
 							</div>
 
 							<div className='link-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.linkClass} link-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<a
-											className='link-btn'
-											href={sample.website}
-											target='_blank'
-											rel='noreferrer'>
-											Web App
-										</a>
-										<a
-											className='link-btn'
-											href={sample.github}
-											target='_blank'
-											rel='noreferrer'>
-											GitHub Repo
-										</a>
-										{sample.bonus && (
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.linkClass} link-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
 											<a
-												className='link-btn bonus-link'
-												href={sample.bonus}
+												className='link-btn'
+												href={sample.website}
 												target='_blank'
 												rel='noreferrer'>
-												Bonus
+												Web App
 											</a>
-										)}
-									</div>
+											<a
+												className='link-btn'
+												href={sample.github}
+												target='_blank'
+												rel='noreferrer'>
+												GitHub Repo
+											</a>
+											{sample.bonus && (
+												<a
+													className='link-btn bonus-link'
+													href={sample.bonus}
+													target='_blank'
+													rel='noreferrer'>
+													Bonus
+												</a>
+											)}
+										</div>
+									</Fragment>
 								))}
 							</div>
 						</div>
@@ -408,63 +416,67 @@ export default function WorkSamples() {
 						<div className='sample-section'>
 							<div className='image-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.imageClass} image-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<img
-											src={sample.image}
-											alt={sample.alt}
-										/>
-									</div>
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.imageClass} image-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<img
+												className='work-sample-image'
+												src={sample.image}
+												alt={sample.alt}
+											/>
+										</div>
+									</Fragment>
 								))}
 							</div>
 
 							<div className='info-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.infoClass} info-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<h2>{sample.title}</h2>
-										<p>{sample.info}</p>
-									</div>
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.infoClass} info-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
+											<h2 className='info-title'>{sample.title}</h2>
+											<p className='info-text'>{sample.info}</p>
+										</div>
+									</Fragment>
 								))}
 							</div>
 
 							<div className='link-section'>
 								{samples.map((sample) => (
-									<div
-										key={sample.index}
-										className={`${sample.linkClass} link-transition`}
-										data-index={sample.index}
-										data-status={sample.status}>
-										<a
-											className='link-btn'
-											href={sample.website}
-											target='_blank'
-											rel='noreferrer'>
-											Web App
-										</a>
-										<a
-											className='link-btn'
-											href={sample.github}
-											target='_blank'
-											rel='noreferrer'>
-											GitHub Repo
-										</a>
-										{sample.bonus && (
+									<Fragment key={sample.index}>
+										<div
+											className={`${sample.linkClass} link-transition`}
+											data-index={sample.index}
+											data-status={sample.status}>
 											<a
-												className='link-btn bonus-link'
-												href={sample.bonus}
+												className='link-btn'
+												href={sample.website}
 												target='_blank'
 												rel='noreferrer'>
-												Bonus
+												Web App
 											</a>
-										)}
-									</div>
+											<a
+												className='link-btn'
+												href={sample.github}
+												target='_blank'
+												rel='noreferrer'>
+												GitHub Repo
+											</a>
+											{sample.bonus && (
+												<a
+													className='link-btn bonus-link'
+													href={sample.bonus}
+													target='_blank'
+													rel='noreferrer'>
+													Bonus
+												</a>
+											)}
+										</div>
+									</Fragment>
 								))}
 							</div>
 						</div>
@@ -491,63 +503,67 @@ export default function WorkSamples() {
 					<div className='sample-section'>
 						<div className='image-section'>
 							{samples.map((sample) => (
-								<div
-									key={sample.index}
-									className={`${sample.imageClass} image-transition`}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<img
-										src={sample.image}
-										alt={sample.alt}
-									/>
-								</div>
+								<Fragment key={sample.index}>
+									<div
+										className={`${sample.imageClass} image-transition`}
+										data-index={sample.index}
+										data-status={sample.status}>
+										<img
+											className='work-sample-image'
+											src={sample.image}
+											alt={sample.alt}
+										/>
+									</div>
+								</Fragment>
 							))}
 						</div>
 
 						<div className='info-section'>
 							{samples.map((sample) => (
-								<div
-									key={sample.index}
-									className={`${sample.infoClass} info-transition`}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<h2>{sample.title}</h2>
-									<p>{sample.info}</p>
-								</div>
+								<Fragment key={sample.index}>
+									<div
+										className={`${sample.infoClass} info-transition`}
+										data-index={sample.index}
+										data-status={sample.status}>
+										<h2 className='info-title'>{sample.title}</h2>
+										<p className='info-text'>{sample.info}</p>
+									</div>
+								</Fragment>
 							))}
 						</div>
 
 						<div className='link-section'>
 							{samples.map((sample) => (
-								<div
-									key={sample.index}
-									className={`${sample.linkClass} link-transition`}
-									data-index={sample.index}
-									data-status={sample.status}>
-									<a
-										className='link-btn'
-										href={sample.website}
-										target='_blank'
-										rel='noreferrer'>
-										Web App
-									</a>
-									<a
-										className='link-btn'
-										href={sample.github}
-										target='_blank'
-										rel='noreferrer'>
-										GitHub Repo
-									</a>
-									{sample.bonus && (
+								<Fragment key={sample.index}>
+									<div
+										className={`${sample.linkClass} link-transition`}
+										data-index={sample.index}
+										data-status={sample.status}>
 										<a
-											className='link-btn bonus-link'
-											href={sample.bonus}
+											className='link-btn'
+											href={sample.website}
 											target='_blank'
 											rel='noreferrer'>
-											Bonus
+											Web App
 										</a>
-									)}
-								</div>
+										<a
+											className='link-btn'
+											href={sample.github}
+											target='_blank'
+											rel='noreferrer'>
+											GitHub Repo
+										</a>
+										{sample.bonus && (
+											<a
+												className='link-btn bonus-link'
+												href={sample.bonus}
+												target='_blank'
+												rel='noreferrer'>
+												Bonus
+											</a>
+										)}
+									</div>
+								</Fragment>
 							))}
 						</div>
 					</div>
@@ -567,6 +583,6 @@ export default function WorkSamples() {
 					</div>
 				</main>
 			</Mobile>
-		</>
+		</Fragment>
 	)
 }
