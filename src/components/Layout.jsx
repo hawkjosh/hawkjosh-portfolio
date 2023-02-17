@@ -3,19 +3,23 @@ import { Outlet, useLocation } from 'react-router-dom'
 
 import '../assets/styles/Layout.css'
 
+import NavbarShrink from './NavbarShrink.jsx'
+import NavbarHide from './NavbarHide.jsx'
 import NavbarStatic from './NavbarStatic.jsx'
-// import NavbarShrink from './NavbarShrink.jsx'
-// import NavbarHide from './NavbarHide.jsx'
 import Footer from './Footer.jsx'
 
 export default function Layout() {
-	// const location = useLocation('/work-samples')
+	const location = useLocation()
+
 	return (
 		<Fragment>
 			<section>
-				<NavbarStatic />
-				{/* <NavbarShrink /> */}
-				{/* <NavbarHide /> */}
+				<Fragment>
+					{location.pathname === '/' && <NavbarShrink />}
+					{location.pathname === '/about' && <NavbarHide />}
+					{location.pathname === '/work-samples' && <NavbarStatic />}
+					{location.pathname === '/contact' && <NavbarShrink />}
+				</Fragment>
 				<Outlet />
 				<Footer />
 			</section>

@@ -36,7 +36,7 @@ export default function NavbarShrink() {
 	return (
 		<Fragment>
 			<Laptop>
-				<nav id='nav-laptop'>
+				<nav id='nav-shrink-laptop'>
 					<div className='nav-logo-container'>
 						<NavLogoIcon className='nav-logo-icon' />
 						<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -76,7 +76,7 @@ export default function NavbarShrink() {
 
 			<Tablet>
 				{isLargeScreen ? (
-					<nav id='nav-tablet-large'>
+					<nav id='nav-shrink-tablet-large'>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -113,7 +113,7 @@ export default function NavbarShrink() {
 						</div>
 					</nav>
 				) : (
-					<nav id='nav-tablet-small'>
+					<nav id='nav-shrink-tablet-small'>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -146,7 +146,7 @@ export default function NavbarShrink() {
 			</Tablet>
 
 			<Mobile>
-				<nav id='nav-mobile'>
+				<nav id='nav-shrink-mobile'>
 					<div className='nav-menu-container'>
 						<Menu />
 					</div>

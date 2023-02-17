@@ -36,13 +36,14 @@ export default function Menu() {
 			{showMenu && (
 				<div className='nav-menu-list'>
 					{menuItems.map((item, index) => (
-						<Link
-							className='nav-menu-list-item'
-							key={index}
-							to={item.link}
-							onClick={() => setShowMenu(!showMenu)}>
-							{item.name}
-						</Link>
+						<Fragment key={index}>
+							<Link
+								className='nav-menu-list-item'
+								to={item.link}
+								onClick={() => setShowMenu(!showMenu)}>
+								{item.name}
+							</Link>
+						</Fragment >
 					))}
 				</div>
 			)}

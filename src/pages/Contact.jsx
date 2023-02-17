@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import '../assets/styles/Contact.css'
 
 export default function Contact() {
 	return (
-		<>
+		<Fragment>
 			<section
 				className='page-section'
 				id='contact'>
@@ -56,6 +56,6 @@ export default function Contact() {
 					</div>
 				</div>
 			</section>
-		</>
+		</Fragment>
 	)
 }

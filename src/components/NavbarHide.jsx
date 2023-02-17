@@ -60,7 +60,7 @@ export default function NavbarHide() {
 		<Fragment>
 			<Laptop>
 				<nav
-					id='nav-laptop'
+					id='nav-hide-laptop'
 					className={`${shadowStyle} ${hiddenStyle}`}>
 					<div className='nav-logo-container'>
 						<NavLogoIcon className='nav-logo-icon' />
@@ -102,7 +102,7 @@ export default function NavbarHide() {
 			<Tablet>
 				{isLargeScreen ? (
 					<nav
-						id='nav-tablet-large'
+						id='nav-hide-tablet-large'
 						className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
@@ -141,7 +141,7 @@ export default function NavbarHide() {
 					</nav>
 				) : (
 					<nav
-						id='nav-tablet-small'
+						id='nav-hide-tablet-small'
 						className={`${shadowStyle} ${hiddenStyle}`}>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
@@ -176,7 +176,7 @@ export default function NavbarHide() {
 
 			<Mobile>
 				<nav
-					id='nav-mobile'
+					id='nav-hide-mobile'
 					className={`${shadowStyle} ${hiddenStyle}`}>
 					<div className='nav-menu-container'>
 						<Menu />

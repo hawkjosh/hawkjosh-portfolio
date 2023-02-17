@@ -32,7 +32,7 @@ export default function NavbarHide() {
 	return (
 		<Fragment>
 			<Laptop>
-				<nav id='nav-laptop'>
+				<nav id='nav-static-laptop'>
 					<div className='nav-logo-container'>
 						<NavLogoIcon className='nav-logo-icon' />
 						<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -72,7 +72,7 @@ export default function NavbarHide() {
 
 			<Tablet>
 				{isLargeScreen ? (
-					<nav id='nav-tablet-large'>
+					<nav id='nav-static-tablet-large'>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -109,7 +109,7 @@ export default function NavbarHide() {
 						</div>
 					</nav>
 				) : (
-					<nav id='nav-tablet-small'>
+					<nav id='nav-static-tablet-small'>
 						<div className='nav-logo-container'>
 							<NavLogoIcon className='nav-logo-icon' />
 							<div className='nav-logo-title'>The Hawk's Nest</div>
@@ -142,7 +142,7 @@ export default function NavbarHide() {
 			</Tablet>
 
 			<Mobile>
-				<nav id='nav-mobile'>
+				<nav id='nav-static-mobile'>
 					<div className='nav-menu-container'>
 						<Menu />
 					</div>

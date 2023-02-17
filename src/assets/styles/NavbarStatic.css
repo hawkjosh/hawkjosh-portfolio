@@ -1,6 +1,6 @@
 /* For All Layouts
 --------------------- */
-nav {
+[id^='nav-static'] {
 	position: sticky;
 	top: 0;
 	height: 5rem;
@@ -13,18 +13,18 @@ nav {
 	transition: transform 0.5s ease-in-out;
 }
 
-.nav-logo-container {
+[id^='nav-static'] .nav-logo-container {
 	height: 100%;
 	display: flex;
 	align-items: center;
 	gap: 1rem;
 }
 
-.nav-logo-icon {
+[id^='nav-static'] .nav-logo-icon {
 	fill: var(--primary);
 	stroke: white;
 }
-.nav-logo-icon:hover {
+[id^='nav-static'] .nav-logo-icon:hover {
 	cursor: grab;
 	animation: rotate 1.5s linear infinite;
 	fill: white;
@@ -39,17 +39,17 @@ nav {
 	}
 }
 
-.nav-logo-title {
+[id^='nav-static'] .nav-logo-title {
 	font-weight: 500;
 	text-transform: uppercase;
 }
 @media (max-width: 359px) {
-	.nav-logo-title {
+	[id^='nav-static'] .nav-logo-title {
 		display: none;
 	}
 }
 
-.nav-links-container {
+[id^='nav-static'] .nav-links-container {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -57,14 +57,14 @@ nav {
 	border-left: solid white;
 }
 
-.nav-link {
+[id^='nav-static'] .nav-link {
 	text-transform: uppercase;
 }
-.nav-link:hover {
+[id^='nav-static'] .nav-link:hover {
 	color: var(--primary);
 }
 
-.nav-social-container {
+[id^='nav-static'] .nav-social-container {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -73,110 +73,110 @@ nav {
 	padding: 0rem 2.5%;
 }
 
-.nav-social-icon {
+[id^='nav-static'] .nav-social-icon {
 	stroke: white;
 }
-.nav-social-icon:hover {
+[id^='nav-static'] .nav-social-icon:hover {
 	stroke: var(--primary);
 	stroke-width: 8;
 }
 
 /* For Laptop Layout → 1280px and above
 --------------------- */
-#nav-laptop .nav-logo-container {
+#nav-static-laptop .nav-logo-container {
 	flex-basis: 31.5%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
 
-#nav-laptop .nav-logo-icon {
+#nav-static-laptop .nav-logo-icon {
 	width: clamp(3.25rem, 2.417rem + 1.042vw, 3.5rem);
 }
 
-#nav-laptop .nav-logo-title {
+#nav-static-laptop .nav-logo-title {
 	font-size: clamp(1.75rem, 0.917rem + 1.042vw, 2rem);
 }
 
-#nav-laptop .nav-links-container {
+#nav-static-laptop .nav-links-container {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
 
-#nav-laptop .nav-link {
+#nav-static-laptop .nav-link {
 	font-size: clamp(1.25rem, 0.583rem + 0.833vw, 1.45rem);
 }
 
-#nav-laptop .nav-social-container {
+#nav-static-laptop .nav-social-container {
 	flex-basis: 25%;
 }
 
-#nav-laptop .nav-social-icon {
+#nav-static-laptop .nav-social-icon {
 	width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
 }
 
 /* For Large Tablet Layout → 1024px to 1279px
 --------------------- */
-#nav-tablet-large .nav-logo-container {
+#nav-static-tablet-large .nav-logo-container {
 	flex-basis: 31.5%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
 
-#nav-tablet-large .nav-logo-icon {
+#nav-static-tablet-large .nav-logo-icon {
 	width: clamp(3rem, 2rem + 1.563vw, 3.25rem);
 }
 
-#nav-tablet-large .nav-logo-title {
+#nav-static-tablet-large .nav-logo-title {
 	font-size: clamp(1.5rem, 0.5rem + 1.563vw, 1.75rem);
 }
 
-#nav-tablet-large .nav-links-container {
+#nav-static-tablet-large .nav-links-container {
 	flex-basis: 43.5%;
 	padding: 0rem 2.5%;
 }
 
-#nav-tablet-large .nav-link {
+#nav-static-tablet-large .nav-link {
 	font-size: clamp(1.05rem, 0.25rem + 1.25vw, 1.25rem);
 }
 
-#nav-tablet-large .nav-social-container {
+#nav-static-tablet-large .nav-social-container {
 	flex-basis: 25%;
 }
 
-#nav-tablet-large .nav-social-icon {
+#nav-static-tablet-large .nav-social-icon {
 	width: clamp(1.75rem, 0.75rem + 1.563vw, 2rem);
 }
 
 /* For Small Tablet Layout → 640px to 1023px
 --------------------- */
-#nav-tablet-small .nav-logo-container {
+#nav-static-tablet-small .nav-logo-container {
 	flex-basis: 42.5%;
 	justify-content: flex-start;
 	padding-left: 2.5%;
 }
 
-#nav-tablet-small .nav-logo-icon {
+#nav-static-tablet-small .nav-logo-icon {
 	width: clamp(2.75rem, 2.333rem + 1.042vw, 3rem);
 }
 
-#nav-tablet-small .nav-logo-title {
+#nav-static-tablet-small .nav-logo-title {
 	font-size: clamp(1.25rem, 0.833rem + 1.042vw, 1.5rem);
 }
 
-#nav-tablet-small .nav-links-container {
+#nav-static-tablet-small .nav-links-container {
 	flex-basis: 57.5%;
 	justify-content: flex-end;
 	padding-right: 2.5%;
 	gap: 1.5rem;
 }
 
-#nav-tablet-small .nav-link {
+#nav-static-tablet-small .nav-link {
 	font-size: clamp(0.85rem, 0.517rem + 0.833vw, 1.05rem);
 }
 
 /* For Mobile Layout → 639px and below
 --------------------- */
-#nav-mobile .nav-menu-container {
+#nav-static-mobile .nav-menu-container {
 	min-height: 5rem;
 	flex-basis: 20%;
 	display: flex;
@@ -185,16 +185,16 @@ nav {
 	padding-left: 1.5rem;
 }
 
-#nav-mobile .nav-logo-container {
+#nav-static-mobile .nav-logo-container {
 	flex-basis: 80%;
 	justify-content: flex-end;
 	padding-right: 1.5rem;
 }
 
-#nav-mobile .nav-logo-title {
+#nav-static-mobile .nav-logo-title {
 	font-size: clamp(1rem, 0.679rem + 1.429vw, 1.25rem);
 }
 
-#nav-mobile .nav-logo-icon {
+#nav-static-mobile .nav-logo-icon {
 	width: clamp(2.5rem, 2.179rem + 1.429vw, 2.75rem);
 }
