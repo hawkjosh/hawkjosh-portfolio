@@ -1,0 +1,18 @@
+.custom-button {
+  all: unset;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 0.125rem solid;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+/* .custom-button:hover {
+  box-shadow:
+    2px 2px 10px hsla(0, 0%, 100%, 0.5),
+    -2px -2px 10px hsla(0, 0%, 100%, 0.5),
+    -2px 2px 10px hsla(0, 0%, 100%, 0.5),
+    2px -2px 10px hsla(0, 0%, 100%, 0.5);
+} */
