@@ -1,16 +1,15 @@
-const buttonStyle = {
-	textTransform: 'uppercase',
+const inputStyle = {
+	display: 'block',
 	borderWidth: '0.125rem',
 	borderStyle: 'solid',
-	borderRadius: '0.75rem',
+	borderRadius: '0.5rem',
 	padding: '0.5rem 1rem',
-	cursor: 'pointer',
 }
 
 export default ({ ...props }) => {
 	return (
-		<button
-			style={buttonStyle}
+		<input
+			style={inputStyle}
 			{...props}
 		/>
 	)

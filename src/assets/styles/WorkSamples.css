@@ -34,7 +34,7 @@
 	position: relative;
 	display: grid;
 	grid-template-columns: 60% 40%;
-	transition: transform 500ms ease;
+	/* transition: transform 5s ease-in-out; */
 }
 
 #work-samples-laptop .image-section {
@@ -49,7 +49,7 @@
 #work-samples-laptop [class^='image-container'] {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-laptop .work-sample-image {
@@ -89,7 +89,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-laptop .info-title {
@@ -117,7 +117,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 5rem;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 #work-samples-laptop [class^='link-container']:has(.bonus-link) {
 	grid-column: 1 / 2;
@@ -127,7 +127,7 @@
 	flex-wrap: wrap;
 	row-gap: 0.25rem;
 	column-gap: 2rem;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-laptop .link-btn {
@@ -206,7 +206,7 @@
 	grid-row: 1 / 2;
 	display: flex;
 	justify-content: center;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-tablet .work-sample-image {
@@ -230,7 +230,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-tablet .info-title {
@@ -258,7 +258,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: clamp(5rem, 0rem + 12.5vw, 8rem);
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-tablet .link-btn {
@@ -336,7 +336,7 @@
 	grid-row: 1 / 2;
 	display: flex;
 	justify-content: center;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-mobile .work-sample-image {
@@ -359,7 +359,7 @@
 	display: flex;
 	flex-direction: column;
 	/* gap: 0.5rem; */
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-mobile .info-title {
@@ -387,7 +387,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: clamp(2rem, -1.857rem + 17.143vw, 5rem);
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 #work-samples-mobile [class^='link-container']:has(.bonus-link) {
 	grid-column: 1 / 2;
@@ -397,7 +397,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 2rem;
-	transition: opacity 2s;
+	transition: opacity 1.5s ease-in-out;
 }
 
 #work-samples-mobile .link-btn {
