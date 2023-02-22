@@ -3,7 +3,7 @@ import React from 'react'
 export default function ResumeBtnIcon({ ...props }) {
 	return (
 		<a
-			href='https://1drv.ms/b/s!AjbK_Cd8W85egfM7DSjzINlw1ZHZpA'
+			href='https://1drv.ms/b/s!AjbK_Cd8W85etY8YbTzNuiafBgluAg?e=gtMTkI'
 			target='_blank'
 			rel='noreferrer'>
 			<svg
