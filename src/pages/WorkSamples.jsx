@@ -65,7 +65,7 @@ const samples = [
 		info: `A clean, crisp, and very usefuly note-taking app that uses localStorage to save and retrieve note data. BONUS: Check out an alternate version of this app at the link below that uses an express.js backend to save and retrieve notes from a JSON file.`,
 		linkClass: 'link-container4',
 		website: 'https://hawkjosh-note-taker.netlify.app/',
-		github: 'https://github.com/hawkjosh/vite-note-taker',
+		github: 'https://github.com/hawkjosh/note-taker-json',
 		bonus: 'https://hawkjosh-note-taker.onrender.com',
 	},
 	{
@@ -76,10 +76,10 @@ const samples = [
 		alt: 'Weather Dashboard Image',
 		infoClass: 'info-container5',
 		title: 'Weather Dashboard',
-		info: `A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the OpenWeatherMap API.`,
+		info: `A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the WeatherAPI developer API.`,
 		linkClass: 'link-container5',
-		website: 'https://hawkjosh.github.io/Weather-Dashboard',
-		github: 'https://github.com/hawkjosh/Weather-Dashboard',
+		website: 'https://hawkjosh-weather-dashboard.onrender.com',
+		github: 'https://github.com/hawkjosh/weather-dashboard-update',
 	},
 	{
 		index: '5',
