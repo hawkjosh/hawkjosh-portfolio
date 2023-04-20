@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import useNavbarHide from '../hooks/useNavbarHide.js'
+import { useNavbarHide } from '../hooks/useNavbarHide.js'
 
-import Menu from './Menu.jsx'
+import { Menu } from './Menu.jsx'
 
-import NavLogoIcon from './page-icons/NavLogoIcon.jsx'
-import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
-import GithubIcon from './page-icons/GithubIcon.jsx'
-import CodepenIcon from './page-icons/CodepenIcon.jsx'
-import StackOverflowIcon from './page-icons/StackOverflowIcon.jsx'
+import { NavLogoIcon } from './page-icons/NavLogoIcon.jsx'
+import { LinkedinIcon } from './page-icons/LinkedinIcon.jsx'
+import { GithubIcon } from './page-icons/GithubIcon.jsx'
+import { CodepenIcon } from './page-icons/CodepenIcon.jsx'
+import { StackOverflowIcon } from './page-icons/StackOverflowIcon.jsx'
 
 export const NavbarHide = () => {
 	const [shouldHideHeader, setShouldHideHeader] = useState(false)

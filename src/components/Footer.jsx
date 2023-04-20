@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
 import { useWindowSize } from '../hooks/useWindowSize.js'
 
-import LinkedinIcon from '../components/page-icons/LinkedinIcon.jsx'
-import GithubIcon from '../components/page-icons/GithubIcon.jsx'
-import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
-import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
-import FooterLogoIcon from '../components/page-icons/FooterLogoIcon.jsx'
+import { LinkedinIcon } from '../components/page-icons/LinkedinIcon.jsx'
+import { GithubIcon } from '../components/page-icons/GithubIcon.jsx'
+import { CodepenIcon } from '../components/page-icons/CodepenIcon.jsx'
+import { StackOverflowIcon } from '../components/page-icons/StackOverflowIcon.jsx'
+import { FooterLogoIcon } from '../components/page-icons/FooterLogoIcon.jsx'
 
 export const Footer = () => {
 	const { isSpecialScreenLg } = useWindowSize()

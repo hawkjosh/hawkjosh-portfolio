@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ToolboxCloseBtnIcon from '../components/page-icons/ToolboxCloseBtnIcon.jsx'
+import { ToolboxCloseBtnIcon } from '../components/page-icons/ToolboxCloseBtnIcon.jsx'
 
 import Apollo from '../assets/images/toolbox/apollo.svg'
 import Babel from '../assets/images/toolbox/babel.svg'

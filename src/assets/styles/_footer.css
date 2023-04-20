@@ -28,7 +28,7 @@
 				fill: $color-primary;
 				stroke: white;
 				cursor: grab;
-				transform: scale(1.2);
+				transform: scale(1.25);
 			}
 		}
 	}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CodepenIcon = ({ ...props }) => {
+export const CodepenIcon = ({ ...props }) => {
 	return (
 		<a
 			href='https://codepen.io/hawkjosh'
@@ -18,5 +18,3 @@ const CodepenIcon = ({ ...props }) => {
 		</a>
 	)
 }
-
-export default CodepenIcon

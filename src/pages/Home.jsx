@@ -4,7 +4,7 @@ import { LaptopIcon } from '../components/page-icons/LaptopIcon.jsx'
 import { SuperheroIcon } from '../components/page-icons/SuperheroIcon.jsx'
 import { TennesseeIcon } from '../components/page-icons/TennesseeIcon.jsx'
 
-import myAvatar from '../assets/images/my-avatar.svg'
+import myAvatar from '../assets/images/avatar-8KB.svg'
 
 export const Home = () => {
 	return (

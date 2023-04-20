@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Menu from './Menu.jsx'
+import { Menu } from './Menu.jsx'
 
-import NavLogoIcon from './page-icons/NavLogoIcon.jsx'
-import LinkedinIcon from './page-icons/LinkedinIcon.jsx'
-import GithubIcon from './page-icons/GithubIcon.jsx'
-import CodepenIcon from './page-icons/CodepenIcon.jsx'
-import StackOverflowIcon from './page-icons/StackOverflowIcon.jsx'
+import { NavLogoIcon } from './page-icons/NavLogoIcon.jsx'
+import { LinkedinIcon } from './page-icons/LinkedinIcon.jsx'
+import { GithubIcon } from './page-icons/GithubIcon.jsx'
+import { CodepenIcon } from './page-icons/CodepenIcon.jsx'
+import { StackOverflowIcon } from './page-icons/StackOverflowIcon.jsx'
 
 export const NavbarStatic = () => {
 	return (

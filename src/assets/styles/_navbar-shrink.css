@@ -87,32 +87,29 @@
 			}
 
 			&:hover {
-				cursor: grab;
-				animation: rotate 1.5s linear infinite;
 				fill: white;
 				stroke: $color-primary;
+				cursor: grab;
+				animation: rotate 1.5s linear infinite;
 			}
 		}
 
 		& .nav-logo-title {
 			font-weight: 500;
 			text-transform: uppercase;
+			transition: font-size 0.5s ease-in-out;
 
 			@media (--laptop) {
 				font-size: clamp(1.75rem, 0.083rem + 2.083vw, 2.25rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (--navbar-tablet-lg) {
 				font-size: clamp(1.35rem, -0.25rem + 2.5vw, 1.75rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (--navbar-tablet-sm) {
 				font-size: clamp(1.15rem, 0.317rem + 2.083vw, 1.65rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (--mobile) {
 				font-size: clamp(1.15rem, 0.507rem + 2.857vw, 1.65rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (width < 360px) {
 				display: none;
@@ -147,24 +144,21 @@
 
 		& .nav-link {
 			text-transform: uppercase;
+			transition: transform 0.25s ease, font-size 0.5s ease-in-out;
 
 			@media (--laptop) {
 				font-size: clamp(1.25rem, 0.417rem + 1.042vw, 1.5rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (--navbar-tablet-lg) {
 				font-size: clamp(1rem, 0rem + 1.563vw, 1.25rem);
-				transition: font-size 0.5s ease-in-out;
 			}
 			@media (--navbar-tablet-sm) {
 				font-size: clamp(0.85rem, 0.183rem + 1.667vw, 1.25rem);
-				transition: font-size 0.5s ease-in-out;
-			}
-			@media (--mobile) {
 			}
 
 			&:hover {
 				color: $color-primary;
+				transform: scale(1.25);
 			}
 		}
 	}
@@ -192,19 +186,19 @@
 
 		& .nav-social-icon {
 			stroke: white;
+			transition: transform 0.25s ease, width 0.5s ease-in-out;
 
 			@media (--laptop) {
 				width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
-				transition: width 0.5s ease-in-out;
 			}
 			@media (--navbar-tablet-lg) {
 				width: clamp(1.65rem, 0.45rem + 1.875vw, 1.95rem);
-				transition: width 0.5s ease-in-out;
 			}
 
 			&:hover {
 				stroke: $color-primary;
 				stroke-width: 8;
+				transform: scale(1.25);
 			}
 		}
 	}

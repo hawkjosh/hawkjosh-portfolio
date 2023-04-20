@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import NavMenuIcon from '../components/page-icons/NavMenuIcon.jsx'
+import { NavMenuIcon } from '../components/page-icons/NavMenuIcon.jsx'
 
 const menuItems = [
 	{
@@ -22,7 +22,7 @@ const menuItems = [
 	},
 ]
 
-const Menu = () => {
+export const Menu = () => {
 	const [showMenu, setShowMenu] = useState(false)
 
 	return (
@@ -48,5 +48,3 @@ const Menu = () => {
 		</Fragment>
 	)
 }
-
-export default Menu

@@ -6,7 +6,7 @@ import { Toolbox } from '../components/Toolbox.jsx'
 import { ToolboxBtnIcon } from '../components/page-icons/ToolboxBtnIcon.jsx'
 import { ResumeBtnIcon } from '../components/page-icons/ResumeBtnIcon.jsx'
 
-import profilePhoto from '../assets/images/profile.png'
+import profilePhoto from '../assets/images/profile-49KB.png'
 
 const paragraphs = [
 	{

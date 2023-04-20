@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react'
-import { throttle } from 'lodash'
 
-const useNavbarHide = (callback) => {
+export const useNavbarHide = (callback, delay) => {
 	const [, setScrollPosition] = useState(0)
 	let prevScrollTop = 0
 
-	const handleDocScroll = () => {
+	const handleScroll = () => {
 		const { scrollTop: currScrollTop } =
 			document.documentElement || document.body
 
@@ -17,13 +16,20 @@ const useNavbarHide = (callback) => {
 		callback({ prevScrollTop, currScrollTop })
 	}
 
-	const handleDocScrollThrottle = throttle(handleDocScroll, 250)
+	let timeoutId = null
+
+	const handleScrollThrottle = () => {
+		if (!timeoutId) {
+			timeoutId = setTimeout(() => {
+				handleScroll()
+				timeoutId = null
+			}, delay)
+		}
+	}
 
 	useEffect(() => {
-		window.addEventListener('scroll', handleDocScrollThrottle)
+		window.addEventListener('scroll', handleScrollThrottle)
 
-		return () => window.removeEventListener('scroll', handleDocScrollThrottle)
+		return () => window.removeEventListener('scroll', handleScrollThrottle)
 	}, [])
 }
-
-export default useNavbarHide

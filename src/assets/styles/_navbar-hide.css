@@ -92,10 +92,10 @@
 			}
 
 			&:hover {
-				cursor: grab;
-				animation: rotate 1.5s linear infinite;
 				fill: white;
 				stroke: $color-primary;
+				cursor: grab;
+				animation: rotate 1.5s linear infinite;
 			}
 		}
 
@@ -148,6 +148,7 @@
 
 		& .nav-link {
 			text-transform: uppercase;
+			transition: transform 0.25s ease;
 
 			@media (--laptop) {
 				font-size: clamp(1.25rem, 0.583rem + 0.833vw, 1.45rem);
@@ -163,6 +164,7 @@
 
 			&:hover {
 				color: $color-primary;
+				transform: scale(1.25);
 			}
 		}
 	}
@@ -190,6 +192,7 @@
 
 		& .nav-social-icon {
 			stroke: white;
+			transition: transform 0.25s ease;
 
 			@media (--laptop) {
 				width: clamp(2rem, 0.333rem + 2.083vw, 2.5rem);
@@ -201,6 +204,7 @@
 			&:hover {
 				stroke: $color-primary;
 				stroke-width: 8;
+				transform: scale(1.25);
 			}
 		}
 	}

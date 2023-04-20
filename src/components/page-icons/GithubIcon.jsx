@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GithubIcon = ({ ...props }) => {
+export const GithubIcon = ({ ...props }) => {
 	return (
 		<a
 			href='https://github.com/hawkjosh'
@@ -18,5 +18,3 @@ const GithubIcon = ({ ...props }) => {
 		</a>
 	)
 }
-
-export default GithubIcon

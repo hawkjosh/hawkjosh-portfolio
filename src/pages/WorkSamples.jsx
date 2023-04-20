@@ -7,14 +7,14 @@ import { WorkSamplesLink } from '../components/WorkSamplesLink.jsx'
 import { RightArrowIcon } from '../components/page-icons/RightArrowIcon.jsx'
 import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
 
-import socialNetwork from '../assets/images/work-samples/social_network.png'
-import messageForum from '../assets/images/work-samples/message_forum.png'
-import songSearch from '../assets/images/work-samples/song_search.png'
-import noteTaker from '../assets/images/work-samples/note_taker.png'
-import weatherDashboard from '../assets/images/work-samples/weather_dashboard.png'
-import workdayScheduler from '../assets/images/work-samples/workday_scheduler.png'
-import courseTracker from '../assets/images/work-samples/course_tracker.png'
-import miniGames from '../assets/images/work-samples/mini_games.png'
+import socialNetwork from '../assets/images/work-samples/social_network-18KB.png'
+import messageForum from '../assets/images/work-samples/message_forum-75KB.png'
+import songSearch from '../assets/images/work-samples/song_search-61KB.png'
+import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
+import weatherDashboard from '../assets/images/work-samples/weather_dashboard-55KB.png'
+import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
+import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
+import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
 
 export const WorkSamples = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -163,13 +163,13 @@ export const WorkSamples = () => {
 
 			<div className='nav-section'>
 				<div
-					className='left-arrow-icon-wrapper'
+					className='arrow-icon-wrapper'
 					onClick={handleLeftClick}>
 					<LeftArrowIcon className='arrow-icon' />
 				</div>
 
 				<div
-					className='right-arrow-icon-wrapper'
+					className='arrow-icon-wrapper'
 					onClick={handleRightClick}>
 					<RightArrowIcon className='arrow-icon' />
 				</div>

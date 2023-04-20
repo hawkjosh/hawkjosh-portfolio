@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export function useWindowSize() {
+export const useWindowSize = () => {
 	const [isMobile, setIsMobile] = useState(false)
 	const [isTablet, setIsTablet] = useState(false)
 	const [isLaptop, setIsLaptop] = useState(false)
