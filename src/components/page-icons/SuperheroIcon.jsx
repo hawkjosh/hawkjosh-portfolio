@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SuperheroIcon({ ...props }) {
+export const SuperheroIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}

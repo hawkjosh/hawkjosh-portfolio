@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToolboxCloseBtnIcon({ ...props }) {
+const ToolboxCloseBtnIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}
@@ -9,3 +9,5 @@ export default function ToolboxCloseBtnIcon({ ...props }) {
 		</svg>
 	)
 }
+
+export default ToolboxCloseBtnIcon

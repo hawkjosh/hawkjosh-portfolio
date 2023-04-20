@@ -1,23 +1,64 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 
-export default function useWindowSize() {
-	const isSSR = typeof window !== 'undefined'
-	const [windowSize, setWindowSize] = React.useState({
-		width: isSSR ? 1200 : window.innerWidth,
-		height: isSSR ? 800 : window.innerHeight,
-	})
+export function useWindowSize() {
+	const [isMobile, setIsMobile] = useState(false)
+	const [isTablet, setIsTablet] = useState(false)
+	const [isLaptop, setIsLaptop] = useState(false)
+	const [isSpecialScreenSm, setIsSpecialScreenSm] = useState(false)
+	const [isSpecialScreenLg, setIsSpecialScreenLg] = useState(false)
 
-	function changeWindowSize() {
-		setWindowSize({ width: window.innerWidth, heigth: window.innerHeight })
-	}
-
-	React.useEffect(() => {
-		window.addEventListener('resize', changeWindowSize)
-
-		return () => {
-			window.removeEventListener('resize', changeWindowSize)
+	useEffect(() => {
+		const handleResizeMobile = () => {
+			setIsMobile(window.innerWidth < 640)
 		}
+		handleResizeMobile()
+		window.addEventListener('resize', handleResizeMobile)
+		return () => window.removeEventListener('resize', handleResizeMobile)
 	}, [])
 
-	return windowSize
+	useEffect(() => {
+		const handleResizeTablet = () => {
+			setIsTablet(window.innerWidth >= 640 && window.innerWidth < 1280)
+		}
+		handleResizeTablet()
+		window.addEventListener('resize', handleResizeTablet)
+		return () => window.removeEventListener('resize', handleResizeTablet)
+	}, [])
+
+	useEffect(() => {
+		const handleResizeLaptop = () => {
+			setIsLaptop(window.innerWidth >= 1280)
+		}
+		handleResizeLaptop()
+		window.addEventListener('resize', handleResizeLaptop)
+		return () => window.removeEventListener('resize', handleResizeLaptop)
+	}, [])
+
+	useEffect(() => {
+		const handleResizeSpecialScreenSm = () => {
+			setIsSpecialScreenSm(window.innerWidth >= 640 && window.innerWidth < 960)
+		}
+		handleResizeSpecialScreenSm()
+		window.addEventListener('resize', handleResizeSpecialScreenSm)
+		return () =>
+			window.removeEventListener('resize', handleResizeSpecialScreenSm)
+	}, [])
+
+	useEffect(() => {
+		const handleResizeSpecialScreenLg = () => {
+			setIsSpecialScreenLg(window.innerWidth >= 1024)
+		}
+		handleResizeSpecialScreenLg()
+		window.addEventListener('resize', handleResizeSpecialScreenLg)
+		return () =>
+			window.removeEventListener('resize', handleResizeSpecialScreenLg)
+	}, [])
+
+	return {
+		isMobile,
+		isTablet,
+		isLaptop,
+		isSpecialScreenSm,
+		isSpecialScreenLg,
+	}
 }

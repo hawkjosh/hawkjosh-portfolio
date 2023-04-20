@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export default function useTextareaScroll() {
+const useTextareaScroll = () => {
 	const textareaRef = useRef(null)
 
 	useEffect(() => {
@@ -24,3 +24,5 @@ export default function useTextareaScroll() {
 
 	return textareaRef
 }
+
+export default useTextareaScroll

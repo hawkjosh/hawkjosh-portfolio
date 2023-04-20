@@ -1,0 +1,120 @@
+.toolbox-background {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(200, 200, 200, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	& .toolbox-container {
+		position: absolute;
+		height: calc(100vh - 12rem);
+		top: 6.5rem;
+		display: flex;
+		flex-direction: column;
+		border: 5px solid $color-secondary;
+		border-radius: 1rem;
+		background-color: white;
+		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+		padding: 0.5rem 1.25rem 1.75rem;
+		overflow-y: auto;
+
+		@media (--laptop) {
+			width: 62.5%;
+			right: 2.5%;
+		}
+		@media (--toolbox-tablet-lg) {
+			width: 62.5%;
+			right: 2.5%;
+		}
+		@media (--toolbox-tablet-sm) {
+			width: 55%;
+			left: 2.5%;
+		}
+		@media (--mobile) {
+			width: 85%;
+			height: calc(100vh - 5.5rem);
+			top: 1rem;
+			left: 7.5%;
+		}
+
+		& .toolbox-close-btn-wrapper {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 0.25rem;
+			margin-right: -0.5rem;
+
+			& .toolbox-close-btn-icon {
+				fill: $color-secondary;
+
+				@media (--laptop) {
+					width: clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem);
+					padding-bottom: 1.5rem;
+				}
+				@media (--toolbox-tablet-lg) {
+					width: clamp(2rem, 1.75rem + 0.625vw, 2.25rem);
+					padding-bottom: 1.25rem;
+				}
+				@media (--toolbox-tablet-sm) {
+					width: clamp(1.875rem, 1.375rem + 1.25vw, 2.125rem);
+					padding-bottom: 1.125rem;
+				}
+				@media (--mobile) {
+					width: clamp(1.75rem, 1.429rem + 1.429vw, 2rem);
+					padding-bottom: 1rem;
+				}
+
+				&:hover {
+					fill: white;
+					stroke: $color-secondary;
+					stroke-width: 3;
+					cursor: pointer;
+				}
+			}
+		}
+
+		& .toolbox-icons-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+
+			@media (--laptop) {
+				row-gap: 3rem;
+				column-gap: 1.25rem;
+			}
+			@media (--toolbox-tablet-lg) {
+				row-gap: 3rem;
+				column-gap: 1rem;
+			}
+			@media (--toolbox-tablet-sm) {
+				row-gap: 2.75rem;
+				column-gap: 0.75rem;
+			}
+			@media (--mobile) {
+				row-gap: 2.5rem;
+				column-gap: 0.5rem;
+			}
+
+			& .toolbox-icon {
+				aspect-ratio: 3/2;
+				object-fit: contain;
+
+				@media (--laptop) {
+					width: 14%;
+					max-width: 8.625rem;
+				}
+				@media (--toolbox-tablet-lg) {
+					width: 19%;
+				}
+				@media (--toolbox-tablet-sm) {
+					width: 22%;
+				}
+				@media (--mobile) {
+					width: 22%;
+					min-width: 3rem;
+				}
+			}
+		}
+	}
+}

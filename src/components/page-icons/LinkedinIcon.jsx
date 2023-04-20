@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LinkedinIcon({ ...props }) {
+const LinkedinIcon = ({ ...props }) => {
 	return (
 		<a
 			href='https://www.linkedin.com/in/josh-hawk-6591a3230/'
@@ -18,3 +18,5 @@ export default function LinkedinIcon({ ...props }) {
 		</a>
 	)
 }
+
+export default LinkedinIcon

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ToolboxBtnIcon({ ...props }) {
+export const ToolboxBtnIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default function useNavbarShrink() {
+const useNavbarShrink = () => {
 	useEffect(() => {
 		var navbarShrink = function () {
 			const navShrinkElement = document.body.querySelector('nav')
@@ -22,3 +22,5 @@ export default function useNavbarShrink() {
 		}
 	}, [])
 }
+
+export default useNavbarShrink

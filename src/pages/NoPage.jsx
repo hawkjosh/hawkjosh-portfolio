@@ -1,11 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-import '../assets/styles/NoPage.css'
-
-export default function NoPage() {
+export const NoPage = () => {
 	return (
-		<>
-			<div>No Page</div>
-		</>
+		<main className='no-page-container'>
+			<div className='no-page-header'>
+				<h1 className='no-page-title'>Page Not Found</h1>
+				<h2 className='no-page-subtitle'>(404 Error)</h2>
+			</div>
+			<div className='no-page-body'>
+				<p className='no-page-message'>
+					Uh oh, something went wrong. Click below to return.
+				</p>
+				<Link
+					className='no-page-link'
+					to='/'>
+					Hawk's Nest Home
+				</Link>
+			</div>
+		</main>
 	)
 }

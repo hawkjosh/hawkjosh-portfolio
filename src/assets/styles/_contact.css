@@ -1,0 +1,211 @@
+.contact-page-wrapper {
+	text-align: center;
+
+	@media (width >= 1440px) {
+		padding: clamp(2.25rem, 0.643rem + 1.786vw, 2.5rem) 0;
+	}
+	@media (1280px <= width < 1440px) {
+		padding: clamp(1.875rem, -1.125rem + 3.75vw, 2.25rem) 0;
+	}
+	@media (1024px <= width < 1280px) {
+		padding: 2rem 0;
+	}
+	@media (834px <= width < 1024px) {
+		padding: clamp(1.75rem, 0.653rem + 2.105vw, 2rem) 0;
+	}
+	@media (768px <= width < 834px) {
+		padding: clamp(1.625rem, 0.17rem + 3.03vw, 1.75rem) 0;
+	}
+	@media (428px <= width < 768px) {
+		padding: clamp(1.5rem, 1.343rem + 0.588vw, 1.625rem) 0;
+	}
+	@media (390px <= width < 428px) {
+		padding: clamp(1.375rem, 0.092rem + 5.263vw, 1.5rem) 0;
+	}
+	@media (width < 390px) {
+		padding: clamp(1.25rem, -0.25rem + 6.667vw, 1.375rem) 0;
+	}
+
+	& .contact-page-title {
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $color-secondary;
+
+		@media (width >= 1440px) {
+			font-size: clamp(3rem, 1.393rem + 1.786vw, 3.25rem);
+			margin-bottom: clamp(2rem, 0.393rem + 1.786vw, 2.25rem);
+		}
+		@media (1280px <= width < 1440px) {
+			font-size: clamp(2.625rem, -0.375rem + 3.75vw, 3rem);
+			margin-bottom: clamp(1.625rem, -1.375rem + 3.75vw, 2rem);
+		}
+		@media (1024px <= width < 1280px) {
+			font-size: 2.75rem;
+			margin-bottom: 1.75rem;
+		}
+		@media (834px <= width < 1024px) {
+			font-size: clamp(2.625rem, 2.076rem + 1.053vw, 2.75rem);
+			margin-bottom: clamp(1.625rem, 1.076rem + 1.053vw, 1.75rem);
+		}
+		@media (768px <= width < 834px) {
+			font-size: clamp(2.5rem, 1.045rem + 3.03vw, 2.625rem);
+			margin-bottom: clamp(1.5rem, 0.045rem + 3.03vw, 1.625rem);
+		}
+		@media (428px <= width < 768px) {
+			font-size: clamp(2.25rem, 1.935rem + 1.176vw, 2.5rem);
+			margin-bottom: clamp(1.25rem, 0.935rem + 1.176vw, 1.5rem);
+		}
+		@media (390px <= width < 428px) {
+			font-size: clamp(2.125rem, 0.842rem + 5.263vw, 2.25rem);
+			margin-bottom: clamp(1.125rem, -0.158rem + 5.263vw, 1.25rem);
+		}
+		@media (width < 390px) {
+			font-size: clamp(2rem, 0.5rem + 6.667vw, 2.125rem);
+			margin-bottom: clamp(1rem, -0.5rem + 6.667vw, 1.125rem);
+		}
+	}
+
+	& .contact-form {
+		width: 90%;
+		max-width: clamp(20rem, 2.055rem + 79.755vw, 85rem);
+		margin-right: auto;
+		margin-left: auto;
+
+		& .contact-form-entry {
+			width: 100%;
+			line-height: 1.25;
+			color: $color-secondary;
+			border-color: $color-secondary;
+
+			@media (width >= 1440px) {
+				font-size: clamp(1.625rem, 0.821rem + 0.893vw, 1.75rem);
+				margin-bottom: clamp(1.75rem, 0.143rem + 1.786vw, 2rem);
+			}
+			@media (1280px <= width < 1440px) {
+				font-size: clamp(1.375rem, -0.625rem + 2.5vw, 1.625rem);
+				margin-bottom: clamp(1.375rem, -1.625rem + 3.75vw, 1.75rem);
+			}
+			@media (1024px <= width < 1280px) {
+				font-size: 1.5rem;
+				margin-bottom: 1.75rem;
+			}
+			@media (834px <= width < 1024px) {
+				font-size: clamp(1.375rem, 0.826rem + 1.053vw, 1.5rem);
+				margin-bottom: clamp(1.5rem, 0.403rem + 2.105vw, 1.75rem);
+			}
+			@media (768px <= width < 834px) {
+				font-size: clamp(1.25rem, -0.205rem + 3.03vw, 1.375rem);
+				margin-bottom: clamp(1.375rem, -0.08rem + 3.03vw, 1.5rem);
+			}
+			@media (428px <= width < 768px) {
+				font-size: clamp(1.125rem, 0.968rem + 0.588vw, 1.25rem);
+				margin-bottom: clamp(1.25rem, 1.093rem + 0.588vw, 1.375rem);
+			}
+			@media (390px <= width < 428px) {
+				font-size: clamp(1rem, -0.283rem + 5.263vw, 1.125rem);
+				margin-bottom: clamp(1.125rem, -0.158rem + 5.263vw, 1.25rem);
+			}
+			@media (width < 390px) {
+				font-size: clamp(0.875rem, -0.625rem + 6.667vw, 1rem);
+				margin-bottom: clamp(1rem, -0.5rem + 6.667vw, 1.125rem);
+			}
+
+			&:nth-child(3) {
+				font-family: inherit;
+				margin-bottom: 0;
+
+				@media (width >= 1440px) {
+					min-height: clamp(25rem, -20rem + 50vw, 32rem);
+					max-height: clamp(25rem, -20rem + 50vw, 32rem);
+				}
+				@media (1280px <= width < 1440px) {
+					min-height: clamp(15rem, -65rem + 100vw, 25rem);
+					max-height: clamp(15rem, -65rem + 100vw, 25rem);
+				}
+				@media (1024px <= width < 1280px) {
+					min-height: calc(75vh - 20rem);
+					max-height: calc(75vh - 20rem);
+				}
+				@media (834px <= width < 1024px) {
+					min-height: calc(75vh - 20rem);
+					max-height: calc(75vh - 20rem);
+				}
+				@media (768px <= width < 834px) {
+					min-height: calc(75vh - 20rem);
+					max-height: calc(75vh - 20rem);
+				}
+				@media (428px <= width < 768px) {
+					min-height: calc(75vh - 19.5rem);
+					max-height: calc(75vh - 19.5rem);
+				}
+				@media (390px <= width < 428px) {
+					min-height: calc(75vh - 19rem);
+					max-height: calc(75vh - 19rem);
+				}
+				@media (width < 390px) {
+					min-height: calc(75vh - 18rem);
+					max-height: calc(75vh - 18rem);
+				}
+			}
+
+			&:focus {
+				box-shadow: 3px 3px 12px hsla(211, 30%, 24%, 0.75),
+					-3px -3px 12px hsla(211, 30%, 24%, 0.5);
+				outline: none;
+			}
+
+			&::placeholder {
+				color: hsla(0, 0%, 78%, 0.85);
+			}
+		}
+
+		& .contact-form-submit-btn {
+			line-height: 1.5;
+			color: white;
+			background-color: $color-secondary;
+			border-color: white;
+
+			@media (width >= 1440px) {
+				font-size: clamp(1.75rem, 0.143rem + 1.786vw, 2rem);
+				margin-top: clamp(2.25rem, 0.643rem + 1.786vw, 2.5rem);
+			}
+			@media (1280px <= width < 1440px) {
+				font-size: clamp(1.5rem, -0.5rem + 2.5vw, 1.75rem);
+				margin-top: clamp(2rem, 0rem + 2.5vw, 2.25rem);
+			}
+			@media (1024px <= width < 1280px) {
+				font-size: 1.75rem;
+				margin-top: 2.5rem;
+			}
+			@media (834px <= width < 1024px) {
+				font-size: clamp(1.625rem, 1.076rem + 1.053vw, 1.75rem);
+				margin-top: clamp(2.375rem, 1.826rem + 1.053vw, 2.5rem);
+			}
+			@media (768px <= width < 834px) {
+				font-size: clamp(1.5rem, 0.045rem + 3.03vw, 1.625rem);
+				margin-top: clamp(2.25rem, 0.795rem + 3.03vw, 2.375rem);
+			}
+			@media (428px <= width < 768px) {
+				font-size: clamp(1.375rem, 1.218rem + 0.588vw, 1.5rem);
+				margin-top: clamp(2.125rem, 1.968rem + 0.588vw, 2.25rem);
+			}
+			@media (390px <= width < 428px) {
+				font-size: clamp(1.25rem, -0.033rem + 5.263vw, 1.375rem);
+				margin-top: clamp(2rem, 0.717rem + 5.263vw, 2.125rem);
+			}
+			@media (width < 390px) {
+				font-size: clamp(1.125rem, -0.375rem + 6.667vw, 1.25rem);
+				margin-top: clamp(1.875rem, 0.375rem + 6.667vw, 2rem);
+			}
+
+			&:is(:hover, :focus) {
+				outline: none;
+				transition: box-shadow 0.25s ease-in-out;
+				box-shadow: 2px 2px 10px hsla(0, 0%, 100%, 0.5),
+					-2px -2px 10px hsla(0, 0%, 100%, 0.5),
+					-2px 2px 10px hsla(0, 0%, 100%, 0.5),
+					2px -2px 10px hsla(0, 0%, 100%, 0.5);
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TennesseeIcon({ ...props }) {
+export const TennesseeIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}

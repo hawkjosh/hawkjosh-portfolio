@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FooterLogoIcon({ ...props }) {
+const FooterLogoIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}
@@ -14,3 +14,5 @@ export default function FooterLogoIcon({ ...props }) {
 		</svg>
 	)
 }
+
+export default FooterLogoIcon

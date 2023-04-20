@@ -1,16 +1,16 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import './assets/styles/App.css'
+import { Layout } from './components/Layout.jsx'
+import { Home } from './pages/Home.jsx'
+import { About } from './pages/About.jsx'
+import { WorkSamples } from './pages/WorkSamples.jsx'
+import { Contact } from './pages/Contact.jsx'
+import { NoPage } from './pages/NoPage.jsx'
 
-import Layout from './components/Layout.jsx'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import WorkSamples from './pages/WorkSamples.jsx'
-import Contact from './pages/Contact.jsx'
-import NoPage from './pages/NoPage.jsx'
+import './App.css'
 
-export default function App() {
+export const App = () => {
 	return (
 		<Router>
 			<Routes>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function NavMenuIcon({ ...props }) {
+const NavMenuIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}
@@ -13,3 +13,5 @@ export default function NavMenuIcon({ ...props }) {
 		</svg>
 	)
 }
+
+export default NavMenuIcon

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FamilyIcon({ ...props }) {
+export const FamilyIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}

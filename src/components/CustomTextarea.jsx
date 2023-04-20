@@ -9,7 +9,7 @@ const textareaStyle = {
 	resize: 'none',
 }
 
-export default function CustomTextarea({ ...props }) {
+export const CustomTextarea = ({ ...props }) => {
 	const textareaRef = useTextareaScroll()
 
 	return (

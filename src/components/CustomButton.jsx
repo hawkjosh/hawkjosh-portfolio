@@ -7,7 +7,7 @@ const buttonStyle = {
 	cursor: 'pointer',
 }
 
-export default ({ ...props }) => {
+export const CustomButton = ({ ...props }) => {
 	return (
 		<button
 			style={buttonStyle}

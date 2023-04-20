@@ -1,7 +1,4 @@
-import React, { Fragment } from 'react'
-import { useMediaQuery } from 'react-responsive'
-
-import '../assets/styles/Toolbox.css'
+import React from 'react'
 
 import ToolboxCloseBtnIcon from '../components/page-icons/ToolboxCloseBtnIcon.jsx'
 
@@ -81,104 +78,29 @@ const icons = [
 	{ name: 'WebPack Icon', image: WebPack },
 ]
 
-const Laptop = ({ children }) => {
-	const isLaptop = useMediaQuery({ minWidth: 1280 })
-	return isLaptop ? children : null
-}
-
-const Tablet = ({ children }) => {
-	const isTablet = useMediaQuery({ minWidth: 640, maxWidth: 1279 })
-	return isTablet ? children : null
-}
-
-const Mobile = ({ children }) => {
-	const isMobile = useMediaQuery({ maxWidth: 639 })
-	return isMobile ? children : null
-}
-
-export default function Toolbox({ setShowToolbox }) {
+export const Toolbox = ({ setShowToolbox }) => {
 	return (
-		<Fragment>
-			<Laptop>
-				<main
-					id='toolbox-laptop-layout'
-					className='toolbox-background'>
-					<div className='toolbox-window'>
-						<div className='toolbox-close-btn-container'>
-							<ToolboxCloseBtnIcon
-								className='toolbox-close-btn-icon'
-								onClick={() => {
-									setShowToolbox(false)
-								}}
-							/>
-						</div>
-						<div className='toolbox-icons-container'>
-							{icons.map((icon, index) => (
-								<img
-									className='toolbox-icons'
-									src={icon.image}
-									key={index}
-									alt={icon.name}
-								/>
-							))}
-						</div>
-					</div>
-				</main>
-			</Laptop>
-
-			<Tablet>
-				<main
-					id='toolbox-tablet-layout'
-					className='toolbox-background'>
-					<div className='toolbox-window'>
-						<div className='toolbox-close-btn-container'>
-							<ToolboxCloseBtnIcon
-								className='toolbox-close-btn-icon'
-								onClick={() => {
-									setShowToolbox(false)
-								}}
-							/>
-						</div>
-						<div className='toolbox-icons-container'>
-							{icons.map((icon, index) => (
-								<img
-									className='toolbox-icons'
-									src={icon.image}
-									key={index}
-									alt={icon.name}
-								/>
-							))}
-						</div>
-					</div>
-				</main>
-			</Tablet>
-
-			<Mobile>
-				<main
-					id='toolbox-mobile-layout'
-					className='toolbox-background'>
-					<div className='toolbox-window'>
-						<div className='toolbox-close-btn-container'>
-							<ToolboxCloseBtnIcon
-								className='toolbox-close-btn-icon'
-								onClick={() => {
-									setShowToolbox(false)
-								}}
-							/>
-						</div>
-						<div className='toolbox-icons-container'>
-							{icons.map((icon, index) => (
-								<img
-									className='toolbox-icons'
-									src={icon.image}
-									key={index}
-									alt={icon.name}
-								/>
-							))}
-						</div>
-					</div>
-				</main>
-			</Mobile>
-		</Fragment>
+		<div className='toolbox-background'>
+			<div className='toolbox-container'>
+				<div className='toolbox-close-btn-wrapper'>
+					<ToolboxCloseBtnIcon
+						className='toolbox-close-btn-icon'
+						onClick={() => {
+							setShowToolbox(false)
+						}}
+					/>
+				</div>
+				<div className='toolbox-icons-wrapper'>
+					{icons.map((icon, index) => (
+						<img
+							className='toolbox-icon'
+							src={icon.image}
+							key={index}
+							alt={icon.name}
+						/>
+					))}
+				</div>
+			</div>
+		</div>
 	)
 }

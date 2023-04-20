@@ -1,8 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import '../assets/styles/Menu.css'
-
 import NavMenuIcon from '../components/page-icons/NavMenuIcon.jsx'
 
 const menuItems = [
@@ -24,7 +22,7 @@ const menuItems = [
 	},
 ]
 
-export default function Menu() {
+const Menu = () => {
 	const [showMenu, setShowMenu] = useState(false)
 
 	return (
@@ -43,10 +41,12 @@ export default function Menu() {
 								onClick={() => setShowMenu(!showMenu)}>
 								{item.name}
 							</Link>
-						</Fragment >
+						</Fragment>
 					))}
 				</div>
 			)}
 		</Fragment>
 	)
 }
+
+export default Menu

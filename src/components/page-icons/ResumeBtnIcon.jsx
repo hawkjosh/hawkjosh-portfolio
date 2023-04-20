@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ResumeBtnIcon({ ...props }) {
+export const ResumeBtnIcon = ({ ...props }) => {
 	return (
 		<a
 			href='https://1drv.ms/b/s!AjbK_Cd8W85etY8YbTzNuiafBgluAg?e=gtMTkI'

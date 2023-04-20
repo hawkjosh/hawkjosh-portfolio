@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+html {
+	height: 100%;
+	scrollbar-width: none;
+
+	& body {
+		width: 100%;
+		min-height: 100vh;
+		font-family: $font-primary;
+		color: white;
+		background-color: $color-primary;
+		overflow-x: hidden;
+	}
+
+	& a {
+		color: white;
+		text-decoration: none;
+	}
+}

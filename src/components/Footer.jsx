@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
-import { useMediaQuery } from 'react-responsive'
-
-import '../assets/styles/Footer.css'
+import { useWindowSize } from '../hooks/useWindowSize.js'
 
 import LinkedinIcon from '../components/page-icons/LinkedinIcon.jsx'
 import GithubIcon from '../components/page-icons/GithubIcon.jsx'
@@ -9,26 +7,36 @@ import CodepenIcon from '../components/page-icons/CodepenIcon.jsx'
 import StackOverflowIcon from '../components/page-icons/StackOverflowIcon.jsx'
 import FooterLogoIcon from '../components/page-icons/FooterLogoIcon.jsx'
 
-export default function Footer() {
-	const isLargeScreen = useMediaQuery({ minWidth: 1024 })
+export const Footer = () => {
+	const { isSpecialScreenLg } = useWindowSize()
 
 	return (
-		<Fragment>
-			{isLargeScreen ? (
-				<footer id='footer-container'>
+		<footer className='footer-container'>
+			{isSpecialScreenLg ? (
+				<Fragment>
 					<div className='footer-copywrite-text'>
 						© {new Date().getFullYear()} Joshua Wilde Hawk
 					</div>
-					<FooterLogoIcon className='footer-logo-icon' />
-				</footer>
+					<div className='footer-logo-icon'>
+						<FooterLogoIcon />
+					</div>
+				</Fragment>
 			) : (
-				<footer id='footer-container'>
-					<LinkedinIcon className='footer-social-icon' />
-					<GithubIcon className='footer-social-icon' />
-					<CodepenIcon className='footer-social-icon' />
-					<StackOverflowIcon className='footer-social-icon' />
-				</footer>
+				<Fragment>
+					<div className='footer-social-icon'>
+						<LinkedinIcon />
+					</div>
+					<div className='footer-social-icon'>
+						<GithubIcon />
+					</div>
+					<div className='footer-social-icon'>
+						<CodepenIcon />
+					</div>
+					<div className='footer-social-icon'>
+						<StackOverflowIcon />
+					</div>
+				</Fragment>
 			)}
-		</Fragment>
+		</footer>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function StackOverflowIcon({ ...props }) {
+const StackOverflowIcon = ({ ...props }) => {
 	return (
 		<a
 			href='https://stackoverflow.com/users/19513873/hawkjosh?tab=profile'
@@ -18,3 +18,5 @@ export default function StackOverflowIcon({ ...props }) {
 		</a>
 	)
 }
+
+export default StackOverflowIcon

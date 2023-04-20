@@ -6,7 +6,7 @@ const inputStyle = {
 	padding: '0.5rem 1rem',
 }
 
-export default ({ ...props }) => {
+export const CustomInput = ({ ...props }) => {
 	return (
 		<input
 			style={inputStyle}

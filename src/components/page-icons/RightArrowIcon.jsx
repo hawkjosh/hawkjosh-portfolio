@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function RightArrow({ ...props }) {
+export const RightArrowIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}
