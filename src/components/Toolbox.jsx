@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ToolboxCloseBtnIcon } from '../components/page-icons/ToolboxCloseBtnIcon.jsx'
+import { CloseBtnIcon } from '../components/page-icons/CloseBtnIcon.jsx'
 
 import Apollo from '../assets/images/toolbox/apollo.svg'
 import Babel from '../assets/images/toolbox/babel.svg'
@@ -83,7 +83,7 @@ export const Toolbox = ({ setShowToolbox }) => {
 		<div className='toolbox-background'>
 			<div className='toolbox-container'>
 				<div className='toolbox-close-btn-wrapper'>
-					<ToolboxCloseBtnIcon
+					<CloseBtnIcon
 						className='toolbox-close-btn-icon'
 						onClick={() => {
 							setShowToolbox(false)

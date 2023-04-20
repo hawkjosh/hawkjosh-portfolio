@@ -19,10 +19,10 @@ html {
 		color: white;
 		background-color: $color-primary;
 		overflow-x: hidden;
-	}
 
-	& a {
-		color: white;
-		text-decoration: none;
+		& a {
+			color: white;
+			text-decoration: none;
+		}
 	}
 }

@@ -1,0 +1,82 @@
+.resume-background {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(200, 200, 200, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	& .resume-container {
+		position: absolute;
+		width: clamp(23.156rem, 5.258rem + 73.427vw, 64rem);
+		height: calc(100vh - 12rem);
+		top: 6.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		border: 5px solid $color-secondary;
+		border-radius: 1rem;
+		background-color: white;
+		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+		padding: 0.5rem 0.25rem 1.5rem;
+		overflow-y: auto;
+		scrollbar-width: none;
+
+		& .resume-close-btn-wrapper {
+			position: absolute;
+			top: 0.625rem;
+			right: 0.625rem;
+
+			& .resume-close-btn-icon {
+				fill: $color-secondary;
+
+				@media (--laptop) {
+					width: clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem);
+				}
+				@media (--toolbox-tablet-lg) {
+					width: clamp(2rem, 1.75rem + 0.625vw, 2.25rem);
+				}
+				@media (--toolbox-tablet-sm) {
+					width: clamp(1.875rem, 1.375rem + 1.25vw, 2.125rem);
+				}
+				@media (--mobile) {
+					width: clamp(1.75rem, 1.429rem + 1.429vw, 2rem);
+				}
+
+				&:hover {
+					fill: white;
+					stroke: $color-secondary;
+					stroke-width: 3;
+					cursor: pointer;
+				}
+			}
+		}
+
+		& .resume-content-wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			margin: 2.5rem 0.5rem 0;
+
+			& .resume {
+				width: clamp(21rem, 5.772rem + 62.472vw, 55.75rem);
+				border: 0.5px solid lightgray;
+				box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+			}
+
+			& .resume-download-btn {
+				font-size: 1.125rem;
+				color: white;
+				background-color: $color-secondary;
+				border: 0.25rem solid transparent;
+				transition: all 0.25s ease-in-out;
+
+				&:hover {
+					color: $color-secondary;
+					background-color: $color-primary;
+					border-color: $color-secondary;
+				}
+			}
+		}
+	}
+}

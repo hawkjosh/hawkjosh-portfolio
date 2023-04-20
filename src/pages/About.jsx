@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { useWindowSize } from '../hooks/useWindowSize.js'
 
 import { Toolbox } from '../components/Toolbox.jsx'
+import { Resume } from '../components/Resume.jsx'
 
 import { ToolboxBtnIcon } from '../components/page-icons/ToolboxBtnIcon.jsx'
 import { ResumeBtnIcon } from '../components/page-icons/ResumeBtnIcon.jsx'
@@ -40,6 +41,17 @@ export const About = () => {
 	const { isSpecialScreenSm } = useWindowSize()
 
 	const [showToolbox, setShowToolbox] = useState(false)
+	const [showResume, setShowResume] = useState(false)
+
+	const handleToolboxClick = () => {
+		setShowToolbox(true)
+		window.scrollTo(0, 0)
+	}
+
+	const handleResumeClick = () => {
+		setShowResume(true)
+		window.scrollTo(0, 0)
+	}
 
 	return (
 		<main className='about-container'>
@@ -76,18 +88,15 @@ export const About = () => {
 
 			<div className='about-btns-wrapper'>
 				<div className='about-btn'>
-					<ToolboxBtnIcon
-						onClick={() => {
-							setShowToolbox(true)
-						}}
-					/>
+					<ToolboxBtnIcon onClick={handleToolboxClick} />
 				</div>
 				<div className='about-btn'>
-					<ResumeBtnIcon />
+					<ResumeBtnIcon onClick={handleResumeClick} />
 				</div>
 			</div>
 
 			{showToolbox && <Toolbox setShowToolbox={setShowToolbox} />}
+			{showResume && <Resume setShowResume={setShowResume} />}
 		</main>
 	)
 }

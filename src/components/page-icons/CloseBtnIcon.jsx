@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ToolboxCloseBtnIcon = ({ ...props }) => {
+export const CloseBtnIcon = ({ ...props }) => {
 	return (
 		<svg
 			{...props}

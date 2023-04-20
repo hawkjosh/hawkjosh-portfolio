@@ -10,14 +10,13 @@
 		position: absolute;
 		height: calc(100vh - 12rem);
 		top: 6.5rem;
-		display: flex;
-		flex-direction: column;
 		border: 5px solid $color-secondary;
 		border-radius: 1rem;
 		background-color: white;
 		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
 		padding: 0.5rem 1.25rem 1.75rem;
 		overflow-y: auto;
+		scrollbar-width: none;
 
 		@media (--laptop) {
 			width: 62.5%;
@@ -39,29 +38,24 @@
 		}
 
 		& .toolbox-close-btn-wrapper {
-			display: flex;
-			justify-content: flex-end;
-			margin-top: 0.25rem;
-			margin-right: -0.5rem;
+			position: absolute;
+			top: 0.625rem;
+			right: 0.625rem;
 
 			& .toolbox-close-btn-icon {
 				fill: $color-secondary;
 
 				@media (--laptop) {
 					width: clamp(2.25rem, 1.417rem + 1.042vw, 2.5rem);
-					padding-bottom: 1.5rem;
 				}
 				@media (--toolbox-tablet-lg) {
 					width: clamp(2rem, 1.75rem + 0.625vw, 2.25rem);
-					padding-bottom: 1.25rem;
 				}
 				@media (--toolbox-tablet-sm) {
 					width: clamp(1.875rem, 1.375rem + 1.25vw, 2.125rem);
-					padding-bottom: 1.125rem;
 				}
 				@media (--mobile) {
 					width: clamp(1.75rem, 1.429rem + 1.429vw, 2rem);
-					padding-bottom: 1rem;
 				}
 
 				&:hover {
@@ -78,6 +72,7 @@
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			align-items: center;
+			margin: 2.5rem 5% 0;
 
 			@media (--laptop) {
 				row-gap: 3rem;
