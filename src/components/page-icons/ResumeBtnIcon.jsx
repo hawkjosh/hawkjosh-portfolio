@@ -3,23 +3,23 @@ import React from 'react'
 export const ResumeBtnIcon = ({ ...props }) => {
 	return (
 		<svg
-			{...props}
-			viewBox='-7 -7 105 33'>
+			fill='currentColor'
+			stroke='currentColor'
+			viewBox='-7 -7 105 33'
+			{...props}>
 			<path
-				strokeWidth='1.15'
-				fill='none'
+				fill='transparent'
 				d='M2 19v-18h12l5 5v13h-17zM14 1v5h5M5 6h6M5 10.5h11M5 15h11'
 			/>
 			<text
-				strokeWidth='0'
+				stroke='transparent'
 				fontSize='12px'
 				x='25'
 				y='13.75'>
 				My Resume
 			</text>
 			<rect
-				strokeWidth='0.5'
-				fill='none'
+				fill='transparent'
 				width='100'
 				height='29'
 				x='-4.5'

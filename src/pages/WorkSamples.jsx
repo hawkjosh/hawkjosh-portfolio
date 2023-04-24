@@ -7,8 +7,8 @@ import { WorkSamplesLink } from '../components/WorkSamplesLink.jsx'
 import { RightArrowIcon } from '../components/page-icons/RightArrowIcon.jsx'
 import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
 
-import socialNetwork from '../assets/images/work-samples/social_network-18KB.png'
-import messageForum from '../assets/images/work-samples/message_forum-75KB.png'
+// import socialNetwork from '../assets/images/work-samples/social_network-18KB.png'
+// import messageForum from '../assets/images/work-samples/message_forum-75KB.png'
 import songSearch from '../assets/images/work-samples/song_search-61KB.png'
 import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard-55KB.png'
@@ -20,38 +20,28 @@ export const WorkSamples = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
 
 	const items = [
+		// {
+		// 	index: 0,
+		// 	image: socialNetwork,
+		// 	alt: 'Social Network Image',
+		// 	title: 'Social Network',
+		// 	info: `An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.`,
+		// 	website: 'https://stayintouchnetwork.herokuapp.com/',
+		// 	github: 'https://github.com/hawkjosh/Social-Network',
+		// 	bonus: null,
+		// },
+		// {
+		// 	index: 1,
+		// 	image: messageForum,
+		// 	alt: 'Message Forum Image',
+		// 	title: 'Message Forum',
+		// 	info: `A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.`,
+		// 	website: 'https://glacial-tor-15581.herokuapp.com/',
+		// 	github: 'https://github.com/hawkjosh/Message-Forum',
+		// 	bonus: null,
+		// },
 		{
 			index: 0,
-			image: socialNetwork,
-			alt: 'Social Network Image',
-			title: 'Social Network',
-			info: `An efficient and polished full-stack social network app that uses React.js on the client-side with Tailwind frameworks for styling. The server-side is built with Express.js including MongoDB as the ODM, GraphQL for runtime API's, and JWT for authentication.`,
-			website: 'https://stayintouchnetwork.herokuapp.com/',
-			github: 'https://github.com/hawkjosh/Social-Network',
-			bonus: null,
-		},
-		{
-			index: 1,
-			image: messageForum,
-			alt: 'Message Forum Image',
-			title: 'Message Forum',
-			info: `A unique and fun message forum app that follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the Express-Session npm package for authentication.`,
-			website: 'https://glacial-tor-15581.herokuapp.com/',
-			github: 'https://github.com/hawkjosh/Message-Forum',
-			bonus: null,
-		},
-		{
-			index: 2,
-			image: songSearch,
-			alt: 'Song Search Image',
-			title: 'Song Search',
-			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
-			website: 'https://hawkjosh.github.io/Song-Search',
-			github: 'https://github.com/hawkjosh/Song-Search',
-			bonus: null,
-		},
-		{
-			index: 3,
 			image: noteTaker,
 			alt: 'Note Taker Image',
 			title: 'Note Taker',
@@ -61,7 +51,7 @@ export const WorkSamples = () => {
 			bonus: 'https://hawkjosh-note-taker.onrender.com',
 		},
 		{
-			index: 4,
+			index: 1,
 			image: weatherDashboard,
 			alt: 'Weather Dashboard Image',
 			title: 'Weather Dashboard',
@@ -71,7 +61,7 @@ export const WorkSamples = () => {
 			bonus: null,
 		},
 		{
-			index: 5,
+			index: 2,
 			image: workdayScheduler,
 			alt: 'Workday Scheduler Image',
 			title: 'Workday Scheduler',
@@ -81,7 +71,7 @@ export const WorkSamples = () => {
 			bonus: null,
 		},
 		{
-			index: 6,
+			index: 3,
 			image: courseTracker,
 			alt: 'Course Tracker Image',
 			title: 'Course Tracker',
@@ -91,13 +81,23 @@ export const WorkSamples = () => {
 			bonus: null,
 		},
 		{
-			index: 7,
+			index: 4,
 			image: miniGames,
 			alt: 'Mini Games Image',
 			title: 'Mini Games',
 			info: `A fun and entertaining way to kill some time, this app is a collection of some classic games built with the basics - HTML, CSS, and JavaScript.`,
 			website: 'https://hawkjosh-mini-games.netlify.app',
 			github: 'https://github.com/hawkjosh/mini-games',
+			bonus: null,
+		},
+		{
+			index: 5,
+			image: songSearch,
+			alt: 'Song Search Image',
+			title: 'Song Search',
+			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
+			website: 'https://hawkjosh.github.io/Song-Search',
+			github: 'https://github.com/hawkjosh/Song-Search',
 			bonus: null,
 		},
 	]

@@ -8,11 +8,11 @@ import { StackOverflowIcon } from '../components/page-icons/StackOverflowIcon.js
 import { FooterLogoIcon } from '../components/page-icons/FooterLogoIcon.jsx'
 
 export const Footer = () => {
-	const { isSpecialScreenLg } = useWindowSize()
+	const { isScreenLg } = useWindowSize()
 
 	return (
 		<footer className='footer-container'>
-			{isSpecialScreenLg ? (
+			{isScreenLg ? (
 				<Fragment>
 					<div className='footer-copywrite-text'>
 						© {new Date().getFullYear()} Joshua Wilde Hawk
