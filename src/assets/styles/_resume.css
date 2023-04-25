@@ -10,7 +10,7 @@
 		position: absolute;
 		width: clamp(23.125rem, 3.857rem + 79.048vw, 75rem);
 		height: calc(100vh - 12rem);
-		top: 6.5rem;
+		top: 8.5rem;
 		left: 50%;
 		transform: translateX(-50%);
 		border: 5px solid $color-secondary;

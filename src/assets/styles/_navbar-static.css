@@ -10,7 +10,8 @@
 .nav-static-container {
 	position: sticky;
 	top: 0;
-	height: 8rem;
+	/* height: 8rem; */
+	height: clamp(5rem, 3.685rem + 5.393vw, 8rem);
 	background-color: $color-secondary;
 	border-bottom: solid white;
 	display: flex;

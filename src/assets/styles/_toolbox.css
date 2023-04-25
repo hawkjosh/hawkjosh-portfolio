@@ -9,7 +9,7 @@
 	& .toolbox-container {
 		position: absolute;
 		height: calc(100vh - 12rem);
-		top: 6.5rem;
+		top: 8.5rem;
 		border: 5px solid $color-secondary;
 		border-radius: 1rem;
 		background-color: white;
