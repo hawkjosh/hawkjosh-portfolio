@@ -19,8 +19,12 @@
 	@media (--tablet-portrait) {
 	}
 	@media (--mobile-landscape) {
+		width: 2rem;
+		height: 2.5rem;
 	}
 	@media (--mobile-portrait) {
+		width: 2rem;
+		height: 2.5rem;
 	}
 
 	& svg {
@@ -35,8 +39,10 @@
 		@media (--tablet-portrait) {
 		}
 		@media (--mobile-landscape) {
+			width: 2rem;
 		}
 		@media (--mobile-portrait) {
+			width: 2rem;
 		}
 	}
 
@@ -48,6 +54,21 @@
 
 		& > svg {
 			fill: white;
+		}
+
+		@media (--laptop) {
+		}
+		@media (--tablet-landscape) {
+		}
+		@media (--tablet-portrait) {
+		}
+		@media (--mobile-landscape) {
+			width: 9rem;
+			font-size: 0.875rem;
+		}
+		@media (--mobile-portrait) {
+			width: 9rem;
+			font-size: 0.875rem;
 		}
 	}
 }
