@@ -1,27 +1,19 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
-import { WorkSamplesImage } from '../components/WorkSamplesImage.jsx'
-import { WorkSamplesInfo } from '../components/WorkSamplesInfo.jsx'
-import { WorkSamplesLink } from '../components/WorkSamplesLink.jsx'
-
-import { RightArrowIcon } from '../components/page-icons/RightArrowIcon.jsx'
-import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
-
-import songSearch from '../assets/images/work-samples/song_search-61KB.png'
 import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard-55KB.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
 import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
+import songSearch from '../assets/images/work-samples/song_search-61KB.png'
 
-export const WorkSamples = () => {
+export const WorkSamplesAlt = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
 
 	const items = [
 		{
 			index: 0,
 			image: noteTaker,
-			alt: 'Note Taker Image',
 			title: 'Note Taker',
 			info: `A clean, crisp, and very usefuly note-taking app that uses localStorage to save and retrieve note data. BONUS: Check out an alternate version of this app at the link below that uses an express.js backend to save and retrieve notes from a JSON file.`,
 			website: 'https://hawkjosh-note-taker.netlify.app/',
@@ -31,7 +23,6 @@ export const WorkSamples = () => {
 		{
 			index: 1,
 			image: weatherDashboard,
-			alt: 'Weather Dashboard Image',
 			title: 'Weather Dashboard',
 			info: `A nifty weather widget app that runs in the browser and retrieves current as well as forectast weather info via the WeatherAPI developer API.`,
 			website: 'https://hawkjosh-weather-dashboard.onrender.com',
@@ -41,7 +32,6 @@ export const WorkSamples = () => {
 		{
 			index: 2,
 			image: workdayScheduler,
-			alt: 'Workday Scheduler Image',
 			title: 'Workday Scheduler',
 			info: `A simple calendar/planner app that runs in the browser and features dynamically updated HTML and CSS powered by jQuery.`,
 			website: 'https://hawkjosh-workday-scheduler.netlify.app/',
@@ -51,7 +41,6 @@ export const WorkSamples = () => {
 		{
 			index: 3,
 			image: courseTracker,
-			alt: 'Course Tracker Image',
 			title: 'Course Tracker',
 			info: `A somewhat niche but very useful app that keeps track of online developer courses that you have purchased or have your eye on purchasing. It uses Netlify Functions to connect with an Airtable database where the user's information is stored.`,
 			website: 'https://hawkjosh-course-tracker.netlify.app',
@@ -61,7 +50,6 @@ export const WorkSamples = () => {
 		{
 			index: 4,
 			image: miniGames,
-			alt: 'Mini Games Image',
 			title: 'Mini Games',
 			info: `A fun and entertaining way to kill some time, this app is a collection of some classic games built with the basics - HTML, CSS, and JavaScript.`,
 			website: 'https://hawkjosh-mini-games.netlify.app',
@@ -71,7 +59,6 @@ export const WorkSamples = () => {
 		{
 			index: 5,
 			image: songSearch,
-			alt: 'Song Search Image',
 			title: 'Song Search',
 			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
 			website: 'https://hawkjosh.github.io/Song-Search',
@@ -81,83 +68,62 @@ export const WorkSamples = () => {
 	]
 
 	const updateIndex = (newIndex) => {
-		if (newIndex < 0) {
-			newIndex = items.length - 1
-		} else if (newIndex >= items.length) {
-			newIndex = 0
-		}
-
 		setActiveIndex(newIndex)
 	}
 
-	const handleLeftClick = () => {
-		updateIndex(activeIndex - 1)
-	}
-
-	const handleRightClick = () => {
-		updateIndex(activeIndex + 1)
+	const imageStyle = {
+		backgroundColor: 'red',
+		border: '2px solid lime'
 	}
 
 	return (
-		<div className='work-samples-container'>
-			<div className='image-section'>
-				{items.map((item) => {
-					return (
-						// <div
-						// 	className='image-wrapper'
-						// 	key={item.index}
-						// 	data-status={item.index === activeIndex ? 'active' : 'inactive'}>
-						// 	<WorkSamplesImage item={item} />
-						// </div>
-						<div
-							className='image-wrapper'
-							key={item.index}
-							data-status={item.index === activeIndex ? 'active' : 'inactive'} style={{backgroundImage: `url(${item.image})`}}>
-							{/* <WorkSamplesImage item={item} /> */}
-						</div>
-					)
-				})}
-			</div>
-
-			<div className='info-section'>
+		<div className='wsa-container'>
+			<div className='wsa-image-wrapper'>
 				{items.map((item) => {
 					return (
 						<div
-							className='info-wrapper'
+							className={
+								item.index === activeIndex ? 'wsa-panel active' : 'wsa-panel'
+							}
 							key={item.index}
-							data-status={item.index === activeIndex ? 'active' : 'inactive'}>
-							<WorkSamplesInfo item={item} />
-						</div>
+							style={{ backgroundImage: `url(${item.image})` }}
+							onClick={() => updateIndex(item.index)}></div>
 					)
 				})}
 			</div>
-
-			<div className='link-section'>
-				{items.map((item) => {
-					return (
-						<div
-							className='link-wrapper'
-							key={item.index}
-							data-status={item.index === activeIndex ? 'active' : 'inactive'}>
-							<WorkSamplesLink item={item} />
+			{items.map((item) => {
+				return (
+					<div
+						className={
+							item.index === activeIndex
+								? 'wsa-info-wrapper active'
+								: 'wsa-info-wrapper'
+						}
+						key={item.index}>
+						<h2 className='wsa-info-title'>{item.title}</h2>
+						<p className='wsa-info-description'>{item.info}</p>
+						<div className='wsa-info-link-wrapper'>
+							<a
+								className='wsa-info-link'
+								href={item.website}>
+								Web App
+							</a>
+							<a
+								className='wsa-info-link'
+								href={item.github}>
+								Github Repo
+							</a>
+							{item.bonus !== null && (
+								<a
+									className='wsa-info-link'
+									href={item.bonus}>
+									Bonus
+								</a>
+							)}
 						</div>
-					)
-				})}
-			</div>
-
-			<div className='nav-section'>
-				<div
-					className='arrow-icon-wrapper'
-					onClick={handleLeftClick}>
-					<LeftArrowIcon className='arrow-icon' />
-				</div>
-
-				<div
-					className='arrow-icon-wrapper'
-					onClick={handleRightClick}>
-					<RightArrowIcon className='arrow-icon' />
-				</div>
-			</div>
+					</div>
+				)
+			})}
 		</div>
 	)
 }

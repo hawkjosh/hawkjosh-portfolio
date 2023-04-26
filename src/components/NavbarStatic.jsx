@@ -10,6 +10,25 @@ import { CodepenIcon } from './page-icons/CodepenIcon.jsx'
 import { StackOverflowIcon } from './page-icons/StackOverflowIcon.jsx'
 
 export const NavbarStatic = () => {
+	const links = [
+		{
+			title: 'Home',
+			url: '/',
+		},
+		{
+			title: 'About',
+			url: '/about',
+		},
+		{
+			title: 'Work Samples',
+			url: '/work-samples',
+		},
+		{
+			title: 'Contact',
+			url: '/contact',
+		},
+	]
+
 	return (
 		<nav className='nav-static-container'>
 			<div className='nav-menu-wrapper'>
@@ -22,26 +41,16 @@ export const NavbarStatic = () => {
 			</div>
 
 			<div className='nav-links-wrapper'>
-				<Link
-					className='nav-link'
-					to='/'>
-					Home
-				</Link>
-				<Link
-					className='nav-link'
-					to='/about'>
-					About
-				</Link>
-				<Link
-					className='nav-link'
-					to='/work-samples'>
-					Work Samples
-				</Link>
-				<Link
-					className='nav-link'
-					to='/contact'>
-					Contact
-				</Link>
+				{links.map((link, index) => {
+					return (
+						<Link
+							className='nav-link'
+							key={index}
+							to={link.url}>
+							{link.title}
+						</Link>
+					)
+				})}
 			</div>
 
 			<div className='nav-social-wrapper'>

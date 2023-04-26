@@ -1,25 +1,23 @@
-.footer-container {
-	width: 100%;
-	/* height: 5rem; */
+footer {
+	position: relative;
+	bottom: 0;
 	height: clamp(3rem, 2.124rem + 3.596vw, 5rem);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: clamp(2.5rem, 1.145rem + 6.024vw, 5rem);
 	background-color: $color-secondary;
 	border-top: solid white;
 
-	& .footer-copywrite-text {
-		font-size: clamp(1.5rem, 0.7rem + 1.25vw, 2rem);
-		font-weight: 300;
-	}
-
-	& .footer-logo-icon {
+	&.footer-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		gap: clamp(2.5rem, 1.145rem + 6.024vw, 5rem);
 
-		& svg {
+		& .footer-copywrite-text {
+			font-size: clamp(1.5rem, 0.7rem + 1.25vw, 2rem);
+			font-weight: 300;
+		}
+
+		& .footer-logo-icon {
+			display: flex;
 			width: clamp(3.25rem, 2.45rem + 1.25vw, 3.75rem);
 			fill: white;
 			stroke: $color-primary;
@@ -32,14 +30,9 @@
 				transform: scale(1.25);
 			}
 		}
-	}
 
-	& .footer-social-icon {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		& svg {
+		& .footer-social-icon {
+			display: flex;
 			width: clamp(1.75rem, 1.343rem + 1.807vw, 2.5rem);
 			stroke: white;
 			transition: transform 0.25s ease;

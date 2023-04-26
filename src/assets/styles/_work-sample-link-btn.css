@@ -1,0 +1,53 @@
+.work-sample-link-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.875rem;
+	width: 3rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	background-color: transparent;
+	color: white;
+	font-size: 0;
+	cursor: pointer;
+	transition: all 0.25s ease-in-out;
+
+	@media (--laptop) {
+	}
+	@media (--tablet-landscape) {
+	}
+	@media (--tablet-portrait) {
+	}
+	@media (--mobile-landscape) {
+	}
+	@media (--mobile-portrait) {
+	}
+
+	& svg {
+		width: 3rem;
+		fill: hsl(211, 30%, 24%);
+		transition: fill 0.25s ease-in-out 0.25s;
+
+		@media (--laptop) {
+		}
+		@media (--tablet-landscape) {
+		}
+		@media (--tablet-portrait) {
+		}
+		@media (--mobile-landscape) {
+		}
+		@media (--mobile-portrait) {
+		}
+	}
+
+	&:hover {
+		width: 11rem;
+		font-size: 1rem;
+		border-radius: 2rem;
+		background-color: hsl(211, 30%, 24%);
+
+		& > svg {
+			fill: white;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+.wsa-container {
+	display: flex;
+	& .wsa-image-wrapper {
+		/* width: 100vw; */
+		flex-basis: 65%;
+		height: calc(100vh - clamp(8rem, 5.809rem + 8.989vw, 13rem));
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+
+		& .wsa-panel {
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: calc(100vh - clamp(8rem, 5.809rem + 8.989vw, 13rem));
+			border-radius: 3.25rem;
+			color: $color-primary;
+			cursor: pointer;
+			flex: 0.5;
+			margin: 0 0.625rem;
+			position: relative;
+			transition: flex 0.75s ease-in;
+
+			& .wsa-panel-title {
+				font-size: 2rem;
+				position: absolute;
+				bottom: 1.5rem;
+				left: 1.5rem;
+				margin: 0;
+				opacity: 0;
+			}
+
+			&.active {
+				flex: 10;
+
+				& .wsa-panel-title {
+					opacity: 1;
+					transition: opacity 0.25s ease-in 0.5s;
+				}
+			}
+		}
+	}
+
+	& .wsa-info-wrapper {
+		flex-basis: 35%;
+		display: none;
+
+		&.active {
+			display: flex;
+			flex-direction: column;
+		}
+
+		& .wsa-info-title {
+
+		}
+
+		& .wsa-info-description {
+
+		}
+
+		& .wsa-info-link-wrapper {
+			display: flex;
+			justify-content: space-evenly;
+
+			& .wsa-info-link {
+				
+			}
+		}
+	}
+}

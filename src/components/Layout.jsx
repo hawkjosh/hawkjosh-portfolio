@@ -16,6 +16,7 @@ export const Layout = () => {
 				{location.pathname === '/about' && <NavbarShrink />}
 				{location.pathname === '/work-samples' && <NavbarStatic />}
 				{location.pathname === '/contact' && <NavbarShrink />}
+				{location.pathname === '/work-samples-alt' && <NavbarStatic />}
 			</Fragment>
 			<Outlet />
 			<Footer />

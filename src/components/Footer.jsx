@@ -17,24 +17,14 @@ export const Footer = () => {
 					<div className='footer-copywrite-text'>
 						© {new Date().getFullYear()} Joshua Wilde Hawk
 					</div>
-					<div className='footer-logo-icon'>
-						<FooterLogoIcon />
-					</div>
+					<FooterLogoIcon className='footer-logo-icon' />
 				</Fragment>
 			) : (
 				<Fragment>
-					<div className='footer-social-icon'>
-						<LinkedinIcon />
-					</div>
-					<div className='footer-social-icon'>
-						<GithubIcon />
-					</div>
-					<div className='footer-social-icon'>
-						<CodepenIcon />
-					</div>
-					<div className='footer-social-icon'>
-						<StackOverflowIcon />
-					</div>
+					<LinkedinIcon className='footer-social-icon' />
+					<GithubIcon className='footer-social-icon' />
+					<CodepenIcon className='footer-social-icon' />
+					<StackOverflowIcon className='footer-social-icon' />
 				</Fragment>
 			)}
 		</footer>

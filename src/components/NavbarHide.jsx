@@ -37,6 +37,25 @@ export const NavbarHide = () => {
 		}, TIMEOUT_DELAY)
 	})
 
+	const links = [
+		{
+			title: 'Home',
+			url: '/',
+		},
+		{
+			title: 'About',
+			url: '/about',
+		},
+		{
+			title: 'Work Samples',
+			url: '/work-samples',
+		},
+		{
+			title: 'Contact',
+			url: '/contact',
+		},
+	]
+
 	return (
 		<nav className={`nav-hide-container ${shadowStyle} ${hiddenStyle}`}>
 			<div className='nav-menu-wrapper'>
@@ -49,26 +68,16 @@ export const NavbarHide = () => {
 			</div>
 
 			<div className='nav-links-wrapper'>
-				<Link
-					className='nav-link'
-					to='/'>
-					Home
-				</Link>
-				<Link
-					className='nav-link'
-					to='/about'>
-					About
-				</Link>
-				<Link
-					className='nav-link'
-					to='/work-samples'>
-					Work Samples
-				</Link>
-				<Link
-					className='nav-link'
-					to='/contact'>
-					Contact
-				</Link>
+			{links.map((link, index) => {
+					return (
+						<Link
+							className='nav-link'
+							key={index}
+							to={link.url}>
+							{link.title}
+						</Link>
+					)
+				})}
 			</div>
 
 			<div className='nav-social-wrapper'>

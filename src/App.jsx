@@ -7,6 +7,7 @@ import { About } from './pages/About.jsx'
 import { WorkSamples } from './pages/WorkSamples.jsx'
 import { Contact } from './pages/Contact.jsx'
 import { NoPage } from './pages/NoPage.jsx'
+import { WorkSamplesAlt } from './components/WorkSamplesAlt.jsx'
 
 import './App.css'
 
@@ -32,6 +33,10 @@ export const App = () => {
 					<Route
 						path='/contact'
 						element={<Contact />}
+					/>
+					<Route
+						path='/work-samples-alt'
+						element={<WorkSamplesAlt />}
 					/>
 				</Route>
 				<Route

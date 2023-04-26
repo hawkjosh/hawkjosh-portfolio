@@ -8,13 +8,22 @@
 		grid-template-columns: 62% 38%;
 		grid-template-rows: 60% 27.5% 12.5%;
 	}
-	@media (--tablet) {
+	@media (--tablet-landscape) {
+		/* PIN */
+	}
+	@media (--tablet-portrait) {
 		grid-template-columns: 1fr;
 		grid-template-rows: 50% 30% 10% 10%;
 	}
-	@media (--mobile) {
+	@media (--mobile-landscape) {
+		height: auto;
+		grid-template-columns: 55% 45%;
+		grid-template-rows: 60% 27.5% 12.5%;
+	}
+	@media (--mobile-portrait) {
+		position: relative;
 		grid-template-columns: 1fr;
-		grid-template-rows: 45% 33.5% 12.5% 9%;
+		grid-template-rows: 45% 35% 10% 10%;
 	}
 
 	& .image-section {
@@ -27,13 +36,21 @@
 			grid-row: 1 / 4;
 			border-right: solid white;
 		}
-		@media (--tablet) {
+		@media (--tablet-landscape) {
+			/* PIN */
+		}
+		@media (--tablet-portrait) {
 			grid-row: 1 / 2;
 			padding-top: 0.5rem;
 		}
-		@media (--mobile) {
+		@media (--mobile-landscape) {
+			grid-column: 1 / 2;
+			grid-row: 1 / 4;
+			padding-top: 0;
+		}
+		@media (--mobile-portrait) {
 			grid-row: 1 / 2;
-			padding-top: 0.5rem;
+			/* padding-top: 0.5rem; */
 			z-index: -1;
 		}
 
@@ -46,32 +63,46 @@
 				width: 100%;
 				height: calc(100vh - 13rem);
 			}
-			@media (--tablet) {
+			@media (--tablet-landscape) {
+				/* PIN */
+			}
+			@media (--tablet-portrait) {
 				display: flex;
 				justify-content: center;
 			}
-			@media (--mobile) {
-				display: flex;
-				justify-content: center;
+			@media (--mobile-landscape) {
+				width: 100%;
+			}
+			@media (--mobile-portrait) {
+				background-size: cover;
+				/* background-position: center; */
+				background-repeat: no-repeat;
 			}
 
-			& .work-sample-image {
+			/* & .work-sample-image {
 				@media (--laptop) {
 					width: 100%;
 					height: calc(100vh - 13rem);
 					object-fit: cover;
 				}
-				@media (--tablet) {
+				@media (--tablet-landscape) {
+				}
+				@media (--tablet-portrait) {
 					width: clamp(31.25rem, 7.813rem + 58.594vw, 45.313rem);
 					box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 					border-radius: 0.625rem;
 				}
-				@media (--mobile) {
+				@media (--mobile-landscape) {
+					width: 100%;
+					object-fit: scale-down;
+					position: absolute;
+				}
+				@media (--mobile-portrait) {
 					width: clamp(20.313rem, 13rem + 30vw, 25rem);
 					box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5);
 					border-radius: 0.625rem;
 				}
-			}
+			} */
 		}
 	}
 
@@ -85,12 +116,21 @@
 			grid-row: 1 / 2;
 			padding: 1rem 2rem 0rem;
 		}
-		@media (--tablet) {
+		@media (--tablet-landscape) {
+			/* PIN */
+		}
+		@media (--tablet-portrait) {
 			padding: 0rem clamp(3.5rem, -1.5rem + 12.5vw, 6.5rem);
 			place-self: center;
 		}
-		@media (--mobile) {
+		@media (--mobile-landscape) {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+			padding: 0 0.5rem;
+		}
+		@media (--mobile-portrait) {
 			padding: 0.5rem clamp(1.5rem, -1.714rem + 14.286vw, 4rem);
+			padding: 0.5rem 1.5rem;
 			place-self: center;
 		}
 
@@ -99,13 +139,17 @@
 			grid-row: 1 / 2;
 			display: flex;
 			flex-direction: column;
-			margin-top: 1rem;
-			gap: 0.5rem;
+			/* margin-top: 1rem; */
+			gap: 0.75rem;
 			transition: all 1s ease;
 
 			@media (--laptop) {
 				gap: 1rem;
 				margin-top: 0;
+			}
+			@media (--mobile-landscape) {
+				gap: 1rem;
+				margin: 0 auto;
 			}
 
 			& .info-title {
@@ -115,11 +159,18 @@
 				@media (--laptop) {
 					font-size: 2.5rem;
 				}
-				@media (--tablet) {
+				@media (--tablet-landscape) {
+					/* PIN */
+				}
+				@media (--tablet-portrait) {
 					font-size: clamp(2rem, 1.167rem + 2.083vw, 2.5rem);
 				}
-				@media (--mobile) {
+				@media (--mobile-landscape) {
 					font-size: clamp(1.5rem, 0.857rem + 2.857vw, 2rem);
+				}
+				@media (--mobile-portrait) {
+					font-size: clamp(1.5rem, 0.857rem + 2.857vw, 2rem);
+					font-size: 2rem;
 				}
 			}
 
@@ -129,11 +180,18 @@
 				@media (--laptop) {
 					font-size: 1.45rem;
 				}
-				@media (--tablet) {
+				@media (--tablet-landscape) {
+					/* PIN */
+				}
+				@media (--tablet-portrait) {
 					font-size: clamp(1.25rem, 0.917rem + 0.833vw, 1.45rem);
 				}
-				@media (--mobile) {
+				@media (--mobile-landscape) {
 					font-size: clamp(1rem, 0.679rem + 1.429vw, 1.25rem);
+				}
+				@media (--mobile-portrait) {
+					font-size: clamp(1rem, 0.679rem + 1.429vw, 1.25rem);
+					font-size: 1.125rem;
 				}
 			}
 		}
@@ -148,12 +206,20 @@
 			grid-column: 2 / 3;
 			grid-row: 2 / 3;
 		}
-		@media (--tablet) {
+		@media (--tablet-landscape) {
+			/* PIN */
+		}
+		@media (--tablet-portrait) {
 			padding-bottom: clamp(1.5rem, 0.667rem + 2.083vw, 2rem);
 			place-self: center;
 		}
-		@media (--mobile) {
-			padding: 1rem clamp(1rem, 0.357rem + 2.857vw, 1.5rem);
+		@media (--mobile-landscape) {
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+		}
+		@media (--mobile-portrait) {
+			/* padding: 1rem clamp(1rem, 0.357rem + 2.857vw, 1.5rem); */
+			width: 90%;
 			place-self: center;
 		}
 
@@ -168,37 +234,20 @@
 
 			@media (--laptop) {
 				column-gap: 5rem;
+				column-gap: 1rem;
 			}
-			@media (--tablet) {
+			@media (--tablet-landscape) {
+				/* PIN */
+			}
+			@media (--tablet-portrait) {
 				gap: clamp(5rem, 0rem + 12.5vw, 8rem);
 			}
-			@media (--mobile) {
-				column-gap: clamp(0.25rem, -7.16rem + 30.4vw, 5rem);
-				row-gap: 1rem;
+			@media (--mobile-landscape) {
+				justify-content: center;
+				gap: 2rem;
 			}
-
-			& .link-btn {
-				width: clamp(8.438rem, 4.271rem + 10.417vw, 10.938rem);
-				font-size: clamp(1rem, 0.583rem + 1.042vw, 1.25rem);
-				font-weight: 600;
-				text-align: center;
-				text-transform: uppercase;
-				background-color: $color-secondary;
-				border: 0.125rem solid white;
-				border-radius: 0.5rem;
-				padding: 0.5rem;
-
-				@media (--mobile) {
-					width: clamp(7.188rem, 5.237rem + 8vw, 8.438rem);
-					font-size: clamp(0.85rem, 0.657rem + 0.857vw, 1rem);
-				}
-
-				&:hover {
-					box-shadow: 2px 2px 10px hsla(0, 0%, 100%, 0.5),
-						-2px -2px 10px hsla(0, 0%, 100%, 0.5),
-						-2px 2px 10px hsla(0, 0%, 100%, 0.5),
-						2px -2px 10px hsla(0, 0%, 100%, 0.5);
-				}
+			@media (--mobile-portrait) {
+				margin-bottom: 1rem;
 			}
 		}
 	}
@@ -237,7 +286,9 @@
 				fill: white;
 				transition: transform 0.25s ease-in-out;
 
-				@media (--mobile) {
+				@media (--mobile-landscape) {
+				}
+				@media (--mobile-portrait) {
 					width: clamp(3.125rem, 1.116rem + 8.929vw, 4.688rem);
 				}
 			}
