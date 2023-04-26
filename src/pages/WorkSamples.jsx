@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import { WorkSamplesImage } from '../components/WorkSamplesImage.jsx'
 import { WorkSamplesInfo } from '../components/WorkSamplesInfo.jsx'
 import { WorkSamplesLink } from '../components/WorkSamplesLink.jsx'
 
@@ -103,18 +102,11 @@ export const WorkSamples = () => {
 			<div className='image-section'>
 				{items.map((item) => {
 					return (
-						// <div
-						// 	className='image-wrapper'
-						// 	key={item.index}
-						// 	data-status={item.index === activeIndex ? 'active' : 'inactive'}>
-						// 	<WorkSamplesImage item={item} />
-						// </div>
 						<div
 							className='image-wrapper'
 							key={item.index}
-							data-status={item.index === activeIndex ? 'active' : 'inactive'} style={{backgroundImage: `url(${item.image})`}}>
-							{/* <WorkSamplesImage item={item} /> */}
-						</div>
+							data-status={item.index === activeIndex ? 'active' : 'inactive'}
+							style={{ backgroundImage: `url(${item.image})` }}></div>
 					)
 				})}
 			</div>
