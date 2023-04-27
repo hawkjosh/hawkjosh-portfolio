@@ -8,7 +8,7 @@ import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
 
 import songSearch from '../assets/images/work-samples/song_search-61KB.png'
 import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
-import weatherDashboard from '../assets/images/work-samples/weather_dashboard-55KB.png'
+import weatherDashboard from '../assets/images/work-samples/weather_dashboard-86KB.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
 import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
@@ -103,7 +103,7 @@ export const WorkSamples = () => {
 				{items.map((item) => {
 					return (
 						<div
-							className='image-wrapper'
+							className='image'
 							key={item.index}
 							data-status={item.index === activeIndex ? 'active' : 'inactive'}
 							style={{ backgroundImage: `url(${item.image})` }}></div>

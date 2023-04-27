@@ -2,9 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 0.875rem;
-	width: 3rem;
-	height: 3.5rem;
+	gap: 0.5rem;
 	border-radius: 50%;
 	background-color: transparent;
 	color: white;
@@ -13,42 +11,56 @@
 	transition: all 0.25s ease-in-out;
 
 	@media (--laptop) {
+		width: 3rem;
+		height: 3.5rem;
 	}
-	@media (--tablet-landscape) {
+	@media (--tablet) {
+		@media (--landscape) {
+			width: 2.5rem;
+			height: 3rem;
+		}
+		@media (--portrait) {
+			width: 2.5rem;
+			height: 3rem;
+		}
 	}
-	@media (--tablet-portrait) {
-	}
-	@media (--mobile-landscape) {
-		width: 2rem;
-		height: 2.5rem;
-	}
-	@media (--mobile-portrait) {
-		width: 2rem;
-		height: 2.5rem;
+	@media (--mobile) {
+		@media (--landscape) {
+			width: 2rem;
+			height: 2.5rem;
+		}
+		@media (--portrait) {
+			width: 2rem;
+			height: 2.5rem;
+		}
 	}
 
 	& svg {
-		width: 3rem;
 		fill: hsl(211, 30%, 24%);
 		transition: fill 0.25s ease-in-out 0.25s;
 
 		@media (--laptop) {
+			width: 3rem;
 		}
-		@media (--tablet-landscape) {
+		@media (--tablet) {
+			@media (--landscape) {
+				width: 2.5rem;
+			}
+			@media (--portrait) {
+				width: 2.5rem;
+			}
 		}
-		@media (--tablet-portrait) {
-		}
-		@media (--mobile-landscape) {
-			width: 2rem;
-		}
-		@media (--mobile-portrait) {
-			width: 2rem;
+		@media (--mobile) {
+			@media (--landscape) {
+				width: 2rem;
+			}
+			@media (--portrait) {
+				width: 2rem;
+			}
 		}
 	}
 
 	&:hover {
-		width: 11rem;
-		font-size: 1rem;
 		border-radius: 2rem;
 		background-color: hsl(211, 30%, 24%);
 
@@ -57,18 +69,28 @@
 		}
 
 		@media (--laptop) {
+			width: 11rem;
+			font-size: 1.125rem;
 		}
-		@media (--tablet-landscape) {
+		@media (--tablet) {
+			@media (--landscape) {
+				width: 10rem;
+				font-size: 1rem;
+			}
+			@media (--portrait) {
+				width: 10rem;
+				font-size: 1rem;
+			}
 		}
-		@media (--tablet-portrait) {
-		}
-		@media (--mobile-landscape) {
-			width: 9rem;
-			font-size: 0.875rem;
-		}
-		@media (--mobile-portrait) {
-			width: 9rem;
-			font-size: 0.875rem;
+		@media (--mobile) {
+			@media (--landscape) {
+				width: 9rem;
+				font-size: 0.875rem;
+			}
+			@media (--portrait) {
+				width: 9rem;
+				font-size: 0.875rem;
+			}
 		}
 	}
 }
