@@ -74,8 +74,8 @@ export const WorkSamples = () => {
 			alt: 'Song Search Image',
 			title: 'Song Search',
 			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
-			website: 'https://hawkjosh.github.io/Song-Search',
-			github: 'https://github.com/hawkjosh/Song-Search',
+			website: 'https://hawkjosh-song-search.onrender.com',
+			github: 'https://github.com/hawkjosh/song-search-update',
 			bonus: null,
 		},
 	]
