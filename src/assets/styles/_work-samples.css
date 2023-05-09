@@ -68,6 +68,12 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 			transition: all 1s ease-in-out;
+
+			@media (--mobile) {
+				&:nth-of-type(6) {
+					background-position: center top;
+				}
+			}
 		}
 	}
 
