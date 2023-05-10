@@ -36,7 +36,7 @@
 		}
 	}
 
-	.home-icon {
+	& .home-icon {
 		width: clamp(9.375rem, 3.516rem + 14.648vw, 18.75rem);
 		fill: $color-secondary;
 
