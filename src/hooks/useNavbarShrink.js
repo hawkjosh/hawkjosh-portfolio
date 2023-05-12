@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 export const useNavbarShrink = () => {
 	useEffect(() => {
-		var navbarShrink = function () {
+		const navbarShrink = () => {
 			const navShrinkElement = document.body.querySelector('nav')
 			if (!navShrinkElement) {
 				return
