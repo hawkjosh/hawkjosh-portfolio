@@ -6,13 +6,12 @@ import { WorkSamplesLink } from '../components/WorkSamplesLink.jsx'
 import { RightArrowIcon } from '../components/page-icons/RightArrowIcon.jsx'
 import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
 
-import songSearch from '../assets/images/work-samples/song_search-61KB.png'
-import songSearchUpdate from '../assets/images/work-samples/song_search_update.png'
 import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard-86KB.png'
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
 import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
+import songSearch from '../assets/images/work-samples/song_search-107KB.png'
 
 export const WorkSamples = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -70,7 +69,7 @@ export const WorkSamples = () => {
 		},
 		{
 			index: 5,
-			image: songSearchUpdate,
+			image: songSearch,
 			alt: 'Song Search Image',
 			title: 'Song Search',
 			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,

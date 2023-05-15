@@ -5,7 +5,7 @@ import weatherDashboard from '../assets/images/work-samples/weather_dashboard-86
 import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
 import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
-import songSearch from '../assets/images/work-samples/song_search-61KB.png'
+import songSearch from '../assets/images/work-samples/song_search-107KB.png'
 
 export const WorkSamplesAlt = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
