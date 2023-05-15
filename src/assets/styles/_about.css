@@ -61,6 +61,7 @@
 		& .about-txt {
 			font-weight: 200;
 			text-align: justify;
+			text-justify: inter-character;
 
 			@media (--laptop) {
 				font-size: 1.5rem;

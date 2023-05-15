@@ -1,7 +1,8 @@
 footer {
 	position: relative;
 	bottom: 0;
-	height: clamp(3rem, 2.124rem + 3.596vw, 5rem);
+	/* height: clamp(3rem, 2.124rem + 3.596vw, 5rem); */
+	height: 4rem;
 	background-color: $color-secondary;
 	border-top: solid white;
 
@@ -27,7 +28,7 @@ footer {
 				fill: $color-primary;
 				stroke: white;
 				cursor: grab;
-				transform: scale(1.25);
+				transform: scale(1.125);
 			}
 		}
 

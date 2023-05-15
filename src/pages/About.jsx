@@ -36,7 +36,9 @@ export const About = () => {
 	}
 
 	return (
-		<main className='about-container'>
+		<main className='about-container'
+		style={{height: showToolbox || showResume ? 'calc(100vh - 10rem)' : 'auto', overflowY: showToolbox || showResume ? 'hidden' : 'visible'}}
+		>
 			<img
 				className='about-img'
 				src={profilePhoto}

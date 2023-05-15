@@ -5,6 +5,8 @@ export const useWindowSize = () => {
 	const [isTablet, setIsTablet] = useState(false)
 	const [isLaptop, setIsLaptop] = useState(false)
 	const [isScreenLg, setIsScreenLg] = useState(false)
+	const [isPortrait, setIsPortrait] = useState(false)
+	const [isScreenHeightSm, setIsScreenHeightSm] = useState(false)
 
 	useEffect(() => {
 		const handleResizeMobile = () => {
@@ -42,10 +44,32 @@ export const useWindowSize = () => {
 		return () => window.removeEventListener('resize', handleResizeScreenLg)
 	}, [])
 
+	useEffect(() => {
+		const handleOrientationChange = () => {
+			setIsPortrait(window.innerWidth < window.innerHeight)
+		}
+		handleOrientationChange()
+		window.addEventListener('orientationchange', handleOrientationChange)
+		return () =>
+			window.removeEventListener('orientationchange', handleOrientationChange)
+	}, [])
+
+	useEffect(() => {
+		const handleResizeScreenHeightSm = () => {
+			setIsScreenHeightSm(window.innerHeight < 500)
+		}
+		handleResizeScreenHeightSm()
+		window.addEventListener('resize', handleResizeScreenHeightSm)
+		return () =>
+			window.removeEventListener('resize', handleResizeScreenHeightSm)
+	}, [])
+
 	return {
 		isMobile,
 		isTablet,
 		isLaptop,
 		isScreenLg,
+		isPortrait,
+		isScreenHeightSm,
 	}
 }

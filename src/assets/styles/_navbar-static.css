@@ -10,7 +10,8 @@
 nav {
 	position: sticky;
 	top: 0;
-	height: clamp(5rem, 3.685rem + 5.393vw, 8rem);
+	/* height: clamp(5rem, 3.685rem + 5.393vw, 8rem); */
+	height: 6rem;
 	background-color: $color-secondary;
 	border-bottom: solid white;
 
@@ -20,7 +21,8 @@ nav {
 		align-items: center;
 
 		& .nav-menu-wrapper {
-			min-height: 5rem;
+			/* min-height: 5rem; */
+			height: 100%;
 			flex-basis: 20%;
 			display: flex;
 			justify-content: flex-start;
