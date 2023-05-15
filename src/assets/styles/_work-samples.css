@@ -1,6 +1,7 @@
 .work-samples-container {
 	display: grid;
 	height: calc(100vh - clamp(8rem, 5.809rem + 8.989vw, 13rem));
+	height: calc(100dvh - clamp(8rem, 5.809rem + 8.989vw, 13rem));
 	overflow: hidden;
 
 	@media (--laptop) {
