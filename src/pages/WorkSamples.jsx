@@ -8,8 +8,8 @@ import { LeftArrowIcon } from '../components/page-icons/LeftArrowIcon.jsx'
 
 import noteTaker from '../assets/images/work-samples/note_taker-23KB.png'
 import weatherDashboard from '../assets/images/work-samples/weather_dashboard-86KB.png'
-import workdayScheduler from '../assets/images/work-samples/workday_scheduler-24KB.png'
-import courseTracker from '../assets/images/work-samples/course_tracker-25KB.png'
+import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25KB.png'
+import courseTracker from '../assets/images/work-samples/course_tracker-24KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
 import songSearch from '../assets/images/work-samples/song_search-107KB.png'
 
