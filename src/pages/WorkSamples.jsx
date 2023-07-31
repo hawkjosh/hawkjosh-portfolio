@@ -12,6 +12,7 @@ import workdayScheduler from '../assets/images/work-samples/workday_scheduler-25
 import courseTracker from '../assets/images/work-samples/course_tracker-24KB.png'
 import miniGames from '../assets/images/work-samples/mini_games-23KB.png'
 import songSearch from '../assets/images/work-samples/song_search-107KB.png'
+import commentForum from '../assets/images/work-samples/comment_forum-28KB.png'
 
 export const WorkSamples = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
@@ -75,6 +76,16 @@ export const WorkSamples = () => {
 			info: `A small but powerful music search tool that uses third party API's to retrieve song information via RESTful CRUD routes.`,
 			website: 'https://hawkjosh-song-search.onrender.com',
 			github: 'https://github.com/hawkjosh/song-search-update',
+			bonus: null,
+		},
+		{
+			index: 6,
+			image: commentForum,
+			alt: 'Comment Forum Image',
+			title: 'Comment Forum',
+			info: `An efficient and polished full-stack comment forum app, complete with user authentication and utilizing Jinja2 on the client-side for templating. The server-side is built with Python and Flask, leveraging sqlAlchemy as the ORM to communicate with a MySQL database for runtime API's.`,
+			website: 'https://hawkjosh.pythonanywhere.com',
+			github: 'https://github.com/hawkjosh/python-flask',
 			bonus: null,
 		},
 	]
