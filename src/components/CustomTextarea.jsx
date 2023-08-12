@@ -1,4 +1,4 @@
-import { useTextareaScroll } from '../hooks/useTextareaScroll.js'
+import { useTextareaScroll } from '../hooks/useTextareaScroll.jsx'
 
 const textareaStyle = {
 	display: 'block',

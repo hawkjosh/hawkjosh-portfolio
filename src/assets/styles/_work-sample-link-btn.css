@@ -35,9 +35,49 @@
 		}
 	}
 
+	&.expanded {
+		border-radius: 2rem;
+		background-color: hsl(211, 30%, 24%);
+
+		& > svg {
+			fill: white;
+		}
+
+		@media (--laptop) {
+			width: 11rem;
+			font-size: 1.125rem;
+		}
+		@media (--tablet) {
+			@media (--landscape) {
+				width: 10rem;
+				font-size: 1rem;
+
+				@media (height < 500px) {
+					width: 2.5rem;
+					background-color: transparent;
+					transform: scale(1.25);
+				}
+			}
+			@media (--portrait) {
+				width: 10rem;
+				font-size: 1rem;
+			}
+		}
+		@media (--mobile) {
+			@media (--landscape) {
+				width: 9rem;
+				font-size: 0.875rem;
+			}
+			@media (--portrait) {
+				width: 9rem;
+				font-size: 0.875rem;
+			}
+		}
+	}
+
 	& svg {
 		fill: hsl(211, 30%, 24%);
-		transition: fill 0.25s ease-in-out 0.25s;
+		transition: fill 0.25s ease-in-out;
 
 		@media (--laptop) {
 			width: 3rem;
@@ -62,45 +102,14 @@
 				width: 2rem;
 			}
 		}
-	}
 
-	&:hover {
-		border-radius: 2rem;
-		background-color: hsl(211, 30%, 24%);
-
-		& > svg {
+		&:hover {
 			fill: white;
 		}
+	}
 
-		@media (--laptop) {
-			width: 11rem;
-			font-size: 1.125rem;
-		}
-		@media (--tablet) {
-			@media (--landscape) {
-				width: 10rem;
-				font-size: 1rem;
-
-				@media (height < 500px) {
-					width: 2.5rem;
-					background-color: transparent;
-					transform: scale(1.25)
-				}
-			}
-			@media (--portrait) {
-				width: 10rem;
-				font-size: 1rem;
-			}
-		}
-		@media (--mobile) {
-			@media (--landscape) {
-				width: 9rem;
-				font-size: 0.875rem;
-			}
-			@media (--portrait) {
-				width: 9rem;
-				font-size: 0.875rem;
-			}
-		}
+	& .btn-text {
+		font-size: inherit;
+		color: inherit;
 	}
 }

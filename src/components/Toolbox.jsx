@@ -28,6 +28,7 @@ import Netlify from '../assets/images/toolbox/netlify.svg'
 import NodeJS from '../assets/images/toolbox/nodejs.svg'
 import Nodemon from '../assets/images/toolbox/nodemon.svg'
 import NPM_icon from '../assets/images/toolbox/npm.svg'
+import Python from '../assets/images/toolbox/python.svg'
 import ReactJS from '../assets/images/toolbox/react.svg'
 import Redux from '../assets/images/toolbox/redux.svg'
 import Sequelize from '../assets/images/toolbox/sequelize.svg'
@@ -66,6 +67,7 @@ const icons = [
 	{ name: 'NodeJS Icon', image: NodeJS },
 	{ name: 'Nodemon Icon', image: Nodemon },
 	{ name: 'NPM Icon', image: NPM_icon },
+	{ name: 'Python Icon', image: Python },
 	{ name: 'ReactJS Icon', image: ReactJS },
 	{ name: 'Redux Icon', image: Redux },
 	{ name: 'Sequelize Icon', image: Sequelize },

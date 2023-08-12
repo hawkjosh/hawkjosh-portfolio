@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useNavbarHide } from '../hooks/useNavbarHide.js'
+import { useNavbarHide } from '../hooks/useNavbarHide.jsx'
 
 import { Menu } from './Menu.jsx'
 

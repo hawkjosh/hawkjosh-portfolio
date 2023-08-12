@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useNavbarShrink } from '../hooks/useNavbarShrink.js'
+import { useNavbarShrink } from '../hooks/useNavbarShrink.jsx'
 
 import { Menu } from './Menu.jsx'
 

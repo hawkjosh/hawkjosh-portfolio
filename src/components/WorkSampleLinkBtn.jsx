@@ -1,17 +1,22 @@
-import React, { Fragment, useRef, useState } from 'react'
-import { useWindowSize } from '../hooks/useWindowSize.js'
+import React, { Fragment } from 'react'
+import { useWindowSize } from '../hooks/useWindowSize.jsx'
+import { useBtnExpand } from '../hooks/useBtnExpand.jsx'
 
-export const WorkSampleLinkBtn = ({ icon, text }) => {
-	const [isHovered, setIsHovered] = useState(false)
-	const buttonRef = useRef(null)
+export const WorkSampleLinkBtn = ({ icon, text, link, index }) => {
+	const { expandBtnIndex, expandBtn, collapseBtn } = useBtnExpand()
 	const { isTablet, isPortrait, isScreenHeightSm } = useWindowSize()
 
-	const handleMouseEnter = () => {
-		setIsHovered(true)
+	const handleExpand = () => {
+		if (expandBtnIndex === index) {
+			collapseBtn()
+			console.log(expandBtnIndex)
+		} else {
+			expandBtn(index)
+		}
 	}
 
-	const handleMouseLeave = () => {
-		setIsHovered(false)
+	const handleLinkClick = () => {
+		window.open(link, '_blank', 'noopener,noreferrer')
 	}
 
 	return (
@@ -19,19 +24,24 @@ export const WorkSampleLinkBtn = ({ icon, text }) => {
 			{isTablet && !isPortrait && isScreenHeightSm ? (
 				<div
 					className='work-sample-link-btn'
-					ref={buttonRef}
-					onMouseEnter={handleMouseEnter}
-					onMouseLeave={handleMouseLeave}>
+					index={expandBtnIndex}
+					onClick={handleLinkClick}>
 					{icon}
 				</div>
 			) : (
 				<div
-					className='work-sample-link-btn'
-					ref={buttonRef}
-					onMouseEnter={handleMouseEnter}
-					onMouseLeave={handleMouseLeave}>
+					className={`work-sample-link-btn ${
+						expandBtnIndex === index ? 'expanded' : ''
+					}`}
+					onClick={handleExpand}>
 					{icon}
-					{isHovered && <span className='btn-text'>{text}</span>}
+					{expandBtnIndex === index && (
+						<span
+							className='btn-text'
+							onClick={handleLinkClick}>
+							{text}
+						</span>
+					)}
 				</div>
 			)}
 		</Fragment>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { useWindowSize } from '../hooks/useWindowSize.js'
+import { useWindowSize } from '../hooks/useWindowSize.jsx'
 
 import { LinkedinIcon } from '../components/page-icons/LinkedinIcon.jsx'
 import { GithubIcon } from '../components/page-icons/GithubIcon.jsx'
